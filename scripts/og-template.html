@@ -1,0 +1,58 @@
+<!doctype html>
+<meta charset="utf-8" />
+<!-- Source for public/og-image.png. Rendered at exactly 1200x630 and
+     screenshotted; see scripts/README-og.md. Text only, no photos, so the
+     share card carries no attribution obligations. -->
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, sans-serif;
+    background:
+      radial-gradient(900px 460px at 88% -12%, rgba(207, 69, 32, 0.42), transparent 62%),
+      radial-gradient(620px 380px at 6% 112%, rgba(137, 115, 76, 0.30), transparent 62%),
+      #0d0c0b;
+    color: #faf7f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 66px 72px;
+  }
+  .wordmark { font-size: 22px; font-weight: 700; letter-spacing: 0.26em;
+              text-transform: uppercase; color: #cf4520; }
+  .sub { font-size: 14px; letter-spacing: 0.34em; text-transform: uppercase;
+         color: rgba(250,247,242,0.45); margin-top: 6px; }
+  h1 { font-size: 82px; line-height: 1.04; letter-spacing: -0.02em;
+       font-weight: 700; }
+  .deck { font-size: 24px; line-height: 1.45; color: rgba(250,247,242,0.72);
+          max-width: 900px; margin-top: 22px; }
+  .footer { display: flex; justify-content: space-between; align-items: flex-end;
+            font-size: 17px; color: rgba(250,247,242,0.5); }
+  .chips { display: flex; gap: 10px; }
+  .chip { border: 1px solid rgba(250,247,242,0.22); border-radius: 999px;
+          padding: 7px 16px; font-size: 15px; color: rgba(250,247,242,0.78); }
+  .url { color: #ab9265; font-weight: 700; letter-spacing: 0.04em; }
+</style>
+<body>
+  <div>
+    <div class="wordmark">Anaheim Ducks</div>
+    <div class="sub">2026 Offseason Tracker</div>
+  </div>
+
+  <div>
+    <h1>The core stayed.<br />The blue line changed.</h1>
+    <p class="deck">
+      Every roster and coaching change from the 2026 offseason, with contract
+      terms, last season&rsquo;s points and full salary-cap utilization.
+    </p>
+  </div>
+
+  <div class="footer">
+    <div class="chips">
+      <span class="chip">Roster changes</span>
+      <span class="chip">Transactions</span>
+      <span class="chip">Salary cap</span>
+    </div>
+    <span class="url">ducks.metacto.com</span>
+  </div>
+</body>

@@ -1,0 +1,196 @@
+{
+  "_source": "PuckPedia, retrieved Aug 7, 2026 (team page + player pages for departed players)",
+  "leo-carlsson": {
+    "aav": "$18M",
+    "thru": "2030-31",
+    "expiry": "UFA"
+  },
+  "cutter-gauthier": {
+    "note": "Unsigned RFA"
+  },
+  "beckett-sennecke": {
+    "aav": "$954K",
+    "thru": "2027-28",
+    "expiry": "RFA"
+  },
+  "troy-terry": {
+    "aav": "$7M",
+    "thru": "2029-30",
+    "expiry": "UFA"
+  },
+  "chris-kreider": {
+    "aav": "$6.5M",
+    "thru": "2026-27",
+    "expiry": "UFA"
+  },
+  "mikael-granlund": {
+    "aav": "$7M",
+    "thru": "2027-28",
+    "expiry": "UFA"
+  },
+  "alex-killorn": {
+    "aav": "$6.25M",
+    "thru": "2026-27",
+    "expiry": "UFA"
+  },
+  "frank-vatrano": {
+    "aav": "$4.57M",
+    "thru": "2027-28",
+    "expiry": "UFA"
+  },
+  "ryan-poehling": {
+    "aav": "$3.75M",
+    "thru": "2029-30",
+    "expiry": "UFA"
+  },
+  "washe": {
+    "aav": "$813K",
+    "thru": "2026-27",
+    "expiry": "RFA"
+  },
+  "mason-mctavish": {
+    "aav": "$7M",
+    "thru": "2030-31",
+    "expiry": "UFA",
+    "team": "STL"
+  },
+  "jeffrey-viel": {
+    "aav": "$2.5M",
+    "thru": "2030-31",
+    "expiry": "UFA",
+    "team": "TBL"
+  },
+  "ross-johnston": {
+    "aav": "$2M",
+    "thru": "2028-29",
+    "expiry": "UFA",
+    "team": "STL"
+  },
+  "aj-greer": {
+    "aav": "$4.25M",
+    "thru": "2029-30",
+    "expiry": "UFA"
+  },
+  "jeff-malott": {
+    "aav": "$1.85M",
+    "thru": "2028-29",
+    "expiry": "UFA"
+  },
+  "colangelo": {
+    "aav": "$850K",
+    "thru": "2026-27",
+    "expiry": "UFA"
+  },
+  "jackson-lacombe": {
+    "aav": "$9M",
+    "thru": "2033-34",
+    "expiry": "UFA"
+  },
+  "pavel-mintyukov": {
+    "aav": "$7.2M",
+    "thru": "2030-31",
+    "expiry": "UFA"
+  },
+  "drew-helleson": {
+    "aav": "$1.1M",
+    "thru": "2026-27",
+    "expiry": "RFA"
+  },
+  "tyson-hinds": {
+    "aav": "$900K",
+    "thru": "2027-28",
+    "expiry": "RFA"
+  },
+  "ian-moore": {
+    "aav": "$1.15M",
+    "thru": "2027-28",
+    "expiry": "RFA"
+  },
+  "jacob-trouba": {
+    "aav": "$8.25M",
+    "thru": "2029-30",
+    "expiry": "UFA",
+    "team": "SJS"
+  },
+  "radko-gudas": {
+    "aav": "$1.5M",
+    "thru": "2031-32",
+    "expiry": "UFA",
+    "team": "FLA"
+  },
+  "john-carlson": {
+    "aav": "$8.5M",
+    "thru": "2027-28",
+    "expiry": "UFA",
+    "team": "TBL"
+  },
+  "olen-zellweger": {
+    "aav": "$3.1M",
+    "thru": "2028-29",
+    "expiry": "RFA",
+    "team": "BUF"
+  },
+  "nick-jensen": {
+    "aav": "$2.25M",
+    "thru": "2027-28",
+    "expiry": "UFA"
+  },
+  "tristan-luneau": {
+    "aav": "$865K",
+    "thru": "2026-27",
+    "expiry": "RFA"
+  },
+  "lukas-dostal": {
+    "aav": "$6.5M",
+    "thru": "2029-30",
+    "expiry": "UFA"
+  },
+  "ville-husso": {
+    "aav": "$2.2M",
+    "thru": "2026-27",
+    "expiry": "UFA"
+  },
+  "petr-mrazek": {
+    "note": "Unsigned UFA"
+  },
+  "laurent-brossoit": {
+    "aav": "$1.1M",
+    "thru": "2026-27",
+    "expiry": "UFA"
+  },
+  "nikita-klepov": {
+    "aav": "$1.08M",
+    "thru": "2028-29",
+    "expiry": "RFA"
+  },
+  "marcus-nordmark": {
+    "aav": "$1.08M",
+    "thru": "2028-29",
+    "expiry": "RFA"
+  },
+  "roger-mcqueen": {
+    "aav": "$1.08M",
+    "thru": "2028-29",
+    "expiry": "RFA"
+  },
+  "anton-wahlberg": {
+    "aav": "$893K",
+    "thru": "2027-28",
+    "expiry": "RFA"
+  },
+  "sean-farrell": {
+    "aav": "$850K",
+    "thru": "2026-27",
+    "expiry": "UFA"
+  },
+  "nathan-gaucher": {
+    "aav": "$887K",
+    "thru": "2026-27",
+    "expiry": "RFA"
+  },
+  "nikita-nesterenko": {
+    "aav": "$838K",
+    "thru": "2026-27",
+    "expiry": "UFA"
+  }
+}

@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run lint
+
+      - run: npm run build
+
+      # The page must never ship NHL/Ducks imagery or reference their CDN.
+      - name: Check for NHL assets
+        run: |
+          if grep -rniE "assets\.nhle\.com|nhle\.com/(mugs|logos)|ducks-logo" \
+              src/ index.html public/ 2>/dev/null; then
+            echo "::error::Found a reference to NHL-hosted imagery."
+            exit 1
+          fi
+          echo "No NHL imagery references found."
+
+      # Every bundled photo must have recorded attribution.
+      - name: Check photo attribution
+        run: |
+          node -e '
+            const fs = require("fs");
+            const credits = require("./src/data/photo-credits.json");
+            const known = new Set(Object.values(credits).map(c => c.file));
+            const onDisk = fs.readdirSync("public/headshots");
+            const missing = onDisk.filter(f => !known.has(f));
+            if (missing.length) {
+              console.error("Photos without attribution:", missing.join(", "));
+              process.exit(1);
+            }
+            console.log(`All ${onDisk.length} photos have recorded attribution.`);
+          '
