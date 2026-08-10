@@ -1,5 +1,6 @@
 import { campWatch, STATUS } from '../data/ducks'
 import Avatar from './Avatar'
+import { isNew } from '../lib/updates'
 
 export default function CampWatch() {
   return (
@@ -17,7 +18,10 @@ export default function CampWatch() {
               <span className="player-name">{p.name}</span>
               <span className="player-pos">{p.pos}</span>
             </div>
-            <p className="player-note">{p.note}</p>
+            <p className="player-note">
+              {isNew(p.note) && <span className="badge badge-new">New</span>}
+              {p.note}
+            </p>
             <span className={`badge badge-${STATUS.camp.color}`}>{STATUS.camp.label}</span>
           </article>
         ))}

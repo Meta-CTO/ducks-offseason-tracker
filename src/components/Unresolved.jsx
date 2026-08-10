@@ -1,4 +1,5 @@
 import { unresolved } from '../data/ducks'
+import { isNew } from '../lib/updates'
 
 export default function Unresolved() {
   return (
@@ -15,7 +16,10 @@ export default function Unresolved() {
             </span>
             <div>
               <p className="unresolved-title">{u.item}</p>
-              <p className="unresolved-impact">{u.impact}</p>
+              <p className="unresolved-impact">
+                {isNew(u.impact) && <span className="badge badge-new">New</span>}
+                {u.impact}
+              </p>
             </div>
           </div>
         ))}

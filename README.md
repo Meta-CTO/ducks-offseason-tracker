@@ -63,6 +63,36 @@ Edit the relevant file in `src/data/` and bump `LAST_UPDATED` in
 The research brief in the repo root lists exactly what to re-verify after
 training camp and before opening night.
 
+## Keeping the data current
+
+```
+/update-data
+```
+
+A Claude Code skill (`.claude/skills/update-data/`) that checks the live
+sources, updates the data **only when something genuinely changed**, and
+badges the new bullets.
+
+It runs `node scripts/check-updates.mjs` for the mechanically-checkable half
+(team changes, stat differences via the NHL API), then checks PuckPedia and
+the official Ducks news for contracts, cap figures, injuries and transactions,
+which block scripted access and need a browser.
+
+The governing rule is that **no news means no edits**. A pass that changes
+nothing is a successful pass. Churning the data would make the NEW badge
+meaningless.
+
+Bullets added by an update pass get a **NEW** badge recorded in
+`src/data/updates.json`:
+
+```json
+{ "text": "exact bullet text", "addedAt": "2026-08-10" }
+```
+
+The badge expires 7 days after `addedAt`, computed in the reader's browser by
+`src/lib/updates.js` — so badges clear themselves without a redeploy. Badges
+work on roster bullets, camp-watch notes, and unresolved-item impact lines.
+
 ## Usage metrics
 
 ```sh

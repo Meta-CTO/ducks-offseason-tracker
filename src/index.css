@@ -18,6 +18,7 @@
   --status-unsigned: #a36a00;
   --status-injured: #6b4fa0;
   --status-camp: #1b5fa8;
+  --status-new: #b3261e;
 
   /* Lightened gold for small text on dark backgrounds (contrast) */
   --ducks-gold-tint: #ab9265;
@@ -225,6 +226,25 @@ body {
 .badge-unsigned { background: var(--status-unsigned); }
 .badge-injured { background: var(--status-injured); }
 .badge-camp { background: var(--status-camp); }
+
+/* NEW marks a bullet added by a recent update pass; it self-expires after
+   7 days (see src/lib/updates.js), so it never needs manual clearing. */
+.badge-new {
+  background: var(--status-new);
+  margin-right: 0.4rem;
+  font-size: 0.62rem;
+  padding: 0.1rem 0.42rem;
+  vertical-align: 0.08em;
+  letter-spacing: 0.06em;
+}
+
+.note-new {
+  color: var(--text);
+}
+
+.note-new::marker {
+  color: var(--status-new);
+}
 
 .legend {
   display: flex;

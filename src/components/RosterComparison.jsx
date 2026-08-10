@@ -4,6 +4,7 @@ import Avatar, { slugify } from './Avatar'
 import CapView from './CapView'
 import points from '../data/points.json'
 import contracts from '../data/contracts.json'
+import { isNew } from '../lib/updates'
 
 const CAP_TAB = 'Salary Cap'
 
@@ -96,7 +97,10 @@ export default function RosterComparison() {
                   </span>
                   <ul className="roster-notes">
                     {row.notes.map((note) => (
-                      <li key={note}>{note}</li>
+                      <li key={note} className={isNew(note) ? 'note-new' : undefined}>
+                        {isNew(note) && <span className="badge badge-new">New</span>}
+                        {note}
+                      </li>
                     ))}
                   </ul>
                 </div>
