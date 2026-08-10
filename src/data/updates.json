@@ -1,5 +1,5 @@
 {
   "_comment": "Written by the update-data skill. Each entry marks a data bullet as NEW; the badge disappears on its own 7 days after addedAt, computed in the browser, so no redeploy is needed to clear it.",
-  "lastChecked": null,
+  "lastChecked": "2026-08-10",
   "entries": []
 }

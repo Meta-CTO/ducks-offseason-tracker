@@ -7,14 +7,13 @@
 set -euo pipefail
 
 . "$(dirname "$0")/_config.sh"
-PROFILE="$AWS_PROFILE_NAME"
 DIST_ID="$CLOUDFRONT_DISTRIBUTION_ID"
 DOMAIN="$SITE_DOMAIN"
 : "${ACM_CERTIFICATE_ARN:?set ACM_CERTIFICATE_ARN in .env.deploy}"
 CERT_ARN="$ACM_CERTIFICATE_ARN"
 
 STATUS=$(aws acm describe-certificate --certificate-arn "$CERT_ARN" \
-  --region us-east-1 --profile "$PROFILE" --query "Certificate.Status" --output text)
+  --region us-east-1 "${AWS_ARGS[@]}" --query "Certificate.Status" --output text)
 echo "certificate status: $STATUS"
 if [ "$STATUS" != "ISSUED" ]; then
   echo "Certificate is not ISSUED yet. Add the validation CNAME to DNS and"
@@ -24,7 +23,7 @@ if [ "$STATUS" != "ISSUED" ]; then
 fi
 
 TMP=$(mktemp -d)
-aws cloudfront get-distribution-config --id "$DIST_ID" --profile "$PROFILE" \
+aws cloudfront get-distribution-config --id "$DIST_ID" "${AWS_ARGS[@]}" \
   > "$TMP/current.json"
 ETAG=$(python3 -c "import json;print(json.load(open('$TMP/current.json'))['ETag'])")
 
@@ -43,7 +42,7 @@ cfg["ViewerCertificate"] = {
 json.dump(cfg, open(dst, "w"))
 PY
 
-aws cloudfront update-distribution --id "$DIST_ID" --profile "$PROFILE" \
+aws cloudfront update-distribution --id "$DIST_ID" "${AWS_ARGS[@]}" \
   --if-match "$ETAG" --distribution-config "file://$TMP/new.json" \
   --query "Distribution.{Status:Status,Aliases:DistributionConfig.Aliases.Items}" --output json
 

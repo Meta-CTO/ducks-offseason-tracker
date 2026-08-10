@@ -9,7 +9,6 @@
 set -euo pipefail
 
 . "$(dirname "$0")/_config.sh"
-PROFILE="$AWS_PROFILE_NAME"
 DIST="$CLOUDFRONT_DISTRIBUTION_ID"
 : "${AWS_ACCOUNT_ID:?set AWS_ACCOUNT_ID in .env.deploy}"
 : "${LOGS_BUCKET:?set LOGS_BUCKET in .env.deploy}"
@@ -21,7 +20,7 @@ START=$(date -u -v-"${HOURS}"H +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -d "$H
 END=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 
 metric() {
-  aws cloudwatch get-metric-statistics --profile "$PROFILE" --region us-east-1 \
+  aws cloudwatch get-metric-statistics "${AWS_ARGS[@]}" --region us-east-1 \
     --namespace AWS/CloudFront --metric-name "$1" \
     --dimensions Name=DistributionId,Value="$DIST" Name=Region,Value=Global \
     --start-time "$START" --end-time "$END" --period $((HOURS * 3600)) \
@@ -45,7 +44,7 @@ TMP=$(mktemp -d); trap 'rm -rf "$TMP"' EXIT
 DAYS=$(( (HOURS + 23) / 24 ))
 for i in $(seq 0 $((DAYS - 1))); do
   D=$(date -u -v-"${i}"d +%Y/%m/%d 2>/dev/null || date -u -d "$i days ago" +%Y/%m/%d)
-  aws s3 cp "$LOGS/$DIST/$D/" "$TMP/" --recursive --profile "$PROFILE" \
+  aws s3 cp "$LOGS/$DIST/$D/" "$TMP/" --recursive "${AWS_ARGS[@]}" \
     --only-show-errors 2>/dev/null || true
 done
 

@@ -4,7 +4,6 @@
 set -euo pipefail
 
 . "$(dirname "$0")/_config.sh"
-PROFILE="$AWS_PROFILE_NAME"
 BUCKET="$S3_BUCKET"
 DIST_ID="$CLOUDFRONT_DISTRIBUTION_ID"
 
@@ -14,19 +13,19 @@ echo "==> building"
 npm run build
 
 echo "==> syncing hashed assets (immutable, 1yr)"
-aws s3 sync dist/ "s3://$BUCKET/" --profile "$PROFILE" --delete \
+aws s3 sync dist/ "s3://$BUCKET/" "${AWS_ARGS[@]}" --delete \
   --exclude "*.html" --exclude "*.json" \
   --cache-control "public,max-age=31536000,immutable" --only-show-errors
 
 echo "==> syncing html/json (short TTL so content updates land fast)"
-aws s3 sync dist/ "s3://$BUCKET/" --profile "$PROFILE" \
+aws s3 sync dist/ "s3://$BUCKET/" "${AWS_ARGS[@]}" \
   --exclude "*" --include "*.html" --include "*.json" \
   --cache-control "public,max-age=60,must-revalidate" --only-show-errors
 
 echo "==> invalidating CloudFront"
 ID=$(aws cloudfront create-invalidation --distribution-id "$DIST_ID" \
-  --paths "/*" --profile "$PROFILE" --query "Invalidation.Id" --output text)
+  --paths "/*" "${AWS_ARGS[@]}" --query "Invalidation.Id" --output text)
 aws cloudfront wait invalidation-completed --distribution-id "$DIST_ID" \
-  --id "$ID" --profile "$PROFILE"
+  --id "$ID" "${AWS_ARGS[@]}"
 
 echo "==> done: https://$SITE_DOMAIN/"

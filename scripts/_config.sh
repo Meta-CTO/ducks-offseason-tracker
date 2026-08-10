@@ -20,7 +20,14 @@ missing() {
   exit 1
 }
 
-: "${AWS_PROFILE_NAME:?$(missing AWS_PROFILE_NAME)}"
 : "${SITE_DOMAIN:?$(missing SITE_DOMAIN)}"
 : "${S3_BUCKET:?$(missing S3_BUCKET)}"
 : "${CLOUDFRONT_DISTRIBUTION_ID:?$(missing CLOUDFRONT_DISTRIBUTION_ID)}"
+
+# AWS_PROFILE_NAME is optional. Locally it selects a named profile; in CI it is
+# unset and credentials come from the environment (GitHub OIDC role), so the
+# --profile flag must be omitted entirely rather than passed empty.
+AWS_ARGS=()
+if [ -n "${AWS_PROFILE_NAME:-}" ]; then
+  AWS_ARGS=(--profile "$AWS_PROFILE_NAME")
+fi
