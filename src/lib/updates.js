@@ -23,6 +23,14 @@ const FRESH = freshTexts()
 /** True when this exact bullet was added by a recent update pass. */
 export const isNew = (text) => FRESH.has(text)
 
+/**
+ * How many of the given strings are currently badged. Used for the counts on
+ * tab controls, so a reader can see which section changed without opening
+ * each one. Ignores null/undefined so callers can pass optional fields.
+ */
+export const countNew = (texts) =>
+  texts.reduce((n, t) => (t && FRESH.has(t) ? n + 1 : n), 0)
+
 /** How many bullets are currently badged, for the "what changed" summary. */
 export const newCount = () => FRESH.size
 

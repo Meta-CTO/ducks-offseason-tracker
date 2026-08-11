@@ -91,7 +91,12 @@ Bullets added by an update pass get a **NEW** badge recorded in
 
 The badge expires 7 days after `addedAt`, computed in the reader's browser by
 `src/lib/updates.js` — so badges clear themselves without a redeploy. Badges
-work on roster bullets, camp-watch notes, and unresolved-item impact lines.
+work on roster bullets, camp-watch notes, unresolved-item impacts, and
+transaction-ledger rows.
+
+Tabs carry a count of the badged items inside them, so a reader can see which
+section changed without opening each one. The counts disappear along with the
+badges they summarise.
 
 ## Usage metrics
 

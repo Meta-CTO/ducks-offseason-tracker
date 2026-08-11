@@ -117,8 +117,11 @@ Rules:
 - Always set `lastChecked` to today, even on a no-op pass. That is bookkeeping
   about when you looked, not a claim that content changed.
 
-Badges work on roster bullets, camp-watch notes, and unresolved-item impact
-lines.
+Badges work on roster bullets, camp-watch notes, unresolved-item impacts, and
+transaction-ledger rows (a departure's `detail`, an arrival's `role`, a draft
+pick's `note`). Tabs automatically show a count of the badged items inside
+them, so badging accurately matters — an inflated count sends readers hunting
+for changes that are not there.
 
 ## Step 6 — verify and ship
 

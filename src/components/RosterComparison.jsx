@@ -5,9 +5,15 @@ import { slugify } from '../lib/slugify'
 import CapView from './CapView'
 import points from '../data/points.json'
 import contracts from '../data/contracts.json'
-import { isNew } from '../lib/updates'
+import { isNew, countNew } from '../lib/updates'
 
 const CAP_TAB = 'Salary Cap'
+
+// How many badged bullets sit inside each tab, so a reader can see which
+// section changed without opening every one.
+const newPerTab = Object.fromEntries(
+  rosterComparison.map((g) => [g.group, countNew(g.rows.flatMap((r) => r.notes))]),
+)
 
 const statLine = (name) => {
   const p = points[slugify(name)]
@@ -66,6 +72,14 @@ export default function RosterComparison() {
             onClick={() => setActive(tab)}
           >
             {tab}
+            {newPerTab[tab] > 0 && (
+              <span
+                className="toggle-count"
+                aria-label={`${newPerTab[tab]} new item${newPerTab[tab] === 1 ? '' : 's'}`}
+              >
+                {newPerTab[tab]}
+              </span>
+            )}
           </button>
         ))}
         </div>

@@ -298,6 +298,26 @@ body {
   color: var(--paper);
 }
 
+/* Count of badged items inside a tab. Sits on both light (inactive) and dark
+   (active) pills, so it carries its own background rather than inheriting. */
+.toggle-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.15rem;
+  height: 1.15rem;
+  padding: 0 0.3rem;
+  margin-left: 0.4rem;
+  border-radius: 999px;
+  background: var(--status-new);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  vertical-align: 0.05em;
+}
+
 /* ---------- Roster comparison ---------- */
 
 .roster-table {

@@ -1,5 +1,13 @@
 import { useState } from 'react'
 import { departures, arrivals, draftClass } from '../data/ducks'
+import { isNew, countNew } from '../lib/updates'
+
+// A new transaction adds a row here, so these are badgeable too.
+const newCounts = {
+  departures: countNew(departures.map((t) => t.detail)),
+  arrivals: countNew(arrivals.map((t) => t.role)),
+  draft: countNew(draftClass.map((d) => d.note)),
+}
 
 export default function Timeline() {
   const [tab, setTab] = useState('departures')
@@ -21,6 +29,14 @@ export default function Timeline() {
             onClick={() => setTab(key)}
           >
             {label}
+            {newCounts[key] > 0 && (
+              <span
+                className="toggle-count"
+                aria-label={`${newCounts[key]} new item${newCounts[key] === 1 ? '' : 's'}`}
+              >
+                {newCounts[key]}
+              </span>
+            )}
           </button>
         ))}
       </div>
@@ -34,7 +50,10 @@ export default function Timeline() {
                 <p className="timeline-headline">
                   <strong>{t.player}</strong> <span className="player-pos">{t.pos}</span> &middot; {t.mechanism}
                 </p>
-                <p className="timeline-detail">{t.detail}</p>
+                <p className="timeline-detail">
+                  {isNew(t.detail) && <span className="badge badge-new">New</span>}
+                  {t.detail}
+                </p>
               </div>
             </li>
           ))}
@@ -50,7 +69,10 @@ export default function Timeline() {
                 <p className="timeline-headline">
                   <strong>{t.player}</strong> <span className="player-pos">{t.pos}</span> &middot; {t.deal}
                 </p>
-                <p className="timeline-detail">{t.role}</p>
+                <p className="timeline-detail">
+                  {isNew(t.role) && <span className="badge badge-new">New</span>}
+                  {t.role}
+                </p>
               </div>
             </li>
           ))}
@@ -70,7 +92,10 @@ export default function Timeline() {
                   <td>{d.pick}</td>
                   <td>{d.player}</td>
                   <td>{d.pos}</td>
-                  <td>{d.note}</td>
+                  <td>
+                    {isNew(d.note) && <span className="badge badge-new">New</span>}
+                    {d.note}
+                  </td>
                 </tr>
               ))}
             </tbody>
