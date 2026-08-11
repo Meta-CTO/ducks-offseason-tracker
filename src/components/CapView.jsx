@@ -1,5 +1,6 @@
 import { capSummary, capGroups, capHits, fmtM, pctOfCap } from '../data/cap'
-import Avatar, { slugify } from './Avatar'
+import Avatar from './Avatar'
+import { slugify } from '../lib/slugify'
 import contracts from '../data/contracts.json'
 
 const maxHit = Math.max(...capHits.map((p) => p.hit))

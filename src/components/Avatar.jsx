@@ -1,7 +1,5 @@
 import credits from '../data/photo-credits.json'
-
-export const slugify = (name) =>
-  name.toLowerCase().replace(/[.'’]/g, '').replace(/\s+/g, '-')
+import { slugify } from '../lib/slugify'
 
 const initials = (name) =>
   name

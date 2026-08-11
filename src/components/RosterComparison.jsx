@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { rosterComparison, STATUS } from '../data/ducks'
-import Avatar, { slugify } from './Avatar'
+import Avatar from './Avatar'
+import { slugify } from '../lib/slugify'
 import CapView from './CapView'
 import points from '../data/points.json'
 import contracts from '../data/contracts.json'
