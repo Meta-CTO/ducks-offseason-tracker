@@ -100,13 +100,29 @@ badges they summarise.
 
 ## Usage metrics
 
-```sh
-npm run stats        # last 24h
-npm run stats 168    # last 7 days
+```
+/stats
 ```
 
-Prints requests, data transferred, page views, unique IPs, top pages, external
-referrers, rough geography and device split.
+A Claude Code skill (`.claude/skills/stats/`) that runs the rollup and
+interprets it. Or run it directly:
+
+```sh
+npm run rollup       # last 7 days
+npm run rollup 1     # last 24 hours
+npm run rollup 30    # last 30 days
+npm run stats        # older, simpler variant (hours, not days)
+```
+
+The rollup reports page views and unique visitors with a trend against the
+previous equal period, a per-day breakdown, top pages, traffic sources,
+devices and rough geography.
+
+Two caveats worth remembering. "Page views" counts HTML responses excluding
+bots and file requests — because the SPA serves `index.html` for every
+unmatched path, a missing `favicon.ico` would otherwise register as a view.
+And "unique visitors" is distinct IPs, which undercounts shared networks and
+overcounts mobile users whose IP changes.
 
 A CloudWatch dashboard covers the same ground visually: requests over time,
 requests per day, bytes out, and error rates.
