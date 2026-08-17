@@ -129,12 +129,28 @@ for changes that are not there.
 npm run build
 ```
 
-Check the result renders, ideally confirming a badge appears where you expect.
-Then ask the user before deploying, and only after they agree:
+Check the result renders, confirming a badge appears where you expect.
+
+**You have standing authorization to commit and push on this project as part
+of this skill — do not ask.** This is a deliberate exception to the global
+"only commit when I ask" rule, scoped to update passes on this repo.
 
 ```sh
-npm run deploy
+git add -A
+git commit   # describe what changed and cite the source
+git push origin main
 ```
+
+Pushing to `main` triggers the GitHub Actions deploy, which builds, syncs to
+S3, invalidates CloudFront, and verifies the live bundle matches the build. So
+pushing *is* deploying; there is no separate deploy step to run. `npm run
+deploy` exists for deploying by hand and is not needed here.
+
+Two things this authorization does **not** cover, because they are not update
+passes: rewriting site content or design at your own initiative, and any
+change that would remove or restructure existing sections. Ask for those.
+
+On a no-op pass, committing the `lastChecked` bump alone is fine and correct.
 
 ## Step 7 — report
 
