@@ -1,0 +1,149 @@
+import { STATUS, RUMOR_STATUS } from '../status'
+import league from '../league/SEA.json'
+import { pointsFromLeague } from './_derive'
+
+// Seattle Kraken editorial content. Research cutoff: August 19, 2026.
+//
+// Primary source: NHL.com's Kraken team reset for the 2026-27 season. Cap
+// figures and the active injury table have not been read from PuckPedia for
+// this club yet, so there is no cap tab. Every "after" lineup is a projection
+// until the club announces a roster.
+
+export const LAST_UPDATED = 'August 19, 2026'
+
+export const hero = {
+  team: 'Seattle Kraken',
+  subtitle: '2026 Offseason Tracker',
+  stage: 'Pre-camp projection',
+  headline: ['They bought a 23-year-old winger.', 'They paid in picks.'],
+  deck:
+    'Seattle sent a 2026 first and a 2027 second to Florida for Mackie ' +
+    'Samoskevich, then signed him for three years at $3.85 million. Jaden ' +
+    'Schwartz and Jamie Oleksiak left in free agency and Eeli Tolvanen is ' +
+    'still unsigned. The bet is that a young winger takes off in Lane ' +
+    'Lambert’s system — the general manager has said so out loud.',
+}
+
+export const ledgerRange = 'June 21 – July 2'
+
+export const departures = [
+  { date: 'Jul. 1', player: 'Jamie Oleksiak', pos: 'D', mechanism: 'UFA', detail: 'Signed a two-year contract with Vancouver after 15 points in 78 games.' },
+  { date: 'Jul. 2', player: 'Jaden Schwartz', pos: 'F', mechanism: 'UFA', detail: 'Signed a three-year contract with Colorado after 26 points in 50 games.' },
+  { date: 'Jul. 1', player: 'Eeli Tolvanen', pos: 'F', mechanism: 'UFA', detail: 'Unsigned as of this brief, which is the only firm statement about him; 36 points in 78 games last season.' },
+]
+
+export const arrivals = [
+  { date: 'Jun. 21', player: 'Mackie Samoskevich', pos: 'F', deal: 'Trade from Florida; three years, $11.5M ($3.85M AAV) signed Jul. 1', role: 'Cost a 2026 first-round pick and a 2027 second; projected third line' },
+  { date: 'Jul. 1', player: 'Curtis Douglas', pos: 'F', deal: 'Two years, $2.5M ($1.25M AAV)', role: 'Forward depth; played for Tampa Bay and Vancouver last season' },
+]
+
+export const rosterComparison = [
+  {
+    group: 'Offense',
+    summary: 'Schwartz gone and Tolvanen unsigned; Samoskevich bought with picks and signed for three years',
+    rows: [
+      {
+        pos: 'F', before: null, after: 'Mackie Samoskevich', status: 'added',
+        notes: [
+          'Acquired from Florida on Jun. 21 for a 2026 first-round pick and a 2027 second',
+          'Signed Jul. 1 for three years, $11.5M — a $3.85M cap hit',
+          'Twenty-three; the general manager said “we think his numbers are really going to take off here”',
+        ],
+      },
+      {
+        pos: 'C', before: 'Matty Beniers', after: 'Matty Beniers', status: 'retained',
+        notes: ['Projected to centre the top line between Bobby McMann and Jordan Eberle'],
+      },
+      {
+        pos: 'C', before: 'Shane Wright', after: 'Shane Wright', status: 'retained',
+        notes: ['Projected to centre the second line with Jared McCann and Berkly Catton'],
+      },
+      {
+        pos: 'F', before: 'Jaden Schwartz', after: null, status: 'departed',
+        notes: ['Signed a three-year contract with Colorado on Jul. 2 after 26 points in 50 games'],
+      },
+      {
+        pos: 'F', before: 'Eeli Tolvanen', after: null, status: 'unsigned',
+        notes: [
+          'An unsigned unrestricted free agent, which is the only firm fact about his situation',
+          '36 points in 78 games last season',
+        ],
+      },
+      {
+        pos: 'F', before: null, after: 'Curtis Douglas', status: 'added',
+        notes: ['Two years at $1.25M a season on Jul. 1'],
+      },
+    ],
+  },
+  {
+    group: 'Defense',
+    summary: 'Oleksiak left for Vancouver; the rest of the group is projected intact',
+    rows: [
+      {
+        pos: 'D', before: 'Jamie Oleksiak', after: null, status: 'departed',
+        notes: ['Signed a two-year contract with Vancouver on Jul. 1 after 15 points in 78 games'],
+      },
+      {
+        pos: 'LD', before: 'Vince Dunn', after: 'Vince Dunn', status: 'retained',
+        notes: ['Projected on the top pair with Adam Larsson'],
+      },
+      {
+        pos: 'RD', before: 'Brandon Montour', after: 'Brandon Montour', status: 'retained',
+        notes: ['Projected on the second pair'],
+      },
+    ],
+  },
+  {
+    group: 'Goaltending',
+    summary: 'Unchanged: Daccord and Grubauer',
+    rows: [
+      {
+        pos: 'G', before: 'Joey Daccord', after: 'Joey Daccord', status: 'retained',
+        notes: ['Projected starter'],
+      },
+      {
+        pos: 'G', before: 'Philipp Grubauer', after: 'Philipp Grubauer', status: 'retained',
+        notes: ['Projected backup'],
+      },
+    ],
+  },
+]
+
+export const biggestChanges = [
+  {
+    title: 'A first-round pick for a 23-year-old',
+    body: 'Mackie Samoskevich cost a 2026 first and a 2027 second, then signed for three years at $3.85 million. Seattle is buying the development curve rather than the production to date.',
+  },
+  {
+    title: 'Two regulars walked in free agency',
+    body: 'Jaden Schwartz signed with Colorado and Jamie Oleksiak with Vancouver, both on Jul. 1–2. Eeli Tolvanen remains unsigned.',
+  },
+]
+
+// Not researched from a primary source yet; the reset does not list picks.
+export const draftClass = []
+
+export const campWatch = [
+  { name: 'Berkly Catton', pos: 'C/LW', note: 'Projected onto the second line; a projection, not an announced job.' },
+  { name: 'Logan Morrison', pos: 'F', note: 'Named as a call-up candidate if a roster spot opens.' },
+  { name: 'Jagger Firkus', pos: 'F', note: 'Named as a call-up candidate if a roster spot opens.' },
+  { name: 'Ryden Evers', pos: 'F', note: 'Named as a call-up candidate if a roster spot opens.' },
+]
+
+export const unresolved = [
+  { status: 'Open', item: 'Eeli Tolvanen', impact: 'Still an unsigned UFA; 36 points of scoring unaccounted for' },
+  { status: 'Open', item: 'Whether Samoskevich takes the step', impact: 'The club paid a first-round pick and three years on the premise that he will' },
+  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+]
+
+export const rumors = []
+
+export const sources = [
+  { label: 'NHL.com Kraken 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/seattle-kraken-roster-changes-for-2026-27-season' },
+  { label: 'Official Kraken news', url: 'https://www.nhl.com/kraken/news/' },
+]
+
+export const points = pointsFromLeague(league)
+export const contracts = {}
+
+export { STATUS, RUMOR_STATUS }

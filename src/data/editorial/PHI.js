@@ -1,6 +1,6 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/PHI.json'
-import { slugify } from '../../lib/slugify'
+import { pointsFromLeague } from './_derive'
 
 // Philadelphia Flyers editorial content. Research cutoff: August 19, 2026.
 //
@@ -262,26 +262,9 @@ export const sources = [
 
 export { STATUS, RUMOR_STATUS }
 
-/**
- * 2025-26 production, derived from the scraped league file rather than typed
- * out by hand — the NHL API is already the source of truth for statistics, so
- * copying them into prose would only create a second thing to keep in sync.
- * Keyed by the same slug the roster cards use.
- */
-export const points = Object.fromEntries(
-  [...league.forwards, ...league.defensemen, ...league.goalies]
-    .filter((p) => p.stats && p.stats.pos !== 'G')
-    .map((p) => [
-      slugify(p.name),
-      {
-        playerId: String(p.id),
-        gp: p.stats.gp,
-        goals: p.stats.g,
-        assists: p.stats.a,
-        points: p.stats.p,
-      },
-    ]),
-)
+// 2025-26 production, derived from the scraped league file rather than typed
+// out by hand. See _derive.js.
+export const points = pointsFromLeague(league)
 
 // No contract file: Philadelphia's terms are quoted inline in the roster notes
 // from PuckPedia, and there is no cap tab for this club, so there is nothing

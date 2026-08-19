@@ -63,17 +63,29 @@ do not render**, which is always better than showing another club's numbers:
 - empty `rumors` → no Rumor mill section
 - no `points` / `contracts` → cards omit those lines
 
-Derive statistics, don't retype them. `PHI.js` builds its `points` map from
-`src/data/league/PHI.json`, which the NHL API already populates, so there is
-one source of truth rather than two things to keep in sync.
+Derive statistics, don't retype them. A club module builds its `points` map
+with `pointsFromLeague()` from `src/data/league/<ABBR>.json`, which the NHL API
+already populates, so there is one source of truth rather than two copies to
+drift apart.
+
+`npm run check:editorial` (part of `npm run lint`) checks shape, not facts: that
+every registered club exports what the components read, that `status:` values
+match `status.js`, that a registered club has a module and vice versa, and — the
+one that matters most — that no club imports another club's league file, which
+would silently attribute one team's statistics to another.
+
+**Coverage so far:** the whole Pacific division plus Philadelphia. The clubs
+written from a team reset alone carry no cap tab and say so in their
+`unresolved` list, because PuckPedia has not been read for them.
 
 ## Commands
 
 ```sh
 npm run dev        # local
 npm run build      # production build
-npm run lint       # oxlint
+npm run lint       # oxlint + editorial structure check
 npm run league     # refresh all 32 clubs from the NHL API
+npm run check:editorial  # structural check on every club module
 npm run photos     # fetch freely-licensed Wikimedia photos
 npm run deploy     # deploy the default site (see docs/INFRASTRUCTURE.md)
 ```

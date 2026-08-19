@@ -9,7 +9,14 @@
  */
 export const EDITORIAL = {
   ANA: () => import('./ANA.js'),
+  CGY: () => import('./CGY.js'),
+  EDM: () => import('./EDM.js'),
+  LAK: () => import('./LAK.js'),
   PHI: () => import('./PHI.js'),
+  SEA: () => import('./SEA.js'),
+  SJS: () => import('./SJS.js'),
+  VAN: () => import('./VAN.js'),
+  VGK: () => import('./VGK.js'),
 }
 
 export const EDITORIAL_ABBREVS = Object.keys(EDITORIAL)
