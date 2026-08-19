@@ -145,7 +145,6 @@ export const unresolved = [
   { status: 'Open', item: 'The captaincy', impact: 'Vacant since Jenner left; no successor named' },
   { status: 'Open', item: 'Three restricted free agents', impact: 'Fantilli, Sillinger and Greaves are all pending RFAs' },
   { status: 'Open', item: 'Isac Lundestrom’s injury', impact: 'Listed as injured in the reset' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -158,5 +157,50 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// CBJ cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 90_504_999,
+    space: 13_495_001,
+    rosterSlots: '22 / 23',
+    potentialBonuses: 1_000_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 48_034_999 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 32_070_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 10_400_000 },
+  ],
+  capHits: [
+    // Unsigned RFA: no cap hit yet. The striped band shows the projected
+    // space his next deal would come out of, not a signed amount.
+    { name: 'Adam Fantilli', group: 'F', hit: 13_495_001, projected: true },
+    { name: 'Valeri Nichushkin', group: 'F', hit: 6_125_000 },
+    { name: 'Charlie Coyle', group: 'F', hit: 6_000_000 },
+    { name: 'Conor Garland', group: 'F', hit: 6_000_000 },
+    { name: 'Sean Monahan', group: 'F', hit: 5_500_000 },
+    { name: 'Cole Sillinger', group: 'F', hit: 4_625_000 },
+    { name: 'Dmitri Voronkov', group: 'F', hit: 4_175_000 },
+    { name: 'Kirill Marchenko', group: 'F', hit: 3_850_000 },
+    { name: 'Mathieu Olivier', group: 'F', hit: 3_000_000 },
+    { name: 'Miles Wood', group: 'F', hit: 2_500_000 },
+    { name: 'Kent Johnson', group: 'F', hit: 1_800_000 },
+    { name: 'Ryan Lomberg', group: 'F', hit: 1_300_000 },
+    { name: 'Isac Lundestrom', group: 'F', hit: 1_300_000 },
+    { name: 'Danton Heinen', group: 'F', hit: 1_000_000 },
+    { name: 'Luca Del Bel Belluz', group: 'F', hit: 859_999 },
+    { name: 'Zach Werenski', group: 'D', hit: 9_583_334 },
+    { name: 'Ivan Provorov', group: 'D', hit: 8_500_000 },
+    { name: 'Damon Severson', group: 'D', hit: 6_250_000 },
+    { name: 'Dante Fabbro', group: 'D', hit: 4_125_000 },
+    { name: 'Erik Gudbranson', group: 'D', hit: 1_750_000 },
+    { name: 'Jake Christiansen', group: 'D', hit: 975_000 },
+    { name: 'Denton Mateychuk', group: 'D', hit: 886_666 },
+    { name: 'Elvis Merzlikins', group: 'G', hit: 5_400_000 },
+    { name: 'Jet Greaves', group: 'G', hit: 5_000_000 },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

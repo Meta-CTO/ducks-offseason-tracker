@@ -156,7 +156,6 @@ export const unresolved = [
   { status: 'Open', item: 'Jonathan Huberdeau’s hip', impact: 'Had surgery in March; third-line left wing' },
   { status: 'Open', item: 'Who absorbs Coleman’s minutes', impact: 'Power play, penalty kill and even strength all have time to redistribute' },
   { status: 'Open', item: 'Zayne Parekh’s roster spot', impact: 'Third defense pair' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -169,5 +168,50 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// CGY cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 89_116_666,
+    space: 14_883_334,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 1_500_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 52_012_916 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 24_403_750 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 8_850_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 3_850_000 },
+  ],
+  capHits: [
+    { name: 'Jonathan Huberdeau', group: 'F', hit: 10_500_000 },
+    { name: 'Matt Coronato', group: 'F', hit: 6_500_000 },
+    { name: 'Yegor Sharangovich', group: 'F', hit: 5_750_000 },
+    { name: 'Ryan Strome', group: 'F', hit: 5_000_000 },
+    { name: 'Joel Farabee', group: 'F', hit: 5_000_000 },
+    { name: 'Morgan Frost', group: 'F', hit: 4_375_000 },
+    { name: 'Connor Zary', group: 'F', hit: 3_775_000 },
+    { name: 'Mikael Backlund', group: 'F', hit: 3_250_000 },
+    { name: 'Martin Pospisil', group: 'F', hit: 2_500_000 },
+    { name: 'Maxim Tsyplakov', group: 'F', hit: 2_250_000 },
+    { name: 'Adam Klapka', group: 'F', hit: 1_250_000 },
+    { name: 'Matvei Gridin', group: 'F', hit: 953_750 },
+    { name: 'Samuel Honzek', group: 'F', hit: 909_166 },
+    { name: 'Simon Nemec', group: 'D', hit: 7_250_000 },
+    { name: 'Kevin Bahl', group: 'D', hit: 5_350_000 },
+    { name: 'Jake Middleton', group: 'D', hit: 4_350_000 },
+    { name: 'Zach Whitecloud', group: 'D', hit: 2_750_000 },
+    { name: 'Joel Hanley', group: 'D', hit: 1_750_000 },
+    { name: 'Brayden Pachal', group: 'D', hit: 1_187_500 },
+    { name: 'Zayne Parekh', group: 'D', hit: 953_750 },
+    { name: 'Yan Kuznetsov', group: 'D', hit: 812_500 },
+    { name: 'Dustin Wolf', group: 'G', hit: 7_500_000 },
+    { name: 'Devin Cooley', group: 'G', hit: 1_350_000 },
+    { name: 'Blake Coleman', group: 'O', hit: 2_450_000, charge: 'retained' },
+    { name: 'Nazem Kadri', group: 'O', hit: 1_400_000, charge: 'retained' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
