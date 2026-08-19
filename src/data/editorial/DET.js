@@ -91,6 +91,13 @@ export const rosterComparison = [
     summary: 'Hamonic unsigned; Bryson added as depth behind an unchanged top four',
     rows: [
       {
+        pos: 'LD', before: 'Simon Edvinsson', after: 'Simon Edvinsson', status: 'unsigned',
+        notes: [
+          'An unsigned restricted free agent with no cap hit yet, per PuckPedia',
+          'Projected on the top pair with Moritz Seider, which assumes he signs',
+        ],
+      },
+      {
         pos: 'RD', before: 'Moritz Seider', after: 'Moritz Seider', status: 'retained',
         notes: ['Projected on the top pair with Simon Edvinsson'],
       },
@@ -171,7 +178,7 @@ export const unresolved = [
   { status: 'Open', item: 'Dylan Larkin’s trade request', impact: 'The captain, with five years left on his contract' },
   { status: 'Open', item: 'Who runs hockey operations', impact: 'Yzerman stepped down Jul. 15 with no successor named' },
   { status: 'Open', item: 'Three unsigned veterans', impact: 'van Riemsdyk, Talbot and Perron are still free agents; Kane signed in Chicago' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+  { status: 'Open', item: 'Simon Edvinsson’s contract', impact: 'Unsigned RFA projected onto the top defense pair' },
 ]
 
 export const rumors = []
@@ -184,5 +191,49 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// DET cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 84_427_916,
+    space: 19_572_084,
+    rosterSlots: '22 / 23',
+    potentialBonuses: 2_000_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 52_612_083 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 23_415_833 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 8_400_000 },
+  ],
+  capHits: [
+    { name: 'Dylan Larkin', group: 'F', hit: 8_700_000 },
+    { name: 'Lucas Raymond', group: 'F', hit: 8_075_000 },
+    { name: 'Alex Debrincat', group: 'F', hit: 7_875_000 },
+    { name: 'Andrew Copp', group: 'F', hit: 5_625_000 },
+    { name: 'J.T. Compher', group: 'F', hit: 5_100_000 },
+    { name: 'Viktor Arvidsson', group: 'F', hit: 5_000_000 },
+    { name: 'Michael Rasmussen', group: 'F', hit: 3_200_000 },
+    { name: 'Mason Appleton', group: 'F', hit: 2_900_000 },
+    { name: 'Keegan Kolesar', group: 'F', hit: 2_500_000 },
+    { name: 'Michael Brandsegg-Nygård', group: 'F', hit: 953_750 },
+    { name: 'Emmitt Finnie', group: 'F', hit: 921_667 },
+    { name: 'Marco Kasper', group: 'F', hit: 886_666 },
+    { name: 'Carter Mazur', group: 'F', hit: 875_000 },
+    // Unsigned RFA: no cap hit yet. The striped band shows the projected
+    // space his next deal would come out of, not a signed amount.
+    { name: 'Simon Edvinsson', group: 'D', hit: 19_572_084, projected: true },
+    { name: 'Moritz Seider', group: 'D', hit: 8_550_000 },
+    { name: 'Justin Faulk', group: 'D', hit: 6_500_000 },
+    { name: 'Ben Chiarot', group: 'D', hit: 3_850_000 },
+    { name: 'Jacob Bernard-Docker', group: 'D', hit: 1_600_000 },
+    { name: 'Albert Johansson', group: 'D', hit: 1_125_000 },
+    { name: 'Axel Sandin Pellikka', group: 'D', hit: 940_833 },
+    { name: 'Jacob Bryson', group: 'D', hit: 850_000 },
+    { name: 'John Gibson', group: 'G', hit: 6_400_000 },
+    { name: 'Daniil Tarasov', group: 'G', hit: 2_000_000 },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
