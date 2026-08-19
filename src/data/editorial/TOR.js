@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/TOR.json'
 import draft from '../draft/TOR.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Toronto Maple Leafs editorial content. Research cutoff: August 19, 2026.
 //
@@ -232,6 +232,7 @@ export const sources = [
   { label: 'Official Maple Leafs news', url: 'https://www.nhl.com/mapleleafs/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

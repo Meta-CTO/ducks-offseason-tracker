@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/PHI.json'
 import draft from '../draft/PHI.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Philadelphia Flyers editorial content. Research cutoff: August 19, 2026.
 //
@@ -262,6 +262,7 @@ export { STATUS, RUMOR_STATUS }
 
 // 2025-26 production, derived from the scraped league file rather than typed
 // out by hand. See _derive.js.
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 
 // No contract file: Philadelphia's terms are quoted inline in the roster notes

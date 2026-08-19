@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/SJS.json'
 import draft from '../draft/SJS.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // San Jose Sharks editorial content. Research cutoff: August 19, 2026.
 //
@@ -184,6 +184,7 @@ export const sources = [
   { label: 'Official Sharks news', url: 'https://www.nhl.com/sharks/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

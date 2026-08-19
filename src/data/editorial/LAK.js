@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/LAK.json'
 import draft from '../draft/LAK.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Los Angeles Kings editorial content. Research cutoff: August 19, 2026.
 //
@@ -168,6 +168,7 @@ export const sources = [
   { label: 'Official Kings news', url: 'https://www.nhl.com/kings/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/OTT.json'
 import draft from '../draft/OTT.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Ottawa Senators editorial content. Research cutoff: August 19, 2026.
 //
@@ -180,6 +180,7 @@ export const sources = [
   { label: 'Official Senators news', url: 'https://www.nhl.com/senators/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

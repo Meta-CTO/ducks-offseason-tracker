@@ -10,7 +10,7 @@
 //
 // Usage: node scripts/fetch-commons-photos.mjs
 
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
 // Wikimedia asks for a descriptive User-Agent. Set CONTACT_EMAIL to your
@@ -20,33 +20,30 @@ const UA = `ducks-offseason-tracker/1.0 (${CONTACT})`
 const OUT_DIR = path.resolve('public/headshots')
 const CREDITS = path.resolve('src/data/photo-credits.json')
 
-// { display } is the name the app renders (and slugifies); { search } is the
-// Wikipedia lookup when the display name is surname-only.
-const PEOPLE = [
-  { display: 'Leo Carlsson' }, { display: 'Cutter Gauthier' },
-  { display: 'Beckett Sennecke' }, { display: 'Troy Terry' },
-  { display: 'Chris Kreider' }, { display: 'Mikael Granlund' },
-  { display: 'Alex Killorn' }, { display: 'Frank Vatrano' },
-  { display: 'Ryan Poehling' }, { display: 'Washe', search: 'Tim Washe' },
-  { display: 'Mason McTavish' }, { display: 'Jeffrey Viel' },
-  { display: 'Ross Johnston' }, { display: 'A.J. Greer' },
-  { display: 'Jeff Malott' }, { display: 'Colangelo', search: 'Sam Colangelo' },
-  { display: 'Nathan Gaucher' }, { display: 'Nikita Nesterenko' },
-  { display: 'Jackson LaCombe' }, { display: 'Pavel Mintyukov' },
-  { display: 'Drew Helleson' }, { display: 'Tyson Hinds' },
-  { display: 'Ian Moore' }, { display: 'Jacob Trouba' },
-  { display: 'Radko Gudas' }, { display: 'John Carlson' },
-  { display: 'Olen Zellweger' }, { display: 'Nick Jensen' },
-  { display: 'Tristan Luneau' }, { display: 'Lukas Dostal' },
-  { display: 'Ville Husso' }, { display: 'Petr Mrazek' },
-  { display: 'Laurent Brossoit' }, { display: 'Roger McQueen' },
-  { display: 'Nikita Klepov' }, { display: 'Anton Wahlberg' },
-  { display: 'Marcus Nordmark' },
-  // Coaching staff
-  { display: 'Joel Quenneville' }, { display: 'Tim Army' },
-  { display: 'Jay Woodcroft' }, { display: 'Ryan McGill' },
-  { display: 'Andrew Brewer' }, { display: 'Peter Budaj' },
-]
+// The people to look up are read from the editorial club modules rather than
+// listed here, so a club added or edited later is picked up automatically.
+// Names come from roster-comparison rows (before/after) and camp-watch
+// entries — the places the UI actually renders an avatar.
+//
+// A photo belongs to a person, not a club: someone traded mid-summer appears
+// on two clubs' pages and needs the same face on both. So credits stay in one
+// global index keyed by slug, and each club module exports the subset it
+// renders, which is what its attribution list must cover.
+const EDITORIAL_DIR = path.resolve('src/data/editorial')
+
+const peopleFromModules = async () => {
+  const files = (await readdir(EDITORIAL_DIR)).filter((f) => /^[A-Z]{3}\.js$/.test(f))
+  const names = new Set()
+  for (const f of files) {
+    const src = await readFile(path.join(EDITORIAL_DIR, f), 'utf8')
+    for (const m of src.matchAll(/(?:before|after): '([^']+)'/g)) names.add(m[1])
+    for (const m of src.matchAll(/\{ name: '([^']+)', pos:/g)) names.add(m[1])
+  }
+  // Coaches and executives are people too, but Wikimedia lookups for them
+  // collide with unrelated articles far more often, and the UI does not render
+  // an avatar for them. Skip anything that is not a player row.
+  return [...names].sort().map((display) => ({ display }))
+}
 
 const slugify = (name) =>
   name.toLowerCase().replace(/[.'’]/g, '').replace(/\s+/g, '-')
@@ -116,10 +113,21 @@ async function licenseFor(imageUrl) {
 await mkdir(OUT_DIR, { recursive: true })
 const credits = await readFile(CREDITS, 'utf8').then(JSON.parse).catch(() => ({}))
 
+const PEOPLE = await peopleFromModules()
+const force = process.argv.includes('--force')
+
+// Wikimedia gets three requests per person, so a full sweep is a few thousand
+// calls. Anyone already credited is skipped unless --force, which makes the
+// run resumable after an interruption and cheap to re-run when a club changes.
+const todo = force ? PEOPLE : PEOPLE.filter((p) => !credits[slugify(p.display)])
+console.log(`${PEOPLE.length} people across all clubs; ${todo.length} to look up.\n`)
+
 let ok = 0
-for (const person of PEOPLE) {
+let checked = 0
+for (const person of todo) {
   const name = person.search ?? person.display
   const slug = slugify(person.display)
+  if (++checked % 25 === 0) console.log(`  ... ${checked}/${todo.length}`)
   try {
     const found = await findPage(name)
     if (!found) {
@@ -154,11 +162,14 @@ for (const person of PEOPLE) {
     }
     ok++
     console.log(`  ok    ${name} — ${lic.license} by ${lic.author.slice(0, 40)}`)
-    await sleep(400) // be polite to the Wikimedia API
   } catch (err) {
     console.log(`  --    ${name} (${err.message})`)
   }
+  await sleep(300) // be polite to the Wikimedia API, hit or miss
 }
 
 await writeFile(CREDITS, JSON.stringify(credits, null, 2) + '\n')
-console.log(`\n${ok}/${PEOPLE.length} freely-licensed photos -> public/headshots/`)
+console.log(
+  `\n${ok} new freely-licensed photo(s); ` +
+    `${Object.keys(credits).length}/${PEOPLE.length} people now have one.`,
+)

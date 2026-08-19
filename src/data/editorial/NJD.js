@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/NJD.json'
 import draft from '../draft/NJD.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // New Jersey Devils editorial content. Research cutoff: August 19, 2026.
 //
@@ -199,6 +199,7 @@ export const sources = [
   { label: 'Official Devils news', url: 'https://www.nhl.com/devils/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

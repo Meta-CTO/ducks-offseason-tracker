@@ -1,4 +1,5 @@
 import { slugify } from '../../lib/slugify'
+import allCredits from '../photo-credits.json'
 
 /**
  * Build a club's points map from its scraped league file.
@@ -42,3 +43,29 @@ export const draftFromApi = (picks, notes = {}) =>
     from: p.from,
     note: notes[p.pick] ?? null,
   }))
+
+/**
+ * The photo credits a club's page must carry: exactly the people it renders an
+ * avatar for, and no more.
+ *
+ * Credits live in one global index because a photo belongs to a person, not a
+ * club — someone traded mid-summer shows the same face on both clubs' pages.
+ * But CC BY and CC BY-SA require attribution for what is actually displayed,
+ * so each page attributes its own roster rather than the whole league.
+ */
+export const creditsFrom = (rosterComparison, campWatch = []) => {
+  const names = new Set()
+  for (const group of rosterComparison) {
+    for (const row of group.rows) {
+      if (row.before) names.add(row.before)
+      if (row.after) names.add(row.after)
+    }
+  }
+  for (const person of campWatch) names.add(person.name)
+
+  return Object.fromEntries(
+    [...names]
+      .map((n) => [slugify(n), allCredits[slugify(n)]])
+      .filter(([, credit]) => credit),
+  )
+}

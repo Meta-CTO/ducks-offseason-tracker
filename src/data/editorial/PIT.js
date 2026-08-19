@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/PIT.json'
 import draft from '../draft/PIT.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Pittsburgh Penguins editorial content. Research cutoff: August 19, 2026.
 //
@@ -169,6 +169,7 @@ export const sources = [
   { label: 'Official Penguins news', url: 'https://www.nhl.com/penguins/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

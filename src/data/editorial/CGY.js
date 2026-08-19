@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/CGY.json'
 import draft from '../draft/CGY.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Calgary Flames editorial content. Research cutoff: August 19, 2026.
 //
@@ -166,6 +166,7 @@ export const sources = [
   { label: 'Official Flames news', url: 'https://www.nhl.com/flames/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

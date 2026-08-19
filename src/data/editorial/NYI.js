@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/NYI.json'
 import draft from '../draft/NYI.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // New York Islanders editorial content. Research cutoff: August 19, 2026.
 //
@@ -164,6 +164,7 @@ export const sources = [
   { label: 'Official Islanders news', url: 'https://www.nhl.com/islanders/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

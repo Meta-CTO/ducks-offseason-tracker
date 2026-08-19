@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/SEA.json'
 import draft from '../draft/SEA.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Seattle Kraken editorial content. Research cutoff: August 19, 2026.
 //
@@ -143,6 +143,7 @@ export const sources = [
   { label: 'Official Kraken news', url: 'https://www.nhl.com/kraken/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

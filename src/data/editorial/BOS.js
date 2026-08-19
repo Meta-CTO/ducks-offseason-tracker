@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/BOS.json'
 import draft from '../draft/BOS.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Boston Bruins editorial content. Research cutoff: August 19, 2026.
 //
@@ -157,6 +157,7 @@ export const sources = [
   { label: 'Official Bruins news', url: 'https://www.nhl.com/bruins/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

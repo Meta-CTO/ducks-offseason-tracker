@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/VAN.json'
 import draft from '../draft/VAN.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Vancouver Canucks editorial content. Research cutoff: August 19, 2026.
 //
@@ -204,6 +204,7 @@ export const sources = [
   { label: 'Official Canucks news', url: 'https://www.nhl.com/canucks/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

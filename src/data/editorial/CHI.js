@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/CHI.json'
 import draft from '../draft/CHI.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Chicago Blackhawks editorial content. Research cutoff: August 19, 2026.
 //
@@ -163,6 +163,7 @@ export const sources = [
   { label: 'Official Blackhawks news', url: 'https://www.nhl.com/blackhawks/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

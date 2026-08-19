@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/WPG.json'
 import draft from '../draft/WPG.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Winnipeg Jets editorial content. Research cutoff: August 19, 2026.
 //
@@ -177,6 +177,7 @@ export const sources = [
   { label: 'Official Jets news', url: 'https://www.nhl.com/jets/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

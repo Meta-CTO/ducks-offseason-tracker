@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/DET.json'
 import draft from '../draft/DET.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Detroit Red Wings editorial content. Research cutoff: August 19, 2026.
 //
@@ -181,6 +181,7 @@ export const sources = [
   { label: 'Official Red Wings news', url: 'https://www.nhl.com/redwings/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 

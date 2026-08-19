@@ -1,7 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/COL.json'
 import draft from '../draft/COL.json'
-import { pointsFromLeague, draftFromApi } from './_derive'
+import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 
 // Colorado Avalanche editorial content. Research cutoff: August 19, 2026.
 //
@@ -178,6 +178,7 @@ export const sources = [
   { label: 'Official Avalanche news', url: 'https://www.nhl.com/avalanche/news/' },
 ]
 
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 
