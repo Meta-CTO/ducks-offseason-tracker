@@ -159,7 +159,6 @@ export const campWatch = [
 export const unresolved = [
   { status: 'Open', item: 'A top-six left wing', impact: 'Named in the reset as the outstanding need despite the summer’s spending' },
   { status: 'Open', item: 'Korpisalo or Garand', impact: 'Backup goaltender' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -172,5 +171,48 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// NYR cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 101_597_024,
+    space: 2_402_976,
+    rosterSlots: '22 / 23',
+    potentialBonuses: 637_500,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 51_104_167 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 35_900_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 14_567_857 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 25_000 },
+  ],
+  capHits: [
+    { name: 'Pavel Dorofeyev', group: 'F', hit: 11_000_000 },
+    { name: 'Mika Zibanejad', group: 'F', hit: 8_500_000 },
+    { name: 'J.T. Miller', group: 'F', hit: 8_000_000 },
+    { name: 'Alexis Lafreniere', group: 'F', hit: 7_450_000 },
+    { name: 'Oliver Bjorkstrand', group: 'F', hit: 4_500_000 },
+    { name: 'Will Cuylle', group: 'F', hit: 3_900_000 },
+    { name: 'Taylor Raddysh', group: 'F', hit: 1_500_000 },
+    { name: 'Tye Kartye', group: 'F', hit: 1_250_000 },
+    { name: 'Joseph Veleno', group: 'F', hit: 1_200_000 },
+    { name: 'Matt Rempe', group: 'F', hit: 975_000 },
+    { name: 'Noah Laba', group: 'F', hit: 945_000 },
+    { name: 'Jaroslav Chmelar', group: 'F', hit: 942_500 },
+    { name: 'Gabe Perreault', group: 'F', hit: 941_667 },
+    { name: 'Adam Fox', group: 'D', hit: 9_500_000 },
+    { name: 'Vladislav Gavrikov', group: 'D', hit: 7_000_000 },
+    { name: 'Sean Durzi', group: 'D', hit: 6_000_000 },
+    { name: 'Marcus Pettersson', group: 'D', hit: 5_500_000 },
+    { name: 'Braden Schneider', group: 'D', hit: 5_500_000 },
+    { name: 'Urho Vaakanainen', group: 'D', hit: 1_550_000 },
+    { name: 'Matthew Robertson', group: 'D', hit: 850_000 },
+    { name: 'Igor Shesterkin', group: 'G', hit: 11_567_857 },
+    { name: 'Joonas Korpisalo', group: 'G', hit: 3_000_000 },
+    { name: 'Juuso Parssinen', group: 'O', hit: 25_000, charge: 'buried' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

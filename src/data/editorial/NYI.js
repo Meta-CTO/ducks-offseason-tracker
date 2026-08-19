@@ -154,7 +154,6 @@ export const unresolved = [
   { status: 'Open', item: 'Semyon Varlamov’s knees', impact: 'Recovering from bilateral knee replacement; decides whether Vanecek stays up' },
   { status: 'Open', item: 'Alexander Romanov’s shoulder', impact: 'Third defense pair' },
   { status: 'Open', item: 'Whether Isaiah George holds a job', impact: 'Named in the reset as a camp question' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -167,5 +166,50 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// NYI cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 101_065_416,
+    space: 2_934_584,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 3_830_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 57_515_833 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 28_049_583 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 12_000_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 3_500_000 },
+  ],
+  capHits: [
+    { name: 'Mathew Barzal', group: 'F', hit: 9_150_000 },
+    { name: 'Bo Horvat', group: 'F', hit: 8_500_000 },
+    { name: 'Brayden Schenn', group: 'F', hit: 6_500_000 },
+    { name: 'Ondrej Palat', group: 'F', hit: 6_000_000 },
+    { name: 'Jean-Gabriel Pageau', group: 'F', hit: 4_850_000 },
+    { name: 'Kyle Palmieri', group: 'F', hit: 4_750_000 },
+    { name: 'Simon Holmstrom', group: 'F', hit: 3_625_000 },
+    { name: 'Anthony Duclair', group: 'F', hit: 3_500_000 },
+    { name: 'Pierre Engvall', group: 'F', hit: 3_000_000 },
+    { name: 'Casey Cizikas', group: 'F', hit: 2_500_000 },
+    { name: 'Matias Maccelli', group: 'F', hit: 2_250_000 },
+    { name: 'Emil Heineman', group: 'F', hit: 1_100_000 },
+    { name: 'Calum Ritchie', group: 'F', hit: 940_833 },
+    { name: 'Kyle MacLean', group: 'F', hit: 850_000 },
+    { name: 'Alexander Romanov', group: 'D', hit: 6_250_000 },
+    { name: 'Ryan Pulock', group: 'D', hit: 6_150_000 },
+    { name: 'Adam Pelech', group: 'D', hit: 5_750_000 },
+    { name: 'Tony DeAngelo', group: 'D', hit: 4_500_000 },
+    { name: 'Scott Mayfield', group: 'D', hit: 3_500_000 },
+    { name: 'Matthew Schaefer', group: 'D', hit: 986_250 },
+    { name: 'Isaiah George', group: 'D', hit: 913_333 },
+    { name: 'Ilya Sorokin', group: 'G', hit: 8_250_000 },
+    { name: 'Semyon Varlamov', group: 'G', hit: 2_750_000 },
+    { name: 'Vitek Vanecek', group: 'G', hit: 1_000_000 },
+    { name: 'Bonus Carryover Overage', group: 'O', hit: 3_500_000, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

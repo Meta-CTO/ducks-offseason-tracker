@@ -188,7 +188,6 @@ export const unresolved = [
   { status: 'Open', item: 'Goaltending behind Jake Allen', impact: 'The reset flags a deadline move if Daws cannot establish himself' },
   { status: 'Open', item: 'Centre insurance behind Jack Hughes', impact: 'Named in the reset as a need' },
   { status: 'Open', item: 'Finishing and physicality up front', impact: 'The reset says the club lacks “finishing detail and a bit more nastiness”' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -202,5 +201,49 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// NJD cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 100_150_000,
+    space: 3_850_000,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 0,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 58_500_000 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 36_500_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 3_900_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 1_250_000 },
+  ],
+  capHits: [
+    { name: 'Timo Meier', group: 'F', hit: 8_800_000 },
+    { name: 'Jack Hughes', group: 'F', hit: 8_000_000 },
+    { name: 'Jesper Bratt', group: 'F', hit: 7_875_000 },
+    { name: 'Nico Hischier', group: 'F', hit: 7_250_000 },
+    { name: 'Anthony Mantha', group: 'F', hit: 4_750_000 },
+    { name: 'Dawson Mercer', group: 'F', hit: 4_000_000 },
+    { name: 'Arseny Gritsyuk', group: 'F', hit: 3_250_000 },
+    { name: 'Evan Rodrigues', group: 'F', hit: 3_075_000 },
+    { name: 'Connor Brown', group: 'F', hit: 3_000_000 },
+    { name: 'Stefan Noesen', group: 'F', hit: 2_750_000 },
+    { name: 'Cody Glass', group: 'F', hit: 2_500_000 },
+    { name: 'Nick Bjugstad', group: 'F', hit: 1_750_000 },
+    { name: 'Jesper Boqvist', group: 'F', hit: 1_500_000 },
+    { name: 'Dougie Hamilton', group: 'D', hit: 9_000_000 },
+    { name: 'Luke Hughes', group: 'D', hit: 9_000_000 },
+    { name: 'Brett Pesce', group: 'D', hit: 5_500_000 },
+    { name: 'Brenden Dillon', group: 'D', hit: 4_000_000 },
+    { name: 'Johnathan Kovacevic', group: 'D', hit: 4_000_000 },
+    { name: 'Jonas Siegenthaler', group: 'D', hit: 3_400_000 },
+    { name: 'Declan Chisholm', group: 'D', hit: 1_600_000 },
+    { name: 'Jake Allen', group: 'G', hit: 1_800_000 },
+    { name: 'Nico Daws', group: 'G', hit: 1_100_000 },
+    { name: 'David Rittich', group: 'G', hit: 1_000_000 },
+    { name: 'Bonus Carryover Overage', group: 'O', hit: 1_250_000, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
