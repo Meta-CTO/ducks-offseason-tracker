@@ -147,7 +147,6 @@ export const unresolved = [
   { status: 'Open', item: 'A first-line centre', impact: 'Named in the reset as the primary need; unresolved since Bergeron retired' },
   { status: 'Open', item: 'Whether Hagens is ready at nineteen', impact: 'Projected third-line centre' },
   { status: 'Open', item: 'Frederic Brunet’s waiver status', impact: 'Cannot be sent down without risk' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -160,5 +159,47 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// BOS cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 98_609_583,
+    space: 5_390_417,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 1_000_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 55_382_083 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 33_550_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 9_062_500 },
+  ],
+  capHits: [
+    { name: 'David Pastrnak', group: 'F', hit: 11_250_000 },
+    { name: 'Elias Lindholm', group: 'F', hit: 7_750_000 },
+    { name: 'JJ Peterka', group: 'F', hit: 7_700_000 },
+    { name: 'Casey Mittelstadt', group: 'F', hit: 5_750_000 },
+    { name: 'Morgan Geekie', group: 'F', hit: 5_500_000 },
+    { name: 'Pavel Zacha', group: 'F', hit: 4_750_000 },
+    { name: 'Tanner Jeannot', group: 'F', hit: 3_400_000 },
+    { name: 'Sean Kuraly', group: 'F', hit: 1_850_000 },
+    { name: 'Alex Steeves', group: 'F', hit: 1_625_000 },
+    { name: 'Mark Kastelic', group: 'F', hit: 1_566_667 },
+    { name: 'Michael Eyssimont', group: 'F', hit: 1_450_000 },
+    { name: 'James Hagens', group: 'F', hit: 986_250 },
+    { name: 'Marat Khusnutdinov', group: 'F', hit: 925_000 },
+    { name: 'Fraser Minten', group: 'F', hit: 879_166 },
+    { name: 'Charlie McAvoy', group: 'D', hit: 9_500_000 },
+    { name: 'Hampus Lindholm', group: 'D', hit: 6_500_000 },
+    { name: 'Nikita Zadorov', group: 'D', hit: 5_000_000 },
+    { name: 'Will Borgen', group: 'D', hit: 4_100_000 },
+    { name: 'Mason Lohrei', group: 'D', hit: 3_200_000 },
+    { name: 'Henri Jokiharju', group: 'D', hit: 3_000_000 },
+    { name: 'Connor Clifton', group: 'D', hit: 2_250_000 },
+    { name: 'Jeremy Swayman', group: 'G', hit: 8_250_000 },
+    { name: 'Michael DiPietro', group: 'G', hit: 812_500 },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

@@ -114,12 +114,21 @@ function PlayerBars({ group }) {
 export default function CapView() {
   const { cap: { capSummary, capGroups, capHits } } = useEditorial()
   const maxHit = Math.max(...capHits.map((p) => p.hit))
+  const topEarner = capHits.find((p) => p.hit === maxHit)
+  // A player shown as a striped "available" band rather than a signed hit —
+  // an unsigned RFA whose next deal the space is reserved for. Anaheim has
+  // one; most clubs do not, so the copy about it has to be conditional.
+  const projected = capHits.find((p) => p.projected)
   return (
     <div className="cap-view">
       <div className="cap-tiles">
         <StatTile label="Cap ceiling" value={fmtM(capSummary.ceiling)} sub="2026–27 upper limit" />
         <StatTile label="Projected cap hit" value={fmtM(capSummary.capHit)} sub={`${pctOfCap(capSummary.capHit)} of ceiling`} />
-        <StatTile label="Projected space" value={fmtM(capSummary.space)} sub="Before a Gauthier deal" />
+        <StatTile
+          label="Projected space"
+          value={fmtM(capSummary.space)}
+          sub={projected ? `Before a ${projected.name} deal` : 'Against the ceiling'}
+        />
         <StatTile label="Active roster" value={capSummary.rosterSlots} sub="Contracts counting" />
       </div>
 
@@ -131,12 +140,21 @@ export default function CapView() {
 
       <p className="cap-footnote">
         Cap figures per PuckPedia as of {capSummary.asOf}; live numbers move
-        with every transaction. Cutter Gauthier is an unsigned RFA with no cap
-        hit yet; his striped band shows the full {fmtM(capSummary.space)}{' '}
-        of projected space available for his next deal, not a signed amount,
-        and it is excluded from the group totals. Potential performance bonuses
-        total {fmtM(capSummary.potentialBonuses)}. Bars are scaled to the
-        largest cap hit (Carlsson, {fmtM(maxHit)}).
+        with every transaction.{' '}
+        {projected && (
+          <>
+            {projected.name} is an unsigned RFA with no cap hit yet; the striped
+            band shows the full {fmtM(capSummary.space)} of projected space
+            available for a next deal, not a signed amount, and it is excluded
+            from the group totals.{' '}
+          </>
+        )}
+        {capSummary.potentialBonuses > 0 && (
+          <>Potential performance bonuses total{' '}
+            {fmtM(capSummary.potentialBonuses)}.{' '}</>
+        )}
+        Bars are scaled to the largest cap hit
+        {topEarner ? ` (${topEarner.name}, ${fmtM(maxHit)})` : ''}.
       </p>
     </div>
   )
