@@ -51,7 +51,7 @@ export const rosterComparison = [
       {
         pos: 'RW', before: 'Nikita Kucherov', after: 'Nikita Kucherov', status: 'retained',
         notes: [
-          'Hart Trophy winner, eligible to re-sign as a restricted free agent after Jul. 1',
+          'Hart Trophy winner on a $9.5M cap hit, eligible to re-sign after Jul. 1',
           'Becomes an unrestricted free agent after 2026-27; no extension has been announced',
           'Projected on the top line with Brayden Point and Jake Guentzel',
         ],
@@ -157,8 +157,8 @@ export const campWatch = [
 
 export const unresolved = [
   { status: 'Open', item: 'Nikita Kucherov’s contract', impact: 'UFA after 2026-27; eligible to re-sign now' },
-  { status: 'Open', item: 'Replacing Raddysh’s 70 points', impact: 'Carlson is 36 and projected on the third pair' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+  { status: 'Open', item: 'Replacing Raddysh’s 70 points', impact: 'Carlson is 36, costs $8.5M, and is projected on the third pair' },
+  { status: 'Open', item: 'Room to extend Kucherov', impact: '$3.23M of space, and no buyouts or retained salary to clear' },
 ]
 
 export const rumors = []
@@ -171,5 +171,47 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// TBL cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 100_771_666,
+    space: 3_228_334,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 1_027_500,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 54_904_999 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 34_275_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 11_591_667 },
+  ],
+  capHits: [
+    { name: 'Nikita Kucherov', group: 'F', hit: 9_500_000 },
+    { name: 'Brayden Point', group: 'F', hit: 9_500_000 },
+    { name: 'Jake Guentzel', group: 'F', hit: 9_000_000 },
+    { name: 'Brandon Hagel', group: 'F', hit: 6_500_000 },
+    { name: 'Anthony Cirelli', group: 'F', hit: 6_250_000 },
+    { name: 'Ilya Mikheyev', group: 'F', hit: 3_850_000 },
+    { name: 'Jeffrey Viel', group: 'F', hit: 2_500_000 },
+    { name: 'Yanni Gourde', group: 'F', hit: 2_333_333 },
+    { name: 'Pontus Holmberg', group: 'F', hit: 1_550_000 },
+    { name: 'Gage Goncalves', group: 'F', hit: 1_200_000 },
+    { name: 'Zemgus Girgensons', group: 'F', hit: 925_000 },
+    { name: 'Dominic James', group: 'F', hit: 910_000 },
+    { name: 'Conor Geekie', group: 'F', hit: 886_666 },
+    { name: 'John Carlson', group: 'D', hit: 8_500_000 },
+    { name: 'Victor Hedman', group: 'D', hit: 8_000_000 },
+    { name: 'Janis Jérôme Moser', group: 'D', hit: 6_750_000 },
+    { name: 'Erik Cernak', group: 'D', hit: 5_200_000 },
+    { name: 'Ryan McDonagh', group: 'D', hit: 4_100_000 },
+    { name: 'Charle-Edouard D\'Astous', group: 'D', hit: 875_000 },
+    { name: 'Emil Lilleberg', group: 'D', hit: 850_000 },
+    { name: 'Andrei Vasilevskiy', group: 'G', hit: 9_500_000 },
+    { name: 'Jonas Johansson', group: 'G', hit: 1_250_000 },
+    { name: 'Dennis Hildeby', group: 'G', hit: 841_667 },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

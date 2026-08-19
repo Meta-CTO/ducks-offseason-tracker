@@ -86,6 +86,7 @@ export const rosterComparison = [
         pos: 'RD', before: null, after: 'Brandon Carlo', status: 'added',
         notes: [
           'Acquired from Toronto on Jun. 27 for two 2026 third-round picks',
+          'Counts $3,485,000 against St. Louis; Boston retains $615,000, which adds back to his $4.1M cap hit',
           'Six-foot-five and 227 pounds; projected on the third pair with Cam Fowler',
         ],
       },
@@ -144,7 +145,6 @@ export const campWatch = [
 export const unresolved = [
   { status: 'Open', item: 'Whether the new forwards fix the scoring', impact: '24th in goals per game last season' },
   { status: 'Open', item: 'Mason McTavish’s form', impact: 'Cost two first-round picks after a season he publicly called disappointing' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -157,5 +157,50 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// STL cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 99_630_832,
+    space: 4_369_168,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 1_800_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 55_596_666 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 33_300_833 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 9_400_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 1_333_333 },
+  ],
+  capHits: [
+    { name: 'Robert Thomas', group: 'F', hit: 8_125_000 },
+    { name: 'Pavel Buchnevich', group: 'F', hit: 8_000_000 },
+    { name: 'Dylan Holloway', group: 'F', hit: 7_750_000 },
+    { name: 'Mason McTavish', group: 'F', hit: 7_000_000 },
+    { name: 'Connor McMichael', group: 'F', hit: 6_750_000 },
+    { name: 'Pius Suter', group: 'F', hit: 4_125_000 },
+    { name: 'Jake Neighbours', group: 'F', hit: 3_750_000 },
+    { name: 'Alexei Toropchenko', group: 'F', hit: 2_500_000 },
+    { name: 'Ross Johnston', group: 'F', hit: 2_000_000 },
+    { name: 'Jonatan Berggren', group: 'F', hit: 2_000_000 },
+    { name: 'Jimmy Snuggerud', group: 'F', hit: 950_000 },
+    { name: 'Dalibor Dvorský', group: 'F', hit: 909_166 },
+    { name: 'Nathan Walker', group: 'F', hit: 887_500 },
+    { name: 'Dillon Dube', group: 'F', hit: 850_000 },
+    { name: 'Philip Broberg', group: 'D', hit: 8_000_000 },
+    { name: 'Torey Krug', group: 'D', hit: 6_500_000 },
+    { name: 'Colton Parayko', group: 'D', hit: 6_500_000 },
+    { name: 'Cam Fowler', group: 'D', hit: 6_100_000 },
+    { name: 'Brandon Carlo', group: 'D', hit: 3_485_000 },
+    { name: 'Theo Lindstein', group: 'D', hit: 940_833 },
+    { name: 'Tyler Tucker', group: 'D', hit: 925_000 },
+    { name: 'Logan Mailloux', group: 'D', hit: 850_000 },
+    { name: 'Jordan Binnington', group: 'G', hit: 6_000_000 },
+    { name: 'Joel Hofer', group: 'G', hit: 3_400_000 },
+    { name: 'LW,C', group: 'O', hit: 1_333_333, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
