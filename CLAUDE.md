@@ -74,8 +74,16 @@ match `status.js`, that a registered club has a module and vice versa, and — t
 one that matters most — that no club imports another club's league file, which
 would silently attribute one team's statistics to another.
 
-**Coverage so far:** the whole Western Conference, the whole Atlantic, and
-Philadelphia — 25 clubs. Only the rest of the Metropolitan remains. Those written from a team reset alone carry no cap tab,
+**Coverage: all 32 clubs.** Anaheim is the deepest (cap tab, contracts, photo
+credits, draft class); every other club is written from its NHL.com team reset
+and carries no cap tab, no draft class and no photo credits, saying so in its
+own `unresolved` list. Deepening a club means reading PuckPedia for it in the
+browser and adding `cap`/`contracts` to its module.
+
+Because every club now has a brief, `TeamPage.jsx` — the data-only fallback —
+renders for nobody. It is kept deliberately: it is what a club falls back to if
+its module is removed or fails to load, and it is the honest default for any
+future expansion club. Those written from a team reset alone carry no cap tab,
 no photo credits and no draft class, and say so in their `unresolved` list,
 because PuckPedia has not been read for them.
 

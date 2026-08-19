@@ -146,6 +146,10 @@ export const biggestChanges = [
     body: 'Vincent Trocheck waived a no-trade clause to come from the Rangers, and Anders Lee signed for three years at thirty-six after eight seasons as an Islanders captain.',
   },
   {
+    title: 'They matched an offer sheet',
+    body: 'New Jersey tendered Barrett Hayton an offer sheet on Jul. 1 and Utah matched it, keeping him. It is the summer’s second matched offer sheet after Anaheim matched Philadelphia’s bid for Leo Carlsson, and it is recorded on the Devils reset rather than Utah’s own.',
+  },
+  {
     title: 'The prospect queue is the real story',
     body: 'Caleb Desnoyers (fourth overall, 2025), Tij Iginla (sixth, 2024), Daniil But and Dmitri Simashev are all named as candidates. The general manager said of Desnoyers that he “will have a chance to make the NHL roster.”',
   },
@@ -173,6 +177,7 @@ export const rumors = []
 
 export const sources = [
   { label: 'NHL.com Mammoth 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/utah-mammoth-roster-changes-for-2026-27-season' },
+  { label: 'NHL.com Devils team reset (matched Hayton offer sheet)', url: 'https://www.nhl.com/news/topic/team-resets/new-jersey-devils-roster-changes-for-2026-27-season' },
   { label: 'Official Mammoth news', url: 'https://www.nhl.com/mammoth/news/' },
 ]
 
