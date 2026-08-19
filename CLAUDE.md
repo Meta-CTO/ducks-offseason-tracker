@@ -74,8 +74,8 @@ match `status.js`, that a registered club has a module and vice versa, and — t
 one that matters most — that no club imports another club's league file, which
 would silently attribute one team's statistics to another.
 
-**Coverage so far:** the whole Western Conference (Pacific and Central) plus
-Philadelphia — 17 clubs. Those written from a team reset alone carry no cap tab,
+**Coverage so far:** the whole Western Conference, the whole Atlantic, and
+Philadelphia — 25 clubs. Only the rest of the Metropolitan remains. Those written from a team reset alone carry no cap tab,
 no photo credits and no draft class, and say so in their `unresolved` list,
 because PuckPedia has not been read for them.
 
@@ -84,6 +84,11 @@ because PuckPedia has not been read for them.
 changes how a lineup reads — Quinn Hughes going Vancouver→Minnesota in December
 — it goes in `biggestChanges` labelled as outside the window, with a scope note
 at the top of the module.
+
+**When sources disagree, say so.** Two NHL.com pages describe Roslovic's and
+Sissons' moves to Toronto differently (trade vs. free-agent signing). The
+module states that they joined, names the disagreement in a sourcing note, and
+lists it as unresolved — rather than silently picking whichever reads better.
 
 ## Commands
 

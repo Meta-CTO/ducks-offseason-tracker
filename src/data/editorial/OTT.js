@@ -1,0 +1,186 @@
+import { STATUS, RUMOR_STATUS } from '../status'
+import league from '../league/OTT.json'
+import { pointsFromLeague } from './_derive'
+
+// Ottawa Senators editorial content. Research cutoff: August 19, 2026.
+//
+// Primary source: NHL.com's Senators team reset for the 2026-27 season. Cap
+// figures have not been read from PuckPedia for this club yet, so there is no
+// cap tab. Every "after" lineup is a projection until the club announces a
+// roster.
+
+export const LAST_UPDATED = 'August 19, 2026'
+
+export const hero = {
+  team: 'Ottawa Senators',
+  subtitle: '2026 Offseason Tracker',
+  stage: 'Pre-camp projection',
+  headline: ['They traded their captain.', 'They say it is not a step back.'],
+  deck:
+    'Brady Tkachuk went to Florida on Jun. 21 to play with his brother, ' +
+    'ending five seasons as captain and 463 points in 572 games. Ottawa took ' +
+    'two first-round picks and more, then spent the ninth of them on William ' +
+    'Eklund. The captaincy is vacant, the reset still names a top-six forward ' +
+    'as the need, and the general manager insists the direction has not ' +
+    'changed.',
+}
+
+export const ledgerRange = 'June 21 – July 1'
+
+export const departures = [
+  { date: 'Jun. 21', player: 'Brady Tkachuk', pos: 'LW · Captain', mechanism: 'Trade to Florida', detail: 'Returned the ninth and 25th picks, a conditional 2029 first and a 2027 second; 463 points in 572 games across five seasons as captain.' },
+  { date: 'Offseason', player: 'Daniel Alfredsson', pos: 'Assistant coach', mechanism: 'Contract expired', detail: 'Joined Toronto as an associate coach; a franchise legend with 1,108 career points.' },
+  { date: 'Jul. 1', player: 'Lars Eller', pos: 'C', mechanism: 'UFA', detail: 'Signed a one-year contract with Florida.' },
+]
+
+export const arrivals = [
+  { date: 'Jun. 23', player: 'William Eklund', pos: 'F', deal: 'Trade from San Jose', role: 'Cost the ninth overall pick; arrived with Kasper Halttunen and Brandon Svoboda; projected top line' },
+  { date: 'Jun. 26', player: 'Andre Burakovsky', pos: 'F', deal: 'Trade from Chicago for a 2027 sixth', role: '33 points in 75 games; projected third line' },
+  { date: 'Jun. 26', player: 'Samuel Ersson', pos: 'G', deal: 'Trade from Toronto; two years, $4.4M', role: 'Cost a 2027 fifth; projected backup to Linus Ullmark' },
+  { date: 'Jul. 1', player: 'Sammy Blais', pos: 'F', deal: 'Two years', role: 'Bottom-six forward; eight points last season across Toronto and Montréal' },
+]
+
+export const rosterComparison = [
+  {
+    group: 'Offense',
+    summary: 'Tkachuk traded to Florida; Eklund bought with the pick it returned',
+    rows: [
+      {
+        pos: 'LW', before: 'Brady Tkachuk', after: null, status: 'departed',
+        notes: [
+          'Traded to Florida on Jun. 21 for the ninth and 25th picks, a conditional 2029 first and a 2027 second',
+          'Captain for five seasons; 463 points in 572 games',
+          'The captaincy is now vacant, with nobody named',
+        ],
+      },
+      {
+        pos: 'F', before: null, after: 'William Eklund', status: 'added',
+        notes: [
+          'Acquired from San Jose on Jun. 23 for the ninth overall pick — the selection the Tkachuk trade produced',
+          '53 points in 78 games; projected on the top line with Tim Stutzle and Drake Batherson',
+        ],
+      },
+      {
+        pos: 'C', before: 'Tim Stutzle', after: 'Tim Stutzle', status: 'retained',
+        notes: [
+          'Projected to centre the top line',
+          'The reset says Ottawa still needs a top-six forward to take pressure off him and Batherson',
+        ],
+      },
+      {
+        pos: 'F', before: null, after: 'Andre Burakovsky', status: 'added',
+        notes: [
+          'Acquired from Chicago on Jun. 26 for a 2027 sixth-round pick',
+          '33 points in 75 games; projected third line',
+        ],
+      },
+      {
+        pos: 'RW', before: null, after: 'Claude Giroux', status: 'retained',
+        notes: [
+          'Re-signed for one year; the reset suggests he may take on leadership after Tkachuk’s departure',
+          'Projected on the second line with Ridly Greig and Dylan Cozens',
+        ],
+      },
+      {
+        pos: 'C', before: 'Lars Eller', after: null, status: 'departed',
+        notes: ['Signed a one-year contract with Florida on Jul. 1'],
+      },
+    ],
+  },
+  {
+    group: 'Defense',
+    summary: 'Unchanged; Yakemchuk gets a look at camp',
+    rows: [
+      {
+        pos: 'LD', before: 'Jake Sanderson', after: 'Jake Sanderson', status: 'retained',
+        notes: ['Projected on the top pair with Artem Zub'],
+      },
+      {
+        pos: 'LD', before: 'Thomas Chabot', after: 'Thomas Chabot', status: 'retained',
+        notes: ['Projected on the second pair with Tyler Kleven’s partner Jordan Spence'],
+      },
+      {
+        pos: 'RD', before: null, after: 'Carter Yakemchuk', status: 'camp',
+        notes: [
+          'Twenty, with a two-game NHL debut behind him',
+          'The reset says he “will get a long look at training camp”',
+        ],
+      },
+    ],
+  },
+  {
+    group: 'Goaltending',
+    summary: 'Ersson acquired from Toronto to back up Ullmark',
+    rows: [
+      {
+        pos: 'G', before: 'Linus Ullmark', after: 'Linus Ullmark', status: 'retained',
+        notes: ['Projected starter'],
+      },
+      {
+        pos: 'G', before: null, after: 'Samuel Ersson', status: 'added',
+        notes: [
+          'Acquired from Toronto on Jun. 26 for a 2027 fifth, on a two-year, $4.4M contract',
+          'Had gone Philadelphia to Toronto ten days earlier in the Joseph Woll trade',
+        ],
+      },
+    ],
+  },
+  {
+    group: 'Coaching',
+    summary: 'Alfredsson left for Toronto when his contract expired',
+    rows: [
+      {
+        pos: 'Assistant coach', before: 'Daniel Alfredsson', after: null, status: 'departed',
+        notes: [
+          'Contract expired; joined Toronto as an associate coach',
+          'A franchise legend with 1,108 career points',
+        ],
+      },
+    ],
+  },
+]
+
+export const biggestChanges = [
+  {
+    title: 'The captain went to play with his brother',
+    body: 'Brady Tkachuk was traded to Florida on Jun. 21 for the ninth and 25th picks, a conditional 2029 first and a 2027 second. He had captained Ottawa for five seasons.',
+  },
+  {
+    title: 'The ninth pick immediately became William Eklund',
+    body: 'Two days after the Tkachuk trade, Ottawa sent that selection to San Jose for Eklund, a 53-point winger who is 23. The picks did not sit long.',
+  },
+  {
+    title: 'Nobody has been named captain',
+    body: 'The reset records no successor. Claude Giroux, re-signed for a year, is the player it suggests may take on the leadership.',
+  },
+  {
+    title: 'A goaltender who changed hands twice in ten days',
+    body: 'Samuel Ersson went Philadelphia to Toronto on Jun. 16 in the Joseph Woll trade, then Toronto to Ottawa on Jun. 26 for a fifth-round pick.',
+  },
+]
+
+// Not researched from a primary source yet; the reset does not list picks.
+export const draftClass = []
+
+export const campWatch = [
+  { name: 'Carter Yakemchuk', pos: 'RD', note: 'Twenty; the reset says he will get a long look at training camp.' },
+]
+
+export const unresolved = [
+  { status: 'Open', item: 'The captaincy', impact: 'Vacant since the Tkachuk trade, with no successor named' },
+  { status: 'Open', item: 'A top-six forward', impact: 'Named in the reset as the need, to take pressure off Stutzle and Batherson' },
+  { status: 'Open', item: 'Carter Yakemchuk’s roster spot', impact: 'Third defense pair' },
+  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+]
+
+export const rumors = []
+
+export const sources = [
+  { label: 'NHL.com Senators 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/ottawa-senators-roster-changes-for-2026-27-season' },
+  { label: 'Official Senators news', url: 'https://www.nhl.com/senators/news/' },
+]
+
+export const points = pointsFromLeague(league)
+export const contracts = {}
+
+export { STATUS, RUMOR_STATUS }

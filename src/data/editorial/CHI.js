@@ -28,6 +28,7 @@ export const hero = {
 export const ledgerRange = 'June 23 – July 1'
 
 export const departures = [
+  { date: 'Jun. 26', player: 'Andre Burakovsky', pos: 'F', mechanism: 'Trade to Ottawa', detail: 'Returned a 2027 sixth-round pick after 33 points in 75 games. Recorded on the Senators reset rather than the Blackhawks one.' },
   { date: 'Jul. 1', player: 'Ilya Mikheyev', pos: 'F', mechanism: 'UFA', detail: 'Signed a four-year contract with Tampa Bay after 36 points in 77 games.' },
   { date: 'Jul. 1', player: 'Sam Lafferty', pos: 'F', mechanism: 'UFA', detail: 'Signed a one-year two-way contract with Florida after a season spent mostly as a healthy scratch.' },
   { date: 'Offseason', player: 'Matt Grzelcyk', pos: 'D', mechanism: 'UFA', detail: 'Unsigned as of this brief, which is the only firm statement about him; missed the end of last season with an upper-body injury.' },
@@ -158,6 +159,7 @@ export const rumors = []
 
 export const sources = [
   { label: 'NHL.com Blackhawks 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/chicago-blackhawks-roster-changes-for-2026-27-season' },
+  { label: 'NHL.com Senators team reset (Burakovsky trade)', url: 'https://www.nhl.com/news/topic/team-resets/ottawa-senators-roster-changes-for-2026-27-season' },
   { label: 'Official Blackhawks news', url: 'https://www.nhl.com/blackhawks/news/' },
 ]
 

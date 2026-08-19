@@ -1,0 +1,174 @@
+import { STATUS, RUMOR_STATUS } from '../status'
+import league from '../league/TBL.json'
+import { pointsFromLeague } from './_derive'
+
+// Tampa Bay Lightning editorial content. Research cutoff: August 19, 2026.
+//
+// Primary source: NHL.com's Lightning team reset for the 2026-27 season. Cap
+// figures have not been read from PuckPedia for this club yet, so there is no
+// cap tab. Every "after" lineup is a projection until the club announces a
+// roster.
+
+export const LAST_UPDATED = 'August 19, 2026'
+
+export const hero = {
+  team: 'Tampa Bay Lightning',
+  subtitle: '2026 Offseason Tracker',
+  stage: 'Pre-camp projection',
+  headline: ['They kept their powder dry.', 'Kucherov’s contract is still open.'],
+  deck:
+    'Tampa Bay lost a 70-point defenseman to a Toronto sign-and-trade, let ' +
+    'three forwards walk, and replaced them with John Carlson and Ilya ' +
+    'Mikheyev. The general manager’s stated logic was to avoid commitments ' +
+    'that would block a bigger opportunity later. The largest piece of ' +
+    'unfinished business is Nikita Kucherov, eligible to re-sign and ' +
+    'unrestricted after this season.',
+}
+
+export const ledgerRange = 'June 19 – July 1'
+
+export const departures = [
+  { date: 'Jun. 19', player: 'Darren Raddysh', pos: 'D', mechanism: 'Sign-and-trade to Toronto', detail: 'Agreed an eight-year contract with Toronto; Tampa Bay received a 2026 fifth-round pick after his career-high 70 points in 73 games.' },
+  { date: 'Jul. 1', player: 'Nick Paul', pos: 'F', mechanism: 'Trade to Toronto', detail: 'Sent for Dennis Hildeby, a 2027 fourth and a 2028 third, after five seasons with the club.' },
+  { date: 'Jul. 1', player: 'Corey Perry', pos: 'F', mechanism: 'UFA', detail: 'Signed a one-year contract with Los Angeles at forty-one.' },
+  { date: 'Jul. 1', player: 'Oliver Bjorkstrand', pos: 'F', mechanism: 'UFA', detail: 'Signed a one-year contract with the N.Y. Rangers after 32 points in 80 games.' },
+  { date: 'Jul. 1', player: 'Declan Carlile', pos: 'D', mechanism: 'UFA', detail: 'Signed a two-year contract with Pittsburgh.' },
+]
+
+export const arrivals = [
+  { date: 'Jul. 1', player: 'John Carlson', pos: 'D', deal: 'Two years', role: 'Thirty-six, after 60 points in 71 games; projected third pair' },
+  { date: 'Jul. 1', player: 'Ilya Mikheyev', pos: 'F', deal: 'Four years', role: 'From Chicago after 36 points in 77 games; projected third line' },
+  { date: 'Jul. 1', player: 'Jeffrey Viel', pos: 'F', deal: 'Five years', role: 'Twenty-nine; spent last season between Boston and Anaheim' },
+  { date: 'Jul. 1', player: 'Dennis Hildeby', pos: 'G', deal: 'Trade from Toronto', role: 'Arrived in the Nick Paul deal with two picks; projected backup' },
+]
+
+export const rosterComparison = [
+  {
+    group: 'Offense',
+    summary: 'Paul, Perry and Bjorkstrand out; Mikheyev and Viel in; Kucherov unsigned beyond this season',
+    rows: [
+      {
+        pos: 'RW', before: 'Nikita Kucherov', after: 'Nikita Kucherov', status: 'retained',
+        notes: [
+          'Hart Trophy winner, eligible to re-sign as a restricted free agent after Jul. 1',
+          'Becomes an unrestricted free agent after 2026-27; no extension has been announced',
+          'Projected on the top line with Brayden Point and Jake Guentzel',
+        ],
+      },
+      {
+        pos: 'F', before: null, after: 'Ilya Mikheyev', status: 'added',
+        notes: [
+          'Four years on Jul. 1 after 36 points in 77 games with Chicago',
+          'Projected on the third line with Zemgus Girgensons and Yanni Gourde',
+        ],
+      },
+      {
+        pos: 'F', before: 'Nick Paul', after: null, status: 'departed',
+        notes: [
+          'Traded to Toronto on Jul. 1 for Dennis Hildeby and two picks after five seasons',
+        ],
+      },
+      {
+        pos: 'F', before: 'Oliver Bjorkstrand', after: null, status: 'departed',
+        notes: ['Signed with the N.Y. Rangers on Jul. 1; second on the team with 9 power-play goals'],
+      },
+      {
+        pos: 'F', before: 'Corey Perry', after: null, status: 'departed',
+        notes: ['Signed a one-year contract with Los Angeles on Jul. 1'],
+      },
+      {
+        pos: 'C', before: null, after: 'Conor Geekie', status: 'camp',
+        notes: [
+          'Twenty-two, in the final year of his entry-level contract',
+          'The reset projects an expanded role with Paul gone',
+        ],
+      },
+    ],
+  },
+  {
+    group: 'Defense',
+    summary: 'Raddysh signed an eight-year deal with Toronto; Carlson signed for two',
+    rows: [
+      {
+        pos: 'D', before: 'Darren Raddysh', after: null, status: 'departed',
+        notes: [
+          'Sign-and-traded to Toronto on Jun. 19 on an eight-year contract',
+          'A career-high 70 points in 73 games; Tampa Bay received a 2026 fifth-round pick',
+        ],
+      },
+      {
+        pos: 'RD', before: null, after: 'John Carlson', status: 'added',
+        notes: [
+          'Two years on Jul. 1 at thirty-six, after 60 points in 71 games',
+          '785 points in 1,159 career games; projected third pair',
+        ],
+      },
+      {
+        pos: 'LD', before: 'Victor Hedman', after: 'Victor Hedman', status: 'retained',
+        notes: ['Projected on the top pair with J.J. Moser'],
+      },
+      {
+        pos: 'D', before: 'Declan Carlile', after: null, status: 'departed',
+        notes: ['Signed a two-year contract with Pittsburgh on Jul. 1'],
+      },
+    ],
+  },
+  {
+    group: 'Goaltending',
+    summary: 'Hildeby acquired from Toronto behind Vasilevskiy',
+    rows: [
+      {
+        pos: 'G', before: 'Andrei Vasilevskiy', after: 'Andrei Vasilevskiy', status: 'retained',
+        notes: ['Projected starter'],
+      },
+      {
+        pos: 'G', before: null, after: 'Dennis Hildeby', status: 'added',
+        notes: [
+          'Arrived from Toronto on Jul. 1 in the Nick Paul trade, with two picks',
+          '2.86 GAA and .914 in 20 games; projected backup',
+        ],
+      },
+    ],
+  },
+]
+
+export const biggestChanges = [
+  {
+    title: 'A 70-point defenseman, signed away',
+    body: 'Darren Raddysh agreed an eight-year contract with Toronto on Jun. 19 in a sign-and-trade. Tampa Bay received a 2026 fifth-round pick for a player coming off a career-high 70 points.',
+  },
+  {
+    title: 'Kucherov’s future is the open file',
+    body: 'The Hart Trophy winner became eligible to re-sign after Jul. 1 and can reach unrestricted free agency after this season. Nothing has been announced.',
+  },
+  {
+    title: 'Deliberately uncommitted',
+    body: 'The general manager’s stated logic: “The idea was to not make commitments that would prevent us from taking advantage of bigger opportunities that would move the needle.” Tampa Bay has not won a playoff round since reaching the 2022 Final.',
+  },
+]
+
+// Not researched from a primary source yet; the reset does not list picks.
+export const draftClass = []
+
+export const campWatch = [
+  { name: 'Conor Geekie', pos: 'C', note: 'Twenty-two, final year of his entry-level deal, projected into a bigger role after Paul’s departure.' },
+  { name: 'Gage Goncalves', pos: 'F', note: 'Projected onto the second line with Brandon Hagel and Anthony Cirelli.' },
+]
+
+export const unresolved = [
+  { status: 'Open', item: 'Nikita Kucherov’s contract', impact: 'UFA after 2026-27; eligible to re-sign now' },
+  { status: 'Open', item: 'Replacing Raddysh’s 70 points', impact: 'Carlson is 36 and projected on the third pair' },
+  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+]
+
+export const rumors = []
+
+export const sources = [
+  { label: 'NHL.com Lightning 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/tampa-bay-lightning-roster-changes-for-2026-27-season' },
+  { label: 'Official Lightning news', url: 'https://www.nhl.com/lightning/news/' },
+]
+
+export const points = pointsFromLeague(league)
+export const contracts = {}
+
+export { STATUS, RUMOR_STATUS }
