@@ -136,7 +136,6 @@ export const unresolved = [
   { status: 'Open', item: 'Alexander Nikishin’s contract', impact: 'Unsigned RFA projected onto the third pair' },
   { status: 'Open', item: 'Seth Jarvis’ shoulder', impact: 'Four to six months from surgery; not in the projected lineup' },
   { status: 'Open', item: 'Goaltending after Andersen', impact: 'No replacement was signed' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = [
@@ -161,5 +160,49 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// CAR cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 94_119_818,
+    space: 9_880_182,
+    rosterSlots: '21 / 23',
+    potentialBonuses: 0,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 65_198_756 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 25_021_062 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 3_900_000 },
+  ],
+  capHits: [
+    { name: 'Sebastian Aho', group: 'F', hit: 9_750_000 },
+    { name: 'Nikolaj Ehlers', group: 'F', hit: 8_500_000 },
+    { name: 'Andrei Svechnikov', group: 'F', hit: 7_750_000 },
+    { name: 'Seth Jarvis', group: 'F', hit: 7_420_087 },
+    { name: 'Logan Stankoven', group: 'F', hit: 6_000_000 },
+    { name: 'Jackson Blake', group: 'F', hit: 5_117_002 },
+    { name: 'Jesperi Kotkaniemi', group: 'F', hit: 4_820_000 },
+    { name: 'Taylor Hall', group: 'F', hit: 3_166_667 },
+    { name: 'Jordan Martinook', group: 'F', hit: 3_125_000 },
+    { name: 'Jordan Staal', group: 'F', hit: 2_975_000 },
+    { name: 'William Carrier', group: 'F', hit: 2_150_000 },
+    { name: 'Mark Jankowski', group: 'F', hit: 1_850_000 },
+    { name: 'Eric Robinson', group: 'F', hit: 1_700_000 },
+    { name: 'Nicolas Deslauriers', group: 'F', hit: 875_000 },
+    // Unsigned RFA: no cap hit yet. The striped band shows the projected
+    // space his next deal would come out of, not a signed amount.
+    { name: 'Alexander Nikishin', group: 'D', hit: 9_880_182, projected: true },
+    { name: 'K\'Andre Miller', group: 'D', hit: 7_500_000 },
+    { name: 'Jaccob Slavin', group: 'D', hit: 6_396_062 },
+    { name: 'Sean Walker', group: 'D', hit: 3_625_000 },
+    { name: 'Shayne Gostisbehere', group: 'D', hit: 3_200_000 },
+    { name: 'Jalen Chatfield', group: 'D', hit: 3_075_000 },
+    { name: 'Joel Nystrom', group: 'D', hit: 1_225_000 },
+    { name: 'Pyotr Kochetkov', group: 'G', hit: 2_000_000 },
+    { name: 'Brandon Bussi', group: 'G', hit: 1_900_000 },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

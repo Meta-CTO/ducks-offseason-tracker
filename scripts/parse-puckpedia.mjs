@@ -130,10 +130,16 @@ console.error(
 for (const g of groups) {
   const summed = hits.filter((h) => h.group === g.key).reduce((n, h) => n + h.hit, 0)
   const count = hits.filter((h) => h.group === g.key).length
-  const flag = summed === g.total && (g.count === null || count === g.count) ? 'ok' : 'MISMATCH'
+  // Money is the authority, not the headline count: PuckPedia excludes players
+  // on IR from its stated group count while still counting their cap hit, so a
+  // count difference with matching money is expected and fine.
+  const moneyOk = summed === g.total
+  const countOk = g.count === null || count === g.count
+  const flag = moneyOk ? (countOk ? 'ok' : 'ok*') : 'MISMATCH'
   console.error(
-    `  ${flag}  ${g.key}: ${count}/${g.count} players, ` +
-      `$${summed.toLocaleString()} vs $${g.total.toLocaleString()}`,
+    `  ${flag}  ${g.key}: ${count}/${g.count ?? '-'} players, ` +
+      `$${summed.toLocaleString()} vs $${g.total.toLocaleString()}` +
+      (moneyOk && !countOk ? '  (count differs; likely an IR player)' : ''),
   )
 }
 
