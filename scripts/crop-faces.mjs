@@ -89,8 +89,15 @@ for (const [slug, meta] of Object.entries(credits)) {
     cx = fx
     cy = fy - side * LIFT
   } else {
-    console.log(`  --    ${slug} — no face box, left uncropped`)
-    continue
+    // No face box. Leaving the file alone used to mean shipping the pristine
+    // Commons original — several were multi-megabyte images rendered into a
+    // 44px circle, and 21 of them accounted for most of public/headshots.
+    // A centred square is a worse crop than a detected face but an enormously
+    // better asset, so fall back to one rather than skipping.
+    cx = 0.5
+    cy = 0.4 // faces sit above centre far more often than below
+    side = 1
+    console.log(`  ~     ${slug} — no face box, centred square fallback`)
   }
 
   const { w, h } = await dims(live)
