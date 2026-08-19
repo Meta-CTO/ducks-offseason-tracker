@@ -166,8 +166,8 @@ export const campWatch = [
 
 export const unresolved = [
   { status: 'Open', item: 'A No. 1 centre', impact: 'Named in the reset as the priority; Bourque is projected there but unproven in the role' },
+  { status: 'Open', item: 'Two buyouts still on the books', impact: 'Turris at $2M and Duchene at $1.56M — $3.56M of the cap committed to players who left' },
   { status: 'Open', item: 'Whether Brady Martin is ready', impact: 'Nineteen, and the club’s highest-upside forward prospect' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -180,5 +180,50 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// NSH cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 96_329_556,
+    space: 7_670_444,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 1_500_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 53_800_000 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 29_984_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 8_990_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 3_555_556 },
+  ],
+  capHits: [
+    { name: 'Filip Forsberg', group: 'F', hit: 8_500_000 },
+    { name: 'Steven Stamkos', group: 'F', hit: 8_000_000 },
+    { name: 'Jonathan Marchessault', group: 'F', hit: 5_500_000 },
+    { name: 'Mavrik Bourque', group: 'F', hit: 5_500_000 },
+    { name: 'Ryan O\'Reilly', group: 'F', hit: 4_500_000 },
+    { name: 'Jack Drury', group: 'F', hit: 4_500_000 },
+    { name: 'Ross Colton', group: 'F', hit: 4_000_000 },
+    { name: 'Alexander Kerfoot', group: 'F', hit: 3_500_000 },
+    { name: 'Nils Hoglander', group: 'F', hit: 3_000_000 },
+    { name: 'Luke Evangelista', group: 'F', hit: 3_000_000 },
+    { name: 'Vitali Pinchuk', group: 'F', hit: 1_025_000 },
+    { name: 'Adam Edstrom', group: 'F', hit: 975_000 },
+    { name: 'Matthew Wood', group: 'F', hit: 950_000 },
+    { name: 'Ozzy Wiesblatt', group: 'F', hit: 850_000 },
+    { name: 'Roman Josi', group: 'D', hit: 9_059_000 },
+    { name: 'Brady Skjei', group: 'D', hit: 7_000_000 },
+    { name: 'Nicolas Hague', group: 'D', hit: 5_500_000 },
+    { name: 'Ilya Lyubushkin', group: 'D', hit: 3_250_000 },
+    { name: 'Nicklaus Perbix', group: 'D', hit: 2_750_000 },
+    { name: 'Justin Barron', group: 'D', hit: 1_575_000 },
+    { name: 'Adam Wilsby', group: 'D', hit: 850_000 },
+    { name: 'Juuse Saros', group: 'G', hit: 7_740_000 },
+    { name: 'Justus Annunen', group: 'G', hit: 1_250_000 },
+    { name: 'C,RW', group: 'O', hit: 2_000_000, charge: 'buyout' },
+    { name: 'C,RW', group: 'O', hit: 1_555_556, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

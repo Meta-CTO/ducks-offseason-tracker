@@ -172,3 +172,22 @@ export const cap = {
 ${hits.map((h) => `    { name: '${h.name.replace(/'/g, "\\'")}', group: '${h.group}', hit: ${fmt(h.hit)}${h.charge ? `, charge: '${h.charge}'` : ''} },`).join('\n')}
   ],
 }`)
+
+// NOTE on abbreviated pages. PuckPedia sometimes serves a layout that renders
+// cap hits as "$8.50M" rather than "$8,500,000". Those are rounded — Roman
+// Josi's $9,059,000 shows as "$9.06M" — so parsing them produces group totals
+// that miss by thousands and fail the reconciliation check above, which is
+// exactly what it is for.
+//
+// The full value is still in the DOM, in a span.val-lg that CSS hides. To
+// recover it, run this in the page and use the output instead of get_page_text:
+//
+//   [...document.querySelectorAll('span.val-lg')].map(v => {
+//     const row = v.closest('tr') || v.parentElement.parentElement.parentElement
+//     const n = [...row.querySelectorAll('*')].find(e =>
+//       e.children.length === 0 && /^[A-ZÄÅÖÜÉ][^,]*, .+/.test(e.textContent.trim()))
+//     return n ? `${n.textContent.trim()}\n${v.textContent.trim()}` : null
+//   }).filter(Boolean).join('\n')
+//
+// Rows come back in section order, so split them using the group counts the
+// page states, then reconcile as usual.
