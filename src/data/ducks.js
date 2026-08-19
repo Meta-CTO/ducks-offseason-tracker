@@ -476,10 +476,17 @@ export const RUMOR_STATUS = {
  * Fields: `date` is when the claim surfaced (omit if genuinely unknown rather
  * than guessing); `attribution` is who said it; `sourceUrl` is optional, and
  * its absence is exactly why the Unconfirmed chip exists.
+ *
+ * `player` must match the name on that person's roster row, which is what puts
+ * the Rumor chip there. `addedAt` is when *we filed it*, not when the claim
+ * surfaced — the chip self-expires 7 days after it, on the same clock as the
+ * NEW badge, so a July claim filed today is still flagged for a week.
  */
 export const rumors = [
   {
     date: 'Aug. 16',
+    addedAt: '2026-08-18',
+    player: 'Cutter Gauthier',
     topic: 'Cutter Gauthier contract',
     claim: 'Gauthier turned down four years, $52M ($13M AAV)',
     status: 'reported',
@@ -489,6 +496,8 @@ export const rumors = [
   },
   {
     date: 'Jul.',
+    addedAt: '2026-08-18',
+    player: 'Cutter Gauthier',
     topic: 'Cutter Gauthier contract',
     claim: 'Gauthier will not sign for less than Carlsson’s $18M AAV',
     status: 'unconfirmed',

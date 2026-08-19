@@ -98,6 +98,20 @@ no `sourceUrl`, `reported` for a named reporter, `confirmed` only for a primary
 source) and nothing else on the site moves. When a rumour is later confirmed,
 apply the real change above and delete the rumour entry in the same pass.
 
+Two fields on a rumour are load-bearing and easy to forget:
+
+- `player` must match the name on that person's roster row exactly, or the
+  Rumor chip will not appear on it. A rumour about someone with no roster row
+  (a trade target, say) simply carries no `player`.
+- `addedAt` is the date *you filed it*, not the date the claim surfaced. The
+  chip expires 7 days after `addedAt` on the same clock as the NEW badge, so a
+  months-old claim you only just picked up is still flagged for a week.
+
+The roster row shows NEW for new sourced bullets and a separate Rumor chip for
+rumours, and they stay separate deliberately — a roster row is sourced content,
+so an unverified claim must never render as one of its facts. Both feed the
+count on the tab control.
+
 Match the existing voice: short, factual bullets; contract terms as AAV plus
 term; a departed player shows their new club. Keep anything not yet official
 labelled as a projection. If a player signs, move them out of the unsigned

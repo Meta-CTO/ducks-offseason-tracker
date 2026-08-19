@@ -1,4 +1,5 @@
 import updates from '../data/updates.json'
+import { rumors } from '../data/ducks'
 
 // A NEW badge lives for exactly this long after the update pass added it.
 // The check runs in the browser at render time, so badges expire on their own
@@ -35,3 +36,23 @@ export const countNew = (texts) =>
 export const newCount = () => FRESH.size
 
 export const lastChecked = updates.lastChecked
+
+/**
+ * Rumors filed about a player within the NEW window. Keyed on `addedAt` (when
+ * the pass filed it) rather than `date` (when the claim surfaced), so an old
+ * claim we only just picked up still gets flagged, and every flag expires on
+ * the same 7-day clock as the NEW badge without a redeploy.
+ */
+export const freshRumorsFor = (name) => {
+  const now = Date.now()
+  return rumors.filter((r) => {
+    if (r.player !== name) return false
+    const added = Date.parse(r.addedAt)
+    if (Number.isNaN(added)) return false
+    return (now - added) / MS_PER_DAY < NEW_WINDOW_DAYS
+  })
+}
+
+/** How many roster-visible flags a player row carries: new bullets + rumors. */
+export const rowFlagCount = (row) =>
+  countNew(row.notes) + freshRumorsFor(row.before ?? row.after).length

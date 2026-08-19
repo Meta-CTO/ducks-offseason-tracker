@@ -38,6 +38,10 @@ reporting does. When a primary source finally confirms a claim, it stops being a
 rumour: move the fact into the roster, cap or contract data and delete the entry.
 Nothing in `rumors` may contradict or quietly update those files.
 
+Setting a rumour's `player` to a name on a roster row puts a Rumor chip on that
+row, linking down to the section. It is a separate chip from the NEW badge, and
+must stay that way: NEW marks new sourced content, and the two must not blur.
+
 ## Where things live
 
 | Path | What it is |

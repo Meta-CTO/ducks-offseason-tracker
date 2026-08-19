@@ -235,6 +235,34 @@ body {
 .badge-reported { background: var(--rumor-reported); }
 .badge-unconfirmed { background: var(--rumor-unconfirmed); }
 
+/* Roster-row rumor chip. Sized to match badge-new so the two read as siblings
+   on a row, but coloured from the rumor palette so it never passes for a
+   sourced status badge. */
+.badge-rumor {
+  background: var(--rumor-unconfirmed);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.62rem;
+  padding: 0.1rem 0.42rem;
+  letter-spacing: 0.06em;
+}
+
+.badge-rumor:hover,
+.badge-rumor:focus-visible {
+  background: var(--rumor-reported);
+}
+
+.person-card-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.15rem 0 0.1rem;
+}
+
+.person-card-flags .badge {
+  margin-right: 0;
+}
+
 /* NEW marks a bullet added by a recent update pass; it self-expires after
    7 days (see src/lib/updates.js), so it never needs manual clearing. */
 .badge-new {
@@ -648,6 +676,10 @@ body {
 }
 
 /* ---------- Rumor mill ---------- */
+
+#rumor-mill {
+  scroll-margin-top: 1.5rem;
+}
 
 /* Dashed, not solid: the border itself is the signal that this section is
    unverified. Everything else on the page uses a solid border. */

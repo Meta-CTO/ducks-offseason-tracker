@@ -5,14 +5,17 @@ import { slugify } from '../lib/slugify'
 import CapView from './CapView'
 import points from '../data/points.json'
 import contracts from '../data/contracts.json'
-import { isNew, countNew } from '../lib/updates'
+import { isNew, countNew, freshRumorsFor, rowFlagCount } from '../lib/updates'
 
 const CAP_TAB = 'Salary Cap'
 
 // How many badged bullets sit inside each tab, so a reader can see which
 // section changed without opening every one.
 const newPerTab = Object.fromEntries(
-  rosterComparison.map((g) => [g.group, countNew(g.rows.flatMap((r) => r.notes))]),
+  rosterComparison.map((g) => [
+    g.group,
+    g.rows.reduce((n, r) => n + rowFlagCount(r), 0),
+  ]),
 )
 
 const statLine = (name) => {
@@ -31,13 +34,27 @@ const contractLine = (name) => {
 // 2025–26 NHL points for ordering; players with no NHL season sort last
 const rowPoints = (row) => points[slugify(row.before ?? row.after)]?.points ?? -1
 
-function PersonCard({ name, pos }) {
+function PersonCard({ name, pos, hasNewNote }) {
+  const rumorCount = freshRumorsFor(name).length
   return (
     <div className="person-card">
       <Avatar name={name} size={64} />
       <span className="person-card-body">
         <span className="person-card-name">{name}</span>
         <span className="person-card-pos">{pos}</span>
+        {(hasNewNote || rumorCount > 0) && (
+          <span className="person-card-flags">
+            {hasNewNote && <span className="badge badge-new">New</span>}
+            {/* Rumors get their own chip rather than sharing NEW: a roster row
+                is sourced content, and an unverified claim must not read as
+                one of its facts. The chip jumps to the quarantined section. */}
+            {rumorCount > 0 && (
+              <a className="badge badge-rumor" href="#rumor-mill">
+                {rumorCount === 1 ? 'Rumor' : `${rumorCount} rumors`}
+              </a>
+            )}
+          </span>
+        )}
         {statLine(name) && <span className="person-card-stats">{statLine(name)}</span>}
         {contractLine(name) && (
           <span className="person-card-contract">{contractLine(name)}</span>
@@ -75,7 +92,7 @@ export default function RosterComparison() {
             {newPerTab[tab] > 0 && (
               <span
                 className="toggle-count"
-                aria-label={`${newPerTab[tab]} new item${newPerTab[tab] === 1 ? '' : 's'}`}
+                aria-label={`${newPerTab[tab]} new item or rumor${newPerTab[tab] === 1 ? '' : 's'}`}
               >
                 {newPerTab[tab]}
               </span>
@@ -105,7 +122,11 @@ export default function RosterComparison() {
                 className={`roster-row status-border-${row.status}`}
                 key={`${row.pos}-${name}`}
               >
-                <PersonCard name={name} pos={row.pos} />
+                <PersonCard
+                  name={name}
+                  pos={row.pos}
+                  hasNewNote={countNew(row.notes) > 0}
+                />
                 <div className="roster-delta">
                   <span className={`badge badge-${STATUS[row.status].color}`}>
                     {STATUS[row.status].label}

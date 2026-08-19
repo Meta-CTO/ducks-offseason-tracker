@@ -11,7 +11,7 @@ export default function RumorMill() {
   if (rumors.length === 0) return null
 
   return (
-    <section className="section">
+    <section className="section" id="rumor-mill">
       <h2>Rumor mill</h2>
       <p className="section-caveat">
         None of this is confirmed, and none of it has moved the roster, cap or
