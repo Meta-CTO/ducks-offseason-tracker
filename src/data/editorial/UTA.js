@@ -148,7 +148,7 @@ export const biggestChanges = [
   },
   {
     title: 'They matched an offer sheet',
-    body: 'New Jersey tendered Barrett Hayton an offer sheet on Jul. 1 and Utah matched it, keeping him. It is the summer’s second matched offer sheet after Anaheim matched Philadelphia’s bid for Leo Carlsson, and it is recorded on the Devils reset rather than Utah’s own.',
+    body: 'New Jersey tendered Barrett Hayton an offer sheet on Jul. 1 and Utah matched it, keeping him at a $4,775,000 cap hit. It is the summer’s second matched offer sheet after Anaheim matched Philadelphia’s bid for Leo Carlsson, and it is recorded on the Devils reset rather than Utah’s own.',
   },
   {
     title: 'The prospect queue is the real story',
@@ -169,7 +169,7 @@ export const unresolved = [
   { status: 'Open', item: 'Which prospects make the roster', impact: 'Four are named as candidates for a lineup that is otherwise set' },
   { status: 'Open', item: 'Backup goaltending', impact: 'The GM named it as something to monitor; Cossa has one NHL appearance' },
   { status: 'Open', item: 'Defensive depth', impact: 'Also named by the GM, after Durzi and Cole both left' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+  { status: 'Open', item: 'A buyout that runs to 2031', impact: '$650K for Oliver Ekman-Larsson this season, then $290K a year for four more' },
 ]
 
 export const rumors = []
@@ -183,5 +183,49 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// UTA cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 99_415_357,
+    space: 4_584_643,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 1_000_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 66_392_875 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 25_622_500 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 6_750_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 650_000 },
+  ],
+  capHits: [
+    { name: 'Logan Cooley', group: 'F', hit: 10_000_000 },
+    { name: 'Nick Schmaltz', group: 'F', hit: 8_000_000 },
+    { name: 'Clayton Keller', group: 'F', hit: 7_150_000 },
+    { name: 'Dylan Guenther', group: 'F', hit: 7_142_875 },
+    { name: 'Vincent Trocheck', group: 'F', hit: 5_625_000 },
+    { name: 'Anders Lee', group: 'F', hit: 5_400_000 },
+    { name: 'Barrett Hayton', group: 'F', hit: 4_775_000 },
+    { name: 'Lawson Crouse', group: 'F', hit: 4_300_000 },
+    { name: 'Jack McBain', group: 'F', hit: 4_250_000 },
+    { name: 'Kevin Stenlund', group: 'F', hit: 2_750_000 },
+    { name: 'Brandon Tanev', group: 'F', hit: 2_500_000 },
+    { name: 'Michael Carcone', group: 'F', hit: 1_750_000 },
+    { name: 'Kailer Yamamoto', group: 'F', hit: 1_750_000 },
+    { name: 'Liam O\'Brien', group: 'F', hit: 1_000_000 },
+    { name: 'Mikhail Sergachev', group: 'D', hit: 8_500_000 },
+    { name: 'MacKenzie Weegar', group: 'D', hit: 6_250_000 },
+    { name: 'John Marino', group: 'D', hit: 4_400_000 },
+    { name: 'Nate Schmidt', group: 'D', hit: 3_500_000 },
+    { name: 'Andrew Peeke', group: 'D', hit: 1_000_000 },
+    { name: 'Nick DeSimone', group: 'D', hit: 1_000_000 },
+    { name: 'Dmitri Simashev', group: 'D', hit: 972_500 },
+    { name: 'Karel Vejmelka', group: 'G', hit: 4_750_000 },
+    { name: 'Sebastian Cossa', group: 'G', hit: 2_000_000 },
+    { name: 'LD,RD', group: 'O', hit: 650_000, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

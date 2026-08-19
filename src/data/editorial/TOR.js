@@ -127,8 +127,8 @@ export const rosterComparison = [
       {
         pos: 'LD', before: 'Morgan Rielly', after: 'Morgan Rielly', status: 'retained',
         notes: [
-          'Projected on the second pair with Chris Tanev',
-          'The reset records that his future is uncertain amid trade rumours',
+          'Projected on the second pair with Chris Tanev, at a $7.5M cap hit',
+          'The reset recorded trade rumours around him; the club’s news feed since reports they have ceased, quoting him that “this is home now”',
         ],
       },
     ],
@@ -191,6 +191,10 @@ export const biggestChanges = [
     body: 'Sergei Bobrovsky signed on Jul. 1 at thirty-seven, having won two Cups in Florida. Toronto traded Joseph Woll to Philadelphia, passed Samuel Ersson through to Ottawa, and sent Dennis Hildeby to Tampa Bay.',
   },
   {
+    title: 'And they are over the cap',
+    body: 'Toronto projects at $106.75 million against a $104 million ceiling — $2.75 million in the red, the second-largest overage in the league behind nobody but Dallas. There are no buyouts or retained salary to clear, so compliance has to come off the active roster.',
+  },
+  {
     title: 'Eight years for a defenseman, and still unfinished',
     body: 'Darren Raddysh arrived in a sign-and-trade on eight years. Even so the reset calls the blue line a work in progress, records interest in a Zach Werenski trade, and notes Morgan Rielly’s future is uncertain.',
   },
@@ -207,25 +211,16 @@ export const campWatch = [
 
 export const unresolved = [
   { status: 'Open', item: 'The blue line', impact: 'Called a work in progress despite Raddysh and Andrae; interest in a Werenski trade is on the record' },
-  { status: 'Open', item: 'Morgan Rielly’s future', impact: 'The reset records trade rumours around him' },
+  { status: 'Open', item: 'Getting under the ceiling', impact: 'Toronto is $2.75M over and must be compliant by opening night' },
   { status: 'Open', item: 'Whether McKenna stays at eighteen', impact: 'Projected second-line left wing' },
   { status: 'Open', item: 'How Roslovic and Sissons arrived', impact: 'NHL.com’s own pages disagree on trade versus free-agent signing' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
-export const rumors = [
-  {
-    date: 'Offseason',
-    addedAt: '2026-08-19',
-    player: 'Morgan Rielly',
-    topic: 'Morgan Rielly’s future',
-    claim: 'Rielly is the subject of trade speculation',
-    status: 'reported',
-    attribution: 'NHL.com’s Maple Leafs team reset',
-    sourceUrl: 'https://www.nhl.com/news/topic/team-resets/toronto-maple-leafs-roster-changes-for-2026-27-season',
-    detail: 'The reset records that his future is uncertain amid trade rumours, alongside management’s stated interest in acquiring Zach Werenski. No team, terms or timeline has been reported, and Rielly is projected on the second pair.',
-  },
-]
+// The Rielly speculation this page carried has resolved. Toronto's own news
+// feed now reports that the trade rumours have ceased and quotes him saying
+// "this is home now", so the claim no longer belongs in the rumor mill —
+// a rumour that resolves is deleted, not left standing.
+export const rumors = []
 
 export const sources = [
   { label: 'NHL.com Maple Leafs 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/toronto-maple-leafs-roster-changes-for-2026-27-season' },
@@ -235,5 +230,48 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// TOR cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 106_752_382,
+    space: -2_752_382,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 3_500_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 64_589_280 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 31_413_102 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 10_750_000 },
+  ],
+  capHits: [
+    { name: 'Auston Matthews', group: 'F', hit: 13_250_000 },
+    { name: 'William Nylander', group: 'F', hit: 11_500_000 },
+    { name: 'Matthew Knies', group: 'F', hit: 7_750_000 },
+    { name: 'John Tavares', group: 'F', hit: 4_389_280 },
+    { name: 'Colton Sissons', group: 'F', hit: 4_250_000 },
+    { name: 'Jack Roslovic', group: 'F', hit: 4_000_000 },
+    { name: 'Max Domi', group: 'F', hit: 3_750_000 },
+    { name: 'Dakota Joshua', group: 'F', hit: 3_250_000 },
+    { name: 'Nick Paul', group: 'F', hit: 3_150_000 },
+    { name: 'Brandon Duhaime', group: 'F', hit: 2_600_000 },
+    { name: 'Teddy Blueger', group: 'F', hit: 2_500_000 },
+    { name: 'Steven Lorentz', group: 'F', hit: 1_350_000 },
+    { name: 'Gavin McKenna', group: 'F', hit: 1_075_000 },
+    { name: 'Easton Cowan', group: 'F', hit: 900_000 },
+    { name: 'Zack MacEwen', group: 'F', hit: 875_000 },
+    { name: 'Darren Raddysh', group: 'D', hit: 8_500_000 },
+    { name: 'Morgan Rielly', group: 'D', hit: 7_500_000 },
+    { name: 'Jake McCabe', group: 'D', hit: 4_513_102 },
+    { name: 'Christopher Tanev', group: 'D', hit: 4_500_000 },
+    { name: 'Oliver Ekman-Larsson', group: 'D', hit: 3_500_000 },
+    { name: 'Emil Andrae', group: 'D', hit: 1_550_000 },
+    { name: 'Troy Stecher', group: 'D', hit: 1_350_000 },
+    { name: 'Sergei Bobrovsky', group: 'G', hit: 7_000_000 },
+    { name: 'Anthony Stolarz', group: 'G', hit: 3_750_000 },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
