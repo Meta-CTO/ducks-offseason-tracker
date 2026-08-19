@@ -88,7 +88,7 @@ for (const [heading, key] of GROUPS) {
   const body = endIdx === -1 ? rest : rest.slice(0, endIdx)
 
   // "Surname, Forename" followed within a few lines by the first $figure.
-  const playerRe = /\n([A-ZÄÅÖÜÉ][^\n,]*, [^\n]+)\n((?:(?!\n[A-ZÄÅÖÜÉ][^\n,]*, )[\s\S])*?)\$([\d,]+)/g
+  const playerRe = /\n([A-Za-zÄÅÖÜÉ][^\n,]*, [^\n]+)\n((?:(?!\n[A-Za-zÄÅÖÜÉ][^\n,]*, )[\s\S])*?)\$([\d,]+)/g
   for (const p of body.matchAll(playerRe)) {
     const [surname, forename] = p[1].split(', ')
     hits.push({ name: `${forename.trim()} ${surname.trim()}`, group: key, hit: money(p[3]) })
@@ -111,7 +111,7 @@ for (const heading of CHARGE_SECTIONS) {
   // Charge rows are usually players, but not always: a "Performance Bonus
   // Cushion" line carries a real charge with no name attached. Match either a
   // "Surname, Forename" row or a bare label, so the section still reconciles.
-  const rowRe = /\n([A-ZÄÅÖÜÉ][^\n$]{2,60})\n((?:(?!\n[A-ZÄÅÖÜÉ][^\n$]{2,60}\n)[\s\S])*?)\$([\d,]+)/g
+  const rowRe = /\n([A-Za-zÄÅÖÜÉ][^\n$]{2,60})\n((?:(?!\n[A-Za-zÄÅÖÜÉ][^\n$]{2,60}\n)[\s\S])*?)\$([\d,]+)/g
   for (const p of body.matchAll(rowRe)) {
     const label = p[1].trim()
     if (/^(PLAYER|TOTALS|CAP HIT|AAV|TOTAL|SALARY|SIGNING|BONUS)$/i.test(label)) continue
@@ -185,7 +185,11 @@ ${hits.map((h) => `    { name: '${h.name.replace(/'/g, "\\'")}', group: '${h.gro
 //   [...document.querySelectorAll('span.val-lg')].map(v => {
 //     const row = v.closest('tr') || v.parentElement.parentElement.parentElement
 //     const n = [...row.querySelectorAll('*')].find(e =>
-//       e.children.length === 0 && /^[A-ZÄÅÖÜÉ][^,]*, .+/.test(e.textContent.trim()))
+//       e.children.length === 0 && /^[A-Za-zÄÅÖÜÉ][^,]*, .+/.test(e.textContent.trim()))
+//     // NOTE the lowercase in that character class. Requiring an uppercase
+//     // first letter silently drops "van Riemsdyk, Trevor" and anyone else
+//     // with a lowercase surname prefix. Pittsburgh's defence came back $4M
+//     // short because of exactly that; the reconciliation check caught it.
 //     return n ? `${n.textContent.trim()}\n${v.textContent.trim()}` : null
 //   }).filter(Boolean).join('\n')
 //

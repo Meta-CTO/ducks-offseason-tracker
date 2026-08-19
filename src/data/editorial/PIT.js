@@ -35,7 +35,8 @@ export const departures = [
 ]
 
 export const arrivals = [
-  { date: 'May 26', player: 'Evgeni Malkin', pos: 'C', deal: 'One-year extension', role: 'Re-signed for a 21st season at thirty-nine; projected second line' },
+  { date: 'May 26', player: 'Evgeni Malkin', pos: 'C', deal: 'One-year extension; $5.5M cap hit', role: 'Re-signed for a 21st season at thirty-nine; projected second line' },
+  { date: 'Offseason', player: 'Ville Koivunen', pos: 'RW', deal: 'Eight years, $4M AAV', role: 'Re-signed long term at twenty-three; recorded on PuckPedia rather than the reset' },
   { date: 'Jun. 25', player: 'Hendrix Lapierre', pos: 'F', deal: 'Trade from Washington', role: 'Cost a 2027 third and a 2028 fifth; recorded on the Capitals reset' },
   { date: 'Jun. 30', player: 'Kaedan Korczak', pos: 'D', deal: 'Trade from Vegas for Parker Wotherspoon', role: 'Twenty-five; projected third pair' },
   { date: 'Jul. 1', player: 'Andrei Kuzmenko', pos: 'F', deal: 'One year', role: 'From Los Angeles; recovering from February meniscus surgery; signed to replace Mantha' },
@@ -157,8 +158,8 @@ export const campWatch = [
 export const unresolved = [
   { status: 'Open', item: 'Replacing 33 goals', impact: 'Mantha left and the replacement is on a one-year deal, coming off surgery' },
   { status: 'Open', item: 'Goaltending', impact: 'Skinner left; Silovs and Murashov are the projected pair' },
-  { status: 'Open', item: 'Sergei Murashov’s development', impact: 'Named in the reset as a potential future starter' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+  { status: 'Open', item: 'Sergei Murashov’s development', impact: 'Named in the reset as a potential future starter, at a $936,110 cap hit' },
+  { status: 'Open', item: 'Money owed to players who left', impact: '$3.28M burying Ryan Graves and $500K retained on Parker Wotherspoon, now in Vegas' },
 ]
 
 export const rumors = []
@@ -172,5 +173,50 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// PIT cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 93_097_360,
+    space: 10_902_640,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 4_000_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 55_736_250 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 29_850_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 3_736_110 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 3_775_000 },
+  ],
+  capHits: [
+    { name: 'Sidney Crosby', group: 'F', hit: 8_700_000 },
+    { name: 'Egor Chinakhov', group: 'F', hit: 6_250_000 },
+    { name: 'Evgeni Malkin', group: 'F', hit: 5_500_000 },
+    { name: 'Bryan Rust', group: 'F', hit: 5_125_000 },
+    { name: 'Rickard Rakell', group: 'F', hit: 5_000_000 },
+    { name: 'Andrei Kuzmenko', group: 'F', hit: 5_000_000 },
+    { name: 'Ville Koivunen', group: 'F', hit: 4_000_000 },
+    { name: 'Thomas Novak', group: 'F', hit: 3_500_000 },
+    { name: 'Nicholas Robertson', group: 'F', hit: 3_250_000 },
+    { name: 'Connor Dewar', group: 'F', hit: 2_250_000 },
+    { name: 'Blake Lizotte', group: 'F', hit: 2_250_000 },
+    { name: 'Justin Brazeau', group: 'F', hit: 1_500_000 },
+    { name: 'Hendrix Lapierre', group: 'F', hit: 1_300_000 },
+    { name: 'Elmer Soderblom', group: 'F', hit: 1_125_000 },
+    { name: 'Ben Kindel', group: 'F', hit: 986_250 },
+    { name: 'Erik Karlsson', group: 'D', hit: 10_000_000 },
+    { name: 'Kris Letang', group: 'D', hit: 6_100_000 },
+    { name: 'Samuel Girard', group: 'D', hit: 5_000_000 },
+    { name: 'Trevor van Riemsdyk', group: 'D', hit: 4_000_000 },
+    { name: 'Kaedan Korczak', group: 'D', hit: 3_250_000 },
+    { name: 'Declan Carlile', group: 'D', hit: 1_500_000 },
+    { name: 'Arturs Silovs', group: 'G', hit: 2_800_000 },
+    { name: 'Sergei Murashov', group: 'G', hit: 936_110 },
+    { name: 'Ryan Graves', group: 'O', hit: 3_275_000, charge: 'buried' },
+    { name: 'RETAINED', group: 'O', hit: 500_000, charge: 'retained' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
