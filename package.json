@@ -11,7 +11,8 @@
     "deploy": "bash scripts/deploy.sh",
     "stats": "bash scripts/stats.sh",
     "photos": "node scripts/fetch-commons-photos.mjs && node scripts/crop-faces.mjs",
-    "rollup": "bash scripts/rollup.sh"
+    "rollup": "bash scripts/rollup.sh",
+    "league": "node scripts/fetch-league.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

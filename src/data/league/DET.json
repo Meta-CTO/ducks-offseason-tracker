@@ -1,0 +1,412 @@
+{
+  "abbrev": "DET",
+  "name": "Detroit Red Wings",
+  "season": "20252026",
+  "forwards": [
+    {
+      "id": 8478891,
+      "name": "Mason Appleton",
+      "pos": "C",
+      "number": 22,
+      "shoots": "R",
+      "height": 74,
+      "weight": 196,
+      "birthDate": "1996-01-15",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8478891,
+        "name": "Mason Appleton",
+        "pos": "C",
+        "gp": 65,
+        "g": 6,
+        "a": 8,
+        "p": 14,
+        "plusMinus": -4,
+        "toi": 811.4462
+      }
+    },
+    {
+      "id": 8478042,
+      "name": "Viktor Arvidsson",
+      "pos": "L",
+      "number": null,
+      "shoots": "R",
+      "height": 70,
+      "weight": 181,
+      "birthDate": "1993-04-08",
+      "birthCountry": "SWE",
+      "stats": null
+    },
+    {
+      "id": 8477456,
+      "name": "J.T. Compher",
+      "pos": "L",
+      "number": 37,
+      "shoots": "R",
+      "height": 72,
+      "weight": 191,
+      "birthDate": "1995-04-08",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8477456,
+        "name": "J.T. Compher",
+        "pos": "L",
+        "gp": 82,
+        "g": 11,
+        "a": 17,
+        "p": 28,
+        "plusMinus": -13,
+        "toi": 940.0366
+      }
+    },
+    {
+      "id": 8477429,
+      "name": "Andrew Copp",
+      "pos": "C",
+      "number": 18,
+      "shoots": "L",
+      "height": 73,
+      "weight": 200,
+      "birthDate": "1994-07-08",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8477429,
+        "name": "Andrew Copp",
+        "pos": "C",
+        "gp": 79,
+        "g": 9,
+        "a": 34,
+        "p": 43,
+        "plusMinus": 3,
+        "toi": 994.3924
+      }
+    },
+    {
+      "id": 8479337,
+      "name": "Alex DeBrincat",
+      "pos": "R",
+      "number": 93,
+      "shoots": "R",
+      "height": 68,
+      "weight": 180,
+      "birthDate": "1997-12-18",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8479337,
+        "name": "Alex DeBrincat",
+        "pos": "R",
+        "gp": 82,
+        "g": 41,
+        "a": 44,
+        "p": 85,
+        "plusMinus": 8,
+        "toi": 1110.0122
+      }
+    },
+    {
+      "id": 8484471,
+      "name": "Emmitt Finnie",
+      "pos": "C",
+      "number": 58,
+      "shoots": "L",
+      "height": 73,
+      "weight": 195,
+      "birthDate": "2005-06-27",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8484471,
+        "name": "Emmitt Finnie",
+        "pos": "C",
+        "gp": 82,
+        "g": 13,
+        "a": 17,
+        "p": 30,
+        "plusMinus": -10,
+        "toi": 930
+      }
+    },
+    {
+      "id": 8483464,
+      "name": "Marco Kasper",
+      "pos": "C",
+      "number": 92,
+      "shoots": "L",
+      "height": 73,
+      "weight": 202,
+      "birthDate": "2004-04-08",
+      "birthCountry": "AUT",
+      "stats": {
+        "id": 8483464,
+        "name": "Marco Kasper",
+        "pos": "C",
+        "gp": 81,
+        "g": 9,
+        "a": 10,
+        "p": 19,
+        "plusMinus": -20,
+        "toi": 827.6667
+      }
+    },
+    {
+      "id": 8478434,
+      "name": "Keegan Kolesar",
+      "pos": "R",
+      "number": null,
+      "shoots": "R",
+      "height": 74,
+      "weight": 216,
+      "birthDate": "1997-04-08",
+      "birthCountry": "CAN",
+      "stats": null
+    },
+    {
+      "id": 8477946,
+      "name": "Dylan Larkin",
+      "pos": "C",
+      "number": 71,
+      "shoots": "L",
+      "height": 73,
+      "weight": 204,
+      "birthDate": "1996-07-30",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8477946,
+        "name": "Dylan Larkin",
+        "pos": "C",
+        "gp": 74,
+        "g": 34,
+        "a": 33,
+        "p": 67,
+        "plusMinus": 3,
+        "toi": 1211.2297
+      }
+    },
+    {
+      "id": 8479992,
+      "name": "Michael Rasmussen",
+      "pos": "C",
+      "number": 27,
+      "shoots": "L",
+      "height": 78,
+      "weight": 222,
+      "birthDate": "1999-04-17",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8479992,
+        "name": "Michael Rasmussen",
+        "pos": "C",
+        "gp": 64,
+        "g": 6,
+        "a": 8,
+        "p": 14,
+        "plusMinus": -10,
+        "toi": 759
+      }
+    },
+    {
+      "id": 8482078,
+      "name": "Lucas Raymond",
+      "pos": "L",
+      "number": 23,
+      "shoots": "R",
+      "height": 71,
+      "weight": 186,
+      "birthDate": "2002-03-28",
+      "birthCountry": "SWE",
+      "stats": {
+        "id": 8482078,
+        "name": "Lucas Raymond",
+        "pos": "L",
+        "gp": 80,
+        "g": 25,
+        "a": 51,
+        "p": 76,
+        "plusMinus": 1,
+        "toi": 1127.9375
+      }
+    }
+  ],
+  "defensemen": [
+    {
+      "id": 8480879,
+      "name": "Jacob Bernard-Docker",
+      "pos": "D",
+      "number": 25,
+      "shoots": "R",
+      "height": 73,
+      "weight": 196,
+      "birthDate": "2000-06-30",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8480879,
+        "name": "Jacob Bernard-Docker",
+        "pos": "D",
+        "gp": 63,
+        "g": 1,
+        "a": 4,
+        "p": 5,
+        "plusMinus": 0,
+        "toi": 888.619
+      }
+    },
+    {
+      "id": 8480196,
+      "name": "Jacob Bryson",
+      "pos": "D",
+      "number": null,
+      "shoots": "L",
+      "height": 69,
+      "weight": 177,
+      "birthDate": "1997-11-18",
+      "birthCountry": "CAN",
+      "stats": null
+    },
+    {
+      "id": 8475279,
+      "name": "Ben Chiarot",
+      "pos": "D",
+      "number": 8,
+      "shoots": "L",
+      "height": 75,
+      "weight": 222,
+      "birthDate": "1991-05-09",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8475279,
+        "name": "Ben Chiarot",
+        "pos": "D",
+        "gp": 82,
+        "g": 5,
+        "a": 10,
+        "p": 15,
+        "plusMinus": -9,
+        "toi": 1250.1951
+      }
+    },
+    {
+      "id": 8482762,
+      "name": "Simon Edvinsson",
+      "pos": "D",
+      "number": 77,
+      "shoots": "L",
+      "height": 78,
+      "weight": 222,
+      "birthDate": "2003-02-05",
+      "birthCountry": "SWE",
+      "stats": {
+        "id": 8482762,
+        "name": "Simon Edvinsson",
+        "pos": "D",
+        "gp": 72,
+        "g": 9,
+        "a": 16,
+        "p": 25,
+        "plusMinus": 12,
+        "toi": 1341.3472
+      }
+    },
+    {
+      "id": 8475753,
+      "name": "Justin Faulk",
+      "pos": "D",
+      "number": 72,
+      "shoots": "R",
+      "height": 72,
+      "weight": 208,
+      "birthDate": "1992-03-20",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8475753,
+        "name": "Justin Faulk",
+        "pos": "D",
+        "gp": 17,
+        "g": 5,
+        "a": 3,
+        "p": 8,
+        "plusMinus": -5,
+        "toi": 1215.4706
+      }
+    },
+    {
+      "id": 8481607,
+      "name": "Albert Johansson",
+      "pos": "D",
+      "number": 20,
+      "shoots": "L",
+      "height": 72,
+      "weight": 195,
+      "birthDate": "2001-01-04",
+      "birthCountry": "SWE",
+      "stats": {
+        "id": 8481607,
+        "name": "Albert Johansson",
+        "pos": "D",
+        "gp": 82,
+        "g": 3,
+        "a": 8,
+        "p": 11,
+        "plusMinus": -18,
+        "toi": 956.3902
+      }
+    },
+    {
+      "id": 8481542,
+      "name": "Moritz Seider",
+      "pos": "D",
+      "number": 53,
+      "shoots": "R",
+      "height": 74,
+      "weight": 210,
+      "birthDate": "2001-04-06",
+      "birthCountry": "DEU",
+      "stats": {
+        "id": 8481542,
+        "name": "Moritz Seider",
+        "pos": "D",
+        "gp": 82,
+        "g": 10,
+        "a": 50,
+        "p": 60,
+        "plusMinus": 15,
+        "toi": 1539.9878
+      }
+    }
+  ],
+  "goalies": [
+    {
+      "id": 8476434,
+      "name": "John Gibson",
+      "pos": "G",
+      "number": 36,
+      "shoots": "L",
+      "height": 75,
+      "weight": 209,
+      "birthDate": "1993-07-14",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8476434,
+        "name": "John Gibson",
+        "pos": "G",
+        "gp": 57,
+        "w": 29,
+        "l": 22,
+        "otl": 4,
+        "gaa": 2.715928,
+        "svPct": 0.901437,
+        "so": 4
+      }
+    },
+    {
+      "id": 8480193,
+      "name": "Daniil Tarasov",
+      "pos": "G",
+      "number": null,
+      "shoots": "L",
+      "height": 77,
+      "weight": 203,
+      "birthDate": "1999-03-27",
+      "birthCountry": "RUS",
+      "stats": null
+    }
+  ]
+}

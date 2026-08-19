@@ -5,9 +5,37 @@
 
 **Live: [ducks.metacto.com](https://ducks.metacto.com/)**
 
-A single-page app tracking how the Ducks' breakthrough 2025-26 playoff roster
-changed over the 2026 offseason: who stayed, who left, what it costs against
-the cap, and what is still unresolved heading into training camp.
+A single-page app tracking how NHL rosters changed over the 2026 offseason.
+All 32 clubs are selectable; the Anaheim Ducks carry the full editorial
+tracker — who stayed, who left, what it costs against the cap, and what is
+still unresolved heading into training camp.
+
+## Teams
+
+Visitors pick a club once and the choice is remembered on that browser in an
+`nhl_team` cookie, so a return visit goes straight there. A `?team=BOS` link
+always overrides the saved pick, which keeps shared links honest. The site is
+static, so team selection is a query parameter rather than a path — a path
+would need a CloudFront rewrite to avoid 404s.
+
+Clubs come in two depths:
+
+- **Full tracker** — the editorial page, written from a sourced research brief:
+  roster narrative, transaction ledger, camp battles, unresolved tracker, cap
+  and rumor mill. Anaheim has one.
+- **Roster and scoring** — every other club, generated from the official NHL
+  API: roster by position with 2025-26 production. These pages say plainly
+  that the narrative is missing rather than inventing one from statistics.
+
+A club is promoted from the second to the first by writing its brief and
+adding it to `EDITORIAL_TEAMS` in `src/lib/team.js`.
+
+Refresh league data with `npm run league`, which rebuilds `src/data/teams.json`
+and one file per club in `src/data/league/`. The NHL API rate-limits a full
+sweep, so requests are serialised and paced; a club whose fetch fails keeps its
+existing file rather than being overwritten with nothing. Player headshots are
+stripped on the way in — they are league photography, which this project does
+not use.
 
 > **Unofficial fan project.** Not affiliated with, authorized by, or endorsed
 > by the Anaheim Ducks or the National Hockey League. Contains no NHL or Ducks

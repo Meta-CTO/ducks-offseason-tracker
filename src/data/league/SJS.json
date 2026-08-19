@@ -1,0 +1,403 @@
+{
+  "abbrev": "SJS",
+  "name": "San Jose Sharks",
+  "season": "20252026",
+  "forwards": [
+    {
+      "id": 8484801,
+      "name": "Macklin Celebrini",
+      "pos": "C",
+      "number": 71,
+      "shoots": "L",
+      "height": 72,
+      "weight": 190,
+      "birthDate": "2006-06-13",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8484801,
+        "name": "Macklin Celebrini",
+        "pos": "C",
+        "gp": 82,
+        "g": 45,
+        "a": 70,
+        "p": 115,
+        "plusMinus": 8,
+        "toi": 1278.9512
+      }
+    },
+    {
+      "id": 8480848,
+      "name": "Ty Dellandrea",
+      "pos": "C",
+      "number": 10,
+      "shoots": "R",
+      "height": 74,
+      "weight": 185,
+      "birthDate": "2000-07-21",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8480848,
+        "name": "Ty Dellandrea",
+        "pos": "C",
+        "gp": 46,
+        "g": 2,
+        "a": 9,
+        "p": 11,
+        "plusMinus": -18,
+        "toi": 851.3696
+      }
+    },
+    {
+      "id": 8478874,
+      "name": "Adam Gaudette",
+      "pos": "R",
+      "number": 81,
+      "shoots": "R",
+      "height": 73,
+      "weight": 190,
+      "birthDate": "1996-10-03",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8478874,
+        "name": "Adam Gaudette",
+        "pos": "R",
+        "gp": 66,
+        "g": 17,
+        "a": 8,
+        "p": 25,
+        "plusMinus": -9,
+        "toi": 688.4394
+      }
+    },
+    {
+      "id": 8476624,
+      "name": "Barclay Goodrow",
+      "pos": "C",
+      "number": 23,
+      "shoots": "L",
+      "height": 74,
+      "weight": 210,
+      "birthDate": "1993-02-26",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8476624,
+        "name": "Barclay Goodrow",
+        "pos": "C",
+        "gp": 82,
+        "g": 5,
+        "a": 7,
+        "p": 12,
+        "plusMinus": -18,
+        "toi": 680.8537
+      }
+    },
+    {
+      "id": 8484911,
+      "name": "Collin Graf",
+      "pos": "R",
+      "number": 51,
+      "shoots": "R",
+      "height": 73,
+      "weight": 190,
+      "birthDate": "2002-09-21",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8484911,
+        "name": "Collin Graf",
+        "pos": "R",
+        "gp": 81,
+        "g": 21,
+        "a": 25,
+        "p": 46,
+        "plusMinus": 6,
+        "toi": 986.5679
+      }
+    },
+    {
+      "id": 8478975,
+      "name": "Mason Marchment",
+      "pos": "L",
+      "number": 27,
+      "shoots": "L",
+      "height": 77,
+      "weight": 212,
+      "birthDate": "1995-06-18",
+      "birthCountry": "CAN",
+      "stats": null
+    },
+    {
+      "id": 8485402,
+      "name": "Michael Misa",
+      "pos": "C",
+      "number": 77,
+      "shoots": "L",
+      "height": 73,
+      "weight": 185,
+      "birthDate": "2007-02-16",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8485402,
+        "name": "Michael Misa",
+        "pos": "C",
+        "gp": 45,
+        "g": 9,
+        "a": 12,
+        "p": 21,
+        "plusMinus": -2,
+        "toi": 768.6444
+      }
+    },
+    {
+      "id": 8482859,
+      "name": "Zack Ostapchuk",
+      "pos": "C",
+      "number": 63,
+      "shoots": "L",
+      "height": 76,
+      "weight": 212,
+      "birthDate": "2003-05-29",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8482859,
+        "name": "Zack Ostapchuk",
+        "pos": "C",
+        "gp": 59,
+        "g": 4,
+        "a": 3,
+        "p": 7,
+        "plusMinus": -11,
+        "toi": 605.678
+      }
+    },
+    {
+      "id": 8480748,
+      "name": "Kiefer Sherwood",
+      "pos": "L",
+      "number": 44,
+      "shoots": "R",
+      "height": 72,
+      "weight": 194,
+      "birthDate": "1995-03-31",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8480748,
+        "name": "Kiefer Sherwood",
+        "pos": "L",
+        "gp": 28,
+        "g": 6,
+        "a": 7,
+        "p": 13,
+        "plusMinus": -8,
+        "toi": 1010.1429
+      }
+    },
+    {
+      "id": 8484227,
+      "name": "Will Smith",
+      "pos": "C",
+      "number": 2,
+      "shoots": "R",
+      "height": 72,
+      "weight": 180,
+      "birthDate": "2005-03-17",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8484227,
+        "name": "Will Smith",
+        "pos": "C",
+        "gp": 69,
+        "g": 24,
+        "a": 35,
+        "p": 59,
+        "plusMinus": 1,
+        "toi": 1090.9855
+      }
+    },
+    {
+      "id": 8475726,
+      "name": "Tyler Toffoli",
+      "pos": "C",
+      "number": 73,
+      "shoots": "R",
+      "height": 72,
+      "weight": 205,
+      "birthDate": "1992-04-24",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8475726,
+        "name": "Tyler Toffoli",
+        "pos": "C",
+        "gp": 79,
+        "g": 19,
+        "a": 30,
+        "p": 49,
+        "plusMinus": -12,
+        "toi": 898.3544
+      }
+    },
+    {
+      "id": 8477505,
+      "name": "Alexander Wennberg",
+      "pos": "C",
+      "number": 21,
+      "shoots": "L",
+      "height": 74,
+      "weight": 190,
+      "birthDate": "1994-09-22",
+      "birthCountry": "SWE",
+      "stats": {
+        "id": 8477505,
+        "name": "Alexander Wennberg",
+        "pos": "C",
+        "gp": 80,
+        "g": 18,
+        "a": 37,
+        "p": 55,
+        "plusMinus": -25,
+        "toi": 1227.3625
+      }
+    }
+  ],
+  "defensemen": [
+    {
+      "id": 8484806,
+      "name": "Sam Dickinson",
+      "pos": "D",
+      "number": 6,
+      "shoots": "L",
+      "height": 75,
+      "weight": 200,
+      "birthDate": "2006-06-07",
+      "birthCountry": "CAN",
+      "stats": {
+        "id": 8484806,
+        "name": "Sam Dickinson",
+        "pos": "D",
+        "gp": 72,
+        "g": 1,
+        "a": 13,
+        "p": 14,
+        "plusMinus": -5,
+        "toi": 1005.3611
+      }
+    },
+    {
+      "id": 8480891,
+      "name": "Michael Kesselring",
+      "pos": "D",
+      "number": 7,
+      "shoots": "R",
+      "height": 77,
+      "weight": 215,
+      "birthDate": "2000-01-13",
+      "birthCountry": "USA",
+      "stats": null
+    },
+    {
+      "id": 8477498,
+      "name": "Darnell Nurse",
+      "pos": "D",
+      "number": 25,
+      "shoots": "L",
+      "height": 76,
+      "weight": 215,
+      "birthDate": "1995-02-04",
+      "birthCountry": "CAN",
+      "stats": null
+    },
+    {
+      "id": 8475200,
+      "name": "Dmitry Orlov",
+      "pos": "D",
+      "number": 9,
+      "shoots": "L",
+      "height": 71,
+      "weight": 215,
+      "birthDate": "1991-07-23",
+      "birthCountry": "RUS",
+      "stats": {
+        "id": 8475200,
+        "name": "Dmitry Orlov",
+        "pos": "D",
+        "gp": 82,
+        "g": 3,
+        "a": 34,
+        "p": 37,
+        "plusMinus": -28,
+        "toi": 1271.7439
+      }
+    },
+    {
+      "id": 8476885,
+      "name": "Jacob Trouba",
+      "pos": "D",
+      "number": 65,
+      "shoots": "R",
+      "height": 75,
+      "weight": 212,
+      "birthDate": "1994-02-26",
+      "birthCountry": "USA",
+      "stats": null
+    }
+  ],
+  "goalies": [
+    {
+      "id": 8482137,
+      "name": "Yaroslav Askarov",
+      "pos": "G",
+      "number": 30,
+      "shoots": "R",
+      "height": 75,
+      "weight": 180,
+      "birthDate": "2002-06-16",
+      "birthCountry": "RUS",
+      "stats": {
+        "id": 8482137,
+        "name": "Yaroslav Askarov",
+        "pos": "G",
+        "gp": 47,
+        "w": 21,
+        "l": 20,
+        "otl": 4,
+        "gaa": 3.627984,
+        "svPct": 0.883669,
+        "so": 0
+      }
+    },
+    {
+      "id": 8477480,
+      "name": "Eric Comrie",
+      "pos": "G",
+      "number": 1,
+      "shoots": "L",
+      "height": 73,
+      "weight": 190,
+      "birthDate": "1995-07-06",
+      "birthCountry": "CAN",
+      "stats": null
+    },
+    {
+      "id": 8477968,
+      "name": "Alex Nedeljkovic",
+      "pos": "G",
+      "number": 33,
+      "shoots": "L",
+      "height": 72,
+      "weight": 205,
+      "birthDate": "1996-01-07",
+      "birthCountry": "USA",
+      "stats": {
+        "id": 8477968,
+        "name": "Alex Nedeljkovic",
+        "pos": "G",
+        "gp": 40,
+        "w": 18,
+        "l": 14,
+        "otl": 4,
+        "gaa": 2.870981,
+        "svPct": 0.896092,
+        "so": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+[
+  {
+    "abbrev": "ANA",
+    "name": "Anaheim Ducks",
+    "common": "Ducks",
+    "slug": "anaheim-ducks",
+    "conference": "Western",
+    "division": "Pacific",
+    "colors": [
+      "#F47A38",
+      "#B9975B"
+    ],
+    "record": {
+      "wins": 43,
+      "losses": 33,
+      "otLosses": 6,
+      "points": 92,
+      "divisionSequence": 3
+    }
+  },
+  {
+    "abbrev": "BOS",
+    "name": "Boston Bruins",
+    "common": "Bruins",
+    "slug": "boston-bruins",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "colors": [
+      "#FFB81C",
+      "#000000"
+    ],
+    "record": {
+      "wins": 45,
+      "losses": 27,
+      "otLosses": 10,
+      "points": 100,
+      "divisionSequence": 4
+    }
+  },
+  {
+    "abbrev": "BUF",
+    "name": "Buffalo Sabres",
+    "common": "Sabres",
+    "slug": "buffalo-sabres",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "colors": [
+      "#003087",
+      "#FFB81C"
+    ],
+    "record": {
+      "wins": 50,
+      "losses": 23,
+      "otLosses": 9,
+      "points": 109,
+      "divisionSequence": 1
+    }
+  },
+  {
+    "abbrev": "CGY",
+    "name": "Calgary Flames",
+    "common": "Flames",
+    "slug": "calgary-flames",
+    "conference": "Western",
+    "division": "Pacific",
+    "colors": [
+      "#D2001C",
+      "#FAAF19"
+    ],
+    "record": {
+      "wins": 34,
+      "losses": 39,
+      "otLosses": 9,
+      "points": 77,
+      "divisionSequence": 7
+    }
+  },
+  {
+    "abbrev": "CAR",
+    "name": "Carolina Hurricanes",
+    "common": "Hurricanes",
+    "slug": "carolina-hurricanes",
+    "conference": "Eastern",
+    "division": "Metropolitan",
+    "colors": [
+      "#CC0000",
+      "#000000"
+    ],
+    "record": {
+      "wins": 53,
+      "losses": 22,
+      "otLosses": 7,
+      "points": 113,
+      "divisionSequence": 1
+    }
+  },
+  {
+    "abbrev": "CHI",
+    "name": "Chicago Blackhawks",
+    "common": "Blackhawks",
+    "slug": "chicago-blackhawks",
+    "conference": "Western",
+    "division": "Central",
+    "colors": [
+      "#CF0A2C",
+      "#000000"
+    ],
+    "record": {
+      "wins": 29,
+      "losses": 39,
+      "otLosses": 14,
+      "points": 72,
+      "divisionSequence": 8
+    }
+  },
+  {
+    "abbrev": "COL",
+    "name": "Colorado Avalanche",
+    "common": "Avalanche",
+    "slug": "colorado-avalanche",
+    "conference": "Western",
+    "division": "Central",
+    "colors": [
+      "#6F263D",
+      "#236192"
+    ],
+    "record": {
+      "wins": 55,
+      "losses": 16,
+      "otLosses": 11,
+      "points": 121,
+      "divisionSequence": 1
+    }
+  },
+  {
+    "abbrev": "CBJ",
+    "name": "Columbus Blue Jackets",
+    "common": "Blue Jackets",
+    "slug": "columbus-blue-jackets",
+    "conference": "Eastern",
+    "division": "Metropolitan",
+    "colors": [
+      "#002654",
+      "#CE1126"
+    ],
+    "record": {
+      "wins": 40,
+      "losses": 30,
+      "otLosses": 12,
+      "points": 92,
+      "divisionSequence": 5
+    }
+  },
+  {
+    "abbrev": "DAL",
+    "name": "Dallas Stars",
+    "common": "Stars",
+    "slug": "dallas-stars",
+    "conference": "Western",
+    "division": "Central",
+    "colors": [
+      "#006847",
+      "#8F8F8C"
+    ],
+    "record": {
+      "wins": 50,
+      "losses": 20,
+      "otLosses": 12,
+      "points": 112,
+      "divisionSequence": 2
+    }
+  },
+  {
+    "abbrev": "DET",
+    "name": "Detroit Red Wings",
+    "common": "Red Wings",
+    "slug": "detroit-red-wings",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "colors": [
+      "#CE1126",
+      "#7F7F7F"
+    ],
+    "record": {
+      "wins": 41,
+      "losses": 31,
+      "otLosses": 10,
+      "points": 92,
+      "divisionSequence": 6
+    }
+  },
+  {
+    "abbrev": "EDM",
+    "name": "Edmonton Oilers",
+    "common": "Oilers",
+    "slug": "edmonton-oilers",
+    "conference": "Western",
+    "division": "Pacific",
+    "colors": [
+      "#FF4C00",
+      "#041E42"
+    ],
+    "record": {
+      "wins": 41,
+      "losses": 30,
+      "otLosses": 11,
+      "points": 93,
+      "divisionSequence": 2
+    }
+  },
+  {
+    "abbrev": "FLA",
+    "name": "Florida Panthers",
+    "common": "Panthers",
+    "slug": "florida-panthers",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "colors": [
+      "#C8102E",
+      "#041E42"
+    ],
+    "record": {
+      "wins": 40,
+      "losses": 38,
+      "otLosses": 4,
+      "points": 84,
+      "divisionSequence": 7
+    }
+  },
+  {
+    "abbrev": "LAK",
+    "name": "Los Angeles Kings",
+    "common": "Kings",
+    "slug": "los-angeles-kings",
+    "conference": "Western",
+    "division": "Pacific",
+    "colors": [
+      "#111111",
+      "#A2AAAD"
+    ],
+    "record": {
+      "wins": 35,
+      "losses": 27,
+      "otLosses": 20,
+      "points": 90,
+      "divisionSequence": 4
+    }
+  },
+  {
+    "abbrev": "MIN",
+    "name": "Minnesota Wild",
+    "common": "Wild",
+    "slug": "minnesota-wild",
+    "conference": "Western",
+    "division": "Central",
+    "colors": [
+      "#154734",
+      "#A6192E"
+    ],
+    "record": {
+      "wins": 46,
+      "losses": 24,
+      "otLosses": 12,
+      "points": 104,
+      "divisionSequence": 3
+    }
+  },
+  {
+    "abbrev": "MTL",
+    "name": "Montréal Canadiens",
+    "common": "Canadiens",
+    "slug": "montreal-canadiens",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "colors": [
+      "#AF1E2D",
+      "#192168"
+    ],
+    "record": {
+      "wins": 48,
+      "losses": 24,
+      "otLosses": 10,
+      "points": 106,
+      "divisionSequence": 3
+    }
+  },
+  {
+    "abbrev": "NSH",
+    "name": "Nashville Predators",
+    "common": "Predators",
+    "slug": "nashville-predators",
+    "conference": "Western",
+    "division": "Central",
+    "colors": [
+      "#FFB81C",
+      "#041E42"
+    ],
+    "record": {
+      "wins": 38,
+      "losses": 34,
+      "otLosses": 10,
+      "points": 86,
+      "divisionSequence": 6
+    }
+  },
+  {
+    "abbrev": "NJD",
+    "name": "New Jersey Devils",
+    "common": "Devils",
+    "slug": "new-jersey-devils",
+    "conference": "Eastern",
+    "division": "Metropolitan",
+    "colors": [
+      "#CE1126",
+      "#000000"
+    ],
+    "record": {
+      "wins": 42,
+      "losses": 37,
+      "otLosses": 3,
+      "points": 87,
+      "divisionSequence": 7
+    }
+  },
+  {
+    "abbrev": "NYI",
+    "name": "New York Islanders",
+    "common": "Islanders",
+    "slug": "new-york-islanders",
+    "conference": "Eastern",
+    "division": "Metropolitan",
+    "colors": [
+      "#00539B",
+      "#F47D30"
+    ],
+    "record": {
+      "wins": 43,
+      "losses": 34,
+      "otLosses": 5,
+      "points": 91,
+      "divisionSequence": 6
+    }
+  },
+  {
+    "abbrev": "NYR",
+    "name": "New York Rangers",
+    "common": "Rangers",
+    "slug": "new-york-rangers",
+    "conference": "Eastern",
+    "division": "Metropolitan",
+    "colors": [
+      "#0038A8",
+      "#CE1126"
+    ],
+    "record": {
+      "wins": 34,
+      "losses": 39,
+      "otLosses": 9,
+      "points": 77,
+      "divisionSequence": 8
+    }
+  },
+  {
+    "abbrev": "OTT",
+    "name": "Ottawa Senators",
+    "common": "Senators",
+    "slug": "ottawa-senators",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "colors": [
+      "#C52032",
+      "#000000"
+    ],
+    "record": {
+      "wins": 44,
+      "losses": 27,
+      "otLosses": 11,
+      "points": 99,
+      "divisionSequence": 5
+    }
+  },
+  {
+    "abbrev": "PHI",
+    "name": "Philadelphia Flyers",
+    "common": "Flyers",
+    "slug": "philadelphia-flyers",
+    "conference": "Eastern",
+    "division": "Metropolitan",
+    "colors": [
+      "#F74902",
+      "#000000"
+    ],
+    "record": {
+      "wins": 43,
+      "losses": 27,
+      "otLosses": 12,
+      "points": 98,
+      "divisionSequence": 3
+    }
+  },
+  {
+    "abbrev": "PIT",
+    "name": "Pittsburgh Penguins",
+    "common": "Penguins",
+    "slug": "pittsburgh-penguins",
+    "conference": "Eastern",
+    "division": "Metropolitan",
+    "colors": [
+      "#FCB514",
+      "#000000"
+    ],
+    "record": {
+      "wins": 41,
+      "losses": 25,
+      "otLosses": 16,
+      "points": 98,
+      "divisionSequence": 2
+    }
+  },
+  {
+    "abbrev": "SJS",
+    "name": "San Jose Sharks",
+    "common": "Sharks",
+    "slug": "san-jose-sharks",
+    "conference": "Western",
+    "division": "Pacific",
+    "colors": [
+      "#006D75",
+      "#EA7200"
+    ],
+    "record": {
+      "wins": 39,
+      "losses": 35,
+      "otLosses": 8,
+      "points": 86,
+      "divisionSequence": 5
+    }
+  },
+  {
+    "abbrev": "SEA",
+    "name": "Seattle Kraken",
+    "common": "Kraken",
+    "slug": "seattle-kraken",
+    "conference": "Western",
+    "division": "Pacific",
+    "colors": [
+      "#001628",
+      "#99D9D9"
+    ],
+    "record": {
+      "wins": 34,
+      "losses": 37,
+      "otLosses": 11,
+      "points": 79,
+      "divisionSequence": 6
+    }
+  },
+  {
+    "abbrev": "STL",
+    "name": "St. Louis Blues",
+    "common": "Blues",
+    "slug": "st-louis-blues",
+    "conference": "Western",
+    "division": "Central",
+    "colors": [
+      "#002F87",
+      "#FCB514"
+    ],
+    "record": {
+      "wins": 37,
+      "losses": 33,
+      "otLosses": 12,
+      "points": 86,
+      "divisionSequence": 5
+    }
+  },
+  {
+    "abbrev": "TBL",
+    "name": "Tampa Bay Lightning",
+    "common": "Lightning",
+    "slug": "tampa-bay-lightning",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "colors": [
+      "#002868",
+      "#4F5B66"
+    ],
+    "record": {
+      "wins": 50,
+      "losses": 26,
+      "otLosses": 6,
+      "points": 106,
+      "divisionSequence": 2
+    }
+  },
+  {
+    "abbrev": "TOR",
+    "name": "Toronto Maple Leafs",
+    "common": "Maple Leafs",
+    "slug": "toronto-maple-leafs",
+    "conference": "Eastern",
+    "division": "Atlantic",
+    "colors": [
+      "#00205B",
+      "#4F6BAF"
+    ],
+    "record": {
+      "wins": 32,
+      "losses": 36,
+      "otLosses": 14,
+      "points": 78,
+      "divisionSequence": 8
+    }
+  },
+  {
+    "abbrev": "UTA",
+    "name": "Utah Mammoth",
+    "common": "Mammoth",
+    "slug": "utah-mammoth",
+    "conference": "Western",
+    "division": "Central",
+    "colors": [
+      "#71AFE5",
+      "#090909"
+    ],
+    "record": {
+      "wins": 43,
+      "losses": 33,
+      "otLosses": 6,
+      "points": 92,
+      "divisionSequence": 4
+    }
+  },
+  {
+    "abbrev": "VAN",
+    "name": "Vancouver Canucks",
+    "common": "Canucks",
+    "slug": "vancouver-canucks",
+    "conference": "Western",
+    "division": "Pacific",
+    "colors": [
+      "#00205B",
+      "#00843D"
+    ],
+    "record": {
+      "wins": 25,
+      "losses": 49,
+      "otLosses": 8,
+      "points": 58,
+      "divisionSequence": 8
+    }
+  },
+  {
+    "abbrev": "VGK",
+    "name": "Vegas Golden Knights",
+    "common": "Golden Knights",
+    "slug": "vegas-golden-knights",
+    "conference": "Western",
+    "division": "Pacific",
+    "colors": [
+      "#B4975A",
+      "#333F42"
+    ],
+    "record": {
+      "wins": 39,
+      "losses": 26,
+      "otLosses": 17,
+      "points": 95,
+      "divisionSequence": 1
+    }
+  },
+  {
+    "abbrev": "WSH",
+    "name": "Washington Capitals",
+    "common": "Capitals",
+    "slug": "washington-capitals",
+    "conference": "Eastern",
+    "division": "Metropolitan",
+    "colors": [
+      "#C8102E",
+      "#041E42"
+    ],
+    "record": {
+      "wins": 43,
+      "losses": 30,
+      "otLosses": 9,
+      "points": 95,
+      "divisionSequence": 4
+    }
+  },
+  {
+    "abbrev": "WPG",
+    "name": "Winnipeg Jets",
+    "common": "Jets",
+    "slug": "winnipeg-jets",
+    "conference": "Western",
+    "division": "Central",
+    "colors": [
+      "#041E42",
+      "#004C97"
+    ],
+    "record": {
+      "wins": 35,
+      "losses": 35,
+      "otLosses": 12,
+      "points": 82,
+      "divisionSequence": 7
+    }
+  }
+]
