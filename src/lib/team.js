@@ -60,8 +60,22 @@ export const clearCookie = () => {
   document.cookie = `${COOKIE}=; path=/; max-age=0; SameSite=Lax`
 }
 
+/**
+ * Hosts that are about one club. ducks.metacto.com predates the league-wide
+ * platform, so a visitor arriving there with no cookie gets Anaheim rather
+ * than a picker — the page they have always seen. On nhl.metacto.com the same
+ * visitor gets the picker. Once ducks.metacto.com redirects to
+ * nhl.metacto.com/?team=ANA this map can go away.
+ */
+export const HOST_DEFAULTS = { 'ducks.metacto.com': 'ANA' }
+
+export const hostDefault = () => {
+  if (typeof window === 'undefined') return null
+  return findTeam(HOST_DEFAULTS[window.location.hostname]) ?? null
+}
+
 /** The team to render on load, or null to show the picker. */
-export const resolveTeam = () => teamFromUrl() ?? readCookie()
+export const resolveTeam = () => teamFromUrl() ?? readCookie() ?? hostDefault()
 
 /**
  * Point the address bar at a team without a reload, so back/forward work and

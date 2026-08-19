@@ -108,3 +108,67 @@ jobs:
             exit 1
           fi
           echo "Live site matches the build."
+
+  # Second site: nhl.metacto.com, the league-wide platform. Dormant until the
+  # NHL_DEPLOY_ENABLED variable is set to 'true', which should happen only once
+  # the deploy role has been granted access to the new bucket and distribution
+  # (see docs/INFRASTRUCTURE.md) — otherwise this fails with AccessDenied. Verifies
+  # against the real domain once DNS resolves, and against the distribution
+  # domain before that, so the check is meaningful either way.
+  deploy-nhl:
+    if: >-
+      github.event_name == 'push' && github.ref == 'refs/heads/main' &&
+      vars.NHL_DEPLOY_ENABLED == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-nhl-production
+      cancel-in-progress: false
+    environment:
+      name: production-nhl
+      url: https://${{ vars.NHL_SITE_DOMAIN }}/
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Assume AWS deploy role
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: us-west-2
+
+      - name: Build and deploy
+        env:
+          SITE_DOMAIN: ${{ vars.NHL_SITE_DOMAIN }}
+          S3_BUCKET: ${{ vars.NHL_S3_BUCKET }}
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.NHL_CLOUDFRONT_DISTRIBUTION_ID }}
+        run: bash scripts/deploy.sh
+
+      - name: Verify the deployed bundle is the one we just built
+        env:
+          SITE_DOMAIN: ${{ vars.NHL_SITE_DOMAIN }}
+          DIST_DOMAIN: ${{ vars.NHL_DISTRIBUTION_DOMAIN }}
+        run: |
+          BUILT=$(ls dist/assets/index-*.js | head -1 | xargs basename)
+          TARGET="$SITE_DOMAIN"
+          if ! host "$SITE_DOMAIN" >/dev/null 2>&1; then
+            echo "::notice::$SITE_DOMAIN does not resolve yet; verifying via $DIST_DOMAIN."
+            TARGET="$DIST_DOMAIN"
+          fi
+          LIVE=$(curl -sS "https://$TARGET/" | grep -oE '/assets/index-[^"]+\.js' | head -1 | xargs basename)
+          echo "built: $BUILT"
+          echo "live:  $LIVE  (via $TARGET)"
+          if [ "$BUILT" != "$LIVE" ]; then
+            echo "::error::Live site is serving $LIVE but we built $BUILT."
+            exit 1
+          fi
+          echo "Live site matches the build."
