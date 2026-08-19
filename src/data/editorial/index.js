@@ -9,6 +9,7 @@
  */
 export const EDITORIAL = {
   ANA: () => import('./ANA.js'),
+  PHI: () => import('./PHI.js'),
 }
 
 export const EDITORIAL_ABBREVS = Object.keys(EDITORIAL)

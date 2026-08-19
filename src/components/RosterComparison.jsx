@@ -4,19 +4,17 @@ import { useEditorial } from '../lib/editorial'
 import Avatar from './Avatar'
 import { slugify } from '../lib/slugify'
 import CapView from './CapView'
-import points from '../data/points.json'
-import contracts from '../data/contracts.json'
 import { isNew, countNew, freshRumorsFor, rowFlagCount } from '../lib/updates'
 
 const CAP_TAB = 'Salary Cap'
 
-const statLine = (name) => {
+const statLine = (name, points) => {
   const p = points[slugify(name)]
   if (!p) return null
   return `${p.points} P · ${p.gp} GP`
 }
 
-const contractLine = (name) => {
+const contractLine = (name, contracts) => {
   const c = contracts[slugify(name)]
   if (!c) return null
   if (c.note) return c.note
@@ -24,9 +22,9 @@ const contractLine = (name) => {
 }
 
 // 2025–26 NHL points for ordering; players with no NHL season sort last
-const rowPoints = (row) => points[slugify(row.before ?? row.after)]?.points ?? -1
+const rowPoints = (row, points) => points[slugify(row.before ?? row.after)]?.points ?? -1
 
-function PersonCard({ name, pos, hasNewNote, rumors }) {
+function PersonCard({ name, pos, hasNewNote, rumors, points, contracts }) {
   const rumorCount = freshRumorsFor(name, rumors).length
   return (
     <div className="person-card">
@@ -47,9 +45,11 @@ function PersonCard({ name, pos, hasNewNote, rumors }) {
             )}
           </span>
         )}
-        {statLine(name) && <span className="person-card-stats">{statLine(name)}</span>}
-        {contractLine(name) && (
-          <span className="person-card-contract">{contractLine(name)}</span>
+        {statLine(name, points) && (
+          <span className="person-card-stats">{statLine(name, points)}</span>
+        )}
+        {contractLine(name, contracts) && (
+          <span className="person-card-contract">{contractLine(name, contracts)}</span>
         )}
       </span>
     </div>
@@ -57,7 +57,7 @@ function PersonCard({ name, pos, hasNewNote, rumors }) {
 }
 
 export default function RosterComparison() {
-  const { rosterComparison, rumors } = useEditorial()
+  const { rosterComparison, rumors, cap, points = {}, contracts = {} } = useEditorial()
   const [active, setActive] = useState(rosterComparison[0].group)
 
   // How many badged bullets sit inside each tab, so a reader can see which
@@ -74,8 +74,13 @@ export default function RosterComparison() {
     ? []
     : group.group === 'Coaching'
       ? group.rows
-      : [...group.rows].sort((a, b) => rowPoints(b) - rowPoints(a))
-  const tabs = [...rosterComparison.map((g) => g.group), CAP_TAB]
+      : [...group.rows].sort((a, b) => rowPoints(b, points) - rowPoints(a, points))
+  // Only clubs whose module carries cap data get the tab. Rendering it
+  // unconditionally would have shown Anaheim's cap table on another club's page.
+  const tabs = [
+    ...rosterComparison.map((g) => g.group),
+    ...(cap ? [CAP_TAB] : []),
+  ]
 
   return (
     <section className="section">
@@ -130,6 +135,8 @@ export default function RosterComparison() {
                   pos={row.pos}
                   hasNewNote={countNew(row.notes) > 0}
                   rumors={rumors}
+                  points={points}
+                  contracts={contracts}
                 />
                 <div className="roster-delta">
                   <span className={`badge badge-${STATUS[row.status].color}`}>

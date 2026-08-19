@@ -19,10 +19,12 @@ export default function Timeline() {
       <h2>Transaction ledger{ledgerRange ? ` · ${ledgerRange}` : ''}</h2>
       <div className="toggle-group" role="tablist">
         {[
-          ['departures', 'Departures'],
-          ['arrivals', 'Arrivals & retentions'],
-          ['draft', '2026 draft class'],
-        ].map(([key, label]) => (
+          ['departures', 'Departures', departures],
+          ['arrivals', 'Arrivals & retentions', arrivals],
+          ['draft', '2026 draft class', draftClass],
+          // A club whose draft class has not been researched shows no draft
+          // tab, rather than an empty panel implying it made no picks.
+        ].filter(([, , rows]) => rows.length > 0).map(([key, label]) => (
           <button
             key={key}
             role="tab"

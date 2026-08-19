@@ -1,4 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
+import { capSummary, capGroups, capHits } from '../cap'
+import contracts from '../contracts.json'
+import points from '../points.json'
 
 // Anaheim Ducks editorial content, sourced from the 2026 offseason research
 // brief. One module per club; see src/data/editorial/index.js.
@@ -485,3 +488,9 @@ export const rumors = [
 ]
 
 export { STATUS, RUMOR_STATUS }
+
+// Cap, contract and points data are Anaheim's, so they are exported from
+// Anaheim's module. A club without them simply has no Salary Cap tab — far
+// better than a page quietly rendering another club's figures.
+export const cap = { capSummary, capGroups, capHits }
+export { contracts, points }

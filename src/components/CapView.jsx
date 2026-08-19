@@ -1,11 +1,9 @@
-import { capSummary, capGroups, capHits, fmtM, pctOfCap } from '../data/cap'
+import { fmtM, pctOfCap } from '../data/cap'
 import Avatar from './Avatar'
 import { slugify } from '../lib/slugify'
-import contracts from '../data/contracts.json'
+import { useEditorial } from '../lib/editorial'
 
-const maxHit = Math.max(...capHits.map((p) => p.hit))
-
-const expiryLabel = (name) => {
+const expiryLabel = (name, contracts) => {
   const c = contracts[slugify(name)]
   if (!c) return null
   if (c.note) return c.note
@@ -25,6 +23,7 @@ function StatTile({ label, value, sub }) {
 }
 
 function UtilizationBar() {
+  const { cap: { capSummary, capGroups } } = useEditorial()
   const segments = [
     ...capGroups.map((g) => ({
       label: g.label,
@@ -58,6 +57,8 @@ function UtilizationBar() {
 }
 
 function PlayerBars({ group }) {
+  const { cap: { capHits }, contracts } = useEditorial()
+  const maxHit = Math.max(...capHits.map((p) => p.hit))
   const players = capHits.filter((p) => p.group === group.key)
   return (
     <div className="cap-group">
@@ -82,8 +83,8 @@ function PlayerBars({ group }) {
             <Avatar name={p.name} size={26} />
             <span className="cap-row-id">
               {p.name}
-              {expiryLabel(p.name) && (
-                <span className="cap-row-expiry">{expiryLabel(p.name)}</span>
+              {expiryLabel(p.name, contracts) && (
+                <span className="cap-row-expiry">{expiryLabel(p.name, contracts)}</span>
               )}
             </span>
           </span>
@@ -111,6 +112,8 @@ function PlayerBars({ group }) {
 }
 
 export default function CapView() {
+  const { cap: { capSummary, capGroups, capHits } } = useEditorial()
+  const maxHit = Math.max(...capHits.map((p) => p.hit))
   return (
     <div className="cap-view">
       <div className="cap-tiles">

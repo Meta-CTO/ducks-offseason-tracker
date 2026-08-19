@@ -53,6 +53,20 @@ rendered from `useEditorial()`; `App` loads the module on demand and provides
 it. Anything genuinely shared (status labels, provenance chips) lives in
 `src/data/status.js` instead.
 
+A club's module owns everything club-specific, and **sections it omits simply
+do not render**, which is always better than showing another club's numbers:
+
+- no `cap` → no Salary Cap tab (this bug was live for one commit: CapView
+  imported Anaheim's `cap.js`, so every club would have shown Anaheim's table)
+- empty `draftClass` → no draft tab, rather than an empty panel implying the
+  club made no picks
+- empty `rumors` → no Rumor mill section
+- no `points` / `contracts` → cards omit those lines
+
+Derive statistics, don't retype them. `PHI.js` builds its `points` map from
+`src/data/league/PHI.json`, which the NHL API already populates, so there is
+one source of truth rather than two things to keep in sync.
+
 ## Commands
 
 ```sh
