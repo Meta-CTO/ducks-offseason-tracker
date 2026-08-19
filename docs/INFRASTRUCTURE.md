@@ -161,6 +161,22 @@ policy**, or CI deploys will fail with AccessDenied.
   visit during an update pass, never by an automated scraper. This is why the
   cap tab exists for Anaheim only.
 
+- **capwages.com** — evaluated as a scriptable replacement for PuckPedia and
+  **rejected as a drop-in**. Its `robots.txt` does allow crawlers, its team
+  pages are at `/teams/<city_team>` and its player pages at `/players/<slug>`,
+  and its *player-level* facts check out: Gauthier shows a $0 expired ELC with
+  an `RFA '26` expiry, exactly as the site says. But its *team* totals disagree
+  with PuckPedia materially — for Anaheim it reports a $91,202,439 cap hit,
+  $12,797,561 of space and a 19/23 roster, against PuckPedia's $94,926,605,
+  $9,073,395 and 22/23. That is a ~$3.7M gap and three roster spots, almost
+  certainly a different convention about who counts against the active roster.
+  Switching the cap tab to it would silently change every number on the page
+  with no way to say which is right. It also gates much of its detail behind a
+  login and an Upgrade tier, so a wholesale 32-team scrape of a commercial
+  product is a different proposition from what robots.txt alone permits. If it
+  is ever used, its numbers must be labelled as capwages figures and must never
+  be mixed with PuckPedia figures on the same page.
+
 ## Analytics
 
 There is no tracking script and no third-party analytics. Traffic reporting
