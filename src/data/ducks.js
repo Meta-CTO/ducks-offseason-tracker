@@ -446,3 +446,53 @@ export const sources = [
   { label: 'PuckPedia contracts/cap', url: 'https://puckpedia.com/team/anaheim-ducks' },
   { label: 'Hockey-Reference 2025–26 season', url: 'https://www.hockey-reference.com/teams/ANA/2026.html' },
 ]
+
+/**
+ * Sourcing strength for a rumor-mill entry. This is deliberately about *who
+ * said it*, not about how likely it is to be true — we do not handicap
+ * outcomes, we label provenance.
+ *
+ *  confirmed   — a primary source is on the record: the club, the player, or
+ *                the agent. An entry that reaches this state has graduated;
+ *                move the fact into the roster/cap/contract data and delete
+ *                the rumor.
+ *  reported    — a named reporter stated specifics, but no primary source has
+ *                confirmed it. Recirculation by aggregators does not promote
+ *                an entry; only an independent outlet's own reporting does.
+ *  unconfirmed — second-hand, anonymous, or untraceable chatter. This is the
+ *                default, and the correct label whenever `sourceUrl` is absent.
+ */
+export const RUMOR_STATUS = {
+  confirmed: { label: 'Confirmed', color: 'confirmed' },
+  reported: { label: 'Reported', color: 'reported' },
+  unconfirmed: { label: 'Unconfirmed', color: 'unconfirmed' },
+}
+
+/**
+ * Chatter about the open items. Nothing here is a site fact, and nothing here
+ * may contradict or silently update the roster, cap or contract data — those
+ * files only ever move on a primary source. See CONTRIBUTING.md.
+ *
+ * Fields: `date` is when the claim surfaced (omit if genuinely unknown rather
+ * than guessing); `attribution` is who said it; `sourceUrl` is optional, and
+ * its absence is exactly why the Unconfirmed chip exists.
+ */
+export const rumors = [
+  {
+    date: 'Aug. 16',
+    topic: 'Cutter Gauthier contract',
+    claim: 'Gauthier turned down four years, $52M ($13M AAV)',
+    status: 'reported',
+    attribution: 'Paul Shaheen, NHL Network Radio contributor',
+    sourceUrl: 'https://www.prohockeyrumors.com/2026/08/cutter-gauthier-rejects-ducks-latest-offer.html',
+    detail: 'Recirculated within a day by most aggregators, but every version traces back to the same single report. The Ducks, Gauthier and agent Kurt Overhardt have all stayed silent, and PuckPedia still lists him with no contract.',
+  },
+  {
+    date: 'Jul.',
+    topic: 'Cutter Gauthier contract',
+    claim: 'Gauthier will not sign for less than Carlsson’s $18M AAV',
+    status: 'unconfirmed',
+    attribution: 'Keith Yandle, on the Spittin’ Chiclets podcast',
+    detail: 'Yandle framed it himself as a "tidbit" he was fed, and did not say whether he meant the $18M annual figure or the $90M total. No reporter has since put a number to the asking price on the record.',
+  },
+]

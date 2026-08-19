@@ -79,6 +79,13 @@ Edit the narrowest thing that is now wrong:
 | Point totals (new season) | `src/data/points.json`, or re-run `node scripts/fetch-points.mjs` |
 | A camp battle resolving | `campWatch` and `unresolved` in `src/data/ducks.js` |
 | A person gaining a free photo | `npm run photos` |
+| Unverified chatter worth surfacing | `rumors` in `src/data/ducks.js` |
+
+Rumours still never touch the roster, cap or contract data. If something is
+only a report, it goes in `rumors` with a provenance chip (`unconfirmed` with
+no `sourceUrl`, `reported` for a named reporter, `confirmed` only for a primary
+source) and nothing else on the site moves. When a rumour is later confirmed,
+apply the real change above and delete the rumour entry in the same pass.
 
 Match the existing voice: short, factual bullets; contract terms as AAV plus
 term; a departed player shows their new club. Keep anything not yet official

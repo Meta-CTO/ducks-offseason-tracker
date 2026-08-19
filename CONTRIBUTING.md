@@ -29,6 +29,15 @@ official — a projected lineup, an expected role — must read as a projection.
 Do not turn a rumour into a stated fact. When a real transaction happens, the
 data changes, not the framing.
 
+Rumours have exactly one home: the `rumors` array in `src/data/ducks.js`, which
+renders as the Rumor mill section. An entry there carries a provenance chip —
+`unconfirmed`, `reported`, or `confirmed` — describing *who said it*, never how
+likely it is to be true. Use `unconfirmed` whenever there is no `sourceUrl`.
+Recirculation by aggregators never promotes an entry; only a second outlet's own
+reporting does. When a primary source finally confirms a claim, it stops being a
+rumour: move the fact into the roster, cap or contract data and delete the entry.
+Nothing in `rumors` may contradict or quietly update those files.
+
 ## Where things live
 
 | Path | What it is |

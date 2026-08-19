@@ -22,9 +22,12 @@ the cap, and what is still unresolved heading into training camp.
   ceiling, including the space reserved for an unsigned Cutter Gauthier.
 - **Transaction ledger** from June 25 to July 28, plus the 2026 draft class.
 - **Camp battles** and an **unresolved tracker** for what is still open.
+- A **rumor mill** for unverified chatter, quarantined from everything above
+  it and chipped by provenance — Unconfirmed, Reported, or Confirmed.
 
 Every "projected" lineup stays labelled as a projection until the Ducks
-announce an official opening-night roster.
+announce an official opening-night roster. Nothing in the rumor mill feeds the
+roster, cap or contract data; those move only on a primary source.
 
 ## Stack
 
