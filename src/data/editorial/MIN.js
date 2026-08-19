@@ -6,8 +6,7 @@ import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 // Minnesota Wild editorial content. Research cutoff: August 19, 2026.
 //
 // Primary source: NHL.com's Wild team reset for the 2026-27 season. Cap
-// figures have not been read from PuckPedia for this club yet, so there is no
-// cap tab. Every "after" lineup is a projection until the club announces a
+// figures read from PuckPedia on Aug. 19, 2026. Every "after" lineup is a projection until the club announces a
 // roster.
 //
 // Scope note: Quinn Hughes appears on the projected blue line but is not in

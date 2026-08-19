@@ -307,7 +307,7 @@ export { STATUS, RUMOR_STATUS }
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 
-// No contract file: Philadelphia's terms are quoted inline in the roster notes
-// from PuckPedia, and there is no cap tab for this club, so there is nothing
-// for a contracts map to feed yet.
+// No contract file: Philadelphia's terms are quoted inline in the roster notes.
+// The cap tab reads cap hits from `cap` above; a contracts map would only add
+// the expiry labels, which have not been transcribed for this club.
 export const contracts = {}

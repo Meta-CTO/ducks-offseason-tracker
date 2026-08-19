@@ -6,8 +6,7 @@ import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 // Washington Capitals editorial content. Research cutoff: August 19, 2026.
 //
 // Primary source: NHL.com's Capitals team reset for the 2026-27 season. Cap
-// figures have not been read from PuckPedia for this club yet, so there is no
-// cap tab. Every "after" lineup is a projection until the club announces a
+// figures read from PuckPedia on Aug. 19, 2026. Every "after" lineup is a projection until the club announces a
 // roster.
 
 export const LAST_UPDATED = 'August 19, 2026'
@@ -150,14 +149,14 @@ export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Cole Hutson', pos: 'LD', note: 'A rookie defenseman the reset names as a Calder Trophy candidate.' },
-  { name: 'Ivan Protas', pos: 'C', note: 'Projected to centre the third line alongside his brother Aliaksei.' },
+  { name: 'Ilya Protas', pos: 'LW', note: 'Twenty, at $932,500, projected onto the third line alongside his brother Aliaksei.' },
   { name: 'Ryan Leonard', pos: 'RW', note: 'Projected onto the third line.' },
 ]
 
 export const unresolved = [
-  { status: 'Open', item: 'Rasmus Sandin’s knee', impact: 'Out after ACL surgery; not in the projected lineup' },
+  { status: 'Open', item: 'Rasmus Sandin’s knee', impact: 'Out after ACL surgery, on a $4.6M cap hit, and not in the projected lineup' },
+  { status: 'Open', item: 'No room at all', impact: '$75,417 of projected space, second-tightest in the league' },
   { status: 'Open', item: 'Whether Cole Hutson holds a top-six defense job', impact: 'Projected onto the third pair as a rookie' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -170,5 +169,48 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// WSH cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 103_924_583,
+    space: 75_417,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 8_352_500,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 60_422_500 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 34_652_083 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 8_850_000 },
+  ],
+  capHits: [
+    { name: 'Alex Tuch', group: 'F', hit: 10_500_000 },
+    { name: 'Pierre-Luc Dubois', group: 'F', hit: 8_500_000 },
+    { name: 'Jordan Kyrou', group: 'F', hit: 8_125_000 },
+    { name: 'Tom Wilson', group: 'F', hit: 6_540_000 },
+    { name: 'Boone Jenner', group: 'F', hit: 5_750_000 },
+    { name: 'Dylan Strome', group: 'F', hit: 5_000_000 },
+    { name: 'Alex Ovechkin', group: 'F', hit: 4_250_000 },
+    { name: 'Aliaksei Protas', group: 'F', hit: 3_375_000 },
+    { name: 'Anthony Beauvillier', group: 'F', hit: 2_750_000 },
+    { name: 'Ethen Frank', group: 'F', hit: 2_000_000 },
+    { name: 'Ryan Leonard', group: 'F', hit: 950_000 },
+    { name: 'Ilya Protas', group: 'F', hit: 932_500 },
+    { name: 'Ivan Miroshnichenko', group: 'F', hit: 925_000 },
+    { name: 'Justin Sourdif', group: 'F', hit: 825_000 },
+    { name: 'Jakob Chychrun', group: 'D', hit: 9_000_000 },
+    { name: 'Martin Fehervary', group: 'D', hit: 6_000_000 },
+    { name: 'Matt Roy', group: 'D', hit: 5_750_000 },
+    { name: 'Rasmus Sandin', group: 'D', hit: 4_600_000 },
+    { name: 'Vincent Desharnais', group: 'D', hit: 4_200_000 },
+    { name: 'Timothy Liljegren', group: 'D', hit: 3_250_000 },
+    { name: 'Cole Hutson', group: 'D', hit: 952_083 },
+    { name: 'Justin Holl', group: 'D', hit: 900_000 },
+    { name: 'Logan Thompson', group: 'G', hit: 5_850_000 },
+    { name: 'Charlie Lindgren', group: 'G', hit: 3_000_000 },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

@@ -6,8 +6,7 @@ import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 // Vegas Golden Knights editorial content. Research cutoff: August 19, 2026.
 //
 // Primary source: NHL.com's Golden Knights team reset for the 2026-27 season.
-// Cap figures have not been read from PuckPedia for this club yet, so there is
-// no cap tab; the one injury noted below is the one the reset states. Every
+// Cap figures read from PuckPedia on Aug. 19, 2026. Every
 // "after" lineup is a projection until the club announces a roster.
 
 export const LAST_UPDATED = 'August 19, 2026'

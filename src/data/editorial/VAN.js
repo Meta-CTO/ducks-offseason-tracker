@@ -11,8 +11,7 @@ import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 // offseason, so that deal is carried as context rather than as a summer move.
 //
 // Primary source: NHL.com's Canucks team reset for the 2026-27 season. Cap
-// figures and the active injury table have not been read from PuckPedia for
-// this club yet, so there is no cap tab. Every "after" lineup is a projection
+// figures read from PuckPedia on Aug. 19, 2026. Every "after" lineup is a projection
 // until the club announces a roster.
 
 export const LAST_UPDATED = 'August 19, 2026'

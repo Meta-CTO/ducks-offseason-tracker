@@ -8,8 +8,8 @@ import { pointsFromLeague, draftFromApi, creditsFrom } from './_derive'
 // Primary source: NHL.com's Flames team reset for the 2026-27 season, which
 // carries the offseason transactions and the projected lineup. Cap figures and
 // the active injury table have not been read from PuckPedia for this club yet,
-// so there is no cap tab and injury status is only claimed where the reset
-// states it. Every "after" lineup is a projection until the club announces a
+// Cap figures read from PuckPedia on Aug. 19, 2026; injury status is claimed
+// only where a source states it. Every "after" lineup is a projection until the club announces a
 // roster.
 
 export const LAST_UPDATED = 'August 19, 2026'
