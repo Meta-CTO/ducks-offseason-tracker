@@ -52,15 +52,20 @@ if (capHit == null || space == null) {
  *   RW,LW
  *   $11,250,000  <- first figure is this season's cap hit
  *
- * Only the roster groups are read; "Non-roster", "Buried", "Retained" and
- * "Buyout" sections are deliberately excluded, because those do not count
- * against the active-roster cap the page's headline figures describe.
+ * "Non-roster" sections are excluded — those players do not count against the
+ * cap. Buried, buyout and retained charges DO count, and are folded into one
+ * "Retained & buyouts" group: without them the group totals fall short of the
+ * stated cap hit and the utilisation bar silently under-reports. Boston is
+ * short $615,000 in retained salary on a traded player, Buffalo $6,444,444 on
+ * a buyout.
  */
 const GROUPS = [
   ['Forwards', 'F'],
   ['Defence', 'D'],
   ['Goaltenders', 'G'],
 ]
+
+const CHARGE_SECTIONS = ['Buried', 'Buyout & Cap Charges', 'Retained']
 
 const groups = []
 const hits = []
@@ -89,11 +94,43 @@ for (const [heading, key] of GROUPS) {
   }
 }
 
+// Buried / buyout / retained charges, folded into one group.
+let chargeTotal = 0
+for (const heading of CHARGE_SECTIONS) {
+  const esc = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const m = text.match(new RegExp(`\\n(\\d+)\\n${esc}\\n\\$([\\d,]+)\\n`))
+  if (!m || money(m[2]) === 0) continue
+  chargeTotal += money(m[2])
+
+  const start = m.index + m[0].length
+  const rest = text.slice(start)
+  const endIdx = rest.search(/\nTOTALS\n/)
+  const body = endIdx === -1 ? rest : rest.slice(0, endIdx)
+  const playerRe = /\n([A-ZÄÅÖÜÉ][^\n,]*, [^\n]+)\n((?:(?!\n[A-ZÄÅÖÜÉ][^\n,]*, )[\s\S])*?)\$([\d,]+)/g
+  for (const p of body.matchAll(playerRe)) {
+    const [surname, forename] = p[1].split(', ')
+    hits.push({
+      name: `${forename.trim()} ${surname.trim()}`,
+      group: 'O',
+      hit: money(p[3]),
+      charge: heading === 'Retained' ? 'retained' : heading === 'Buried' ? 'buried' : 'buyout',
+    })
+  }
+}
+if (chargeTotal > 0) groups.push({ key: 'O', total: chargeTotal, count: null })
+
+// The whole point of the extra group: groups must reconcile to the cap hit.
+const groupSum = groups.reduce((n, g) => n + g.total, 0)
+console.error(
+  `  ${groupSum === capHit ? 'ok' : 'MISMATCH'}  groups sum $${groupSum.toLocaleString()} ` +
+    `vs cap hit $${capHit.toLocaleString()}`,
+)
+
 // Sanity: the parsed players should account for the group totals.
 for (const g of groups) {
   const summed = hits.filter((h) => h.group === g.key).reduce((n, h) => n + h.hit, 0)
   const count = hits.filter((h) => h.group === g.key).length
-  const flag = summed === g.total && count === g.count ? 'ok' : 'MISMATCH'
+  const flag = summed === g.total && (g.count === null || count === g.count) ? 'ok' : 'MISMATCH'
   console.error(
     `  ${flag}  ${g.key}: ${count}/${g.count} players, ` +
       `$${summed.toLocaleString()} vs $${g.total.toLocaleString()}`,
@@ -115,9 +152,13 @@ export const cap = {
   capGroups: [
     { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: ${fmt(groups[0].total)} },
     { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: ${fmt(groups[1].total)} },
-    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: ${fmt(groups[2].total)} },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: ${fmt(groups[2].total)} },${
+  groups[3]
+    ? `\n    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: ${fmt(groups[3].total)} },`
+    : ''
+}
   ],
   capHits: [
-${hits.map((h) => `    { name: '${h.name.replace(/'/g, "\\'")}', group: '${h.group}', hit: ${fmt(h.hit)} },`).join('\n')}
+${hits.map((h) => `    { name: '${h.name.replace(/'/g, "\\'")}', group: '${h.group}', hit: ${fmt(h.hit)}${h.charge ? `, charge: '${h.charge}'` : ''} },`).join('\n')}
   ],
 }`)

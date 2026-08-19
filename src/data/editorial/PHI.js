@@ -258,6 +258,48 @@ export const sources = [
   { label: 'PuckPedia contracts/cap', url: 'https://puckpedia.com/team/philadelphia-flyers' },
 ]
 
+// PHI cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 90_217_917,
+    space: 13_782_083,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 5_605_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 53_451_250 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 28_550_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 7_016_667 },
+  ],
+  capHits: [
+    { name: 'Trevor Zegras', group: 'F', hit: 9_125_000 },
+    { name: 'Travis Konecny', group: 'F', hit: 8_750_000 },
+    { name: 'Sean Couturier', group: 'F', hit: 7_750_000 },
+    { name: 'Owen Tippett', group: 'F', hit: 6_200_000 },
+    { name: 'Christian Dvorak', group: 'F', hit: 5_150_000 },
+    { name: 'Noah Cates', group: 'F', hit: 4_000_000 },
+    { name: 'Tyson Foerster', group: 'F', hit: 3_750_000 },
+    { name: 'Noel Acciari', group: 'F', hit: 2_800_000 },
+    { name: 'Nikita Grebenkin', group: 'F', hit: 1_100_000 },
+    { name: 'Carl Grundstrom', group: 'F', hit: 1_000_000 },
+    { name: 'Porter Martone', group: 'F', hit: 977_917 },
+    { name: 'Alex Bump', group: 'F', hit: 972_500 },
+    { name: 'Matvei Michkov', group: 'F', hit: 950_000 },
+    { name: 'Denver Barkey', group: 'F', hit: 925_833 },
+    { name: 'Jamie Drysdale', group: 'D', hit: 6_500_000 },
+    { name: 'Travis Sanheim', group: 'D', hit: 6_250_000 },
+    { name: 'Cameron York', group: 'D', hit: 5_150_000 },
+    { name: 'Rasmus Ristolainen', group: 'D', hit: 5_100_000 },
+    { name: 'Nick Seeler', group: 'D', hit: 2_700_000 },
+    { name: 'David Jiricek', group: 'D', hit: 1_500_000 },
+    { name: 'Simon Benoit', group: 'D', hit: 1_350_000 },
+    { name: 'Joseph Woll', group: 'G', hit: 3_666_667 },
+    { name: 'Dan Vladar', group: 'G', hit: 3_350_000 },
+  ],
+}
+
 export { STATUS, RUMOR_STATUS }
 
 // 2025-26 production, derived from the scraped league file rather than typed

@@ -160,6 +160,7 @@ export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
 
+
 // BOS cap data, PuckPedia, retrieved Aug. 19, 2026.
 export const cap = {
   capSummary: {
@@ -174,6 +175,7 @@ export const cap = {
     { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 55_382_083 },
     { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 33_550_000 },
     { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 9_062_500 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 615_000 },
   ],
   capHits: [
     { name: 'David Pastrnak', group: 'F', hit: 11_250_000 },
@@ -199,6 +201,7 @@ export const cap = {
     { name: 'Connor Clifton', group: 'D', hit: 2_250_000 },
     { name: 'Jeremy Swayman', group: 'G', hit: 8_250_000 },
     { name: 'Michael DiPietro', group: 'G', hit: 812_500 },
+    { name: 'Brandon Carlo', group: 'O', hit: 615_000, charge: 'retained' },
   ],
 }
 

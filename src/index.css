@@ -32,6 +32,9 @@
   --cap-forwards: #cf4520;
   --cap-defense: #2e8b57;
   --cap-goalies: #1b5fa8;
+  /* Buried, buyout and retained charges. Muted: it is money committed to
+     players who are not on the roster. */
+  --cap-other: #8a7f72;
   --cap-space: #d6cdc0;
 }
 

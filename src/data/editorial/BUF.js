@@ -153,7 +153,6 @@ export const campWatch = [
 export const unresolved = [
   { status: 'Open', item: 'Replacing Tuch’s 33 goals', impact: 'The scoring left and the returns were a defenseman and picks' },
   { status: 'Open', item: 'The power play', impact: '19.5% last season, 21st in the league' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -166,5 +165,49 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// BUF cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 98_876_348,
+    space: 5_123_652,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 475_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 54_646_190 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 30_685_714 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 7_100_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 6_444_444 },
+  ],
+  capHits: [
+    { name: 'Joshua Norris', group: 'F', hit: 7_950_000 },
+    { name: 'Zach Benson', group: 'F', hit: 7_500_000 },
+    { name: 'Tage Thompson', group: 'F', hit: 7_142_857 },
+    { name: 'Josh Doan', group: 'F', hit: 6_950_000 },
+    { name: 'Ryan McLeod', group: 'F', hit: 5_000_000 },
+    { name: 'Jason Zucker', group: 'F', hit: 4_750_000 },
+    { name: 'Peyton Krebs', group: 'F', hit: 4_500_000 },
+    { name: 'Jack Quinn', group: 'F', hit: 3_375_000 },
+    { name: 'Beck Malenstyn', group: 'F', hit: 2_916_667 },
+    { name: 'Justin Danforth', group: 'F', hit: 1_800_000 },
+    { name: 'Sam Carrick', group: 'F', hit: 1_000_000 },
+    { name: 'Noah Östlund', group: 'F', hit: 886_666 },
+    { name: 'Tyson Kozak', group: 'F', hit: 875_000 },
+    { name: 'Rasmus Dahlin', group: 'D', hit: 11_000_000 },
+    { name: 'Owen Power', group: 'D', hit: 8_350_000 },
+    { name: 'Mattias Samuelsson', group: 'D', hit: 4_285_714 },
+    { name: 'Olen Zellweger', group: 'D', hit: 3_100_000 },
+    { name: 'Conor Timmins', group: 'D', hit: 2_200_000 },
+    { name: 'Louis Crevier', group: 'D', hit: 900_000 },
+    { name: 'Zach Metsa', group: 'D', hit: 850_000 },
+    { name: 'Ukko-Pekka Luukkonen', group: 'G', hit: 4_750_000 },
+    { name: 'Alex Lyon', group: 'G', hit: 1_500_000 },
+    { name: 'Colten Ellis', group: 'G', hit: 850_000 },
+    { name: 'Jeff Skinner', group: 'O', hit: 6_444_444, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
