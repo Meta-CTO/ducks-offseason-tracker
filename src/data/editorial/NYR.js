@@ -197,7 +197,7 @@ export const cap = {
     { name: 'Will Cuylle', group: 'F', hit: 3_900_000 },
     { name: 'Taylor Raddysh', group: 'F', hit: 1_500_000 },
     { name: 'Tye Kartye', group: 'F', hit: 1_250_000 },
-    { name: 'Joseph Veleno', group: 'F', hit: 1_200_000 },
+    { name: 'Joe Veleno', group: 'F', hit: 1_200_000 },
     { name: 'Matt Rempe', group: 'F', hit: 975_000 },
     { name: 'Noah Laba', group: 'F', hit: 945_000 },
     { name: 'Jaroslav Chmelar', group: 'F', hit: 942_500 },
