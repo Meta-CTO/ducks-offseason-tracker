@@ -38,6 +38,7 @@ export const arrivals = [
   { date: 'Jul. 1', player: 'Erik Haula', pos: 'F', deal: 'Two years', role: 'From Nashville after 38 points in 81 games; projected to centre the second line' },
   { date: 'Jul. 1', player: 'Corey Perry', pos: 'F', deal: 'One year', role: 'Returns to Los Angeles; projected fourth line' },
   { date: 'Jul. 1', player: 'Erik Gustafsson', pos: 'D', deal: 'One year', role: 'From Detroit; 37 points in 39 AHL games last season' },
+  { date: 'Jul. 1', player: 'Scott Laughton', pos: 'C/LW', deal: 'Three years, $3.5M AAV', role: 'Recorded on PuckPedia rather than the reset; projected to centre the third line' },
 ]
 
 export const rosterComparison = [
@@ -51,6 +52,13 @@ export const rosterComparison = [
           'Retired after twenty seasons and ten years as captain',
           '1,316 points in 1,521 games; two Stanley Cups',
           'The reset is explicit that the role is not replaceable, only redistributed',
+        ],
+      },
+      {
+        pos: 'LW', before: 'Artemi Panarin', after: 'Artemi Panarin', status: 'retained',
+        notes: [
+          'Carries $11M, the largest forward cap hit on the roster, and reaches unrestricted free agency in 2027',
+          'Projected on the top line with Byfield and Kempe',
         ],
       },
       {
@@ -158,7 +166,6 @@ export const campWatch = [
 export const unresolved = [
   { status: 'Open', item: 'The captaincy', impact: 'Vacant for the first time in a decade after Kopitar’s retirement' },
   { status: 'Open', item: 'Centre depth', impact: 'The reset names this as the outstanding need behind Byfield and Haula' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -171,5 +178,49 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// LAK cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 102_225_000,
+    space: 1_775_000,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 6_000_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 58_250_000 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 35_875_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 7_500_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 600_000 },
+  ],
+  capHits: [
+    { name: 'Artemi Panarin', group: 'F', hit: 11_000_000 },
+    { name: 'Adrian Kempe', group: 'F', hit: 10_625_000 },
+    { name: 'Kevin Fiala', group: 'F', hit: 7_875_000 },
+    { name: 'Quinton Byfield', group: 'F', hit: 6_250_000 },
+    { name: 'Trevor Moore', group: 'F', hit: 4_200_000 },
+    { name: 'Alex Laferriere', group: 'F', hit: 4_100_000 },
+    { name: 'Erik Haula', group: 'F', hit: 3_600_000 },
+    { name: 'Scott Laughton', group: 'F', hit: 3_500_000 },
+    { name: 'Joel Armia', group: 'F', hit: 2_500_000 },
+    { name: 'Corey Perry', group: 'F', hit: 1_000_000 },
+    { name: 'Mats Zuccarello', group: 'F', hit: 1_000_000 },
+    { name: 'Samuel Helenius', group: 'F', hit: 875_000 },
+    { name: 'Taylor Ward', group: 'F', hit: 875_000 },
+    { name: 'Alex Turcotte', group: 'F', hit: 850_000 },
+    { name: 'Drew Doughty', group: 'D', hit: 11_000_000 },
+    { name: 'Brandt Clarke', group: 'D', hit: 7_400_000 },
+    { name: 'Cody Ceci', group: 'D', hit: 4_500_000 },
+    { name: 'Mikey Anderson', group: 'D', hit: 4_125_000 },
+    { name: 'Brian Dumoulin', group: 'D', hit: 4_000_000 },
+    { name: 'Joel Edmundson', group: 'D', hit: 3_850_000 },
+    { name: 'Erik Gustafsson', group: 'D', hit: 1_000_000 },
+    { name: 'Darcy Kuemper', group: 'G', hit: 5_250_000 },
+    { name: 'Anton Forsberg', group: 'G', hit: 2_250_000 },
+    { name: 'BUYOUT', group: 'O', hit: 600_000, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

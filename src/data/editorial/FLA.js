@@ -156,6 +156,10 @@ export const biggestChanges = [
     body: 'Sergei Bobrovsky won two Stanley Cups in Florida and signed in Toronto on Jul. 1. Jacob Markstrom came from New Jersey and Akira Schmid from Vegas, in two separate trades over two days.',
   },
   {
+    title: 'Eleven players are hurt right now',
+    body: 'PuckPedia’s active injury table lists eleven Panthers as of Aug. 19: Marchand month to month after surgery, plus Bennett, Verhaeghe, Forsling, Jones, Mikkola, Gudas, Kulikov, Balinskis, Gadjovich and Markstrom. Florida also has $34,286 of cap space, which is what makes that list a problem rather than an inconvenience.',
+  },
+  {
     title: 'The season was lost to injuries',
     body: 'Barkov missed the whole year after ACL and MCL surgery, Matthew Tkachuk the first 47 games. Jones, Reinhart, Marchand, Lundell, Kulikov, Nosek and Gadjovich were all hurt too. Florida finished 40-38-4 and missed the playoffs.',
   },
@@ -172,9 +176,9 @@ export const campWatch = [
 ]
 
 export const unresolved = [
-  { status: 'Open', item: 'Health', impact: 'The reset frames the whole season around recovering from a year of injuries' },
+  { status: 'Open', item: 'Health', impact: 'Eleven players on the active injury table, with $34,286 of cap space to absorb it' },
+  { status: 'Open', item: 'Brad Marchand’s surgery', impact: 'Month to month; may miss the start of the season' },
   { status: 'Open', item: 'Whether Markstrom holds the crease', impact: 'Replacing a goaltender who won two Cups here' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -187,5 +191,48 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// FLA cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 103_965_714,
+    space: 34_286,
+    rosterSlots: '22 / 23',
+    potentialBonuses: 250_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 68_410_714 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 27_405_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 8_000_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 150_000 },
+  ],
+  capHits: [
+    { name: 'Aleksander Barkov', group: 'F', hit: 10_000_000 },
+    { name: 'Matthew Tkachuk', group: 'F', hit: 9_500_000 },
+    { name: 'Sam Reinhart', group: 'F', hit: 8_625_000 },
+    { name: 'Brady Tkachuk', group: 'F', hit: 8_205_714 },
+    { name: 'Sam Bennett', group: 'F', hit: 8_000_000 },
+    { name: 'Carter Verhaeghe', group: 'F', hit: 7_000_000 },
+    { name: 'Brad Marchand', group: 'F', hit: 5_250_000 },
+    { name: 'Anton Lundell', group: 'F', hit: 5_000_000 },
+    { name: 'Eetu Luostarinen', group: 'F', hit: 3_000_000 },
+    { name: 'Garnet Hathaway', group: 'F', hit: 1_200_000 },
+    { name: 'Jonah Gadjovich', group: 'F', hit: 905_000 },
+    { name: 'Cole Schwindt', group: 'F', hit: 875_000 },
+    { name: 'Lars Eller', group: 'F', hit: 850_000 },
+    { name: 'Seth Jones', group: 'D', hit: 7_000_000 },
+    { name: 'Aaron Ekblad', group: 'D', hit: 6_100_000 },
+    { name: 'Gustav Forsling', group: 'D', hit: 5_750_000 },
+    { name: 'Niko Mikkola', group: 'D', hit: 5_000_000 },
+    { name: 'Radko Gudas', group: 'D', hit: 1_500_000 },
+    { name: 'Dmitry Kulikov', group: 'D', hit: 1_180_000 },
+    { name: 'Uvis Balinskis', group: 'D', hit: 875_000 },
+    { name: 'Jacob Markstrom', group: 'G', hit: 6_000_000 },
+    { name: 'Akira Schmid', group: 'G', hit: 2_000_000 },
+    { name: 'Bonus Carryover Overage', group: 'O', hit: 150_000, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
