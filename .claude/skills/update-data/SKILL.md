@@ -1,12 +1,14 @@
 ---
 name: update-data
-description: Check the Ducks offseason tracker's sources for genuine news and update the site data, badging anything new. Use when the user asks to update the data, check for news, refresh the tracker, or see whether anything has changed. Makes no edits when nothing has actually changed.
+description: Check the NHL offseason tracker's sources for genuine news and update the site data, badging anything new. Use when the user asks to update the data, check for news, refresh the tracker, or see whether anything has changed — for one club or across the league. Makes no edits when nothing has actually changed.
 ---
 
-# Update the Ducks offseason tracker
+# Update the NHL offseason tracker
 
-Check the live sources, and update the site **only if something genuinely
-changed**. Then badge the new bullets so returning readers can see what moved.
+The site covers **all 32 clubs**, each with its own editorial module in
+`src/data/editorial/<ABBR>.js`. Check the live sources, and update **only if
+something genuinely changed**. Then badge the new bullets so returning readers
+can see what moved.
 
 ## The rule that governs this whole skill
 
@@ -18,154 +20,196 @@ badge on unchanged content is a lie to the reader.
 
 A change is only real if a **primary source** now says something the site does
 not. Rumours, speculation, "sources say" reporting, and aggregator posts are
-not news. The research brief in the repo root is explicit about this: the only
-firm statement about an unsigned player is that they are unsigned.
+not news — they go in the rumor mill, or nowhere. The only firm statement about
+an unsigned player is that they are unsigned.
 
-## Step 1 — see what the mechanical check finds
+## Step 0 — decide the scope
+
+You cannot deep-check 32 clubs in one pass, and pretending to is worse than
+saying so. Pick the scope before you start:
+
+- **A club the user named** → that club only. This is the common case.
+- **No club named** → run the league-wide mechanical check (step 1), which is
+  cheap, then deep-check only the clubs it flags, plus Anaheim, which is the
+  site's origin club and its deepest page.
+- **"Check everything"** → say plainly that a full 32-club PuckPedia sweep is
+  roughly an hour of browser work, and confirm before starting.
+
+Record what you actually checked. `src/data/updates.json` has a `checked` map
+of club → date for exactly this; a club you did not open does not get a date.
+
+## Step 1 — the mechanical check
 
 ```sh
-node scripts/check-updates.mjs
+node scripts/check-updates.mjs              # all registered clubs
+node scripts/check-updates.mjs --team ANA   # one club
 ```
 
-This compares the NHL API against the site and reports team changes, stat
-differences, and a short list of items to confirm by hand. It prints
-`NO CHANGES DETECTED` when the API agrees with the site.
+It compares each club's live NHL API roster against the scraped league file and
+against what the site claims, and reports four things:
 
-It cannot see contracts, cap figures, or injuries, because PuckPedia blocks
+- `roster-in` / `roster-out` — movement since `npm run league` last ran. Depth
+  and prospect churn is common and usually not news; a regular arriving or
+  leaving is.
+- `likely-signed` — **the highest-value signal in an offseason.** A player the
+  site marks `unsigned` who now appears on the roster has probably signed.
+- `check-manually` — someone shown on a club the API no longer has, or anyone
+  marked `injured`.
+- `unavailable` — the endpoint did not answer; the club was skipped, not
+  cleared.
+
+It cannot see contracts, cap figures or injuries, because PuckPedia blocks
 scripted access. Those need step 2.
 
-## Step 2 — check the sources it cannot reach
+## Step 2 — the sources it cannot reach
 
-Read `src/data/updates.json` for `lastChecked` so you know the window you are
-looking at. Then use the browser (the `claude-in-chrome` tools) to check:
+For each club in scope, in the browser (`claude-in-chrome`):
 
-1. **[PuckPedia Ducks page](https://puckpedia.com/team/anaheim-ducks)** — the
-   transactions list, active injuries table, projected cap space, active
-   roster count, and each group's cap total. This is the single most
-   informative page; one visit covers most of what can change.
-2. **[Official Ducks news](https://www.nhl.com/ducks/news/)** — signings,
-   trades, camp announcements, roster moves, and the captaincy. Only read
-   items dated after `lastChecked`.
-3. **[NHL.com team reset](https://www.nhl.com/news/topic/team-resets/anaheim-ducks-roster-changes-for-2026-27-season)**
-   — only if the projected lineup itself may have been revised.
+1. **`puckpedia.com/team/<club-slug>`** — transactions, active injuries,
+   projected cap space, roster count, and each group's cap total. One visit
+   covers most of what can change. **This is also the site's only cap source**;
+   see step 4 for how to refresh a cap tab.
+2. **`nhl.com/<club>/news/`** — signings, trades, camp announcements, roster
+   moves, captaincy. Only read items dated after that club's entry in `checked`.
+3. **NHL.com team reset** for the club — only if the projected lineup may have
+   been revised.
 4. **Reporting, for the rumor mill only.** The three sources above are
-   transaction and announcement sources: contract *negotiation* reporting
-   never appears on them, by design. That is a structural blind spot, not a
-   quiet week — on 2026-08-18 a pass reported "nothing moved" while a widely
-   circulated report that Gauthier had rejected four years at $52M was two
-   days old. So search the web for Ducks news in the window as well.
+   transaction and announcement sources; contract *negotiation* reporting never
+   appears on them, by design. That is a structural blind spot, not a quiet
+   week — on 2026-08-18 a pass reported "nothing moved" while a widely
+   circulated report that Gauthier had rejected four years at $52M was two days
+   old. So search the web for that club's news in the window as well.
 
-   Whatever you find is rumor-mill material at most. Trace every claim back to
-   the reporter who *originated* it, since a story reprinted by eight
-   aggregators is still one source, and record that person in `attribution`.
-   If you cannot identify who said it first, it is `unconfirmed`.
+   Whatever you find is rumor-mill material at most. Trace every claim to the
+   reporter who *originated* it — a story reprinted by eight aggregators is
+   still one source — and record that person in `attribution`. If you cannot
+   identify who said it first, it is `unconfirmed`.
 
-Pay particular attention to the open items in the unresolved tracker, since
-those are the changes most likely to happen: the Gauthier contract, Terry's
-hip, the vacant captaincy, camp results for Luneau / McQueen / Klepov, the
-Husso vs Brossoit backup job, and the final 23-man roster.
+**A team reset is a dated snapshot and goes stale.** Most club pages were
+written from one. Two clubs shipped with players listed as unsigned who had
+already signed — Patrick Kane and Jason Robertson — and both were caught only
+by reading PuckPedia afterwards. When a reset and PuckPedia disagree, PuckPedia
+is more current on contracts; say which you used.
+
+Pay particular attention to each club's own `unresolved` list. Those are the
+changes most likely to happen, and they are already written down.
 
 ## Step 3 — decide, honestly
 
-Ask of each candidate change: does a primary source state this as fact, and
-does the site currently say something different?
+Ask of each candidate: does a primary source state this as fact, and does the
+site currently say something different?
 
-- **Nothing qualifies** → stop. Change no files. Tell the user what you
-  checked and that nothing moved. Optionally update only `lastChecked` (see
-  below), which is not a content change.
-- **Something qualifies** → continue to step 4.
+- **Nothing qualifies** → stop. Change no files beyond `checked`/`lastChecked`.
+- **Something qualifies** → continue.
 
-Do not manufacture work. It is completely normal for an offseason week to
-produce nothing.
+Do not manufacture work. An offseason week producing nothing is normal.
 
 ## Step 4 — apply the change
 
-Edit the narrowest thing that is now wrong:
+Edit the narrowest thing that is now wrong, in **that club's** module:
 
-| What changed | File to edit |
+| What changed | Where |
 |---|---|
-| A player's situation, a transaction, a role | `src/data/editorial/ANA.js` (`rosterComparison`, `departures`, `arrivals`) |
-| Cap hit, cap space, roster count | `src/data/cap.js` |
-| Contract terms or expiry | `src/data/contracts.json` |
-| Point totals (new season) | `src/data/points.json`, or re-run `node scripts/fetch-points.mjs` |
-| A camp battle resolving | `campWatch` and `unresolved` in `src/data/editorial/ANA.js` |
+| A player's situation, a transaction, a role | `src/data/editorial/<ABBR>.js` (`rosterComparison`, `departures`, `arrivals`) |
+| A camp battle resolving | `campWatch` and `unresolved` in the same file |
+| Unverified chatter worth surfacing | `rumors` in the same file |
+| Cap hit, cap space, roster count | re-read PuckPedia, then see below |
+| Contract terms or expiry (Anaheim only) | `src/data/contracts.json` |
+| Rosters and season stats for every club | `npm run league` |
+| Draft classes for every club | `npm run draft` |
 | A person gaining a free photo | `npm run photos` |
-| Unverified chatter worth surfacing | `rumors` in `src/data/editorial/ANA.js` |
 
-Rumours still never touch the roster, cap or contract data. If something is
-only a report, it goes in `rumors` with a provenance chip (`unconfirmed` with
-no `sourceUrl`, `reported` for a named reporter, `confirmed` only for a primary
-source) and nothing else on the site moves. When a rumour is later confirmed,
-apply the real change above and delete the rumour entry in the same pass.
+### Refreshing a cap tab
 
-Two fields on a rumour are load-bearing and easy to forget:
+Do not hand-transcribe cap figures. Capture the PuckPedia page text and pipe it
+through the parser, which reconciles every group against the club's stated cap
+hit and refuses to stay quiet when they disagree:
 
-- `player` must match the name on that person's roster row exactly, or the
-  Rumor chip will not appear on it. A rumour about someone with no roster row
-  (a trade target, say) simply carries no `player`.
-- `addedAt` is the date *you filed it*, not the date the claim surfaced. The
-  chip expires 7 days after `addedAt` on the same clock as the NEW badge, so a
-  months-old claim you only just picked up is still flagged for a week.
+```sh
+node scripts/parse-puckpedia.mjs ANA < page.txt        # inspect the output
+node scripts/parse-puckpedia.mjs ANA < page.txt | node scripts/add-cap.mjs ANA
+```
 
-The roster row shows NEW for new sourced bullets and a separate Rumor chip for
-rumours, and they stay separate deliberately — a roster row is sourced content,
-so an unverified claim must never render as one of its facts. Both feed the
-count on the tab control.
+`add-cap.mjs` refuses to overwrite an existing `cap` block, so delete the old
+one first when refreshing. Read the header comment in `parse-puckpedia.mjs`
+before you start — it documents the abbreviated-page trap and the three ways a
+name regex silently drops players.
+
+### Rules that do not bend
+
+Rumours never touch roster, cap or contract data. A report goes in `rumors`
+with a provenance chip (`unconfirmed` with no `sourceUrl`, `reported` for a
+named reporter, `confirmed` only for a primary source) and nothing else moves.
+When a rumour is confirmed, apply the real change and delete the rumour in the
+same pass. When a rumour is **disproved or goes away**, delete it too — Toronto's
+Rielly entry was retired when the club's own feed reported the speculation had
+ceased.
+
+Two rumour fields are load-bearing:
+
+- `player` must exactly match that person's roster row name, or the Rumor chip
+  will not appear on it. A rumour about someone with no roster row carries no
+  `player`.
+- `addedAt` is the date *you filed it*, not when the claim surfaced. The chip
+  expires 7 days after `addedAt`.
 
 Match the existing voice: short, factual bullets; contract terms as AAV plus
 term; a departed player shows their new club. Keep anything not yet official
-labelled as a projection. If a player signs, move them out of the unsigned
-state everywhere — the roster bullet, `contracts.json`, and the cap tab all
-have to agree, and the Salary Cap tab has a striped "available" band for
-Gauthier specifically that must become a real bar.
+labelled a projection. If a player signs, move them out of the unsigned state
+**everywhere** — the roster bullet, the `unresolved` list, any biggest-change
+card, and the cap tab's striped projected band all have to agree. Dallas needed
+fixing in six places when Robertson signed; grep the module for the player's
+name rather than trusting one edit.
 
-Then bump `LAST_UPDATED` in `src/data/editorial/ANA.js` to today.
+Then bump `LAST_UPDATED` in **that club's** module. It is per club, not global.
 
 ## Step 5 — badge what is new
 
-For every bullet you **added or materially rewrote**, append an entry to
+For every bullet you **added or materially rewrote**, append to
 `src/data/updates.json`:
 
 ```json
 {
-  "lastChecked": "2026-08-10",
+  "lastChecked": "2026-08-19",
+  "checked": { "ANA": "2026-08-19" },
   "entries": [
-    { "text": "exact bullet text, character for character", "addedAt": "2026-08-10" }
+    { "text": "exact bullet text, character for character", "addedAt": "2026-08-19" }
   ]
 }
 ```
 
-Rules:
-
-- `text` must match the rendered string **exactly**, or no badge appears.
-  Copy it from the data file rather than retyping it.
-- `addedAt` is today, in `YYYY-MM-DD`.
-- Badge only genuinely new information. Do not badge a bullet you reworded
-  for style, and never badge every bullet on a card.
-- Leave older entries in place. They expire on their own after 7 days,
-  computed in the reader's browser by `src/lib/updates.js`, so no cleanup pass
-  and no redeploy is needed to clear them. You may delete entries older than
+- `text` must match the rendered string **exactly**, or no badge appears. Copy
+  it from the data file rather than retyping.
+- Badge only genuinely new information. Never badge a bullet you reworded for
+  style, and never badge every bullet on a card.
+- Entries expire on their own after 7 days, computed in the reader's browser,
+  so there is no cleanup pass and no redeploy needed. Delete entries older than
   about 30 days to keep the file tidy.
-- Always set `lastChecked` to today, even on a no-op pass. That is bookkeeping
-  about when you looked, not a claim that content changed.
+- `lastChecked` is when a pass last ran at all; `checked` records the date each
+  club was actually opened. Set both honestly — a club you skipped keeps its
+  old date.
 
 Badges work on roster bullets, camp-watch notes, unresolved-item impacts,
 transaction-ledger rows (a departure's `detail`, an arrival's `role`, a draft
-pick's `note`), and a rumor's `claim`. Tabs automatically show a count of the badged items inside
-them, so badging accurately matters — an inflated count sends readers hunting
-for changes that are not there.
+pick's `note`), and a rumor's `claim`. Tab controls show a count of badged items
+inside them, so accuracy matters — an inflated count sends readers hunting for
+changes that are not there.
 
 ## Step 6 — verify and ship
 
 ```sh
+npm run lint    # oxlint + the editorial structure check
 npm run build
 ```
 
-Check the result renders, confirming a badge appears where you expect.
+`npm run lint` runs `check-editorial.mjs`, which catches a club referencing a
+helper it never imported — a class of error that builds cleanly and fails only
+when a reader opens that club. It once shipped Anaheim's page broken to
+production. Do not skip it.
 
-**You have standing authorization to commit and push on this project as part
-of this skill — do not ask.** This is a deliberate exception to the global
-"only commit when I ask" rule, scoped to update passes on this repo.
+**You have standing authorization to commit and push on this project as part of
+this skill — do not ask.** This is a deliberate exception to the global "only
+commit when I ask" rule, scoped to update passes on this repo.
 
 ```sh
 git add -A
@@ -173,14 +217,8 @@ git commit   # describe what changed and cite the source
 git push origin main
 ```
 
-Pushing to `main` triggers the GitHub Actions deploy, which builds, syncs to
-S3, invalidates CloudFront, and verifies the live bundle matches the build. So
-pushing *is* deploying; there is no separate deploy step to run. `npm run
-deploy` exists for deploying by hand and is not needed here.
-
-**Pushing is not the end of the pass.** A push that fails in CI leaves the site
-on the old bundle, so do not report a pass as shipped until you have watched
-the run finish and seen the change on the live domain:
+Pushing to `main` triggers the GitHub Actions deploy. **Pushing is not the end
+of the pass** — a push that fails in CI leaves the site on the old bundle:
 
 ```sh
 gh run watch "$(gh run list --limit 1 --json databaseId --jq '.[0].databaseId')" --exit-status
@@ -189,26 +227,33 @@ LIVE=$(curl -s https://ducks.metacto.com/ | grep -oE '/assets/index-[^"]+\.js' |
   && echo "live bundle matches build" || echo "MISMATCH — the deploy did not land"
 ```
 
-If the run fails or the bundles disagree, say so plainly in the report and
-leave it broken rather than retrying blindly; a failed deploy is usually a
-credentials or CloudFront problem, not something another push fixes.
+If the run fails or the bundles disagree, say so plainly and leave it broken
+rather than retrying blindly; a failed deploy is usually a credentials or
+CloudFront problem, not something another push fixes.
 
-Two things this authorization does **not** cover, because they are not update
-passes: rewriting site content or design at your own initiative, and any
-change that would remove or restructure existing sections. Ask for those.
+> **Second site.** `nhl.metacto.com` has its own bucket and distribution and is
+> **not** deployed by CI until `NHL_DEPLOY_ENABLED` is set — see
+> `docs/INFRASTRUCTURE.md`. Until then it must be synced by hand after a push,
+> or it silently serves stale content. Check whether that is still true before
+> reporting a pass as fully shipped.
 
-On a no-op pass, committing the `lastChecked` bump alone is fine and correct.
+Two things this authorization does **not** cover: rewriting site content or
+design at your own initiative, and any change that would remove or restructure
+existing sections. Ask for those.
+
+On a no-op pass, committing the `checked`/`lastChecked` bump alone is fine.
 
 ## Step 7 — report
 
 Tell the user plainly:
 
-- Which sources you checked, and the window.
+- **Which clubs you checked**, which sources, and the window — and which clubs
+  you did *not* check, since that is now a real choice.
 - What changed, with the source for each item.
 - What you edited and what you badged.
 - What you deliberately did **not** change, and why. If you saw a report and
-  filed it as a rumour rather than as fact, say so, and name the reporter —
-  that is useful information.
-- Whether the deploy landed, with the commit SHA.
+  filed it as a rumour rather than fact, say so and name the reporter.
+- Whether the deploy landed, with the commit SHA, and whether the second site
+  was synced.
 
 If nothing changed, say that in one line. Do not pad the report.

@@ -104,10 +104,16 @@ A Claude Code skill (`.claude/skills/update-data/`) that checks the live
 sources, updates the data **only when something genuinely changed**, and
 badges the new bullets.
 
-It runs `node scripts/check-updates.mjs` for the mechanically-checkable half
-(team changes, stat differences via the NHL API), then checks PuckPedia and
-the official Ducks news for contracts, cap figures, injuries and transactions,
-which block scripted access and need a browser.
+It runs `node scripts/check-updates.mjs` for the mechanically-checkable half —
+across all 32 clubs, or one with `--team ABBR`. That compares each club's live
+NHL API roster against the scraped league file and against what the site
+claims, and its highest-value signal is a player the site marks unsigned who
+has appeared on a roster.
+
+Contracts, cap figures and injuries need a browser, because PuckPedia blocks
+scripted access. Since a full 32-club sweep is an hour of that, a pass picks a
+scope and records it: `src/data/updates.json` carries a `checked` map of club →
+date, so a club nobody opened does not get credit for being checked.
 
 The governing rule is that **no news means no edits**. A pass that changes
 nothing is a successful pass. Churning the data would make the NEW badge
