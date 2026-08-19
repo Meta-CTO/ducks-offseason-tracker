@@ -54,7 +54,8 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Macklin Celebrini', after: 'Macklin Celebrini', status: 'retained',
         notes: [
-          'Signed Jul. 29 for five years and $94M — an $18.8M cap hit',
+          'Signed Jul. 29 for five years and $94M — an $18.8M cap hit from 2027-28',
+          'His 2026-27 cap hit is still the $975,000 entry-level figure, which is why San Jose could spend this summer',
           '45 goals and 70 assists for 115 points, more than the next two Sharks scorers combined',
           'Projected to centre the top line between Collin Graf and Will Smith',
         ],
@@ -174,7 +175,8 @@ export const unresolved = [
   { status: 'Open', item: 'Secondary scoring', impact: 'Celebrini outscored the next two Sharks combined; the reset names this as the need' },
   { status: 'Open', item: 'Whether Stenberg can hold an NHL job', impact: 'Third-line left wing, at eighteen' },
   { status: 'Open', item: 'Comrie vs. Nedeljkovic', impact: 'Backup goaltender' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+  { status: 'Open', item: 'The Celebrini raise lands next season', impact: '$975K now, $18.8M from 2027-28, against $3.34M of current space' },
+  { status: 'Open', item: '$12.8M owed to players who left', impact: 'Buyouts of Jones and Vlasic, salary retained on Karlsson and Hertl, plus bonus charges' },
 ]
 
 export const rumors = []
@@ -187,5 +189,54 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// SJS cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 100_664_305,
+    space: 3_335_695,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 14_030_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 51_298_334 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 30_373_750 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 6_150_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 12_842_221 },
+  ],
+  capHits: [
+    { name: 'Logan Couture', group: 'F', hit: 8_000_000 },
+    { name: 'Mason Marchment', group: 'F', hit: 6_750_000 },
+    { name: 'Tyler Toffoli', group: 'F', hit: 6_000_000 },
+    { name: 'Alexander Wennberg', group: 'F', hit: 6_000_000 },
+    { name: 'Kiefer Sherwood', group: 'F', hit: 5_750_000 },
+    { name: 'Collin Graf', group: 'F', hit: 4_250_000 },
+    { name: 'Barclay Goodrow', group: 'F', hit: 3_641_667 },
+    { name: 'Zack Ostapchuk', group: 'F', hit: 2_350_000 },
+    { name: 'Adam Gaudette', group: 'F', hit: 2_000_000 },
+    { name: 'Ty Dellandrea', group: 'F', hit: 1_625_000 },
+    { name: 'Ivar Stenberg', group: 'F', hit: 1_075_000 },
+    { name: 'Michael Misa', group: 'F', hit: 986_250 },
+    { name: 'Macklin Celebrini', group: 'F', hit: 975_000 },
+    { name: 'Will Smith', group: 'F', hit: 950_000 },
+    { name: 'Igor Chernyshov', group: 'F', hit: 945_417 },
+    { name: 'Darnell Nurse', group: 'D', hit: 9_250_000 },
+    { name: 'Jacob Trouba', group: 'D', hit: 8_250_000 },
+    { name: 'Dmitry Orlov', group: 'D', hit: 6_500_000 },
+    { name: 'Michael Kesselring', group: 'D', hit: 4_500_000 },
+    { name: 'Sam Dickinson', group: 'D', hit: 953_750 },
+    { name: 'Luca Cagnoni', group: 'D', hit: 920_000 },
+    { name: 'Alex Nedeljkovic', group: 'G', hit: 3_000_000 },
+    { name: 'Yaroslav Askarov', group: 'G', hit: 2_000_000 },
+    { name: 'Eric Comrie', group: 'G', hit: 1_150_000 },
+    { name: 'Bonus cushion and carryover', group: 'O', hit: 7_121_387, charge: 'buyout' },
+    { name: 'catchesL', group: 'O', hit: 1_666_667, charge: 'buyout' },
+    { name: 'BUYOUT', group: 'O', hit: 1_166_667, charge: 'buyout' },
+    { name: 'RETAINED', group: 'O', hit: 1_500_000, charge: 'retained' },
+    { name: 'RETAINED', group: 'O', hit: 1_387_500, charge: 'retained' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

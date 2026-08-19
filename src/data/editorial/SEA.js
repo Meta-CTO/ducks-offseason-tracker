@@ -132,8 +132,8 @@ export const campWatch = [
 
 export const unresolved = [
   { status: 'Open', item: 'Eeli Tolvanen', impact: 'Still an unsigned UFA; 36 points of scoring unaccounted for' },
+  { status: 'Open', item: 'What to do with $18.4M', impact: 'The most projected cap space in the league, and a roster already at 23' },
   { status: 'Open', item: 'Whether Samoskevich takes the step', impact: 'The club paid a first-round pick and three years on the premise that he will' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -146,5 +146,49 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// SEA cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 85_594_463,
+    space: 18_405_537,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 4_062_500,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 46_224_939 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 28_090_357 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 10_900_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 379_167 },
+  ],
+  capHits: [
+    { name: 'Matty Beniers', group: 'F', hit: 7_142_857 },
+    { name: 'Chandler Stephenson', group: 'F', hit: 6_250_000 },
+    { name: 'Bobby McMann', group: 'F', hit: 5_750_000 },
+    { name: 'Jordan Eberle', group: 'F', hit: 5_500_000 },
+    { name: 'Jared McCann', group: 'F', hit: 5_000_000 },
+    { name: 'Kaapo Kakko', group: 'F', hit: 4_525_000 },
+    { name: 'Mackie Samoskevich', group: 'F', hit: 3_850_000 },
+    { name: 'Frederick Gaudreau', group: 'F', hit: 2_100_000 },
+    { name: 'Curtis Douglas', group: 'F', hit: 1_250_000 },
+    { name: 'Ryan Winterton', group: 'F', hit: 1_125_000 },
+    { name: 'Ben Meyers', group: 'F', hit: 1_000_000 },
+    { name: 'Berkly Catton', group: 'F', hit: 953_750 },
+    { name: 'Jani Nyman', group: 'F', hit: 891_666 },
+    { name: 'Shane Wright', group: 'F', hit: 886_666 },
+    { name: 'Vince Dunn', group: 'D', hit: 7_350_000 },
+    { name: 'Brandon Montour', group: 'D', hit: 7_142_857 },
+    { name: 'Adam Larsson', group: 'D', hit: 5_250_000 },
+    { name: 'Ryan Lindgren', group: 'D', hit: 4_500_000 },
+    { name: 'Ryker Evans', group: 'D', hit: 2_050_000 },
+    { name: 'Josh Mahura', group: 'D', hit: 907_500 },
+    { name: 'Cale Fleury', group: 'D', hit: 890_000 },
+    { name: 'Philipp Grubauer', group: 'G', hit: 5_900_000 },
+    { name: 'Joey Daccord', group: 'G', hit: 5_000_000 },
+    { name: 'C,LW', group: 'O', hit: 379_167, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
