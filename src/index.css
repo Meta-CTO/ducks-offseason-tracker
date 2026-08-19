@@ -1206,15 +1206,37 @@ body {
 
 /* ---------- Picker ---------- */
 
+/* The landing hero. Neutral rather than tinted with any one club's colours,
+   since at this point we do not know whose team this is about. */
+.picker-hero {
+  background:
+    radial-gradient(900px 460px at 80% -15%, rgba(120, 130, 150, 0.30), transparent 62%),
+    radial-gradient(700px 400px at 12% 112%, rgba(137, 115, 76, 0.20), transparent 60%),
+    var(--ink);
+}
+
+
+
+.picker-footnote {
+  margin-top: 2.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
 .picker-conference {
   margin-top: 1.75rem;
 }
 
 .picker-conference-name {
-  font-size: 1.05rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.35rem;
-  margin-bottom: 0.9rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.1rem;
 }
 
 .picker-division {
@@ -1231,33 +1253,55 @@ body {
 
 .picker-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
+  gap: 0.7rem;
 }
 
 .team-chip {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.1rem;
+  gap: 0.12rem;
   text-align: left;
-  background: #fff;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--team-primary) 9%, #fff), #fff 62%);
   border: 1px solid var(--border);
-  border-left: 5px solid var(--team-primary);
-  border-radius: 9px;
-  padding: 0.6rem 0.75rem;
+  border-radius: 11px;
+  padding: 0.85rem 0.9rem 0.75rem;
   cursor: pointer;
   font: inherit;
+  overflow: hidden;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+
+/* The club's colour reads as a stripe down the leading edge rather than a
+   border, so the two palette colours can both appear without shouting. */
+.team-chip::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(var(--team-primary), var(--team-secondary));
 }
 
 .team-chip:hover,
 .team-chip:focus-visible {
   border-color: var(--team-primary);
-  box-shadow: inset 0 0 0 1px var(--team-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
 }
 
 .team-chip-current {
+  border-color: var(--team-primary);
   box-shadow: inset 0 0 0 2px var(--team-primary);
+}
+
+.team-chip-record {
+  margin-top: 0.15rem;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
 }
 
 .team-chip-code {
@@ -1272,17 +1316,6 @@ body {
   font-size: 0.92rem;
 }
 
-.team-chip-flag {
-  margin-top: 0.25rem;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #fff;
-  background: var(--status-added);
-  border-radius: 999px;
-  padding: 0.08rem 0.4rem;
-}
 
 /* ---------- Data-only club page ---------- */
 
