@@ -186,10 +186,15 @@ ${hits.map((h) => `    { name: '${h.name.replace(/'/g, "\\'")}', group: '${h.gro
 //     const row = v.closest('tr') || v.parentElement.parentElement.parentElement
 //     const n = [...row.querySelectorAll('*')].find(e =>
 //       e.children.length === 0 && /^[A-Za-zÄÅÖÜÉ][^,]*, .+/.test(e.textContent.trim()))
-//     // NOTE the lowercase in that character class. Requiring an uppercase
-//     // first letter silently drops "van Riemsdyk, Trevor" and anyone else
-//     // with a lowercase surname prefix. Pittsburgh's defence came back $4M
-//     // short because of exactly that; the reconciliation check caught it.
+//     // Use \p{L} with the u flag, not [A-Za-z]. Three ways a narrower class
+//     // silently drops players, all found the hard way and all caught only by
+//     // the reconciliation check:
+//     //   * lowercase surname prefixes — "van Riemsdyk, Trevor" (Pittsburgh,
+//     //     $4,000,000 missing)
+//     //   * diacritics — "Öhgren, Liam" (Vancouver, $886,666 missing)
+//     //   * and do NOT dedupe rows by player name: Vancouver rosters two
+//     //     different Elias Petterssons, a 27-year-old forward at $11.6M and a
+//     //     22-year-old defenceman at $913,333. Deduping dropped the second.
 //     return n ? `${n.textContent.trim()}\n${v.textContent.trim()}` : null
 //   }).filter(Boolean).join('\n')
 //

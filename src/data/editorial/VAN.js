@@ -193,7 +193,6 @@ export const unresolved = [
   { status: 'Open', item: 'Where the goals come from', impact: '31st in scoring last season; the reset names this as the primary need' },
   { status: 'Open', item: 'Evander Kane', impact: 'Still an unsigned UFA' },
   { status: 'Open', item: 'How Malhotra deploys the young forwards', impact: 'A new coach with no NHL head-coaching record to read' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -207,5 +206,50 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// VAN cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 86_185_833,
+    space: 17_814_167,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 3_455_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 48_566_666 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 18_352_500 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 13_000_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 6_266_667 },
+  ],
+  capHits: [
+    { name: 'Elias Pettersson', group: 'F', hit: 11_600_000 },
+    { name: 'Brock Boeser', group: 'F', hit: 7_250_000 },
+    { name: 'Jake DeBrusk', group: 'F', hit: 5_500_000 },
+    { name: 'Marco Rossi', group: 'F', hit: 5_000_000 },
+    { name: 'Filip Chytil', group: 'F', hit: 4_437_500 },
+    { name: 'Brendan Gallagher', group: 'F', hit: 3_250_000 },
+    { name: 'Drew O\'Connor', group: 'F', hit: 2_500_000 },
+    { name: 'Linus Karlsson', group: 'F', hit: 2_250_000 },
+    { name: 'Paul Cotter', group: 'F', hit: 2_150_000 },
+    { name: 'Max Sasson', group: 'F', hit: 1_000_000 },
+    { name: 'Braeden Cootes', group: 'F', hit: 974_167 },
+    { name: 'Jonathan Lekkerimaki', group: 'F', hit: 918_333 },
+    { name: 'Liam Öhgren', group: 'F', hit: 886_666 },
+    { name: 'Aatu Räty', group: 'F', hit: 850_000 },
+    { name: 'Filip Hronek', group: 'D', hit: 7_250_000 },
+    { name: 'Jamie Oleksiak', group: 'D', hit: 5_000_000 },
+    { name: 'Luke Schenn', group: 'D', hit: 2_250_000 },
+    { name: 'Victor Mancini', group: 'D', hit: 1_000_000 },
+    { name: 'Tom Willander', group: 'D', hit: 972_500 },
+    { name: 'Zeev Buium', group: 'D', hit: 966_667 },
+    { name: 'Elias Nils Pettersson', group: 'D', hit: 913_333 },
+    { name: 'Thatcher Demko', group: 'G', hit: 8_500_000 },
+    { name: 'Kevin Lankinen', group: 'G', hit: 4_500_000 },
+    { name: 'LD,RD', group: 'O', hit: 4_766_667, charge: 'buyout' },
+    { name: 'RETAINED', group: 'O', hit: 1_500_000, charge: 'retained' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
