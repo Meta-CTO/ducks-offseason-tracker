@@ -1,17 +1,30 @@
-// All content sourced from the 2026 offseason research brief.
+import { STATUS, RUMOR_STATUS } from '../status'
+
+// Anaheim Ducks editorial content, sourced from the 2026 offseason research
+// brief. One module per club; see src/data/editorial/index.js.
 // Research cutoff: August 6, 2026 (America/Los_Angeles). Every "after"
 // lineup is a projection until the Ducks announce the official roster.
 
 export const LAST_UPDATED = 'August 6, 2026'
 
-export const STATUS = {
-  retained: { label: 'Retained', color: 'retained' },
-  added: { label: 'Added', color: 'added' },
-  departed: { label: 'Departed', color: 'departed' },
-  unsigned: { label: 'Unsigned / RFA', color: 'unsigned' },
-  injured: { label: 'Injured', color: 'injured' },
-  camp: { label: 'Camp candidate', color: 'camp' },
+// Hero copy. Club-specific, so it lives with the club's other editorial
+// content rather than hard-coded into the Hero component.
+export const hero = {
+  team: 'Anaheim Ducks',
+  subtitle: '2026 Offseason Tracker',
+  stage: 'Pre-camp projection',
+  headline: ['The core stayed.', 'The blue line changed.'],
+  deck:
+    'Anaheim\u2019s young core broke a seven-year playoff drought and won a ' +
+    'postseason round. Then the Ducks spent the summer paying Leo Carlsson, ' +
+    'trading Mason McTavish and Olen Zellweger, and replacing nearly an entire ' +
+    'defense corps. Here is the team that finished 2025\u201326, and the one ' +
+    'projected to open 2026\u201327.',
 }
+
+// Date span covered by the transaction ledger.
+export const ledgerRange = 'June 25 \u2013 July 28'
+
 
 export const seasonSnapshot = {
   record: '43–33–6',
@@ -447,41 +460,6 @@ export const sources = [
   { label: 'Hockey-Reference 2025–26 season', url: 'https://www.hockey-reference.com/teams/ANA/2026.html' },
 ]
 
-/**
- * Sourcing strength for a rumor-mill entry. This is deliberately about *who
- * said it*, not about how likely it is to be true — we do not handicap
- * outcomes, we label provenance.
- *
- *  confirmed   — a primary source is on the record: the club, the player, or
- *                the agent. An entry that reaches this state has graduated;
- *                move the fact into the roster/cap/contract data and delete
- *                the rumor.
- *  reported    — a named reporter stated specifics, but no primary source has
- *                confirmed it. Recirculation by aggregators does not promote
- *                an entry; only an independent outlet's own reporting does.
- *  unconfirmed — second-hand, anonymous, or untraceable chatter. This is the
- *                default, and the correct label whenever `sourceUrl` is absent.
- */
-export const RUMOR_STATUS = {
-  confirmed: { label: 'Confirmed', color: 'confirmed' },
-  reported: { label: 'Reported', color: 'reported' },
-  unconfirmed: { label: 'Unconfirmed', color: 'unconfirmed' },
-}
-
-/**
- * Chatter about the open items. Nothing here is a site fact, and nothing here
- * may contradict or silently update the roster, cap or contract data — those
- * files only ever move on a primary source. See CONTRIBUTING.md.
- *
- * Fields: `date` is when the claim surfaced (omit if genuinely unknown rather
- * than guessing); `attribution` is who said it; `sourceUrl` is optional, and
- * its absence is exactly why the Unconfirmed chip exists.
- *
- * `player` must match the name on that person's roster row, which is what puts
- * the Rumor chip there. `addedAt` is when *we filed it*, not when the claim
- * surfaced — the chip self-expires 7 days after it, on the same clock as the
- * NEW badge, so a July claim filed today is still flagged for a week.
- */
 export const rumors = [
   {
     date: 'Aug. 16',
@@ -505,3 +483,5 @@ export const rumors = [
     detail: 'Yandle framed it himself as a "tidbit" he was fed, and did not say whether he meant the $18M annual figure or the $90M total. No reporter has since put a number to the asking price on the record.',
   },
 ]
+
+export { STATUS, RUMOR_STATUS }

@@ -84,13 +84,13 @@ Edit the narrowest thing that is now wrong:
 
 | What changed | File to edit |
 |---|---|
-| A player's situation, a transaction, a role | `src/data/ducks.js` (`rosterComparison`, `departures`, `arrivals`) |
+| A player's situation, a transaction, a role | `src/data/editorial/ANA.js` (`rosterComparison`, `departures`, `arrivals`) |
 | Cap hit, cap space, roster count | `src/data/cap.js` |
 | Contract terms or expiry | `src/data/contracts.json` |
 | Point totals (new season) | `src/data/points.json`, or re-run `node scripts/fetch-points.mjs` |
-| A camp battle resolving | `campWatch` and `unresolved` in `src/data/ducks.js` |
+| A camp battle resolving | `campWatch` and `unresolved` in `src/data/editorial/ANA.js` |
 | A person gaining a free photo | `npm run photos` |
-| Unverified chatter worth surfacing | `rumors` in `src/data/ducks.js` |
+| Unverified chatter worth surfacing | `rumors` in `src/data/editorial/ANA.js` |
 
 Rumours still never touch the roster, cap or contract data. If something is
 only a report, it goes in `rumors` with a provenance chip (`unconfirmed` with
@@ -119,7 +119,7 @@ state everywhere — the roster bullet, `contracts.json`, and the cap tab all
 have to agree, and the Salary Cap tab has a striped "available" band for
 Gauthier specifically that must become a real bar.
 
-Then bump `LAST_UPDATED` in `src/data/ducks.js` to today.
+Then bump `LAST_UPDATED` in `src/data/editorial/ANA.js` to today.
 
 ## Step 5 — badge what is new
 

@@ -1,20 +1,22 @@
 import { useState } from 'react'
-import { departures, arrivals, draftClass } from '../data/ducks'
+import { useEditorial } from '../lib/editorial'
 import { isNew, countNew } from '../lib/updates'
 
-// A new transaction adds a row here, so these are badgeable too.
-const newCounts = {
-  departures: countNew(departures.map((t) => t.detail)),
-  arrivals: countNew(arrivals.map((t) => t.role)),
-  draft: countNew(draftClass.map((d) => d.note)),
-}
-
 export default function Timeline() {
+  const { departures, arrivals, draftClass, ledgerRange } = useEditorial()
   const [tab, setTab] = useState('departures')
+
+  // A new transaction adds a row here, so these are badgeable too. Computed
+  // per render rather than at module scope: the data now varies by club.
+  const newCounts = {
+    departures: countNew(departures.map((t) => t.detail)),
+    arrivals: countNew(arrivals.map((t) => t.role)),
+    draft: countNew(draftClass.map((d) => d.note)),
+  }
 
   return (
     <section className="section">
-      <h2>Transaction ledger · June 25 – July 28</h2>
+      <h2>Transaction ledger{ledgerRange ? ` · ${ledgerRange}` : ''}</h2>
       <div className="toggle-group" role="tablist">
         {[
           ['departures', 'Departures'],

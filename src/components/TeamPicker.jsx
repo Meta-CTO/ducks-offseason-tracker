@@ -1,4 +1,5 @@
-import { groupedTeams, hasEditorial } from '../lib/team'
+import { groupedTeams } from '../lib/team'
+import { hasEditorial } from '../data/editorial'
 
 /**
  * The 32-team chooser. Identity is carried by club colors and the three-letter

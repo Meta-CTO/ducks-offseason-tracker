@@ -1,4 +1,5 @@
-import { rumors, RUMOR_STATUS } from '../data/ducks'
+import { RUMOR_STATUS } from '../data/status'
+import { useEditorial } from '../lib/editorial'
 import { isNew } from '../lib/updates'
 
 /**
@@ -8,6 +9,7 @@ import { isNew } from '../lib/updates'
  * backed by a primary source, and nothing in it is.
  */
 export default function RumorMill() {
+  const { rumors } = useEditorial()
   if (rumors.length === 0) return null
 
   return (

@@ -1,27 +1,26 @@
-import { LAST_UPDATED } from '../data/ducks'
+import { useEditorial } from '../lib/editorial'
 
 export default function Hero() {
+  const { LAST_UPDATED, hero } = useEditorial()
+
   return (
     <header className="hero">
-      {/* Original text wordmark. The NHL/Ducks logo is a trademark and is
+      {/* Original text wordmark. Club and league logos are trademarks and are
           deliberately not used. Naming the team in text is nominative use. */}
       <p className="hero-wordmark">
-        <span className="hero-wordmark-team">Anaheim Ducks</span>
-        <span className="hero-wordmark-sub">2026 Offseason Tracker</span>
+        <span className="hero-wordmark-team">{hero.team}</span>
+        <span className="hero-wordmark-sub">{hero.subtitle}</span>
       </p>
-      <p className="hero-badge">As of {LAST_UPDATED} · Pre-camp projection</p>
+      <p className="hero-badge">As of {LAST_UPDATED} · {hero.stage}</p>
       <h1>
-        The core stayed.
-        <br />
-        The blue line changed.
+        {hero.headline.map((line, i) => (
+          <span key={line}>
+            {i > 0 && <br />}
+            {line}
+          </span>
+        ))}
       </h1>
-      <p className="hero-deck">
-        Anaheim&rsquo;s young core broke a seven-year playoff drought and won a
-        postseason round. Then the Ducks spent the summer paying Leo Carlsson,
-        trading Mason McTavish and Olen Zellweger, and replacing nearly an
-        entire defense corps. Here is the team that finished 2025–26, and the
-        one projected to open 2026–27.
-      </p>
+      <p className="hero-deck">{hero.deck}</p>
     </header>
   )
 }

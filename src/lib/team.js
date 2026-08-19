@@ -102,6 +102,7 @@ export const groupedTeams = () => {
   return out
 }
 
-/** Which clubs have a written editorial brief, and so a full tracker page. */
-export const EDITORIAL_TEAMS = new Set(['ANA'])
-export const hasEditorial = (abbrev) => EDITORIAL_TEAMS.has(abbrev)
+// Which clubs have a written editorial brief now lives in
+// src/data/editorial/index.js, next to the modules themselves, so the registry
+// and the content cannot drift apart. Re-exported here for convenience.
+export { hasEditorial } from '../data/editorial'

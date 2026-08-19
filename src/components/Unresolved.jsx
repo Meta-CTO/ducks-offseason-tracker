@@ -1,7 +1,8 @@
-import { unresolved } from '../data/ducks'
+import { useEditorial } from '../lib/editorial'
 import { isNew } from '../lib/updates'
 
 export default function Unresolved() {
+  const { unresolved } = useEditorial()
   return (
     <section className="section">
       <h2>Still unresolved</h2>

@@ -29,7 +29,8 @@ official — a projected lineup, an expected role — must read as a projection.
 Do not turn a rumour into a stated fact. When a real transaction happens, the
 data changes, not the framing.
 
-Rumours have exactly one home: the `rumors` array in `src/data/ducks.js`, which
+Rumours have exactly one home: the `rumors` array in the club's editorial
+module (`src/data/editorial/<ABBR>.js`), which
 renders as the Rumor mill section. An entry there carries a provenance chip —
 `unconfirmed`, `reported`, or `confirmed` — describing *who said it*, never how
 likely it is to be true. Use `unconfirmed` whenever there is no `sourceUrl`.
@@ -46,7 +47,7 @@ must stay that way: NEW marks new sourced content, and the two must not blur.
 
 | Path | What it is |
 |---|---|
-| `src/data/ducks.js` | Roster, transactions, notes. Most content edits go here. |
+| `src/data/editorial/<ABBR>.js` | One club's roster, transactions, notes. Most content edits go here. |
 | `src/data/cap.js` | Salary-cap figures. |
 | `src/data/contracts.json` | Contract terms per player. |
 | `src/data/points.json` | 2025-26 point totals. |

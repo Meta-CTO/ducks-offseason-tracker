@@ -8,21 +8,58 @@ import Unresolved from './components/Unresolved'
 import RumorMill from './components/RumorMill'
 import Credits from './components/Credits'
 import Sources from './components/Sources'
+import SiteFooter from './components/SiteFooter'
 import TeamPicker from './components/TeamPicker'
 import TeamPage from './components/TeamPage'
 import TeamBar from './components/TeamBar'
-import {
-  resolveTeam,
-  findTeam,
-  saveCookie,
-  pushTeamUrl,
-  hasEditorial,
-} from './lib/team'
+import { resolveTeam, findTeam, saveCookie, pushTeamUrl } from './lib/team'
+import { hasEditorial, loadEditorial } from './data/editorial'
+import { EditorialContext } from './lib/editorial'
 
-/** The full editorial tracker. Only clubs with a written brief get this. */
-function EditorialTeam() {
+/**
+ * The full editorial tracker. Only clubs with a written brief get this, and
+ * the brief is a separate chunk fetched on demand — opening one club must not
+ * download another club's prose.
+ */
+function EditorialTeam({ team }) {
+  const [content, setContent] = useState(null)
+  const [failed, setFailed] = useState(false)
+
+  useEffect(() => {
+    let live = true
+    setContent(null)
+    setFailed(false)
+    loadEditorial(team.abbrev)
+      .then((m) => live && (m ? setContent(m) : setFailed(true)))
+      .catch(() => live && setFailed(true))
+    return () => {
+      live = false
+    }
+  }, [team.abbrev])
+
+  if (failed) {
+    return (
+      <main>
+        <section className="section">
+          <p className="team-empty">
+            The {team.name} tracker could not be loaded.
+          </p>
+        </section>
+      </main>
+    )
+  }
+  if (!content) {
+    return (
+      <main>
+        <section className="section">
+          <p className="team-empty">Loading the {team.name} tracker…</p>
+        </section>
+      </main>
+    )
+  }
+
   return (
-    <>
+    <EditorialContext.Provider value={content}>
       <Hero />
       <main>
         <RosterComparison />
@@ -33,9 +70,15 @@ function EditorialTeam() {
         <RumorMill />
         <Credits />
       </main>
-    </>
+      <Sources />
+    </EditorialContext.Provider>
   )
 }
+
+// Data-only club pages state exactly one source, because that is all they use.
+const API_SOURCE = [
+  { label: 'NHL API (api-web.nhle.com) — rosters and season statistics', url: 'https://api-web.nhle.com' },
+]
 
 export default function App() {
   const [team, setTeam] = useState(() => resolveTeam())
@@ -86,14 +129,17 @@ export default function App() {
           <TeamPicker onPick={pick} current={team?.abbrev} />
         </main>
       ) : hasEditorial(team.abbrev) ? (
-        <EditorialTeam />
+        <EditorialTeam team={team} />
       ) : (
-        <main>
-          <TeamPage team={team} />
-        </main>
+        <>
+          <main>
+            <TeamPage team={team} />
+          </main>
+          <SiteFooter sources={API_SOURCE} />
+        </>
       )}
 
-      <Sources />
+      {showPicker && <SiteFooter />}
     </div>
   )
 }

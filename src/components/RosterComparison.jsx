@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { rosterComparison, STATUS } from '../data/ducks'
+import { STATUS } from '../data/status'
+import { useEditorial } from '../lib/editorial'
 import Avatar from './Avatar'
 import { slugify } from '../lib/slugify'
 import CapView from './CapView'
@@ -8,15 +9,6 @@ import contracts from '../data/contracts.json'
 import { isNew, countNew, freshRumorsFor, rowFlagCount } from '../lib/updates'
 
 const CAP_TAB = 'Salary Cap'
-
-// How many badged bullets sit inside each tab, so a reader can see which
-// section changed without opening every one.
-const newPerTab = Object.fromEntries(
-  rosterComparison.map((g) => [
-    g.group,
-    g.rows.reduce((n, r) => n + rowFlagCount(r), 0),
-  ]),
-)
 
 const statLine = (name) => {
   const p = points[slugify(name)]
@@ -34,8 +26,8 @@ const contractLine = (name) => {
 // 2025–26 NHL points for ordering; players with no NHL season sort last
 const rowPoints = (row) => points[slugify(row.before ?? row.after)]?.points ?? -1
 
-function PersonCard({ name, pos, hasNewNote }) {
-  const rumorCount = freshRumorsFor(name).length
+function PersonCard({ name, pos, hasNewNote, rumors }) {
+  const rumorCount = freshRumorsFor(name, rumors).length
   return (
     <div className="person-card">
       <Avatar name={name} size={64} />
@@ -65,7 +57,18 @@ function PersonCard({ name, pos, hasNewNote }) {
 }
 
 export default function RosterComparison() {
+  const { rosterComparison, rumors } = useEditorial()
   const [active, setActive] = useState(rosterComparison[0].group)
+
+  // How many badged bullets sit inside each tab, so a reader can see which
+  // section changed without opening every one. Computed per render rather than
+  // at module scope: the data now varies by club.
+  const newPerTab = Object.fromEntries(
+    rosterComparison.map((g) => [
+      g.group,
+      g.rows.reduce((n, r) => n + rowFlagCount(r, rumors), 0),
+    ]),
+  )
   const group = rosterComparison.find((g) => g.group === active)
   const rows = !group
     ? []
@@ -126,6 +129,7 @@ export default function RosterComparison() {
                   name={name}
                   pos={row.pos}
                   hasNewNote={countNew(row.notes) > 0}
+                  rumors={rumors}
                 />
                 <div className="roster-delta">
                   <span className={`badge badge-${STATUS[row.status].color}`}>

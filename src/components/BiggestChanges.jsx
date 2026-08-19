@@ -1,6 +1,7 @@
-import { biggestChanges } from '../data/ducks'
+import { useEditorial } from '../lib/editorial'
 
 export default function BiggestChanges() {
+  const { biggestChanges } = useEditorial()
   return (
     <section className="section">
       <h2>The four biggest changes</h2>

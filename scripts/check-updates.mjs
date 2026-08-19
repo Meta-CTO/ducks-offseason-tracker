@@ -103,7 +103,7 @@ if (gauthier) {
 }
 
 // Anyone the site marks injured is worth re-checking each pass.
-const ducksSrc = await readFile(path.resolve('src/data/ducks.js'), 'utf8')
+const ducksSrc = await readFile(path.resolve('src/data/editorial/ANA.js'), 'utf8')
 const injured = [...ducksSrc.matchAll(/'([^']+)',\s*after:\s*'[^']+',\s*status:\s*'injured'/g)]
 for (const m of injured) {
   note('check-manually', `${m[1]} is marked injured; confirm status on PuckPedia's injury table.`)

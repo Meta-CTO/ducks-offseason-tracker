@@ -1,8 +1,10 @@
-import { campWatch, STATUS } from '../data/ducks'
+import { STATUS } from '../data/status'
+import { useEditorial } from '../lib/editorial'
 import Avatar from './Avatar'
 import { isNew } from '../lib/updates'
 
 export default function CampWatch() {
+  const { campWatch } = useEditorial()
   return (
     <section className="section">
       <h2>Watch camp</h2>
