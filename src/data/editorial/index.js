@@ -10,13 +10,21 @@
 export const EDITORIAL = {
   ANA: () => import('./ANA.js'),
   CGY: () => import('./CGY.js'),
+  CHI: () => import('./CHI.js'),
+  COL: () => import('./COL.js'),
+  DAL: () => import('./DAL.js'),
   EDM: () => import('./EDM.js'),
   LAK: () => import('./LAK.js'),
+  MIN: () => import('./MIN.js'),
+  NSH: () => import('./NSH.js'),
   PHI: () => import('./PHI.js'),
   SEA: () => import('./SEA.js'),
   SJS: () => import('./SJS.js'),
+  STL: () => import('./STL.js'),
+  UTA: () => import('./UTA.js'),
   VAN: () => import('./VAN.js'),
   VGK: () => import('./VGK.js'),
+  WPG: () => import('./WPG.js'),
 }
 
 export const EDITORIAL_ABBREVS = Object.keys(EDITORIAL)

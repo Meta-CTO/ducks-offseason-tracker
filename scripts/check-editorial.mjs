@@ -67,6 +67,17 @@ for (const club of registered.filter((c) => files.includes(c))) {
     }
   }
 
+  // The same failure shape as the league-file check: a club-specific data file
+  // imported by the wrong club. photo-credits.json and points.json are
+  // Anaheim's; only Anaheim may import them.
+  if (club !== 'ANA') {
+    for (const shared of ['photo-credits.json', 'points.json', 'contracts.json', '../cap']) {
+      if (src.includes(shared)) {
+        fail(club, `imports ${shared}, which holds Anaheim's data`)
+      }
+    }
+  }
+
   for (const m of src.matchAll(/status: '([a-z]+)'/g)) {
     if (!VALID_STATUS.has(m[1])) {
       fail(club, `unknown status '${m[1]}' (valid: ${[...VALID_STATUS].join(', ')})`)

@@ -74,9 +74,16 @@ match `status.js`, that a registered club has a module and vice versa, and — t
 one that matters most — that no club imports another club's league file, which
 would silently attribute one team's statistics to another.
 
-**Coverage so far:** the whole Pacific division plus Philadelphia. The clubs
-written from a team reset alone carry no cap tab and say so in their
-`unresolved` list, because PuckPedia has not been read for them.
+**Coverage so far:** the whole Western Conference (Pacific and Central) plus
+Philadelphia — 17 clubs. Those written from a team reset alone carry no cap tab,
+no photo credits and no draft class, and say so in their `unresolved` list,
+because PuckPedia has not been read for them.
+
+**Scope of the ledger is the offseason.** An in-season trade does not belong in
+`departures`/`arrivals` even when it explains the roster. Where one materially
+changes how a lineup reads — Quinn Hughes going Vancouver→Minnesota in December
+— it goes in `biggestChanges` labelled as outside the window, with a scope note
+at the top of the module.
 
 ## Commands
 

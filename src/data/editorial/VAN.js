@@ -4,6 +4,11 @@ import { pointsFromLeague } from './_derive'
 
 // Vancouver Canucks editorial content. Research cutoff: August 19, 2026.
 //
+// Scope note: Marco Rossi, Liam Ohgren and Zeev Buium appear in the projected
+// lineup but not in the ledger below, because they arrived from Minnesota in a
+// mid-December in-season trade for Quinn Hughes. This tracker covers the
+// offseason, so that deal is carried as context rather than as a summer move.
+//
 // Primary source: NHL.com's Canucks team reset for the 2026-27 season. Cap
 // figures and the active injury table have not been read from PuckPedia for
 // this club yet, so there is no cap tab. Every "after" lineup is a projection
@@ -15,8 +20,7 @@ export const hero = {
   team: 'Vancouver Canucks',
   subtitle: '2026 Offseason Tracker',
   stage: 'Pre-camp projection',
-  headline: ['They rebuilt the front office first.', 'The scoring problem remains.']
-    ,
+  headline: ['They rebuilt the front office first.', 'The scoring problem remains.'],
   deck:
     'Vancouver finished 25-49-8, last in the Pacific, and scored 210 goals — ' +
     '31st in the league. So the changes started above the roster: a new ' +
@@ -167,6 +171,10 @@ export const biggestChanges = [
     body: 'Vancouver scored 210 goals, 31st in the league, and Elias Pettersson’s team-leading 51 points tied for 123rd. The forwards added since are Gallagher, Cotter and Safonov, all on one-year terms.',
   },
   {
+    title: 'Quinn Hughes was traded in December, not this summer',
+    body: 'The captain went to Minnesota mid-season for Marco Rossi, Liam Ohgren, Zeev Buium and a 2026 first-round pick. It is the reason the projected lineup looks so different and it sits outside the offseason window this page covers, so it appears here as context rather than in the ledger.',
+  },
+  {
     title: 'A first-round pick for Marcus Pettersson',
     body: 'The defenseman went to the Rangers on Jul. 1 for a conditional 2030 first, and Jamie Oleksiak and Luke Schenn were signed to replace the minutes.',
   },
@@ -192,6 +200,7 @@ export const rumors = []
 
 export const sources = [
   { label: 'NHL.com Canucks 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/vancouver-canucks-roster-changes-for-2026-27-season' },
+  { label: 'Hughes traded to Wild by Canucks (Dec. 2025)', url: 'https://www.nhl.com/news/quinn-hughes-traded-to-minnesota-wild-by-vancouver-canucks' },
   { label: 'Official Canucks news', url: 'https://www.nhl.com/canucks/news/' },
 ]
 
