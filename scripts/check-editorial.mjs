@@ -78,6 +78,21 @@ for (const club of registered.filter((c) => files.includes(c))) {
     }
   }
 
+  // Vite does not error on an undefined identifier at build time — it assumes
+  // a global — so a module can reference a helper it never imported, build
+  // cleanly, and fail only when a reader opens that club. That shipped once:
+  // a bulk edit added draftFromApi() to every module by matching an import
+  // line Anaheim did not have, and Anaheim's page broke in production while
+  // the build stayed green. Checked here because nothing else catches it.
+  const body = src.replace(/^import.*$/gm, '')
+  for (const id of ['draftFromApi', 'creditsFrom', 'pointsFromLeague', 'draft', 'league']) {
+    const used = new RegExp(`(?<!\\w)${id}(?!\\w)`).test(body)
+    const imported = new RegExp(`^import.*\\b${id}\\b`, 'm').test(src)
+    if (used && !imported) {
+      fail(club, `uses \`${id}\` but never imports it — the page will fail to load`)
+    }
+  }
+
   for (const m of src.matchAll(/status: '([a-z]+)'/g)) {
     if (!VALID_STATUS.has(m[1])) {
       fail(club, `unknown status '${m[1]}' (valid: ${[...VALID_STATUS].join(', ')})`)

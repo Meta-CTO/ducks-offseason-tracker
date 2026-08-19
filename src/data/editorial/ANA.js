@@ -1,8 +1,9 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import { capSummary, capGroups, capHits } from '../cap'
+import draft from '../draft/ANA.json'
+import { draftFromApi, creditsFrom } from './_derive'
 import contracts from '../contracts.json'
 import points from '../points.json'
-import photoCredits from '../photo-credits.json'
 
 // Anaheim Ducks editorial content, sourced from the 2026 offseason research
 // brief. One module per club; see src/data/editorial/index.js.
@@ -494,4 +495,6 @@ export { STATUS, RUMOR_STATUS }
 // Anaheim's module. A club without them simply has no Salary Cap tab — far
 // better than a page quietly rendering another club's figures.
 export const cap = { capSummary, capGroups, capHits }
-export { contracts, points, photoCredits }
+export { contracts, points }
+
+export const photoCredits = creditsFrom(rosterComparison, campWatch)
