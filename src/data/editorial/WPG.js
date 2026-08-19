@@ -107,7 +107,7 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Connor Hellebuyck', after: 'Connor Hellebuyck', status: 'retained',
         notes: [
-          'Three-time Vezina winner with five seasons left on his contract',
+          'Three-time Vezina winner on an $8.5M cap hit with five seasons left',
           'The reset says he expressed frustration after the season',
           'General manager Kevin Cheveldayoff, on the record: “we’re going to listen” to trade offers',
         ],
@@ -138,7 +138,7 @@ export const biggestChanges = [
   },
   {
     title: 'Perfetti signed for five years',
-    body: 'A $30 million extension on Jul. 15 keeps a 24-year-old scoring winger through the rest of this core’s window.',
+    body: 'A $30 million extension on Jul. 15 — a $6M cap hit, confirmed against PuckPedia — keeps a 24-year-old scoring winger through the rest of this core’s window.',
   },
 ]
 
@@ -155,7 +155,6 @@ export const unresolved = [
   { status: 'Open', item: 'Connor Hellebuyck’s future', impact: 'The GM has said publicly the club will listen to offers' },
   { status: 'Open', item: 'Replacing Toews down the middle', impact: 'A full-time centre’s minutes are unassigned' },
   { status: 'Open', item: 'Gustav Nyquist', impact: 'Still an unsigned UFA' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = [
@@ -180,5 +179,48 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// WPG cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 99_518_332,
+    space: 4_481_668,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 1_430_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 56_703_332 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 30_565_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 12_250_000 },
+  ],
+  capHits: [
+    { name: 'Kyle Connor', group: 'F', hit: 12_000_000 },
+    { name: 'Mark Scheifele', group: 'F', hit: 8_500_000 },
+    { name: 'Gabriel Vilardi', group: 'F', hit: 7_500_000 },
+    { name: 'Cole Perfetti', group: 'F', hit: 6_000_000 },
+    { name: 'Adam Lowry', group: 'F', hit: 5_000_000 },
+    { name: 'Nino Niederreiter', group: 'F', hit: 4_000_000 },
+    { name: 'Alex Iafallo', group: 'F', hit: 3_666_666 },
+    { name: 'Vladislav Namestnikov', group: 'F', hit: 3_000_000 },
+    { name: 'Morgan Barron', group: 'F', hit: 1_850_000 },
+    { name: 'Cole Koepke', group: 'F', hit: 1_450_000 },
+    { name: 'Viggo Björck', group: 'F', hit: 1_075_000 },
+    { name: 'Isak Rosén', group: 'F', hit: 925_000 },
+    { name: 'Brad Lambert', group: 'F', hit: 886_666 },
+    { name: 'Noah Gregor', group: 'F', hit: 850_000 },
+    { name: 'Neal Pionk', group: 'D', hit: 7_000_000 },
+    { name: 'Josh Morrissey', group: 'D', hit: 6_250_000 },
+    { name: 'Dylan Samberg', group: 'D', hit: 5_750_000 },
+    { name: 'Dylan Demelo', group: 'D', hit: 4_900_000 },
+    { name: 'Mario Ferraro', group: 'D', hit: 4_000_000 },
+    { name: 'Haydn Fleury', group: 'D', hit: 950_000 },
+    { name: 'Elias Salomonsson', group: 'D', hit: 865_000 },
+    { name: 'Jack St. Ivany', group: 'D', hit: 850_000 },
+    { name: 'Connor Hellebuyck', group: 'G', hit: 8_500_000 },
+    { name: 'Stuart Skinner', group: 'G', hit: 3_750_000 },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

@@ -157,6 +157,10 @@ export const biggestChanges = [
     body: 'Pavel Dorofeyev scored 37 goals and 64 points, then added 12 in the playoffs. He went to the Rangers on Jun. 26 for the 26th and 92nd picks and a conditional 2028 first.',
   },
   {
+    title: 'They are $8.7 million over the cap',
+    body: 'Vegas projects at $112,661,182 against a $104 million ceiling — the largest overage in the league by some distance, with no buyouts or retained salary to unwind. Alex Pietrangelo’s $8.8M sits on a hip injury, which is the one obvious route to relief.',
+  },
+  {
     title: 'Four subtractions, no headline addition',
     body: 'Dorofeyev, Keegan Kolesar, Kaedan Korczak and Akira Schmid all left in separate deals. The forwards who came in — Victor Olofsson and Marc Gatcomb — are bottom-six signings.',
   },
@@ -172,10 +176,10 @@ export const campWatch = [
 ]
 
 export const unresolved = [
-  { status: 'Open', item: 'Alex Pietrangelo’s hip', impact: 'Top-four defense' },
+  { status: 'Open', item: 'Getting under the ceiling', impact: '$8.66M over, the largest overage in the league, and nothing to buy out' },
+  { status: 'Open', item: 'Alex Pietrangelo’s hip', impact: 'Top-four defense, and an $8.8M cap hit' },
   { status: 'Open', item: 'Who replaces 37 goals', impact: 'Dorofeyev’s scoring left and was not directly replaced' },
   { status: 'Open', item: 'How Craig differs from Tortorella', impact: 'A first-time NHL head coach after a Final run' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -188,5 +192,47 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// VGK cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 112_661_182,
+    space: -8_661_182,
+    rosterSlots: '22 / 23',
+    potentialBonuses: 0,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 63_311_182 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 41_100_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 8_250_000 },
+  ],
+  capHits: [
+    { name: 'Jack Eichel', group: 'F', hit: 13_500_000 },
+    { name: 'Mitch Marner', group: 'F', hit: 12_000_000 },
+    { name: 'Mark Stone', group: 'F', hit: 9_500_000 },
+    { name: 'Tomas Hertl', group: 'F', hit: 6_750_000 },
+    { name: 'William Karlsson', group: 'F', hit: 5_900_000 },
+    { name: 'Ivan Barbashev', group: 'F', hit: 5_000_000 },
+    { name: 'Nic Dowd', group: 'F', hit: 3_000_000 },
+    { name: 'Brett Howden', group: 'F', hit: 2_500_000 },
+    { name: 'Victor Olofsson', group: 'F', hit: 1_638_330 },
+    { name: 'Braeden Bowman', group: 'F', hit: 912_500 },
+    { name: 'Tanner Laczynski', group: 'F', hit: 900_000 },
+    { name: 'Marc Gatcomb', group: 'F', hit: 875_000 },
+    { name: 'Alexander Holtz', group: 'F', hit: 835_352 },
+    { name: 'Alex Pietrangelo', group: 'D', hit: 8_800_000 },
+    { name: 'Rasmus Andersson', group: 'D', hit: 8_500_000 },
+    { name: 'Shea Theodore', group: 'D', hit: 7_425_000 },
+    { name: 'Noah Hanifin', group: 'D', hit: 7_350_000 },
+    { name: 'Jeremy Lauzon', group: 'D', hit: 4_000_000 },
+    { name: 'Brayden McNabb', group: 'D', hit: 3_650_000 },
+    { name: 'Dylan Coghlan', group: 'D', hit: 875_000 },
+    { name: 'Parker Wotherspoon', group: 'D', hit: 500_000 },
+    { name: 'Adin Hill', group: 'G', hit: 6_250_000 },
+    { name: 'Carter Hart', group: 'G', hit: 2_000_000 },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
