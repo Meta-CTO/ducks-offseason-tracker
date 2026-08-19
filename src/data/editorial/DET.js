@@ -30,7 +30,7 @@ export const ledgerRange = 'June 4 – July 15'
 
 export const departures = [
   { date: 'Jul. 15', player: 'Steve Yzerman', pos: 'General manager', mechanism: 'Stepped down', detail: 'Left the role with the search for a replacement under way.' },
-  { date: 'Offseason', player: 'Patrick Kane', pos: 'F', mechanism: 'UFA', detail: 'Unsigned as of this brief, which is the only firm statement about him; 57 points in 67 games.' },
+  { date: 'Jul. 23', player: 'Patrick Kane', pos: 'F', mechanism: 'UFA', detail: 'Signed a two-year, $8M-a-year contract with Chicago after 57 points in 67 games. The Red Wings reset listed him as still unsigned; PuckPedia records the signing.' },
   { date: 'Offseason', player: 'James van Riemsdyk', pos: 'F', mechanism: 'UFA', detail: 'Unsigned as of this brief; 31 points in 72 games.' },
   { date: 'Offseason', player: 'Cam Talbot', pos: 'G', mechanism: 'UFA', detail: 'Unsigned as of this brief; a .883 save percentage across 27 decisions.' },
   { date: 'Offseason', player: 'David Perron', pos: 'F', mechanism: 'UFA', detail: 'Unsigned as of this brief; 3 goals in 16 games after arriving from Ottawa.' },
@@ -66,10 +66,10 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'F', before: 'Patrick Kane', after: null, status: 'unsigned',
+        pos: 'F', before: 'Patrick Kane', after: null, status: 'departed',
         notes: [
-          'An unsigned unrestricted free agent, which is the only firm fact about his situation',
-          '57 points in 67 games while seeking a twentieth season',
+          'Signed with Chicago on Jul. 23 for two years at $8M a year',
+          '57 points in 67 games in his twentieth season',
         ],
       },
       {
@@ -154,8 +154,8 @@ export const biggestChanges = [
     body: 'Steve Yzerman stepped down on Jul. 15. Detroit therefore heads into camp with a captain who wants out, no permanent general manager, and no announced plan for either.',
   },
   {
-    title: 'Four veterans are simply unsigned',
-    body: 'Patrick Kane, James van Riemsdyk, Cam Talbot and David Perron all remain free agents. That is the only firm statement available about any of them.',
+    title: 'Three veterans are still unsigned',
+    body: 'James van Riemsdyk, Cam Talbot and David Perron all remain free agents. Patrick Kane, listed alongside them on the reset, signed with Chicago on Jul. 23 for two years at $8M — a correction the cap sweep surfaced.',
   },
 ]
 
@@ -170,7 +170,7 @@ export const campWatch = [
 export const unresolved = [
   { status: 'Open', item: 'Dylan Larkin’s trade request', impact: 'The captain, with five years left on his contract' },
   { status: 'Open', item: 'Who runs hockey operations', impact: 'Yzerman stepped down Jul. 15 with no successor named' },
-  { status: 'Open', item: 'Four unsigned veterans', impact: 'Kane, van Riemsdyk, Talbot and Perron are all free agents' },
+  { status: 'Open', item: 'Three unsigned veterans', impact: 'van Riemsdyk, Talbot and Perron are still free agents; Kane signed in Chicago' },
   { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 

@@ -106,15 +106,18 @@ for (const heading of CHARGE_SECTIONS) {
   const rest = text.slice(start)
   const endIdx = rest.search(/\nTOTALS\n/)
   const body = endIdx === -1 ? rest : rest.slice(0, endIdx)
-  const playerRe = /\n([A-ZÄÅÖÜÉ][^\n,]*, [^\n]+)\n((?:(?!\n[A-ZÄÅÖÜÉ][^\n,]*, )[\s\S])*?)\$([\d,]+)/g
-  for (const p of body.matchAll(playerRe)) {
-    const [surname, forename] = p[1].split(', ')
-    hits.push({
-      name: `${forename.trim()} ${surname.trim()}`,
-      group: 'O',
-      hit: money(p[3]),
-      charge: heading === 'Retained' ? 'retained' : heading === 'Buried' ? 'buried' : 'buyout',
-    })
+  const kind = heading === 'Retained' ? 'retained' : heading === 'Buried' ? 'buried' : 'buyout'
+  // Charge rows are usually players, but not always: a "Performance Bonus
+  // Cushion" line carries a real charge with no name attached. Match either a
+  // "Surname, Forename" row or a bare label, so the section still reconciles.
+  const rowRe = /\n([A-ZÄÅÖÜÉ][^\n$]{2,60})\n((?:(?!\n[A-ZÄÅÖÜÉ][^\n$]{2,60}\n)[\s\S])*?)\$([\d,]+)/g
+  for (const p of body.matchAll(rowRe)) {
+    const label = p[1].trim()
+    if (/^(PLAYER|TOTALS|CAP HIT|AAV|TOTAL|SALARY|SIGNING|BONUS)$/i.test(label)) continue
+    const name = label.includes(', ')
+      ? `${label.split(', ')[1].trim()} ${label.split(', ')[0].trim()}`
+      : label
+    hits.push({ name, group: 'O', hit: money(p[3]), charge: kind })
   }
 }
 if (chargeTotal > 0) groups.push({ key: 'O', total: chargeTotal, count: null })

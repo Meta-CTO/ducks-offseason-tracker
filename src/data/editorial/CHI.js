@@ -36,6 +36,8 @@ export const departures = [
 ]
 
 export const arrivals = [
+  { date: 'Jul. 18', player: 'Connor Bedard', pos: 'C', deal: 'Five years, $15M AAV', role: 'Re-signed as the franchise centre; recorded on PuckPedia rather than the reset' },
+  { date: 'Jul. 23', player: 'Patrick Kane', pos: 'RW', deal: 'Two years, $8M AAV', role: 'Signed at thirty-seven after a season in Detroit; recorded on PuckPedia rather than the reset' },
   { date: 'Jun. 23', player: 'Bowen Byram', pos: 'D', deal: 'Trade from Buffalo; six years from 2027-28, signed Jul. 1', role: 'Cost the fourth and 45th picks and Louis Crevier; projected top pair' },
   { date: 'Jun. 23', player: 'Jordan Greenway', pos: 'F', deal: 'Trade from Buffalo', role: 'Came with Byram; projected fourth line' },
   { date: 'Jul. 1', player: 'Ian Cole', pos: 'D', deal: 'One year', role: 'Thirty-seven; from Utah after 23 points in 82 games' },
@@ -50,6 +52,7 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Connor Bedard', after: 'Connor Bedard', status: 'injured',
         notes: [
+          'Re-signed Jul. 18 for five years at $15M a year — the largest cap hit on the roster',
           'Had left shoulder surgery and is not expected back until November',
           'His absence is why the reset projects Roman Kantserov onto the top line',
         ],
@@ -63,6 +66,13 @@ export const rosterComparison = [
         notes: [
           'Twenty-one, and projected onto the top line while Bedard is out',
           'A projection created by an injury rather than an announced job',
+        ],
+      },
+      {
+        pos: 'RW', before: null, after: 'Patrick Kane', status: 'added',
+        notes: [
+          'Signed Jul. 23 for two years at $8M a year, at thirty-seven',
+          'Arrives from Detroit, whose reset still listed him as an unsigned free agent',
         ],
       },
       {
@@ -152,7 +162,6 @@ export const unresolved = [
   { status: 'Open', item: 'Connor Bedard’s shoulder', impact: 'Out until roughly November after surgery' },
   { status: 'Open', item: 'Matt Grzelcyk', impact: 'Still an unsigned free agent' },
   { status: 'Open', item: 'Who holds the top line until Bedard returns', impact: 'Kantserov is projected there, not assigned' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -166,5 +175,52 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// CHI cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 101_580_824,
+    space: 2_419_176,
+    rosterSlots: '22 / 23',
+    potentialBonuses: 13_350_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 60_930_825 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 24_716_667 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 8_583_333 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 7_349_999 },
+  ],
+  capHits: [
+    { name: 'Connor Bedard', group: 'F', hit: 15_000_000 },
+    { name: 'Patrick Kane', group: 'F', hit: 8_000_000 },
+    { name: 'Frank Nazar', group: 'F', hit: 6_599_991 },
+    { name: 'Tyler Bertuzzi', group: 'F', hit: 5_500_000 },
+    { name: 'Teuvo Teravainen', group: 'F', hit: 5_400_000 },
+    { name: 'Ryan Donato', group: 'F', hit: 4_000_000 },
+    { name: 'Jordan Greenway', group: 'F', hit: 4_000_000 },
+    { name: 'Andrew Mangiapane', group: 'F', hit: 3_600_000 },
+    { name: 'Cole Smith', group: 'F', hit: 3_000_000 },
+    { name: 'Roman Kantserov', group: 'F', hit: 1_075_000 },
+    { name: 'Anton Frondell', group: 'F', hit: 986_250 },
+    { name: 'Sacha Boisvert', group: 'F', hit: 977_917 },
+    { name: 'Ryan Greene', group: 'F', hit: 950_000 },
+    { name: 'Oliver Moore', group: 'F', hit: 941_667 },
+    { name: 'Landon Slaggert', group: 'F', hit: 900_000 },
+    { name: 'Ryan Ellis', group: 'D', hit: 6_250_000 },
+    { name: 'Bowen Byram', group: 'D', hit: 6_250_000 },
+    { name: 'Alex Vlasic', group: 'D', hit: 4_600_000 },
+    { name: 'Ian Cole', group: 'D', hit: 4_000_000 },
+    { name: 'Wyatt Kaiser', group: 'D', hit: 1_700_000 },
+    { name: 'Artyom Levshunov', group: 'D', hit: 975_000 },
+    { name: 'Sam Rinzel', group: 'D', hit: 941_667 },
+    { name: 'Spencer Knight', group: 'G', hit: 5_833_333 },
+    { name: 'Arvid Soderblom', group: 'G', hit: 2_750_000 },
+    { name: 'Performance Bonus Cushion', group: 'O', hit: 4_591_666, charge: 'buyout' },
+    { name: 'BUYOUT', group: 'O', hit: 258_333, charge: 'buyout' },
+    { name: 'RETAINED', group: 'O', hit: 2_500_000, charge: 'retained' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
