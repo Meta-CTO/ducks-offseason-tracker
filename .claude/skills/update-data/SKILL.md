@@ -48,6 +48,17 @@ looking at. Then use the browser (the `claude-in-chrome` tools) to check:
    items dated after `lastChecked`.
 3. **[NHL.com team reset](https://www.nhl.com/news/topic/team-resets/anaheim-ducks-roster-changes-for-2026-27-season)**
    — only if the projected lineup itself may have been revised.
+4. **Reporting, for the rumor mill only.** The three sources above are
+   transaction and announcement sources: contract *negotiation* reporting
+   never appears on them, by design. That is a structural blind spot, not a
+   quiet week — on 2026-08-18 a pass reported "nothing moved" while a widely
+   circulated report that Gauthier had rejected four years at $52M was two
+   days old. So search the web for Ducks news in the window as well.
+
+   Whatever you find is rumor-mill material at most. Trace every claim back to
+   the reporter who *originated* it, since a story reprinted by eight
+   aggregators is still one source, and record that person in `attribution`.
+   If you cannot identify who said it first, it is `unconfirmed`.
 
 Pay particular attention to the open items in the unresolved tracker, since
 those are the changes most likely to happen: the Gauthier contract, Terry's
@@ -124,9 +135,9 @@ Rules:
 - Always set `lastChecked` to today, even on a no-op pass. That is bookkeeping
   about when you looked, not a claim that content changed.
 
-Badges work on roster bullets, camp-watch notes, unresolved-item impacts, and
+Badges work on roster bullets, camp-watch notes, unresolved-item impacts,
 transaction-ledger rows (a departure's `detail`, an arrival's `role`, a draft
-pick's `note`). Tabs automatically show a count of the badged items inside
+pick's `note`), and a rumor's `claim`. Tabs automatically show a count of the badged items inside
 them, so badging accurately matters — an inflated count sends readers hunting
 for changes that are not there.
 
@@ -153,6 +164,21 @@ S3, invalidates CloudFront, and verifies the live bundle matches the build. So
 pushing *is* deploying; there is no separate deploy step to run. `npm run
 deploy` exists for deploying by hand and is not needed here.
 
+**Pushing is not the end of the pass.** A push that fails in CI leaves the site
+on the old bundle, so do not report a pass as shipped until you have watched
+the run finish and seen the change on the live domain:
+
+```sh
+gh run watch "$(gh run list --limit 1 --json databaseId --jq '.[0].databaseId')" --exit-status
+LIVE=$(curl -s https://ducks.metacto.com/ | grep -oE '/assets/index-[^"]+\.js' | head -1)
+[ "$(basename "$LIVE")" = "$(basename dist/assets/index-*.js)" ] \
+  && echo "live bundle matches build" || echo "MISMATCH — the deploy did not land"
+```
+
+If the run fails or the bundles disagree, say so plainly in the report and
+leave it broken rather than retrying blindly; a failed deploy is usually a
+credentials or CloudFront problem, not something another push fixes.
+
 Two things this authorization does **not** cover, because they are not update
 passes: rewriting site content or design at your own initiative, and any
 change that would remove or restructure existing sections. Ask for those.
@@ -166,7 +192,9 @@ Tell the user plainly:
 - Which sources you checked, and the window.
 - What changed, with the source for each item.
 - What you edited and what you badged.
-- What you deliberately did **not** change, and why. If you saw a rumour and
-  rejected it, say so — that is useful information.
+- What you deliberately did **not** change, and why. If you saw a report and
+  filed it as a rumour rather than as fact, say so, and name the reporter —
+  that is useful information.
+- Whether the deploy landed, with the commit SHA.
 
 If nothing changed, say that in one line. Do not pad the report.
