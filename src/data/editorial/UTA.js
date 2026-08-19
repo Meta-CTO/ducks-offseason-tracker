@@ -185,6 +185,13 @@ export const points = pointsFromLeague(league)
 export const contracts = {}
 
 // UTA cap data, PuckPedia, retrieved Aug. 19, 2026.
+//
+// PuckPedia's own figures do not quite reconcile here: the stated group totals
+// sum to $99,415,375 while its stated cap hit is $99,415,357, an $18 gap. Both
+// were read back from the page to rule out a transcription slip — Dylan
+// Guenther really is listed at $7,142,875 and the forward total at $66,392,875.
+// The values below are the source's, unaltered; the $18 is noted rather than
+// quietly reconciled by editing a number nobody published.
 export const cap = {
   capSummary: {
     ceiling: 104_000_000,
