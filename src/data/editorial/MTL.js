@@ -28,7 +28,7 @@ export const hero = {
 export const ledgerRange = 'June 26 – July 9'
 
 export const departures = [
-  { date: 'Jun. 29', player: 'Brendan Gallagher', pos: 'RW', mechanism: 'Trade to Vancouver', detail: 'Sent for future considerations after fourteen seasons, 911 games and 487 points in Montréal.' },
+  { date: 'Jun. 29', player: 'Brendan Gallagher', pos: 'RW', mechanism: 'Trade to Vancouver', detail: 'Sent for future considerations after fourteen seasons, 911 games and 487 points in Montréal. The Canadiens retain $3.25M of his cap hit.' },
   { date: 'Jul. 1', player: 'Joe Veleno', pos: 'F', mechanism: 'No qualifying offer', detail: 'Signed with the N.Y. Rangers after Montréal declined to qualify him.' },
   { date: 'Offseason', player: 'Patrik Laine', pos: 'F', mechanism: 'UFA', detail: 'Unsigned as of this brief, which is the only firm statement about him; has not played since Oct. 16 and required core muscle surgery.' },
 ]
@@ -108,8 +108,15 @@ export const rosterComparison = [
     summary: 'The crease is handed to two young goaltenders',
     rows: [
       {
+        pos: 'G', before: 'Sam Montembeault', after: 'Sam Montembeault', status: 'retained',
+        notes: [
+          'Carries $3.15M, the largest goaltending hit on the roster, and is a UFA in 2027',
+          'PuckPedia has him on the roster; NHL.com’s projected lineup lists only Dobes and Fowler',
+        ],
+      },
+      {
         pos: 'G', before: 'Jakub Dobes', after: 'Jakub Dobes', status: 'retained',
-        notes: ['Projected starter'],
+        notes: ['Projected starter, at $965,000 before a raise to $5.36M in 2027-28'],
       },
       {
         pos: 'G', before: 'Jacob Fowler', after: 'Jacob Fowler', status: 'camp',
@@ -149,7 +156,8 @@ export const unresolved = [
   { status: 'Open', item: 'A top-six forward for Demidov', impact: 'Named in the reset as the outstanding need' },
   { status: 'Open', item: 'Patrik Laine', impact: 'Unsigned, and has not played since October' },
   { status: 'Open', item: 'Dobes or Fowler', impact: 'Two young goaltenders and no established starter' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+  { status: 'Open', item: 'Where Montembeault fits', impact: 'On the roster at $3.15M but absent from the projected lineup' },
+  { status: 'Open', item: 'Bolduc and Xhekaj', impact: 'Both unsigned RFAs carrying no cap hit yet' },
 ]
 
 export const rumors = []
@@ -162,5 +170,48 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// MTL cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 94_216_076,
+    space: 9_783_924,
+    rosterSlots: '21 / 23',
+    potentialBonuses: 4_350_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 48_908_333 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 35_062_500 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 5_060_833 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 5_184_410 },
+  ],
+  capHits: [
+    { name: 'Nick Suzuki', group: 'F', hit: 7_875_000 },
+    { name: 'Cole Caufield', group: 'F', hit: 7_850_000 },
+    { name: 'Juraj Slafkovský', group: 'F', hit: 7_600_000 },
+    { name: 'Phillip Danault', group: 'F', hit: 5_500_000 },
+    { name: 'Josh Anderson', group: 'F', hit: 5_500_000 },
+    { name: 'Kirby Dach', group: 'F', hit: 3_600_000 },
+    { name: 'Alex Newhook', group: 'F', hit: 2_900_000 },
+    { name: 'Jake Evans', group: 'F', hit: 2_850_000 },
+    { name: 'Alexandre Texier', group: 'F', hit: 2_500_000 },
+    { name: 'Oliver Kapanen', group: 'F', hit: 942_500 },
+    { name: 'Ivan Demidov', group: 'F', hit: 940_833 },
+    { name: 'Brett Berard', group: 'F', hit: 850_000 },
+    { name: 'Noah Dobson', group: 'D', hit: 9_500_000 },
+    { name: 'Lane Hutson', group: 'D', hit: 8_850_000 },
+    { name: 'Mike Matheson', group: 'D', hit: 6_000_000 },
+    { name: 'Kaiden Guhle', group: 'D', hit: 5_550_000 },
+    { name: 'Alexandre Carrier', group: 'D', hit: 3_750_000 },
+    { name: 'Jayden Struble', group: 'D', hit: 1_412_500 },
+    { name: 'Sam Montembeault', group: 'G', hit: 3_150_000 },
+    { name: 'Jakub Dobes', group: 'G', hit: 965_000 },
+    { name: 'Jacob Fowler', group: 'G', hit: 945_833 },
+    { name: 'Bonus Carryover Overage', group: 'O', hit: 1_934_410, charge: 'buyout' },
+    { name: 'RETAINED', group: 'O', hit: 3_250_000, charge: 'retained' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

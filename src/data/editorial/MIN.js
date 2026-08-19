@@ -55,7 +55,10 @@ export const rosterComparison = [
     rows: [
       {
         pos: 'LW', before: 'Kirill Kaprizov', after: 'Kirill Kaprizov', status: 'retained',
-        notes: ['Projected on the top line with Joel Eriksson Ek and Matt Boldy'],
+        notes: [
+          'Carries a $17M cap hit through 2034, the largest in the league',
+          'Projected on the top line with Joel Eriksson Ek and Matt Boldy',
+        ],
       },
       {
         pos: 'F', before: 'Mats Zuccarello', after: null, status: 'departed',
@@ -151,7 +154,7 @@ export const biggestChanges = [
   },
   {
     title: 'Quinn Hughes was already here',
-    body: 'Hughes anchors the projected top pair but does not appear in this summer’s ledger: he came from Vancouver in a mid-December in-season trade, for Marco Rossi, Liam Ohgren, Zeev Buium and a 2026 first-round pick. It sits outside the offseason window this page covers, and is noted here so the blue line makes sense.',
+    body: 'Hughes anchors the projected top pair at a $7.85M cap hit but does not appear in this summer’s ledger: he came from Vancouver in a mid-December in-season trade, for Marco Rossi, Liam Ohgren, Zeev Buium and a 2026 first-round pick. It sits outside the offseason window this page covers, and is noted here so the blue line makes sense. He can reach unrestricted free agency in 2027.',
   },
 ]
 
@@ -163,10 +166,10 @@ export const campWatch = [
 ]
 
 export const unresolved = [
-  { status: 'Open', item: 'Filip Gustavsson’s hip', impact: 'Recovering from surgery; Pickard signed behind Wallstedt' },
+  { status: 'Open', item: 'Filip Gustavsson’s hip', impact: 'On IR recovering from surgery; Pickard signed behind Wallstedt' },
+  { status: 'Open', item: 'Five players hurt going into camp', impact: 'Gustavsson, Brodin, Eriksson Ek, Bogosian and Stramel, with $1.15M of cap space' },
   { status: 'Open', item: 'Top-six forward depth', impact: 'Named in the reset as the outstanding need after three veterans left' },
   { status: 'Open', item: 'Vladimir Tarasenko and Jeff Petry', impact: 'Both still unsigned' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -180,5 +183,51 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// MIN cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 102_847_499,
+    space: 1_152_501,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 2_100_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 55_605_833 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 35_575_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 10_000_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 1_666_666 },
+  ],
+  capHits: [
+    { name: 'Kirill Kaprizov', group: 'F', hit: 17_000_000 },
+    { name: 'Matt Boldy', group: 'F', hit: 7_000_000 },
+    { name: 'Joel Eriksson Ek', group: 'F', hit: 5_250_000 },
+    { name: 'Marcus Foligno', group: 'F', hit: 4_000_000 },
+    { name: 'Ryan Hartman', group: 'F', hit: 4_000_000 },
+    { name: 'Yakov Trenin', group: 'F', hit: 3_500_000 },
+    { name: 'Michael McCarron', group: 'F', hit: 3_333_333 },
+    { name: 'Bobby Brink', group: 'F', hit: 2_750_000 },
+    { name: 'Blake Coleman', group: 'F', hit: 2_450_000 },
+    { name: 'Nico Sturm', group: 'F', hit: 2_000_000 },
+    { name: 'Maksim Shabanov', group: 'F', hit: 1_600_000 },
+    { name: 'Danila Yurov', group: 'F', hit: 972_500 },
+    { name: 'Nick Foligno', group: 'F', hit: 900_000 },
+    { name: 'Justin Kirkland', group: 'F', hit: 850_000 },
+    { name: 'Brock Faber', group: 'D', hit: 8_500_000 },
+    { name: 'Quinn Hughes', group: 'D', hit: 7_850_000 },
+    { name: 'Jared Spurgeon', group: 'D', hit: 7_575_000 },
+    { name: 'Jonas Brodin', group: 'D', hit: 6_000_000 },
+    { name: 'Olli Maatta', group: 'D', hit: 3_500_000 },
+    { name: 'Zach Bogosian', group: 'D', hit: 1_250_000 },
+    { name: 'Daemon Hunt', group: 'D', hit: 900_000 },
+    { name: 'Filip Gustavsson', group: 'G', hit: 6_800_000 },
+    { name: 'Jesper Wallstedt', group: 'G', hit: 2_200_000 },
+    { name: 'Calvin Pickard', group: 'G', hit: 1_000_000 },
+    { name: 'LW,RW', group: 'O', hit: 833_333, charge: 'buyout' },
+    { name: 'BUYOUT', group: 'O', hit: 833_333, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
