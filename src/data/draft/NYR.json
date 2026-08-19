@@ -1,0 +1,65 @@
+[
+  {
+    "rd": 1,
+    "pick": 5,
+    "player": "Alberts Smits",
+    "pos": "D",
+    "from": "MUNCHEN, GERMANY"
+  },
+  {
+    "rd": 2,
+    "pick": 64,
+    "player": "Benjamin MacBeath",
+    "pos": "D",
+    "from": "CALGARY, WHL"
+  },
+  {
+    "rd": 3,
+    "pick": 67,
+    "player": "Danai Shaiikov",
+    "pos": "G",
+    "from": "GATINEAU, QMJHL"
+  },
+  {
+    "rd": 3,
+    "pick": 77,
+    "player": "Charlie Morrison",
+    "pos": "D",
+    "from": "QUEBEC, QMJHL"
+  },
+  {
+    "rd": 3,
+    "pick": 81,
+    "player": "Tomas Chrenko",
+    "pos": "C",
+    "from": "NITRA, SLOVAKIA"
+  },
+  {
+    "rd": 4,
+    "pick": 102,
+    "player": "Spencer Bowes",
+    "pos": "LW",
+    "from": "OTTAWA, OHL"
+  },
+  {
+    "rd": 6,
+    "pick": 162,
+    "player": "Andre Mondoux",
+    "pos": "D",
+    "from": "KINGSTON, OHL"
+  },
+  {
+    "rd": 6,
+    "pick": 163,
+    "player": "Darian Anderson",
+    "pos": "RW",
+    "from": "FLINT, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 193,
+    "player": "Ivan Patrikhayev",
+    "pos": "D",
+    "from": "CSKA, RUSSIA"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "rd": 1,
+    "pick": 14,
+    "player": "Oscar Hemming",
+    "pos": "LW",
+    "from": "BOSTON COLLEGE, H-EAST"
+  },
+  {
+    "rd": 3,
+    "pick": 94,
+    "player": "Alessandro Di Iorio",
+    "pos": "C",
+    "from": "SARNIA, OHL"
+  },
+  {
+    "rd": 4,
+    "pick": 121,
+    "player": "Evan Jardine",
+    "pos": "LW",
+    "from": "YOUNGSTOWN, USHL"
+  },
+  {
+    "rd": 5,
+    "pick": 142,
+    "player": "Parker Snell",
+    "pos": "G",
+    "from": "EDMONTON, WHL"
+  },
+  {
+    "rd": 6,
+    "pick": 182,
+    "player": "Anttoni Uronen",
+    "pos": "C",
+    "from": "HIFK, FINLAND"
+  },
+  {
+    "rd": 6,
+    "pick": 185,
+    "player": "Jonas Woo",
+    "pos": "D",
+    "from": "MEDICINE HAT, WHL"
+  },
+  {
+    "rd": 7,
+    "pick": 206,
+    "player": "Filip Novak",
+    "pos": "LW",
+    "from": "SPARTA JR., CZECHIA-JR."
+  }
+]

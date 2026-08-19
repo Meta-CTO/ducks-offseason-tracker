@@ -1,0 +1,44 @@
+[
+  {
+    "rd": 2,
+    "pick": 40,
+    "player": "Simas Ignatavicius",
+    "pos": "RW",
+    "from": "GENEVE, SWISS"
+  },
+  {
+    "rd": 2,
+    "pick": 48,
+    "player": "Ryder Cali",
+    "pos": "C",
+    "from": "NORTH BAY, OHL"
+  },
+  {
+    "rd": 4,
+    "pick": 98,
+    "player": "Jonas Kemps",
+    "pos": "D",
+    "from": "CHICAGO, USHL"
+  },
+  {
+    "rd": 6,
+    "pick": 168,
+    "player": "Vilho Vanhatalo",
+    "pos": "RW",
+    "from": "TAPPARA JR., FINLAND-JR."
+  },
+  {
+    "rd": 6,
+    "pick": 181,
+    "player": "Cole Zurawski",
+    "pos": "RW",
+    "from": "OWEN SOUND, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 217,
+    "player": "Louis-Antoine Denault",
+    "pos": "G",
+    "from": "NEWFOUNDLAND, QMJHL"
+  }
+]

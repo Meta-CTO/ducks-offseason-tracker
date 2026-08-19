@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/SJS.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/SJS.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // San Jose Sharks editorial content. Research cutoff: August 19, 2026.
 //
@@ -161,9 +162,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset lists the top selections
-// in prose but not the full class.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Ivar Stenberg', pos: 'LW', note: 'Second overall pick, eighteen, projected straight onto the third line.' },

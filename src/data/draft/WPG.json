@@ -1,0 +1,51 @@
+[
+  {
+    "rd": 1,
+    "pick": 8,
+    "player": "Viggo Bjorck",
+    "pos": "C",
+    "from": "DJURGARDEN, SWEDEN"
+  },
+  {
+    "rd": 3,
+    "pick": 71,
+    "player": "Samuel Hrenak",
+    "pos": "G",
+    "from": "FARGO, USHL"
+  },
+  {
+    "rd": 4,
+    "pick": 116,
+    "player": "Zach Wooten",
+    "pos": "LW",
+    "from": "GREEN BAY, USHL"
+  },
+  {
+    "rd": 5,
+    "pick": 135,
+    "player": "Alexandre Taillefer",
+    "pos": "D",
+    "from": "QUEBEC, QMJHL"
+  },
+  {
+    "rd": 6,
+    "pick": 167,
+    "player": "Landon Hafele",
+    "pos": "C",
+    "from": "GREEN BAY, USHL"
+  },
+  {
+    "rd": 7,
+    "pick": 199,
+    "player": "Alofa Tunoa Ta'amu",
+    "pos": "D",
+    "from": "EDMONTON, WHL"
+  },
+  {
+    "rd": 7,
+    "pick": 220,
+    "player": "John Parsons",
+    "pos": "G",
+    "from": "PROVIDENCE, H-EAST"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "rd": 2,
+    "pick": 56,
+    "player": "Yuri Ivanov",
+    "pos": "G",
+    "from": "SPARTAK JR., RUSSIA-JR."
+  },
+  {
+    "rd": 3,
+    "pick": 88,
+    "player": "Nils Bartholdsson",
+    "pos": "RW",
+    "from": "ROGLE JR., SWEDEN-JR."
+  },
+  {
+    "rd": 4,
+    "pick": 104,
+    "player": "Matvei Kotkov",
+    "pos": "RW",
+    "from": "YAROSLAVL JR., RUSSIA-JR."
+  },
+  {
+    "rd": 4,
+    "pick": 122,
+    "player": "Oscar Olsson",
+    "pos": "LW",
+    "from": "OREBRO JR., SWEDEN-JR."
+  },
+  {
+    "rd": 5,
+    "pick": 157,
+    "player": "Jacob Vandeven",
+    "pos": "D",
+    "from": "KOMOKA, GOHL"
+  },
+  {
+    "rd": 6,
+    "pick": 170,
+    "player": "Roberto Henriquez",
+    "pos": "G",
+    "from": "GREEN BAY, USHL"
+  },
+  {
+    "rd": 7,
+    "pick": 216,
+    "player": "Cullen McCrate",
+    "pos": "D",
+    "from": "FARGO, USHL"
+  }
+]

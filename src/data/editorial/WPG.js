@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/WPG.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/WPG.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Winnipeg Jets editorial content. Research cutoff: August 19, 2026.
 //
@@ -141,8 +142,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Brad Lambert', pos: 'F', note: 'Twenty-two, a 2022 first-rounder, projected onto the third line.' },

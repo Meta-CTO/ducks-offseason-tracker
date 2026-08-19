@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/TOR.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/TOR.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Toronto Maple Leafs editorial content. Research cutoff: August 19, 2026.
 //
@@ -195,8 +196,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet beyond the first overall selection.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Gavin McKenna', pos: 'LW', note: 'Eighteen, first overall, projected onto the second line. Camp decides it.' },

@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/PIT.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/PIT.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Pittsburgh Penguins editorial content. Research cutoff: August 19, 2026.
 //
@@ -144,8 +145,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Ben Kindel', pos: 'C', note: 'Projected to centre the third line between Kuzmenko and Robertson.' },

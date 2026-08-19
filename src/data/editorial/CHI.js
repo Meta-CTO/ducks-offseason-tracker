@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/CHI.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/CHI.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Chicago Blackhawks editorial content. Research cutoff: August 19, 2026.
 //
@@ -139,8 +140,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Roman Kantserov', pos: 'RW', note: 'Twenty-one, projected onto the top line because Bedard is hurt.' },

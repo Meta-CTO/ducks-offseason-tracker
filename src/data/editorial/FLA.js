@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/FLA.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/FLA.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Florida Panthers editorial content. Research cutoff: August 19, 2026.
 //
@@ -164,8 +165,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Sandis Vilmanis', pos: 'LW', note: 'Projected onto the fourth line with Eller and Hathaway.' },

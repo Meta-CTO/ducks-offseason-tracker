@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/DET.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/DET.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Detroit Red Wings editorial content. Research cutoff: August 19, 2026.
 //
@@ -158,8 +159,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Emmitt Finnie', pos: 'F', note: 'Projected onto the top line beside Larkin and Lucas Raymond.' },

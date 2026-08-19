@@ -1,0 +1,58 @@
+[
+  {
+    "rd": 1,
+    "pick": 29,
+    "player": "Juho Piiparinen",
+    "pos": "D",
+    "from": "TAPPARA, FINLAND"
+  },
+  {
+    "rd": 2,
+    "pick": 63,
+    "player": "Forfeited",
+    "pos": null,
+    "from": null
+  },
+  {
+    "rd": 3,
+    "pick": 92,
+    "player": "Benjamin Wilmott",
+    "pos": "C",
+    "from": "BARRIE, OHL"
+  },
+  {
+    "rd": 3,
+    "pick": 95,
+    "player": "Sean Burick",
+    "pos": "D",
+    "from": "PENTICTON, WHL"
+  },
+  {
+    "rd": 4,
+    "pick": 113,
+    "player": "Jonah Sivertson",
+    "pos": "RW",
+    "from": "PRINCE ALBERT, WHL"
+  },
+  {
+    "rd": 5,
+    "pick": 159,
+    "player": "Will McLaughlin",
+    "pos": "D",
+    "from": "PORTLAND, WHL"
+  },
+  {
+    "rd": 6,
+    "pick": 191,
+    "player": "Matthew Minchak",
+    "pos": "G",
+    "from": "KINGSTON, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 207,
+    "player": "Noel Pakarinen",
+    "pos": "LW",
+    "from": "K-ESPOO JR., FINLAND-JR."
+  }
+]

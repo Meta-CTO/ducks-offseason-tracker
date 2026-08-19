@@ -1,0 +1,44 @@
+[
+  {
+    "rd": 1,
+    "pick": 22,
+    "player": "Liam Ruck",
+    "pos": "RW",
+    "from": "MEDICINE HAT, WHL"
+  },
+  {
+    "rd": 2,
+    "pick": 39,
+    "player": "Markus Ruck",
+    "pos": "C",
+    "from": "MEDICINE HAT, WHL"
+  },
+  {
+    "rd": 2,
+    "pick": 54,
+    "player": "Tomas Galvas",
+    "pos": "D",
+    "from": "LIBEREC, CZECHIA"
+  },
+  {
+    "rd": 3,
+    "pick": 86,
+    "player": "Pierce Mbuyi",
+    "pos": "LW",
+    "from": "OWEN SOUND, OHL"
+  },
+  {
+    "rd": 4,
+    "pick": 111,
+    "player": "Parker Von Richter",
+    "pos": "D",
+    "from": "BARRIE, OHL"
+  },
+  {
+    "rd": 5,
+    "pick": 160,
+    "player": "Matvei Nikonovich",
+    "pos": "G",
+    "from": "TOGLIATTI JR., RUSSIA-JR."
+  }
+]

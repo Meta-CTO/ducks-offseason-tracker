@@ -1,0 +1,58 @@
+[
+  {
+    "rd": 1,
+    "pick": 25,
+    "player": "Jonas Lagerberg Hoen",
+    "pos": "RW",
+    "from": "LEKSAND JR., SWEDEN-JR."
+  },
+  {
+    "rd": 1,
+    "pick": 32,
+    "player": "Jaxon Cover",
+    "pos": "RW",
+    "from": "LONDON, OHL"
+  },
+  {
+    "rd": 3,
+    "pick": 72,
+    "player": "Adam Nemec",
+    "pos": "LW",
+    "from": "SUDBURY, OHL"
+  },
+  {
+    "rd": 3,
+    "pick": 87,
+    "player": "Oscar Holmertz",
+    "pos": "C",
+    "from": "LINKOPING JR., SWEDEN-JR."
+  },
+  {
+    "rd": 3,
+    "pick": 91,
+    "player": "Louis Felix Bourque",
+    "pos": "RW",
+    "from": "DRUMMONDVILLE, QMJHL"
+  },
+  {
+    "rd": 4,
+    "pick": 110,
+    "player": "Elliot Lennon",
+    "pos": "G",
+    "from": "DEERFIELD, HIGH-MA"
+  },
+  {
+    "rd": 5,
+    "pick": 151,
+    "player": "Harris Pangretitsch",
+    "pos": "D",
+    "from": "SAULT STE. MARIE, OHL"
+  },
+  {
+    "rd": 6,
+    "pick": 183,
+    "player": "Alexander Grunin",
+    "pos": "D",
+    "from": "NOVOSIBIRSK JR., RUSSIA-JR."
+  }
+]

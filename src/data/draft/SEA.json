@@ -1,0 +1,58 @@
+[
+  {
+    "rd": 1,
+    "pick": 7,
+    "player": "Chase Reid",
+    "pos": "D",
+    "from": "SAULT STE. MARIE, OHL"
+  },
+  {
+    "rd": 2,
+    "pick": 38,
+    "player": "Casey Mutryn",
+    "pos": "RW",
+    "from": "USA U-18, NTDP - USHL"
+  },
+  {
+    "rd": 4,
+    "pick": 99,
+    "player": "Viktor Fedorov",
+    "pos": "C",
+    "from": "TORPEDO-GORKY NN, RUSSIA-2"
+  },
+  {
+    "rd": 5,
+    "pick": 131,
+    "player": "Finn Kearns",
+    "pos": "D",
+    "from": "ST. ANDREWS COLLEGE, HIGH-ON"
+  },
+  {
+    "rd": 5,
+    "pick": 148,
+    "player": "Luken Huff",
+    "pos": "D",
+    "from": "CEDAR RAPIDS, USHL"
+  },
+  {
+    "rd": 6,
+    "pick": 166,
+    "player": "Ola Palme",
+    "pos": "D",
+    "from": "VAXJO JR., SWEDEN-JR."
+  },
+  {
+    "rd": 7,
+    "pick": 198,
+    "player": "Rylan Singh",
+    "pos": "D",
+    "from": "GUELPH, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 204,
+    "player": "William Tomko",
+    "pos": "C",
+    "from": "SIOUX CITY, USHL"
+  }
+]

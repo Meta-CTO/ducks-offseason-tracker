@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/DAL.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/DAL.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Dallas Stars editorial content. Research cutoff: August 19, 2026.
 //
@@ -126,8 +127,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Arttu Hyry', pos: 'F', note: 'The general manager said he has “a great opportunity” to earn a roster spot after his playoff performance.' },

@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/VGK.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/VGK.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Vegas Golden Knights editorial content. Research cutoff: August 19, 2026.
 //
@@ -161,9 +162,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset names the 29th pick in
-// prose but not the full class.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Trevor Connelly', pos: 'F', note: 'Twenty; 49 points in 46 AHL games after being taken 19th in 2024.' },

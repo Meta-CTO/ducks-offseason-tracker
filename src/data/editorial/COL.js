@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/COL.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/COL.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Colorado Avalanche editorial content. Research cutoff: August 19, 2026.
 //
@@ -157,8 +158,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Zachary L’Heureux', pos: 'F', note: 'Twenty-three, projected onto the third line after arriving from Nashville.' },

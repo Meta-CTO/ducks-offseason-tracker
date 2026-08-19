@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/WSH.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/WSH.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Washington Capitals editorial content. Research cutoff: August 19, 2026.
 //
@@ -145,8 +146,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Cole Hutson', pos: 'LD', note: 'A rookie defenseman the reset names as a Calder Trophy candidate.' },

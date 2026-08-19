@@ -1,0 +1,65 @@
+[
+  {
+    "rd": 1,
+    "pick": 6,
+    "player": "Carson Carels",
+    "pos": "D",
+    "from": "PRINCE GEORGE, WHL"
+  },
+  {
+    "rd": 1,
+    "pick": 30,
+    "player": "Jack Hextall",
+    "pos": "C",
+    "from": "YOUNGSTOWN, USHL"
+  },
+  {
+    "rd": 2,
+    "pick": 36,
+    "player": "Chase Harrington",
+    "pos": "LW",
+    "from": "SPOKANE, WHL"
+  },
+  {
+    "rd": 2,
+    "pick": 42,
+    "player": "Tobias Trejbal",
+    "pos": "G",
+    "from": "YOUNGSTOWN, USHL"
+  },
+  {
+    "rd": 2,
+    "pick": 55,
+    "player": "Alan Shaikhlislamov",
+    "pos": "RW",
+    "from": "UFA JR., RUSSIA-JR."
+  },
+  {
+    "rd": 3,
+    "pick": 65,
+    "player": "Joe Iginla",
+    "pos": "RW",
+    "from": "VANCOUVER, WHL"
+  },
+  {
+    "rd": 4,
+    "pick": 100,
+    "player": "Egor Barabanov",
+    "pos": "C",
+    "from": "SAGINAW, OHL"
+  },
+  {
+    "rd": 5,
+    "pick": 132,
+    "player": "Simon Katolicky",
+    "pos": "LW",
+    "from": "TAPPARA JR., FINLAND-JR."
+  },
+  {
+    "rd": 6,
+    "pick": 164,
+    "player": "Bode Laylin",
+    "pos": "D",
+    "from": "TRI-CITY, USHL"
+  }
+]

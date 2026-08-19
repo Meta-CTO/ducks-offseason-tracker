@@ -1,0 +1,37 @@
+[
+  {
+    "rd": 2,
+    "pick": 58,
+    "player": "Rudolfs Berzkalns",
+    "pos": "C",
+    "from": "MUSKEGON, USHL"
+  },
+  {
+    "rd": 3,
+    "pick": 84,
+    "player": "Malcom Gastrin",
+    "pos": "LW",
+    "from": "MODO JR., SWEDEN-JR."
+  },
+  {
+    "rd": 5,
+    "pick": 133,
+    "player": "Andrew Robinson",
+    "pos": "D",
+    "from": "WINDSOR, OHL"
+  },
+  {
+    "rd": 6,
+    "pick": 180,
+    "player": "Caden Harvey",
+    "pos": "C",
+    "from": "WINDSOR, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 212,
+    "player": "Ryan Cameron",
+    "pos": "G",
+    "from": "CEDAR RAPIDS, USHL"
+  }
+]

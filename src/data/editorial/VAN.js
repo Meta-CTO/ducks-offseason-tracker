@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/VAN.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/VAN.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Vancouver Canucks editorial content. Research cutoff: August 19, 2026.
 //
@@ -180,8 +181,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Tom Willander', pos: 'D', note: 'Projected onto the second pair with Oleksiak.' },

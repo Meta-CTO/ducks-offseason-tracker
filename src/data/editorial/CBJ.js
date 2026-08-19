@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/CBJ.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/CBJ.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Columbus Blue Jackets editorial content. Research cutoff: August 19, 2026.
 //
@@ -134,8 +135,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Luca Del Bel Belluz', pos: 'C', note: 'Projected to centre the fourth line.' },

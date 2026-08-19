@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/MTL.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/MTL.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Montréal Canadiens editorial content. Research cutoff: August 19, 2026.
 //
@@ -136,8 +137,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Jacob Fowler', pos: 'G', note: 'Could push Dobes for starts; a .908 save percentage so far.' },

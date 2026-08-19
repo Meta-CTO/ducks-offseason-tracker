@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/UTA.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/UTA.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Utah Mammoth editorial content. Research cutoff: August 19, 2026.
 //
@@ -155,9 +156,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset names recent picks in
-// prose but not a 2026 class.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Caleb Desnoyers', pos: 'F', note: 'Nineteen, fourth overall in 2025; the GM said he will have a chance to make the roster.' },

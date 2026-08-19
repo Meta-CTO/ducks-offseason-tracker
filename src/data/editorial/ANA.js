@@ -422,17 +422,17 @@ export const biggestChanges = [
   },
 ]
 
-export const draftClass = [
-  { rd: 1, pick: 15, player: 'Nikita Klepov', pos: 'RW', note: 'Headline prospect; OHL rookie season: 67 GP, 37–60–97; possible camp push' },
-  { rd: 1, pick: 28, player: 'Marcus Nordmark', pos: 'RW', note: 'First-round prospect, signed; development story rather than roster lock' },
-  { rd: 2, pick: 45, player: 'Jayden Kurtz', pos: 'D', note: 'Acquired pick in Zellweger trade' },
-  { rd: 2, pick: 50, player: 'Mathis Preston', pos: 'RW', note: 'Development pipeline' },
-  { rd: 3, pick: 82, player: 'Rian Chudzinski', pos: 'RW', note: 'Development pipeline' },
-  { rd: 5, pick: 146, player: 'Eric Frossard', pos: 'D', note: 'Development pipeline' },
-  { rd: 6, pick: 178, player: 'Gleb Peshkov', pos: 'G', note: 'Development pipeline' },
-  { rd: 6, pick: 192, player: 'Noah Kosick', pos: 'C', note: 'Pick obtained in John Carlson rights deal' },
-  { rd: 7, pick: 210, player: 'James Rieber', pos: 'D', note: 'Development pipeline' },
-]
+export const draftClass = draftFromApi(draft, {
+  15: 'Headline prospect; OHL rookie season: 67 GP, 37–60–97; possible camp push',
+  28: 'First-round prospect, signed; development story rather than roster lock',
+  45: 'Acquired pick in Zellweger trade',
+  50: 'Development pipeline',
+  82: 'Development pipeline',
+  146: 'Development pipeline',
+  178: 'Development pipeline',
+  192: 'Pick obtained in John Carlson rights deal',
+  210: 'Development pipeline',
+})
 
 export const campWatch = [
   { name: 'Tristan Luneau', pos: 'D', note: '41 points in 70 AHL games; GM Pat Verbeek expects him to make the team out of camp. Four departed regulars create a real opening.' },

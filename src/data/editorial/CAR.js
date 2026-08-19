@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/CAR.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/CAR.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Carolina Hurricanes editorial content. Research cutoff: August 19, 2026.
 //
@@ -125,8 +126,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Brandon Bussi', pos: 'G', note: 'Listed first among the projected goaltenders with Andersen gone.' },

@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/TBL.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/TBL.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Tampa Bay Lightning editorial content. Research cutoff: August 19, 2026.
 //
@@ -147,8 +148,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Conor Geekie', pos: 'C', note: 'Twenty-two, final year of his entry-level deal, projected into a bigger role after Paul’s departure.' },

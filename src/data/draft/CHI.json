@@ -1,0 +1,37 @@
+[
+  {
+    "rd": 2,
+    "pick": 34,
+    "player": "Xavier Villeneuve",
+    "pos": "D",
+    "from": "BLAINVILLE-BOISBRIAND, QMJHL"
+  },
+  {
+    "rd": 2,
+    "pick": 35,
+    "player": "Ryan Roobroeck",
+    "pos": "LW",
+    "from": "NIAGARA, OHL"
+  },
+  {
+    "rd": 3,
+    "pick": 66,
+    "player": "Samu Alalauri",
+    "pos": "D",
+    "from": "PELICANS JR., FINLAND-JR."
+  },
+  {
+    "rd": 7,
+    "pick": 194,
+    "player": "Alexander Ivanov",
+    "pos": "D",
+    "from": "BARS KAZAN, RUSSIA-2"
+  },
+  {
+    "rd": 7,
+    "pick": 200,
+    "player": "William Sorbrand",
+    "pos": "C",
+    "from": "TIMRA JR., SWEDEN-JR."
+  }
+]

@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/BUF.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/BUF.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Buffalo Sabres editorial content. Research cutoff: August 19, 2026.
 //
@@ -142,8 +143,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Konsta Helenius', pos: 'C', note: 'Twenty, with 63 points in 63 AHL games, projected to centre the third line.' },

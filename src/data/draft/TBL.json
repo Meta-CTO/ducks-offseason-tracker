@@ -1,0 +1,44 @@
+[
+  {
+    "rd": 2,
+    "pick": 52,
+    "player": "Oleg Kulebiakin",
+    "pos": "RW",
+    "from": "HALIFAX, QMJHL"
+  },
+  {
+    "rd": 3,
+    "pick": 90,
+    "player": "Tomas Kralovic",
+    "pos": "D",
+    "from": "BRATISLAVA, SLOVAKIA"
+  },
+  {
+    "rd": 5,
+    "pick": 134,
+    "player": "Morgan Anderberg",
+    "pos": "C",
+    "from": "VAXJO, SWEDEN"
+  },
+  {
+    "rd": 5,
+    "pick": 154,
+    "player": "Cooper Soller",
+    "pos": "C",
+    "from": "SIOUX FALLS, USHL"
+  },
+  {
+    "rd": 6,
+    "pick": 186,
+    "player": "Stepan Shurygin",
+    "pos": "G",
+    "from": "SAGINAW, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 218,
+    "player": "Max Vilen",
+    "pos": "D",
+    "from": "MONCTON, QMJHL"
+  }
+]

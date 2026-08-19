@@ -1,0 +1,44 @@
+[
+  {
+    "rd": 1,
+    "pick": 27,
+    "player": "Maksim Sokolovskii",
+    "pos": "D",
+    "from": "LONDON, OHL"
+  },
+  {
+    "rd": 2,
+    "pick": 53,
+    "player": "Brek Liske",
+    "pos": "D",
+    "from": "EVERETT, WHL"
+  },
+  {
+    "rd": 2,
+    "pick": 62,
+    "player": "Martin Psohlavec",
+    "pos": "G",
+    "from": "KARLOVY VARY JR., CZECHIA-JR."
+  },
+  {
+    "rd": 4,
+    "pick": 120,
+    "player": "Marek Sklenicka",
+    "pos": "G",
+    "from": "SEATTLE, WHL"
+  },
+  {
+    "rd": 5,
+    "pick": 136,
+    "player": "Kent Sauer",
+    "pos": "C",
+    "from": "ANDOVER, HIGH-MN"
+  },
+  {
+    "rd": 7,
+    "pick": 213,
+    "player": "Max Laatikainen",
+    "pos": "D",
+    "from": "K-ESPOO JR., FINLAND-JR."
+  }
+]

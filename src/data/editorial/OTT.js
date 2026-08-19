@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/OTT.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/OTT.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Ottawa Senators editorial content. Research cutoff: August 19, 2026.
 //
@@ -159,8 +160,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Carter Yakemchuk', pos: 'RD', note: 'Twenty; the reset says he will get a long look at training camp.' },

@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/PHI.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/PHI.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Philadelphia Flyers editorial content. Research cutoff: August 19, 2026.
 //
@@ -227,10 +228,7 @@ export const biggestChanges = [
   },
 ]
 
-// Philadelphia's 2026 draft class is not yet recorded here: the club's news
-// archive does not reach back to draft weekend, and this project does not
-// publish a pick list it has not read from a primary source.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Porter Martone', pos: 'RW', note: 'Nineteen, and projected straight onto the top line. A projection, not a decision.' },

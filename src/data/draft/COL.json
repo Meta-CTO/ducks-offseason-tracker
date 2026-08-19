@@ -1,0 +1,65 @@
+[
+  {
+    "rd": 2,
+    "pick": 43,
+    "player": "Egor Shilov",
+    "pos": "C",
+    "from": "VICTORIAVILLE, QMJHL"
+  },
+  {
+    "rd": 3,
+    "pick": 74,
+    "player": "Beckett Hamilton",
+    "pos": "C",
+    "from": "RED DEER, WHL"
+  },
+  {
+    "rd": 4,
+    "pick": 126,
+    "player": "Tobias Tvrznik",
+    "pos": "G",
+    "from": "WENATCHEE, WHL"
+  },
+  {
+    "rd": 4,
+    "pick": 128,
+    "player": "Axel Elofsson",
+    "pos": "D",
+    "from": "OREBRO JR., SWEDEN-JR."
+  },
+  {
+    "rd": 5,
+    "pick": 140,
+    "player": "Cole Tuminaro",
+    "pos": "D",
+    "from": "CHICAGO, USHL"
+  },
+  {
+    "rd": 5,
+    "pick": 152,
+    "player": "Theodore Lechner",
+    "pos": "D",
+    "from": "HOLY ANGELS, HIGH-MN"
+  },
+  {
+    "rd": 7,
+    "pick": 195,
+    "player": "Shawn Carrier",
+    "pos": "LW",
+    "from": "HALIFAX, QMJHL"
+  },
+  {
+    "rd": 7,
+    "pick": 214,
+    "player": "Ondrej Ruml",
+    "pos": "D",
+    "from": "OTTAWA, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 215,
+    "player": "Alexandre Raymond",
+    "pos": "G",
+    "from": "ROUYN-NORANDA, QMJHL"
+  }
+]

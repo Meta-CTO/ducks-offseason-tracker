@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/CGY.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/CGY.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Calgary Flames editorial content. Research cutoff: August 19, 2026.
 //
@@ -142,8 +143,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Aydar Suniev', pos: 'F', note: 'Twenty-one, and challenging for a spot after 24 points in 57 AHL games.' },

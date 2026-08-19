@@ -87,7 +87,10 @@ export default function Timeline() {
         <div className="table-scroll">
           <table className="draft-table">
             <thead>
-              <tr><th>Rd.</th><th>Pick</th><th>Player</th><th>Pos.</th><th>Outlook</th></tr>
+              <tr>
+                <th>Rd.</th><th>Pick</th><th>Player</th><th>Pos.</th>
+                <th>Drafted from</th><th>Outlook</th>
+              </tr>
             </thead>
             <tbody>
               {draftClass.map((d) => (
@@ -96,6 +99,10 @@ export default function Timeline() {
                   <td>{d.pick}</td>
                   <td>{d.player}</td>
                   <td>{d.pos}</td>
+                  {/* Where they were playing, from the API. The Outlook beside
+                      it is written analysis, so a club without one stays blank
+                      rather than having the two conflated. */}
+                  <td className="draft-from">{d.from}</td>
                   <td>
                     {isNew(d.note) && <span className="badge badge-new">New</span>}
                     {d.note}

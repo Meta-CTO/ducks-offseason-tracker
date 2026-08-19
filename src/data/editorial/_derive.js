@@ -24,3 +24,21 @@ export const pointsFromLeague = (league) =>
         },
       ]),
   )
+
+/**
+ * A club's draft class from the scraped API file, optionally merged with
+ * hand-written outlooks keyed by overall pick.
+ *
+ * The API supplies who was taken and where they were playing; only a person
+ * supplies what it means. Clubs with no written outlook show the factual
+ * "drafted from" column and leave Outlook blank, rather than inventing one.
+ */
+export const draftFromApi = (picks, notes = {}) =>
+  picks.map((p) => ({
+    rd: p.rd,
+    pick: p.pick,
+    player: p.player,
+    pos: p.pos,
+    from: p.from,
+    note: notes[p.pick] ?? null,
+  }))

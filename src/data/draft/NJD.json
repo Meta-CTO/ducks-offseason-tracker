@@ -1,0 +1,51 @@
+[
+  {
+    "rd": 1,
+    "pick": 12,
+    "player": "Alexander Command",
+    "pos": "C",
+    "from": "OREBRO JR., SWEDEN-JR."
+  },
+  {
+    "rd": 2,
+    "pick": 37,
+    "player": "Matias Vanhanen",
+    "pos": "LW",
+    "from": "EVERETT, WHL"
+  },
+  {
+    "rd": 2,
+    "pick": 44,
+    "player": "Nikita Shcherbakov",
+    "pos": "D",
+    "from": "UFA JR., RUSSIA-JR."
+  },
+  {
+    "rd": 4,
+    "pick": 119,
+    "player": "Lavr Gashilov",
+    "pos": "C",
+    "from": "YEKATERINBURG JR., RUSSIA-JR."
+  },
+  {
+    "rd": 5,
+    "pick": 149,
+    "player": "Daniil Rusakovich",
+    "pos": "G",
+    "from": "DINAMO-SHINNIK JR., RUSSIA-JR."
+  },
+  {
+    "rd": 6,
+    "pick": 172,
+    "player": "Luke Wilfley",
+    "pos": "C",
+    "from": "PORTLAND, WHL"
+  },
+  {
+    "rd": 7,
+    "pick": 222,
+    "player": "Quinn McKenzie",
+    "pos": "C",
+    "from": "SAULT STE. MARIE, OHL"
+  }
+]

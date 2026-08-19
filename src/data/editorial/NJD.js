@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/NJD.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/NJD.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // New Jersey Devils editorial content. Research cutoff: August 19, 2026.
 //
@@ -174,8 +175,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Anton Silayev', pos: 'LD', note: 'Twenty and six-foot-seven, signed for three years in June.' },

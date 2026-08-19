@@ -1,0 +1,44 @@
+[
+  {
+    "rd": 2,
+    "pick": 51,
+    "player": "William Hakansson",
+    "pos": "D",
+    "from": "LULEA, SWEDEN"
+  },
+  {
+    "rd": 2,
+    "pick": 61,
+    "player": "Wiggo Sorensson",
+    "pos": "C",
+    "from": "BORO/VETLANDA, SWEDEN-4"
+  },
+  {
+    "rd": 3,
+    "pick": 68,
+    "player": "Zachary Lansard",
+    "pos": "RW",
+    "from": "REGINA, WHL"
+  },
+  {
+    "rd": 4,
+    "pick": 105,
+    "player": "Michael Berchild",
+    "pos": "LW",
+    "from": "USA U-18, NTDP - USHL"
+  },
+  {
+    "rd": 4,
+    "pick": 125,
+    "player": "Ryder Fetterolf",
+    "pos": "G",
+    "from": "OTTAWA, OHL"
+  },
+  {
+    "rd": 6,
+    "pick": 165,
+    "player": "Zachary Jovanovski",
+    "pos": "G",
+    "from": "GUELPH, OHL"
+  }
+]

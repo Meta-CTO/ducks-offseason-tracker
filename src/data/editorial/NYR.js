@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/NYR.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/NYR.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // New York Rangers editorial content. Research cutoff: August 19, 2026.
 //
@@ -147,8 +148,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Gabe Perreault', pos: 'LW', note: 'Projected onto the top line with Zibanejad and Lafreniere.' },

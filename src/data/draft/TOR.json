@@ -1,0 +1,72 @@
+[
+  {
+    "rd": 1,
+    "pick": 1,
+    "player": "Gavin McKenna",
+    "pos": "LW",
+    "from": "PENN STATE, BIG10"
+  },
+  {
+    "rd": 2,
+    "pick": 60,
+    "player": "Alexander Bilecki",
+    "pos": "D",
+    "from": "KITCHENER, OHL"
+  },
+  {
+    "rd": 3,
+    "pick": 69,
+    "player": "Ethan MacKenzie",
+    "pos": "D",
+    "from": "EDMONTON, WHL"
+  },
+  {
+    "rd": 3,
+    "pick": 73,
+    "player": "Zach Olsen",
+    "pos": "RW",
+    "from": "SASKATOON, WHL"
+  },
+  {
+    "rd": 3,
+    "pick": 76,
+    "player": "Mans Gudmundsson",
+    "pos": "D",
+    "from": "FARJESTAD JR., SWEDEN-JR."
+  },
+  {
+    "rd": 3,
+    "pick": 85,
+    "player": "Juuso Ainasto",
+    "pos": "G",
+    "from": "JOKERIT JR., FINLAND-JR."
+  },
+  {
+    "rd": 4,
+    "pick": 114,
+    "player": "Patriks Plumins",
+    "pos": "G",
+    "from": "ZEMGALE, LATVIA"
+  },
+  {
+    "rd": 5,
+    "pick": 158,
+    "player": "Cooper Williams",
+    "pos": "C",
+    "from": "SASKATOON, WHL"
+  },
+  {
+    "rd": 6,
+    "pick": 161,
+    "player": "Yaroslav Fedoseyev",
+    "pos": "D",
+    "from": "CHELYABINSK JR., RUSSIA-JR."
+  },
+  {
+    "rd": 6,
+    "pick": 169,
+    "player": "Brody Pepoy",
+    "pos": "RW",
+    "from": "SAGINAW, OHL"
+  }
+]

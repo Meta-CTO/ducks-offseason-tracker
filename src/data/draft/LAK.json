@@ -1,0 +1,79 @@
+[
+  {
+    "rd": 1,
+    "pick": 19,
+    "player": "Elton Hermansson",
+    "pos": "RW",
+    "from": "MODO, SWEDEN-2"
+  },
+  {
+    "rd": 2,
+    "pick": 46,
+    "player": "Liam Lefebvre",
+    "pos": "C",
+    "from": "CHICOUTIMI, QMJHL"
+  },
+  {
+    "rd": 2,
+    "pick": 49,
+    "player": "Adam Goljer",
+    "pos": "D",
+    "from": "TRENCIN, SLOVAKIA"
+  },
+  {
+    "rd": 3,
+    "pick": 80,
+    "player": "Blake Zielinski",
+    "pos": "C",
+    "from": "DES MOINES, USHL"
+  },
+  {
+    "rd": 3,
+    "pick": 89,
+    "player": "Yegor Rybkin",
+    "pos": "G",
+    "from": "NIZHNY NOVGOROD JR., RUSSIA-JR."
+  },
+  {
+    "rd": 4,
+    "pick": 103,
+    "player": "Thomas Vandenberg",
+    "pos": "C",
+    "from": "OTTAWA, OHL"
+  },
+  {
+    "rd": 5,
+    "pick": 145,
+    "player": "Vertti Svensk",
+    "pos": "D",
+    "from": "SAIPA JR., FINLAND-JR."
+  },
+  {
+    "rd": 5,
+    "pick": 153,
+    "player": "Giorgos Pantelas",
+    "pos": "D",
+    "from": "BRANDON, WHL"
+  },
+  {
+    "rd": 6,
+    "pick": 177,
+    "player": "Alex Kostov",
+    "pos": "RW",
+    "from": "FLINT, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 209,
+    "player": "Tobias Krestan",
+    "pos": "RW",
+    "from": "HV71 JR., SWEDEN-JR."
+  },
+  {
+    "rd": 7,
+    "pick": 223,
+    "player": "Lucas Ambrosio",
+    "pos": "D",
+    "from": "ERIE, OHL"
+  }
+]

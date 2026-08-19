@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/EDM.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/EDM.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Edmonton Oilers editorial content. Research cutoff: August 19, 2026.
 //
@@ -156,8 +157,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Matthew Savoie', pos: 'F', note: 'Projected onto the second line beside Draisaitl; a projection rather than a decision.' },

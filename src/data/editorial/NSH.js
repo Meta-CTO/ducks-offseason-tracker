@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/NSH.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/NSH.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // Nashville Predators editorial content. Research cutoff: August 19, 2026.
 //
@@ -154,8 +155,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset does not list picks.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Brady Martin', pos: 'F', note: 'Nineteen, the fifth overall pick in 2025; three NHL games so far and 24 points in 24 OHL games.' },

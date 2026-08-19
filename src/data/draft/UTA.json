@@ -1,0 +1,44 @@
+[
+  {
+    "rd": 1,
+    "pick": 17,
+    "player": "Ethan Belchetz",
+    "pos": "LW",
+    "from": "WINDSOR, OHL"
+  },
+  {
+    "rd": 3,
+    "pick": 96,
+    "player": "Adam Valentini",
+    "pos": "C",
+    "from": "MICHIGAN, BIG10"
+  },
+  {
+    "rd": 4,
+    "pick": 115,
+    "player": "Carl Axelsson",
+    "pos": "G",
+    "from": "MUSKEGON, USHL"
+  },
+  {
+    "rd": 5,
+    "pick": 130,
+    "player": "Theodor Knights",
+    "pos": "D",
+    "from": "MODO JR., SWEDEN-JR."
+  },
+  {
+    "rd": 5,
+    "pick": 147,
+    "player": "Florent Houle",
+    "pos": "RW",
+    "from": "SHERBROOKE, QMJHL"
+  },
+  {
+    "rd": 7,
+    "pick": 211,
+    "player": "Artem Prima",
+    "pos": "LW",
+    "from": "MINOT, NAHL"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "rd": 1,
+    "pick": 26,
+    "player": "Gleb Pugachyov",
+    "pos": "RW",
+    "from": "NIZHNY NOVGOROD JR., RUSSIA-JR."
+  },
+  {
+    "rd": 2,
+    "pick": 57,
+    "player": "Timofei Runtso",
+    "pos": "D",
+    "from": "VICTORIA, WHL"
+  },
+  {
+    "rd": 3,
+    "pick": 93,
+    "player": "Cooper Cleaves",
+    "pos": "D",
+    "from": "DARTMOUTH, ECAC"
+  },
+  {
+    "rd": 4,
+    "pick": 117,
+    "player": "Brayden Klimpke",
+    "pos": "D",
+    "from": "SASKATOON, WHL"
+  },
+  {
+    "rd": 6,
+    "pick": 189,
+    "player": "Parker Trottier",
+    "pos": "LW",
+    "from": "USA U-18, NTDP - USHL"
+  },
+  {
+    "rd": 6,
+    "pick": 190,
+    "player": "Wesley Royston",
+    "pos": "RW",
+    "from": "OWEN SOUND, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 221,
+    "player": "Jean-Samuel Daigneault",
+    "pos": "D",
+    "from": "MUSKEGON, USHL"
+  },
+  {
+    "rd": 7,
+    "pick": 224,
+    "player": "Tyler Deakos",
+    "pos": "RW",
+    "from": "WATERLOO, USHL"
+  }
+]

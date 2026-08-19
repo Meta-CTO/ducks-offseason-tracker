@@ -1,0 +1,65 @@
+[
+  {
+    "rd": 1,
+    "pick": 3,
+    "player": "Caleb Malhotra",
+    "pos": "C",
+    "from": "BRANTFORD, OHL"
+  },
+  {
+    "rd": 1,
+    "pick": 24,
+    "player": "Adam Novotny",
+    "pos": "LW",
+    "from": "PETERBOROUGH, OHL"
+  },
+  {
+    "rd": 2,
+    "pick": 33,
+    "player": "Brooks Rogowski",
+    "pos": "C",
+    "from": "OSHAWA, OHL"
+  },
+  {
+    "rd": 2,
+    "pick": 41,
+    "player": "Niklas Aaram-Olsen",
+    "pos": "LW",
+    "from": "OREBRO JR., SWEDEN-JR."
+  },
+  {
+    "rd": 3,
+    "pick": 78,
+    "player": "Dmitri Ivchenko",
+    "pos": "G",
+    "from": "OMSK JR., RUSSIA-JR."
+  },
+  {
+    "rd": 4,
+    "pick": 97,
+    "player": "Yaroslav Bryzgalov",
+    "pos": "LW",
+    "from": "MEDICINE HAT, WHL"
+  },
+  {
+    "rd": 5,
+    "pick": 129,
+    "player": "Connor Davis",
+    "pos": "RW",
+    "from": "CEDAR RAPIDS, USHL"
+  },
+  {
+    "rd": 6,
+    "pick": 176,
+    "player": "Lucian Bernat",
+    "pos": "RW",
+    "from": "TAPPARA JR., FINLAND-JR."
+  },
+  {
+    "rd": 6,
+    "pick": 184,
+    "player": "Samuel Eriksson",
+    "pos": "D",
+    "from": "FARJESTAD JR., SWEDEN-JR."
+  }
+]

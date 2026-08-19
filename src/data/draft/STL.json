@@ -1,0 +1,65 @@
+[
+  {
+    "rd": 1,
+    "pick": 11,
+    "player": "Tynan Lawrence",
+    "pos": "C",
+    "from": "BOSTON UNIVERSITY, H-EAST"
+  },
+  {
+    "rd": 1,
+    "pick": 16,
+    "player": "Maddox Dagenais",
+    "pos": "C",
+    "from": "QUEBEC, QMJHL"
+  },
+  {
+    "rd": 3,
+    "pick": 75,
+    "player": "Luke Schairer",
+    "pos": "D",
+    "from": "USA U-18, NTDP - USHL"
+  },
+  {
+    "rd": 4,
+    "pick": 107,
+    "player": "Landon Nycz",
+    "pos": "D",
+    "from": "UMASS, H-EAST"
+  },
+  {
+    "rd": 4,
+    "pick": 123,
+    "player": "Vladimir Proskurin",
+    "pos": "G",
+    "from": "MYTISCHI JR., RUSSIA-JR."
+  },
+  {
+    "rd": 5,
+    "pick": 139,
+    "player": "Nicholas Bogas",
+    "pos": "D",
+    "from": "USA U-18, NTDP - USHL"
+  },
+  {
+    "rd": 5,
+    "pick": 150,
+    "player": "Carter Stevens",
+    "pos": "RW",
+    "from": "GUELPH, OHL"
+  },
+  {
+    "rd": 6,
+    "pick": 171,
+    "player": "Lars Steiner",
+    "pos": "RW",
+    "from": "ROUYN-NORANDA, QMJHL"
+  },
+  {
+    "rd": 7,
+    "pick": 203,
+    "player": "Colin Fitzgerald",
+    "pos": "C",
+    "from": "SAULT STE. MARIE, OHL"
+  }
+]

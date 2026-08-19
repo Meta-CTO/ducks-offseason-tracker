@@ -1,0 +1,37 @@
+[
+  {
+    "rd": 2,
+    "pick": 59,
+    "player": "Jakub Vanecek",
+    "pos": "D",
+    "from": "TRI-CITY, WHL"
+  },
+  {
+    "rd": 5,
+    "pick": 155,
+    "player": "Ryan Brown",
+    "pos": "LW",
+    "from": "LONDON, OHL"
+  },
+  {
+    "rd": 6,
+    "pick": 187,
+    "player": "Anton Emil Wilde Larsen",
+    "pos": "G",
+    "from": "FREDERIKSHAVN, DENMARK"
+  },
+  {
+    "rd": 7,
+    "pick": 197,
+    "player": "Jasper Kuhta",
+    "pos": "C",
+    "from": "OTTAWA, OHL"
+  },
+  {
+    "rd": 7,
+    "pick": 219,
+    "player": "Mikhail Cherepanov",
+    "pos": "D",
+    "from": "NEW HAMPSHIRE, NAHL"
+  }
+]

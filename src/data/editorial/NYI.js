@@ -1,6 +1,7 @@
 import { STATUS, RUMOR_STATUS } from '../status'
 import league from '../league/NYI.json'
-import { pointsFromLeague } from './_derive'
+import draft from '../draft/NYI.json'
+import { pointsFromLeague, draftFromApi } from './_derive'
 
 // New York Islanders editorial content. Research cutoff: August 19, 2026.
 //
@@ -139,9 +140,7 @@ export const biggestChanges = [
   },
 ]
 
-// Not researched from a primary source yet; the reset names recent picks in
-// prose but not a full class.
-export const draftClass = []
+export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
   { name: 'Victor Eklund', pos: 'RW', note: 'Nineteen, sixteenth overall in 2025, projected onto the third line.' },

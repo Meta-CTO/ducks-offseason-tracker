@@ -1,0 +1,51 @@
+[
+  {
+    "rd": 1,
+    "pick": 23,
+    "player": "Jeffrey (JP) Hurlbert",
+    "pos": "LW",
+    "from": "KAMLOOPS, WHL"
+  },
+  {
+    "rd": 2,
+    "pick": 47,
+    "player": "Victor Plante",
+    "pos": "LW",
+    "from": "USA U-18, NTDP - USHL"
+  },
+  {
+    "rd": 3,
+    "pick": 79,
+    "player": "Michal Orsulak",
+    "pos": "G",
+    "from": "PRINCE ALBERT, WHL"
+  },
+  {
+    "rd": 4,
+    "pick": 108,
+    "player": "Adam Levac",
+    "pos": "C",
+    "from": "PETERBOROUGH, OHL"
+  },
+  {
+    "rd": 5,
+    "pick": 143,
+    "player": "Beckham Edwards",
+    "pos": "C",
+    "from": "SARNIA, OHL"
+  },
+  {
+    "rd": 6,
+    "pick": 175,
+    "player": "Luka Arkko",
+    "pos": "LW",
+    "from": "PELICANS JR., FINLAND-JR."
+  },
+  {
+    "rd": 7,
+    "pick": 196,
+    "player": "Myles Brosnan",
+    "pos": "D",
+    "from": "DEXTER SCHOOL, HIGH-MA"
+  }
+]

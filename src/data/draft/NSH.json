@@ -1,0 +1,58 @@
+[
+  {
+    "rd": 1,
+    "pick": 10,
+    "player": "Wyatt Cullen",
+    "pos": "LW",
+    "from": "USA U-18, NTDP - USHL"
+  },
+  {
+    "rd": 1,
+    "pick": 31,
+    "player": "Thomas Bleyl",
+    "pos": "D",
+    "from": "MONCTON, QMJHL"
+  },
+  {
+    "rd": 3,
+    "pick": 70,
+    "player": "Dmitri Borichev",
+    "pos": "G",
+    "from": "LOKO-76 YAROSLAVL, RUSSIA-JR."
+  },
+  {
+    "rd": 4,
+    "pick": 106,
+    "player": "Jakub Floris",
+    "pos": "D",
+    "from": "LUKKO JR., FINLAND-JR."
+  },
+  {
+    "rd": 4,
+    "pick": 118,
+    "player": "Justin Graf",
+    "pos": "LW",
+    "from": "CEDAR RAPIDS, USHL"
+  },
+  {
+    "rd": 5,
+    "pick": 138,
+    "player": "Philip Hemmyr",
+    "pos": "LW",
+    "from": "BJORKLOVEN, SWEDEN-2"
+  },
+  {
+    "rd": 6,
+    "pick": 179,
+    "player": "Benjamin Cossette Ayotte",
+    "pos": "D",
+    "from": "VAL-D'OR, QMJHL"
+  },
+  {
+    "rd": 7,
+    "pick": 202,
+    "player": "Charlie Puglisi",
+    "pos": "C",
+    "from": "WINCHENDON, HIGH-MA"
+  }
+]
