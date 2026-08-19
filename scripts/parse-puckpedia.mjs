@@ -24,8 +24,9 @@ const text = Buffer.concat(chunks).toString('utf8')
 const money = (s) => Number(String(s).replace(/[$,]/g, ''))
 
 const num = (label) => {
-  const m = text.match(new RegExp(`${label}\\s*\\n\\s*\\$([\\d,]+)`))
-  return m ? money(m[1]) : null
+  // PuckPedia writes an overage as "-$1,360,333"; keep the sign.
+  const m = text.match(new RegExp(`${label}\\s*\\n\\s*(-?)\\$([\\d,]+)`))
+  return m ? (m[1] ? -money(m[2]) : money(m[2])) : null
 }
 
 const capHit = num('PROJECTED CAP HIT')

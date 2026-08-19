@@ -168,7 +168,6 @@ export const campWatch = [
 export const unresolved = [
   { status: 'Open', item: 'Cale Makar’s extension', impact: 'Can become a UFA after 2026-27; the reset names it as the priority' },
   { status: 'Open', item: 'Replacing Nichushkin’s scoring', impact: '49 points traded for picks' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
 ]
 
 export const rumors = []
@@ -181,5 +180,48 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// COL cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 103_595_841,
+    space: 404_159,
+    rosterSlots: '22 / 23',
+    potentialBonuses: 2_150_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 62_154_000 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 31_400_000 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 7_750_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 2_291_841 },
+  ],
+  capHits: [
+    { name: 'Nathan MacKinnon', group: 'F', hit: 12_604_000 },
+    { name: 'Martin Necas', group: 'F', hit: 11_500_000 },
+    { name: 'Brock Nelson', group: 'F', hit: 7_500_000 },
+    { name: 'Gabriel Landeskog', group: 'F', hit: 7_000_000 },
+    { name: 'Nazem Kadri', group: 'F', hit: 5_600_000 },
+    { name: 'Artturi Lehkonen', group: 'F', hit: 4_500_000 },
+    { name: 'Jaden Schwartz', group: 'F', hit: 3_250_000 },
+    { name: 'Nicolas Roy', group: 'F', hit: 3_000_000 },
+    { name: 'Logan O\'Connor', group: 'F', hit: 2_500_000 },
+    { name: 'Parker Kelly', group: 'F', hit: 1_700_000 },
+    { name: 'Fedor Svechkov', group: 'F', hit: 1_250_000 },
+    { name: 'Zachary L\'Heureux', group: 'F', hit: 875_000 },
+    { name: 'Gavin Brindley', group: 'F', hit: 875_000 },
+    { name: 'Cale Makar', group: 'D', hit: 9_000_000 },
+    { name: 'Devon Toews', group: 'D', hit: 7_250_000 },
+    { name: 'Sam Malinski', group: 'D', hit: 4_750_000 },
+    { name: 'Brett Kulak', group: 'D', hit: 4_500_000 },
+    { name: 'Josh Manson', group: 'D', hit: 3_950_000 },
+    { name: 'Noah Juulsen', group: 'D', hit: 1_100_000 },
+    { name: 'Brent Burns', group: 'D', hit: 850_000 },
+    { name: 'Mackenzie Blackwood', group: 'G', hit: 5_250_000 },
+    { name: 'Scott Wedgewood', group: 'G', hit: 2_500_000 },
+    { name: 'Bonus Carryover Overage', group: 'O', hit: 2_291_841, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }

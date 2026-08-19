@@ -30,7 +30,12 @@ function UtilizationBar() {
       value: g.total,
       color: g.color,
     })),
-    { label: 'Cap space', value: capSummary.space, color: 'var(--cap-space)' },
+    // A club can be over the ceiling — Dallas is, by $1.36M. Rendering that as
+    // a negative-width segment produces nothing at all, so an overage becomes
+    // its own labelled segment instead of a missing one.
+    capSummary.space >= 0
+      ? { label: 'Cap space', value: capSummary.space, color: 'var(--cap-space)' }
+      : { label: 'Over the ceiling', value: -capSummary.space, color: 'var(--cap-over)' },
   ]
   return (
     <div className="cap-util">
@@ -125,9 +130,15 @@ export default function CapView() {
         <StatTile label="Cap ceiling" value={fmtM(capSummary.ceiling)} sub="2026–27 upper limit" />
         <StatTile label="Projected cap hit" value={fmtM(capSummary.capHit)} sub={`${pctOfCap(capSummary.capHit)} of ceiling`} />
         <StatTile
-          label="Projected space"
-          value={fmtM(capSummary.space)}
-          sub={projected ? `Before a ${projected.name} deal` : 'Against the ceiling'}
+          label={capSummary.space < 0 ? 'Over the ceiling' : 'Projected space'}
+          value={fmtM(Math.abs(capSummary.space))}
+          sub={
+            capSummary.space < 0
+              ? 'Must be cap-compliant by opening night'
+              : projected
+                ? `Before a ${projected.name} deal`
+                : 'Against the ceiling'
+          }
         />
         <StatTile label="Active roster" value={capSummary.rosterSlots} sub="Contracts counting" />
       </div>

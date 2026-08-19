@@ -16,16 +16,16 @@ export const hero = {
   team: 'Dallas Stars',
   subtitle: '2026 Offseason Tracker',
   stage: 'Pre-camp projection',
-  headline: ['A quiet summer.', 'One very loud contract.'],
+  headline: ['A quiet summer.', 'Then a $12 million bridge.'],
   deck:
     'Dallas made almost no additions — one $1 million forward — and moved ' +
-    'Mavrik Bourque and Ilya Lyubushkin to Nashville for picks. The offseason ' +
-    'that matters is a negotiation: Jason Robertson led the club with 96 ' +
-    'points and remains an unsigned restricted free agent. The general ' +
-    'manager’s public position is that there is time.',
+    'Mavrik Bourque and Ilya Lyubushkin to Nashville for picks. Then it paid ' +
+    'Jason Robertson $12 million for a single season, matching Mikko Rantanen ' +
+    'as the club’s largest cap hit and pushing Dallas $1.36 million above the ' +
+    'ceiling. It has to be compliant by opening night.',
 }
 
-export const ledgerRange = 'July 1'
+export const ledgerRange = 'July 1 – July 21'
 
 export const departures = [
   { date: 'Jul. 1', player: 'Mavrik Bourque', pos: 'F', mechanism: 'Trade to Nashville', detail: 'Sent with Ilya Lyubushkin for a 2027 second and a 2028 third; signed a six-year, $33M deal with Nashville on Jul. 4 after 41 points in 82 games.' },
@@ -36,19 +36,21 @@ export const departures = [
 
 export const arrivals = [
   { date: 'Jul. 1', player: 'Joel Kiviranta', pos: 'F', deal: 'One year, $1M', role: 'Returns to Dallas after three seasons away; projected fourth line' },
+  { date: 'Jul. 3', player: 'Jamie Benn', pos: 'LW/C', deal: 'One year, $850K', role: 'Re-signed at thirty-seven; recorded on PuckPedia rather than the reset' },
+  { date: 'Jul. 21', player: 'Jason Robertson', pos: 'LW', deal: 'One year, $12M', role: 'Re-signed after leading Dallas with 96 points; recorded on PuckPedia rather than the reset' },
 ]
 
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Robertson unsigned; Bourque traded to Nashville; Kiviranta returns',
+    summary: 'Robertson re-signed for a year; Bourque traded to Nashville; Kiviranta returns',
     rows: [
       {
-        pos: 'LW', before: 'Jason Robertson', after: 'Jason Robertson', status: 'unsigned',
+        pos: 'LW', before: 'Jason Robertson', after: 'Jason Robertson', status: 'retained',
         notes: [
-          'An unsigned restricted free agent, which is the only firm fact about his situation',
+          'Re-signed Jul. 21 for one year at $12M, tying Mikko Rantanen for the largest cap hit on the roster',
           'Led Dallas with 96 points — 45 goals and 51 assists — in 82 games',
-          'The general manager’s public position: “The games don’t start until September, and this is part of contract negotiations”',
+          'A one-year deal rather than a long term, so the same negotiation returns next summer',
         ],
       },
       {
@@ -114,8 +116,12 @@ export const rosterComparison = [
 
 export const biggestChanges = [
   {
-    title: 'The 96-point winger is unsigned',
-    body: 'Jason Robertson led Dallas with 45 goals and 51 assists and remains a restricted free agent. Jim Nill’s public line is that the games do not start until September. Nothing beyond that is confirmed.',
+    title: 'The 96-point winger signed — for one year',
+    body: 'Jason Robertson re-signed on Jul. 21 at $12 million, matching Mikko Rantanen as the club’s largest cap hit. The term is the striking part: a single season, which means Dallas has the same conversation again next summer.',
+  },
+  {
+    title: 'And now they are over the cap',
+    body: 'Dallas projects at $105.36 million against a $104 million ceiling — $1.36 million in the red, before a $2.08 million bonus carryover overage that is already counted. The roster has to be compliant by opening night.',
   },
   {
     title: 'Bourque sold, then paid elsewhere',
@@ -135,10 +141,11 @@ export const campWatch = [
 ]
 
 export const unresolved = [
-  { status: 'Open', item: 'Jason Robertson’s contract', impact: 'The club’s leading scorer is an unsigned RFA' },
+  { status: 'Open', item: 'Getting under the ceiling', impact: 'Dallas is $1.36M over and must be compliant by opening night' },
+  { status: 'Open', item: 'Robertson again next summer', impact: 'His new deal runs one year, so the negotiation repeats in 2027' },
   { status: 'Open', item: 'Replacing Lyubushkin and Petrovic', impact: 'Two defensemen left and nobody was signed' },
   { status: 'Open', item: 'Michael Bunting', impact: 'Still an unsigned UFA' },
-  { status: 'Open', item: 'Cap and contract detail', impact: 'Not yet verified against PuckPedia, so this club has no cap tab' },
+  { status: 'Open', item: 'Four injured regulars', impact: 'Hintz, Seguin, Lundkvist and Hyry are all listed week to week' },
 ]
 
 export const rumors = []
@@ -151,5 +158,49 @@ export const sources = [
 export const photoCredits = creditsFrom(rosterComparison, campWatch)
 export const points = pointsFromLeague(league)
 export const contracts = {}
+
+// DAL cap data, PuckPedia, retrieved Aug. 19, 2026.
+export const cap = {
+  capSummary: {
+    ceiling: 104_000_000,
+    capHit: 105_360_333,
+    space: -1_360_333,
+    rosterSlots: '23 / 23',
+    potentialBonuses: 1_650_000,
+    asOf: 'Aug. 19, 2026',
+  },
+  capGroups: [
+    { key: 'F', label: 'Forwards', color: 'var(--cap-forwards)', total: 64_650_000 },
+    { key: 'D', label: 'Defense', color: 'var(--cap-defense)', total: 29_330_333 },
+    { key: 'G', label: 'Goaltending', color: 'var(--cap-goalies)', total: 9_300_000 },
+    { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 2_080_000 },
+  ],
+  capHits: [
+    { name: 'Mikko Rantanen', group: 'F', hit: 12_000_000 },
+    { name: 'Jason Robertson', group: 'F', hit: 12_000_000 },
+    { name: 'Tyler Seguin', group: 'F', hit: 9_850_000 },
+    { name: 'Roope Hintz', group: 'F', hit: 8_450_000 },
+    { name: 'Wyatt Johnston', group: 'F', hit: 8_400_000 },
+    { name: 'Matt Duchene', group: 'F', hit: 4_500_000 },
+    { name: 'Sam Steel', group: 'F', hit: 2_100_000 },
+    { name: 'Radek Faksa', group: 'F', hit: 2_000_000 },
+    { name: 'Joel Kiviranta', group: 'F', hit: 1_000_000 },
+    { name: 'Justin Hryckowian', group: 'F', hit: 950_000 },
+    { name: 'Arttu Hyry', group: 'F', hit: 875_000 },
+    { name: 'Jamie Benn', group: 'F', hit: 850_000 },
+    { name: 'Colin Blackwell', group: 'F', hit: 850_000 },
+    { name: 'Oskar Back', group: 'F', hit: 825_000 },
+    { name: 'Thomas Harley', group: 'D', hit: 10_587_000 },
+    { name: 'Miro Heiskanen', group: 'D', hit: 8_450_000 },
+    { name: 'Esa Lindell', group: 'D', hit: 5_250_000 },
+    { name: 'Nils Lundkvist', group: 'D', hit: 1_750_000 },
+    { name: 'Tyler Myers', group: 'D', hit: 1_500_000 },
+    { name: 'Lian Bichsel', group: 'D', hit: 918_333 },
+    { name: 'Kyle Capobianco', group: 'D', hit: 875_000 },
+    { name: 'Jake Oettinger', group: 'G', hit: 8_250_000 },
+    { name: 'Casey DeSmith', group: 'G', hit: 1_050_000 },
+    { name: 'Bonus Carryover Overage', group: 'O', hit: 2_080_000, charge: 'buyout' },
+  ],
+}
 
 export { STATUS, RUMOR_STATUS }
