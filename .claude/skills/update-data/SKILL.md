@@ -199,8 +199,18 @@ changes that are not there.
 
 ```sh
 npm run lint    # oxlint + the editorial structure check
+npm run qa      # content sweep: coverage, wrong-club rows, dead name lookups
 npm run build
 ```
+
+`npm run qa` is the content half of the check. It loads each club module,
+compares its rows to the roster feed, puts any name the feed does not have to
+the NHL player-search endpoint, and reports rows that attribute someone to the
+wrong club, rumor chips and badge entries that can never render, and cap names
+that will silently lose a photo. It also cross-checks each Coaching group's head
+coach against `src/data/coaches/`. Findings are signals to go read a source, not
+defects to fix blindly — the roster feed carries the NHL roster only, so AHL and
+LTIR players are legitimately absent from it.
 
 `npm run lint` runs `check-editorial.mjs`, which catches a club referencing a
 helper it never imported — a class of error that builds cleanly and fails only
