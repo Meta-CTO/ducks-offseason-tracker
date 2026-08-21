@@ -130,6 +130,14 @@ containing immutable **numeric** org and repo IDs
 (`repo:Meta-CTO@<id>/<repo>@<id>:environment:production`), not the plain-name
 form in most GitHub documentation.
 
+**The trust policy also constrains the *environment* name.** It allows exactly
+two subjects — `:environment:production` and `:ref:refs/heads/main`. A deploy job
+declaring any other environment (`production-nhl`, say) fails at
+`sts:AssumeRoleWithWebIdentity` with "Not authorized to perform" before it ever
+reaches S3, which reads like a permissions problem with the bucket and is not.
+Both deploy jobs therefore share the `production` environment. Adding a
+per-site environment means adding its subject to the trust policy first.
+
 The role's inline policy is deliberately narrow — `PutObject`/`GetObject`/
 `DeleteObject` and `ListBucket` on the site buckets, plus
 `CreateInvalidation`/`GetInvalidation` on those distributions, and nothing else.

@@ -127,8 +127,14 @@ jobs:
     concurrency:
       group: deploy-nhl-production
       cancel-in-progress: false
+    # Deliberately the same environment as `deploy`, not a `production-nhl` of
+    # its own. The OIDC trust policy allows two subjects only —
+    # `:environment:production` and `:ref:refs/heads/main` — so a distinct
+    # environment name makes the subject unmatched and the job fails at
+    # sts:AssumeRoleWithWebIdentity, before it touches AWS. Giving this site its
+    # own environment means adding that subject to the trust policy first.
     environment:
-      name: production-nhl
+      name: production
       url: https://${{ vars.NHL_SITE_DOMAIN }}/
     permissions:
       contents: read
