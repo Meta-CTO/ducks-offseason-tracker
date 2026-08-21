@@ -218,6 +218,10 @@ export const biggestChanges = [
 export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
+  { name: 'Bradly Nadeau', pos: 'F', note: 'Twenty-one; Jarvis’ shoulder surgery opens a path after 56 points in 52 AHL games.' },
+  { name: 'Felix Unger-Sorum', pos: 'F', note: 'Twenty; led Chicago’s AHL side with 66 points and has one NHL assist.' },
+  { name: 'Joel Nystrom', pos: 'D', note: 'Twenty-four; covered the blue line’s injuries for 10 points in 38 NHL games.' },
+  { name: 'Charles Alexis Legault', pos: 'D', note: 'Twenty-two; 12 NHL games last season and 16 more in the Calder Cup run.' },
   { name: 'Brandon Bussi', pos: 'G', note: 'Listed first among the projected goaltenders with Andersen gone.' },
 ]
 

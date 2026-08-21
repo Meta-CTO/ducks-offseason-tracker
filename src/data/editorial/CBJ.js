@@ -245,7 +245,10 @@ export const biggestChanges = [
 export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
-  { name: 'Luca Del Bel Belluz', pos: 'C', note: 'Projected to centre the fourth line.' },
+  { name: 'Luca Pinelli', pos: 'F', note: 'Twenty-one; three NHL games after 46 points in 68 with Cleveland.' },
+  { name: 'Josh Eernisse', pos: 'F', note: 'Twenty-four; signed out of Michigan in April and likely opens in the AHL.' },
+  { name: 'Corson Ceulemans', pos: 'D', note: 'Twenty-three; a 2021 first-round pick with three full AHL seasons behind him.' },
+  { name: 'Luca Del Bel Belluz', pos: 'C', note: 'Projected to centre the fourth line, and may open there with Lundestrom hurt.' },
 ]
 
 export const unresolved = [

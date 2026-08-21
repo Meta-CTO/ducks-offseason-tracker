@@ -267,6 +267,9 @@ export const biggestChanges = [
 export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
+  { name: 'Cole Schwindt', pos: 'F', note: 'Twenty-five; re-signed for two years on Jul. 1 but has never been an NHL regular.' },
+  { name: 'Jack Devine', pos: 'F', note: 'Twenty-two; 43 points in 63 AHL games, and pointless in six with Florida.' },
+  { name: 'Marek Alscher', pos: 'D', note: 'Twenty-two; four NHL games and three assists last season.' },
   { name: 'Sandis Vilmanis', pos: 'LW', note: 'Projected onto the fourth line with Eller and Hathaway.' },
 ]
 

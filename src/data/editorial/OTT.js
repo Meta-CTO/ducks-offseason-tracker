@@ -264,6 +264,7 @@ export const biggestChanges = [
 export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
+  { name: 'Logan Hensler', pos: 'D', note: 'Turns 20 in October; the reset expects him to push at camp, but may need another year.' },
   { name: 'Carter Yakemchuk', pos: 'RD', note: 'Twenty; the reset says he will get a long look at training camp.' },
 ]
 
