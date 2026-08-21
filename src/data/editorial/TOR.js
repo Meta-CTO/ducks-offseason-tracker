@@ -300,6 +300,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Maple Leafs management and coaching staff (NHL.com) — confirms John Chayka as general manager and Jim Hiller as head coach', url: 'https://www.nhl.com/mapleleafs/team/management' },
   { label: 'NHL.com Maple Leafs 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/toronto-maple-leafs-roster-changes-for-2026-27-season' },
   { label: 'Official Maple Leafs news', url: 'https://www.nhl.com/mapleleafs/news/' },
 ]
