@@ -55,7 +55,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Blueger and Hoglander out, Kane unsigned; Gallagher, Cotter and Safonov in on short deals',
+    summary: 'Blueger and Hoglander out, Kane unsigned; Gallagher, Cotter and Safonov in on short deals — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Elias Pettersson', after: 'Elias Pettersson', status: 'retained',
@@ -90,11 +90,65 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Paul Cotter', status: 'added',
         notes: ['One year on Jul. 1 after 15 points in 79 games with New Jersey'],
       },
+          {
+        pos: 'R', before: 'Brock Boeser', after: 'Brock Boeser', status: 'retained',
+        notes: [
+          'Played 75 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Filip Chytil', after: 'Filip Chytil', status: 'retained',
+        notes: [
+          'Played 12 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Jake DeBrusk', after: 'Jake DeBrusk', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Linus Karlsson', after: 'Linus Karlsson', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Drew O\'Connor', after: 'Drew O\'Connor', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Liam Ohgren', after: 'Liam Ohgren', status: 'retained',
+        notes: [
+          'Played 51 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Aatu Räty', after: 'Aatu Räty', status: 'retained',
+        notes: [
+          'Played 66 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Marco Rossi', after: 'Marco Rossi', status: 'retained',
+        notes: [
+          'Played 33 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Max Sasson', after: 'Max Sasson', status: 'retained',
+        notes: [
+          'Played 66 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Marcus Pettersson traded to the Rangers; Oleksiak and Schenn signed as veterans',
+    summary: 'Marcus Pettersson traded to the Rangers; Oleksiak and Schenn signed as veterans — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'D', before: 'Marcus Pettersson', after: null, status: 'departed',
@@ -120,11 +174,29 @@ export const rosterComparison = [
         pos: 'RD', before: 'Filip Hronek', after: 'Filip Hronek', status: 'retained',
         notes: ['Projected on the top pair'],
       },
+          {
+        pos: 'D', before: 'Zeev Buium', after: 'Zeev Buium', status: 'retained',
+        notes: [
+          'Played 45 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Victor Mancini', after: 'Victor Mancini', status: 'retained',
+        notes: [
+          'Played 24 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Tom Willander', after: 'Tom Willander', status: 'retained',
+        notes: [
+          'Played 70 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Unchanged: Demko and Lankinen',
+    summary: 'Unchanged: Demko and Lankinen — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Thatcher Demko', after: 'Thatcher Demko', status: 'retained',
@@ -133,6 +205,12 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Kevin Lankinen', after: 'Kevin Lankinen', status: 'retained',
         notes: ['Projected backup'],
+      },
+          {
+        pos: 'G', before: 'Nikita Tolopilo', after: 'Nikita Tolopilo', status: 'retained',
+        notes: [
+          'Played 21 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

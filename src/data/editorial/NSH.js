@@ -47,7 +47,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Six forwards acquired; Svechkov, L’Heureux and Haula out',
+    summary: 'Six forwards acquired; Svechkov, L’Heureux and Haula out — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: null, after: 'Mavrik Bourque', status: 'added',
@@ -90,11 +90,59 @@ export const rosterComparison = [
         pos: 'F', before: 'Erik Haula', after: null, status: 'departed',
         notes: ['Signed a two-year contract with Los Angeles on Jul. 1 after 38 points in 81 games'],
       },
+          {
+        pos: 'C', before: 'Adam Edstrom', after: 'Adam Edstrom', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'R', before: 'Luke Evangelista', after: 'Luke Evangelista', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Aiden Fink', after: 'Aiden Fink', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Alexander Kerfoot', after: 'Alexander Kerfoot', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jonathan Marchessault', after: 'Jonathan Marchessault', status: 'retained',
+        notes: [
+          'Played 62 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Steven Stamkos', after: 'Steven Stamkos', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Ozzy Wiesblatt', after: 'Ozzy Wiesblatt', status: 'retained',
+        notes: [
+          'Played 40 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Matthew Wood', after: 'Matthew Wood', status: 'retained',
+        notes: [
+          'Played 71 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Lyubushkin added; the top four is unchanged',
+    summary: 'Lyubushkin added; the top four is unchanged — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'D', before: 'Roman Josi', after: 'Roman Josi', status: 'retained',
@@ -105,6 +153,36 @@ export const rosterComparison = [
         notes: [
           'Arrived from Dallas on Jul. 1 in the Bourque trade',
           '9 points and 68 hits in 53 games; projected third pair',
+        ],
+      },
+          {
+        pos: 'D', before: 'Justin Barron', after: 'Justin Barron', status: 'retained',
+        notes: [
+          'Played 52 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Nicolas Hague', after: 'Nicolas Hague', status: 'retained',
+        notes: [
+          'Played 62 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Nick Perbix', after: 'Nick Perbix', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Brady Skjei', after: 'Brady Skjei', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Adam Wilsby', after: 'Adam Wilsby', status: 'retained',
+        notes: [
+          'Played 58 games for the club in 2025–26 and is on the current roster',
         ],
       },
     ],

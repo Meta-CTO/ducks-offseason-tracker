@@ -48,7 +48,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Celebrini signed long term; Eklund traded for the ninth pick; Marchment and Stenberg in',
+    summary: 'Celebrini signed long term; Eklund traded for the ninth pick; Marchment and Stenberg in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Macklin Celebrini', after: 'Macklin Celebrini', status: 'retained',
@@ -84,11 +84,71 @@ export const rosterComparison = [
         pos: 'F', before: 'Ryan Reaves', after: null, status: 'departed',
         notes: ['Became a UFA after 3 goals in 50 games'],
       },
+          {
+        pos: 'C', before: 'Ty Dellandrea', after: 'Ty Dellandrea', status: 'retained',
+        notes: [
+          'Played 46 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Adam Gaudette', after: 'Adam Gaudette', status: 'retained',
+        notes: [
+          'Played 66 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Barclay Goodrow', after: 'Barclay Goodrow', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Collin Graf', after: 'Collin Graf', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Michael Misa', after: 'Michael Misa', status: 'retained',
+        notes: [
+          'Played 45 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Zack Ostapchuk', after: 'Zack Ostapchuk', status: 'retained',
+        notes: [
+          'Played 59 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Kiefer Sherwood', after: 'Kiefer Sherwood', status: 'retained',
+        notes: [
+          'Played 28 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Will Smith', after: 'Will Smith', status: 'retained',
+        notes: [
+          'Played 69 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Tyler Toffoli', after: 'Tyler Toffoli', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Alexander Wennberg', after: 'Alexander Wennberg', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Rebuilt entirely: Ferraro, Desharnais and Mukhamadullin out; Trouba, Nurse and Kesselring in',
+    summary: 'Rebuilt entirely: Ferraro, Desharnais and Mukhamadullin out; Trouba, Nurse and Kesselring in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: null, after: 'Jacob Trouba', status: 'added',
@@ -126,11 +186,23 @@ export const rosterComparison = [
         pos: 'D', before: 'Shakir Mukhamadullin', after: null, status: 'departed',
         notes: ['Traded to Edmonton on Jul. 1 in the Nurse deal'],
       },
+          {
+        pos: 'D', before: 'Sam Dickinson', after: 'Sam Dickinson', status: 'retained',
+        notes: [
+          'Played 72 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Dmitry Orlov', after: 'Dmitry Orlov', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Askarov projected to start; Comrie signed to push Nedeljkovic for the backup job',
+    summary: 'Askarov projected to start; Comrie signed to push Nedeljkovic for the backup job — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Yaroslav Askarov', after: 'Yaroslav Askarov', status: 'retained',
@@ -141,6 +213,12 @@ export const rosterComparison = [
         notes: [
           'Two years on Jul. 1',
           'Competing with Alex Nedeljkovic for the backup job',
+        ],
+      },
+          {
+        pos: 'G', before: 'Alex Nedeljkovic', after: 'Alex Nedeljkovic', status: 'retained',
+        notes: [
+          'Played 40 games for the club in 2025–26 and is on the current roster',
         ],
       },
     ],

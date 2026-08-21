@@ -43,7 +43,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Kopitar retired and Kuzmenko left; Zuccarello, Haula and Perry signed on one- and two-year deals',
+    summary: 'Kopitar retired and Kuzmenko left; Zuccarello, Haula and Perry signed on one- and two-year deals — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Anze Kopitar', after: null, status: 'departed',
@@ -89,11 +89,65 @@ export const rosterComparison = [
         pos: 'F', before: 'Andrei Kuzmenko', after: null, status: 'departed',
         notes: ['Signed a one-year contract with Pittsburgh on Jul. 1'],
       },
+          {
+        pos: 'R', before: 'Joel Armia', after: 'Joel Armia', status: 'retained',
+        notes: [
+          'Played 67 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Kevin Fiala', after: 'Kevin Fiala', status: 'retained',
+        notes: [
+          'Played 56 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Samuel Helenius', after: 'Samuel Helenius', status: 'retained',
+        notes: [
+          'Played 53 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Adrian Kempe', after: 'Adrian Kempe', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Alex Laferriere', after: 'Alex Laferriere', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Scott Laughton', after: 'Scott Laughton', status: 'retained',
+        notes: [
+          'Played 21 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Trevor Moore', after: 'Trevor Moore', status: 'retained',
+        notes: [
+          'Played 69 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Alex Turcotte', after: 'Alex Turcotte', status: 'retained',
+        notes: [
+          'Played 62 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Taylor Ward', after: 'Taylor Ward', status: 'retained',
+        notes: [
+          'Played 36 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Largely intact, with Gustafsson added on a one-year deal',
+    summary: 'Largely intact, with Gustafsson added on a one-year deal — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: 'Drew Doughty', after: 'Drew Doughty', status: 'retained',
@@ -108,6 +162,36 @@ export const rosterComparison = [
         notes: [
           'One year on Jul. 1 from Detroit',
           'Played only two NHL games last season, with 37 points in 39 AHL games',
+        ],
+      },
+          {
+        pos: 'D', before: 'Mikey Anderson', after: 'Mikey Anderson', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Cody Ceci', after: 'Cody Ceci', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Brian Dumoulin', after: 'Brian Dumoulin', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Joel Edmundson', after: 'Joel Edmundson', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Scott Perunovich', after: 'Scott Perunovich', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],

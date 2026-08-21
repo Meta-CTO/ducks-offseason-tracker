@@ -50,7 +50,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Zuccarello, Johansson and Tarasenko out — 150 points — with Coleman and Shabanov in',
+    summary: 'Zuccarello, Johansson and Tarasenko out — 150 points — with Coleman and Shabanov in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LW', before: 'Kirill Kaprizov', after: 'Kirill Kaprizov', status: 'retained',
@@ -89,11 +89,83 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Maksim Shabanov', status: 'added',
         notes: ['One year on Jul. 2 after 18 points in 44 games with the Islanders'],
       },
+          {
+        pos: 'L', before: 'Matt Boldy', after: 'Matt Boldy', status: 'retained',
+        notes: [
+          'Played 76 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Bobby Brink', after: 'Bobby Brink', status: 'retained',
+        notes: [
+          'Played 13 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Joel Eriksson Ek', after: 'Joel Eriksson Ek', status: 'retained',
+        notes: [
+          'Played 70 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Marcus Foligno', after: 'Marcus Foligno', status: 'retained',
+        notes: [
+          'Played 56 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Nick Foligno', after: 'Nick Foligno', status: 'retained',
+        notes: [
+          'Played 17 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Hunter Haight', after: 'Hunter Haight', status: 'retained',
+        notes: [
+          'Played 9 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Ryan Hartman', after: 'Ryan Hartman', status: 'retained',
+        notes: [
+          'Played 76 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Michael McCarron', after: 'Michael McCarron', status: 'retained',
+        notes: [
+          'Played 20 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Maxim Shabanov', after: 'Maxim Shabanov', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Nico Sturm', after: 'Nico Sturm', status: 'retained',
+        notes: [
+          'Played 49 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Yakov Trenin', after: 'Yakov Trenin', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Danila Yurov', after: 'Danila Yurov', status: 'retained',
+        notes: [
+          'Played 73 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Middleton traded to Calgary; Maatta came back the other way',
+    summary: 'Middleton traded to Calgary; Maatta came back the other way — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'D', before: 'Jake Middleton', after: null, status: 'departed',
@@ -117,11 +189,65 @@ export const rosterComparison = [
         pos: 'D', before: 'Jeff Petry', after: null, status: 'unsigned',
         notes: ['An unsigned UFA, which is the only firm fact about his situation'],
       },
+          {
+        pos: 'D', before: 'Zach Bogosian', after: 'Zach Bogosian', status: 'retained',
+        notes: [
+          'Played 41 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jonas Brodin', after: 'Jonas Brodin', status: 'retained',
+        notes: [
+          'Played 62 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Viking Gustafsson Nyberg', after: 'Viking Gustafsson Nyberg', status: 'retained',
+        notes: [
+          'Played 2 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Quinn Hughes', after: 'Quinn Hughes', status: 'retained',
+        notes: [
+          'Played 48 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Daemon Hunt', after: 'Daemon Hunt', status: 'retained',
+        notes: [
+          'Played 32 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Matt Kiersted', after: 'Matt Kiersted', status: 'retained',
+        notes: [
+          'Played 6 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Carson Lambos', after: 'Carson Lambos', status: 'retained',
+        notes: [
+          'Played 1 game for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'David Spacek', after: 'David Spacek', status: 'retained',
+        notes: [
+          'Played 2 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jared Spurgeon', after: 'Jared Spurgeon', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Gustavsson recovering from hip surgery; Pickard signed behind Wallstedt',
+    summary: 'Gustavsson recovering from hip surgery; Pickard signed behind Wallstedt — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Filip Gustavsson', after: 'Filip Gustavsson', status: 'injured',
@@ -136,6 +262,18 @@ export const rosterComparison = [
         notes: [
           'One year on Jul. 1 from Edmonton',
           'Projected backup while Gustavsson recovers',
+        ],
+      },
+          {
+        pos: 'G', before: 'Riley Mercer', after: 'Riley Mercer', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'G', before: 'Chase Wutzke', after: 'Chase Wutzke', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],

@@ -47,7 +47,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Dorofeyev signed for seven years; Trocheck traded to Utah; Bjorkstrand and Veleno added',
+    summary: 'Dorofeyev signed for seven years; Trocheck traded to Utah; Bjorkstrand and Veleno added — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LW', before: null, after: 'Pavel Dorofeyev', status: 'added',
@@ -79,11 +79,71 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Joe Veleno', status: 'added',
         notes: ['One year on Jul. 1 after Montréal declined to qualify him'],
       },
+          {
+        pos: 'R', before: 'Jaroslav Chmelar', after: 'Jaroslav Chmelar', status: 'retained',
+        notes: [
+          'Played 28 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Will Cuylle', after: 'Will Cuylle', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Tye Kartye', after: 'Tye Kartye', status: 'retained',
+        notes: [
+          'Played 24 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Noah Laba', after: 'Noah Laba', status: 'retained',
+        notes: [
+          'Played 74 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Alexis Lafrenière', after: 'Alexis Lafrenière', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'J.T. Miller', after: 'J.T. Miller', status: 'retained',
+        notes: [
+          'Played 68 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Gabe Perreault', after: 'Gabe Perreault', status: 'retained',
+        notes: [
+          'Played 49 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Taylor Raddysh', after: 'Taylor Raddysh', status: 'retained',
+        notes: [
+          'Played 68 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Matt Rempe', after: 'Matt Rempe', status: 'retained',
+        notes: [
+          'Played 26 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Adam Sykora', after: 'Adam Sykora', status: 'retained',
+        notes: [
+          'Played 11 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Borgen traded to Boston; Durzi and Pettersson both acquired',
+    summary: 'Borgen traded to Boston; Durzi and Pettersson both acquired — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: 'Adam Fox', after: 'Adam Fox', status: 'retained',
@@ -107,11 +167,47 @@ export const rosterComparison = [
         pos: 'D', before: 'Will Borgen', after: null, status: 'departed',
         notes: ['Traded to Boston on Jul. 1 for a 2027 second and a conditional 2028 third'],
       },
+          {
+        pos: 'D', before: 'Drew Fortescue', after: 'Drew Fortescue', status: 'retained',
+        notes: [
+          'Played 9 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Vladislav Gavrikov', after: 'Vladislav Gavrikov', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Vincent Iorio', after: 'Vincent Iorio', status: 'retained',
+        notes: [
+          'Played 6 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Matthew Robertson', after: 'Matthew Robertson', status: 'retained',
+        notes: [
+          'Played 72 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Braden Schneider', after: 'Braden Schneider', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Urho Vaakanainen', after: 'Urho Vaakanainen', status: 'retained',
+        notes: [
+          'Played 34 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Quick retired; Korpisalo acquired from Boston behind Shesterkin',
+    summary: 'Quick retired; Korpisalo acquired from Boston behind Shesterkin — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Igor Shesterkin', after: 'Igor Shesterkin', status: 'retained',
@@ -127,6 +223,12 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Jonathan Quick', after: null, status: 'departed',
         notes: ['Retired after a 6-17-2 season'],
+      },
+          {
+        pos: 'G', before: 'Dylan Garand', after: 'Dylan Garand', status: 'retained',
+        notes: [
+          'Played 3 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

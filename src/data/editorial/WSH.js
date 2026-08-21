@@ -45,7 +45,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Ovechkin returns at forty; Tuch, Kyrou and Jenner all added; McMichael traded',
+    summary: 'Ovechkin returns at forty; Tuch, Kyrou and Jenner all added; McMichael traded — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LW', before: 'Alex Ovechkin', after: 'Alex Ovechkin', status: 'retained',
@@ -83,11 +83,71 @@ export const rosterComparison = [
           'Projected to centre the fourth line',
         ],
       },
+          {
+        pos: 'R', before: 'Anthony Beauvillier', after: 'Anthony Beauvillier', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Pierre-Luc Dubois', after: 'Pierre-Luc Dubois', status: 'retained',
+        notes: [
+          'Played 29 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Ethen Frank', after: 'Ethen Frank', status: 'retained',
+        notes: [
+          'Played 62 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Ryan Leonard', after: 'Ryan Leonard', status: 'retained',
+        notes: [
+          'Played 75 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Ivan Miroshnichenko', after: 'Ivan Miroshnichenko', status: 'retained',
+        notes: [
+          'Played 13 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Aliaksei Protas', after: 'Aliaksei Protas', status: 'retained',
+        notes: [
+          'Played 76 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Ilya Protas', after: 'Ilya Protas', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Justin Sourdif', after: 'Justin Sourdif', status: 'retained',
+        notes: [
+          'Played 78 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Dylan Strome', after: 'Dylan Strome', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Tom Wilson', after: 'Tom Wilson', status: 'retained',
+        notes: [
+          'Played 72 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'van Riemsdyk and Chisholm out; Desharnais signed for four years; Sandin out injured',
+    summary: 'van Riemsdyk and Chisholm out; Desharnais signed for four years; Sandin out injured — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'D', before: 'Rasmus Sandin', after: 'Rasmus Sandin', status: 'injured',
@@ -112,11 +172,35 @@ export const rosterComparison = [
         pos: 'LD', before: null, after: 'Cole Hutson', status: 'camp',
         notes: ['A rookie defenseman the reset names as a Calder Trophy candidate'],
       },
+          {
+        pos: 'D', before: 'Martin Fehérváry', after: 'Martin Fehérváry', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Timothy Liljegren', after: 'Timothy Liljegren', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Dylan McIlrath', after: 'Dylan McIlrath', status: 'retained',
+        notes: [
+          'Played 13 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Matt Roy', after: 'Matt Roy', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Unchanged: Thompson and Lindgren',
+    summary: 'Unchanged: Thompson and Lindgren — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Logan Thompson', after: 'Logan Thompson', status: 'retained',
@@ -125,6 +209,12 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Charlie Lindgren', after: 'Charlie Lindgren', status: 'retained',
         notes: ['Projected backup'],
+      },
+          {
+        pos: 'G', before: 'Clay Stevenson', after: 'Clay Stevenson', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

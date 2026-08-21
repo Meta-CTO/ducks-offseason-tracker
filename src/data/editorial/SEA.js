@@ -40,7 +40,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Schwartz gone and Tolvanen unsigned; Samoskevich bought with picks and signed for three years',
+    summary: 'Schwartz gone and Tolvanen unsigned; Samoskevich bought with picks and signed for three years — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'F', before: null, after: 'Mackie Samoskevich', status: 'added',
@@ -73,11 +73,65 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Curtis Douglas', status: 'added',
         notes: ['Two years at $1.25M a season on Jul. 1'],
       },
+          {
+        pos: 'C', before: 'Berkly Catton', after: 'Berkly Catton', status: 'retained',
+        notes: [
+          'Played 66 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Jordan Eberle', after: 'Jordan Eberle', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Frederick Gaudreau', after: 'Frederick Gaudreau', status: 'retained',
+        notes: [
+          'Played 68 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Kaapo Kakko', after: 'Kaapo Kakko', status: 'retained',
+        notes: [
+          'Played 65 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Jared McCann', after: 'Jared McCann', status: 'retained',
+        notes: [
+          'Played 52 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Bobby McMann', after: 'Bobby McMann', status: 'retained',
+        notes: [
+          'Played 18 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Ben Meyers', after: 'Ben Meyers', status: 'retained',
+        notes: [
+          'Played 52 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Chandler Stephenson', after: 'Chandler Stephenson', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Ryan Winterton', after: 'Ryan Winterton', status: 'retained',
+        notes: [
+          'Played 68 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Oleksiak left for Vancouver; the rest of the group is projected intact',
+    summary: 'Oleksiak left for Vancouver; the rest of the group is projected intact — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'D', before: 'Jamie Oleksiak', after: null, status: 'departed',
@@ -90,6 +144,36 @@ export const rosterComparison = [
       {
         pos: 'RD', before: 'Brandon Montour', after: 'Brandon Montour', status: 'retained',
         notes: ['Projected on the second pair'],
+      },
+          {
+        pos: 'D', before: 'Ryker Evans', after: 'Ryker Evans', status: 'retained',
+        notes: [
+          'Played 67 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Cale Fleury', after: 'Cale Fleury', status: 'retained',
+        notes: [
+          'Played 23 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Adam Larsson', after: 'Adam Larsson', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Ryan Lindgren', after: 'Ryan Lindgren', status: 'retained',
+        notes: [
+          'Played 76 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Joshua Mahura', after: 'Joshua Mahura', status: 'retained',
+        notes: [
+          'Played 23 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

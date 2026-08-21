@@ -44,7 +44,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Toews retired and Nyquist unsigned; Perfetti extended for five years',
+    summary: 'Toews retired and Nyquist unsigned; Perfetti extended for five years — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Jonathan Toews', after: null, status: 'departed',
@@ -72,11 +72,71 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Noah Gregor', status: 'added',
         notes: ['One year, two-way, on Jul. 1'],
       },
+          {
+        pos: 'C', before: 'Morgan Barron', after: 'Morgan Barron', status: 'retained',
+        notes: [
+          'Played 65 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Nikita Chibrikov', after: 'Nikita Chibrikov', status: 'retained',
+        notes: [
+          'Played 11 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Alex Iafallo', after: 'Alex Iafallo', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Cole Koepke', after: 'Cole Koepke', status: 'retained',
+        notes: [
+          'Played 66 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Adam Lowry', after: 'Adam Lowry', status: 'retained',
+        notes: [
+          'Played 70 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Vladislav Namestnikov', after: 'Vladislav Namestnikov', status: 'retained',
+        notes: [
+          'Played 60 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Nino Niederreiter', after: 'Nino Niederreiter', status: 'retained',
+        notes: [
+          'Played 61 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Isak Rosen', after: 'Isak Rosen', status: 'retained',
+        notes: [
+          'Played 21 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Mark Scheifele', after: 'Mark Scheifele', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Gabriel Vilardi', after: 'Gabriel Vilardi', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Miller left for Switzerland; Ferraro signed for three years',
+    summary: 'Miller left for Switzerland; Ferraro signed for three years — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LD', before: 'Josh Morrissey', after: 'Josh Morrissey', status: 'retained',
@@ -96,6 +156,36 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Colin Miller', after: null, status: 'departed',
         notes: ['Signed with Lausanne HC in Switzerland on Jul. 1'],
+      },
+          {
+        pos: 'D', before: 'Dylan DeMelo', after: 'Dylan DeMelo', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Haydn Fleury', after: 'Haydn Fleury', status: 'retained',
+        notes: [
+          'Played 38 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Neal Pionk', after: 'Neal Pionk', status: 'retained',
+        notes: [
+          'Played 51 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Dylan Samberg', after: 'Dylan Samberg', status: 'retained',
+        notes: [
+          'Played 66 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jack St. Ivany', after: 'Jack St. Ivany', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
       },
     ],
   },

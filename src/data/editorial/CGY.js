@@ -46,7 +46,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Coleman, Lomberg and Olofsson out; Tsyplakov in, and the vacated minutes go to younger players',
+    summary: 'Coleman, Lomberg and Olofsson out; Tsyplakov in, and the vacated minutes go to younger players — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'F', before: 'Blake Coleman', after: null, status: 'departed',
@@ -81,11 +81,89 @@ export const rosterComparison = [
         pos: 'F', before: 'Ryan Lomberg', after: null, status: 'departed',
         notes: ['Signed a two-year deal with Columbus on Jul. 1'],
       },
+          {
+        pos: 'R', before: 'Matt Coronato', after: 'Matt Coronato', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Joel Farabee', after: 'Joel Farabee', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Matvei Gridin', after: 'Matvei Gridin', status: 'retained',
+        notes: [
+          'Played 37 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Tyson Gross', after: 'Tyson Gross', status: 'retained',
+        notes: [
+          'Played 6 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Samuel Honzek', after: 'Samuel Honzek', status: 'retained',
+        notes: [
+          'Played 18 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Ben Jones', after: 'Ben Jones', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Rory Kerins', after: 'Rory Kerins', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Adam Klapka', after: 'Adam Klapka', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Martin Pospisil', after: 'Martin Pospisil', status: 'retained',
+        notes: [
+          'Played 22 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Yegor Sharangovich', after: 'Yegor Sharangovich', status: 'retained',
+        notes: [
+          'Played 78 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Ryan Strome', after: 'Ryan Strome', status: 'retained',
+        notes: [
+          'Played 19 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Aydar Suniev', after: 'Aydar Suniev', status: 'retained',
+        notes: [
+          'Played 6 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Connor Zary', after: 'Connor Zary', status: 'retained',
+        notes: [
+          'Played 74 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Rebuilt in two trades: Nemec bought with picks, Middleton acquired for Coleman and Maatta',
+    summary: 'Rebuilt in two trades: Nemec bought with picks, Middleton acquired for Coleman and Maatta — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'D', before: null, after: 'Simon Nemec', status: 'added',
@@ -109,6 +187,48 @@ export const rosterComparison = [
       {
         pos: 'D', before: null, after: 'Zayne Parekh', status: 'camp',
         notes: ['Projected onto the third pair with Yan Kuznetsov; a projection, not an announced job'],
+      },
+          {
+        pos: 'D', before: 'Kevin Bahl', after: 'Kevin Bahl', status: 'retained',
+        notes: [
+          'Played 76 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Hunter Brzustewicz', after: 'Hunter Brzustewicz', status: 'retained',
+        notes: [
+          'Played 34 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Joel Hanley', after: 'Joel Hanley', status: 'retained',
+        notes: [
+          'Played 68 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Yan Kuznetsov', after: 'Yan Kuznetsov', status: 'retained',
+        notes: [
+          'Played 57 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Brayden Pachal', after: 'Brayden Pachal', status: 'retained',
+        notes: [
+          'Played 39 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Zach Whitecloud', after: 'Zach Whitecloud', status: 'retained',
+        notes: [
+          'Played 31 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Abram Wiebe', after: 'Abram Wiebe', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

@@ -46,7 +46,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Bedard opens the season injured; Mikheyev and Lafferty out, Greenway and Smith in',
+    summary: 'Bedard opens the season injured; Mikheyev and Lafferty out, Greenway and Smith in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Connor Bedard', after: 'Connor Bedard', status: 'injured',
@@ -89,11 +89,77 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Cole Smith', status: 'added',
         notes: ['Three years on Jul. 1 after a season split between Nashville and Vegas'],
       },
+          {
+        pos: 'L', before: 'Tyler Bertuzzi', after: 'Tyler Bertuzzi', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Sacha Boisvert', after: 'Sacha Boisvert', status: 'retained',
+        notes: [
+          'Played 7 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Ryan Donato', after: 'Ryan Donato', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Anton Frondell', after: 'Anton Frondell', status: 'retained',
+        notes: [
+          'Played 12 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Ryan Greene', after: 'Ryan Greene', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Nick Lardis', after: 'Nick Lardis', status: 'retained',
+        notes: [
+          'Played 41 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Andrew Mangiapane', after: 'Andrew Mangiapane', status: 'retained',
+        notes: [
+          'Played 10 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Oliver Moore', after: 'Oliver Moore', status: 'retained',
+        notes: [
+          'Played 51 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Landon Slaggert', after: 'Landon Slaggert', status: 'retained',
+        notes: [
+          'Played 53 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Teuvo Teravainen', after: 'Teuvo Teravainen', status: 'retained',
+        notes: [
+          'Played 75 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Dominic Toninato', after: 'Dominic Toninato', status: 'retained',
+        notes: [
+          'Played 8 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'The fourth overall pick became Bowen Byram; Ian Cole added as a veteran',
+    summary: 'The fourth overall pick became Bowen Byram; Ian Cole added as a veteran — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LD', before: null, after: 'Bowen Byram', status: 'added',
@@ -119,6 +185,24 @@ export const rosterComparison = [
       {
         pos: 'RD', before: 'Artyom Levshunov', after: 'Artyom Levshunov', status: 'retained',
         notes: ['Projected on the second pair with Wyatt Kaiser'],
+      },
+          {
+        pos: 'D', before: 'Wyatt Kaiser', after: 'Wyatt Kaiser', status: 'retained',
+        notes: [
+          'Played 77 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Sam Rinzel', after: 'Sam Rinzel', status: 'retained',
+        notes: [
+          'Played 54 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Alex Vlasic', after: 'Alex Vlasic', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

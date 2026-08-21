@@ -47,7 +47,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Larkin has asked to be traded; four veteran forwards are unsigned; Arvidsson and Kolesar in',
+    summary: 'Larkin has asked to be traded; four veteran forwards are unsigned; Arvidsson and Kolesar in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Dylan Larkin', after: 'Dylan Larkin', status: 'retained',
@@ -83,11 +83,59 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Carter Mazur', status: 'added',
         notes: ['Two years on Jul. 1 at twenty-four; projected third line'],
       },
+          {
+        pos: 'C', before: 'Mason Appleton', after: 'Mason Appleton', status: 'retained',
+        notes: [
+          'Played 65 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'J.T. Compher', after: 'J.T. Compher', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Andrew Copp', after: 'Andrew Copp', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Alex DeBrincat', after: 'Alex DeBrincat', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Emmitt Finnie', after: 'Emmitt Finnie', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Marco Kasper', after: 'Marco Kasper', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Michael Rasmussen', after: 'Michael Rasmussen', status: 'retained',
+        notes: [
+          'Played 64 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Lucas Raymond', after: 'Lucas Raymond', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Hamonic unsigned; Bryson added as depth behind an unchanged top four',
+    summary: 'Hamonic unsigned; Bryson added as depth behind an unchanged top four — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LD', before: 'Simon Edvinsson', after: 'Simon Edvinsson', status: 'unsigned',
@@ -111,6 +159,30 @@ export const rosterComparison = [
       {
         pos: 'RD', before: null, after: 'Axel Sandin-Pellikka', status: 'camp',
         notes: ['Projected onto the third pair with Albert Johansson; a projection, not an announced job'],
+      },
+          {
+        pos: 'D', before: 'Jacob Bernard-Docker', after: 'Jacob Bernard-Docker', status: 'retained',
+        notes: [
+          'Played 63 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Ben Chiarot', after: 'Ben Chiarot', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Justin Faulk', after: 'Justin Faulk', status: 'retained',
+        notes: [
+          'Played 17 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Albert Johansson', after: 'Albert Johansson', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

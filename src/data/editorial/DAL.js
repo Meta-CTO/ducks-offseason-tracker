@@ -42,7 +42,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Robertson re-signed for a year; Bourque traded to Nashville; Kiviranta returns',
+    summary: 'Robertson re-signed for a year; Bourque traded to Nashville; Kiviranta returns — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LW', before: 'Jason Robertson', after: 'Jason Robertson', status: 'retained',
@@ -73,11 +73,71 @@ export const rosterComparison = [
           'One year at $1M on Jul. 1, returning after playing in Dallas from 2019 to 2023',
         ],
       },
+          {
+        pos: 'L', before: 'Jamie Benn', after: 'Jamie Benn', status: 'retained',
+        notes: [
+          'Played 60 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Colin Blackwell', after: 'Colin Blackwell', status: 'retained',
+        notes: [
+          'Played 70 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Oskar Bäck', after: 'Oskar Bäck', status: 'retained',
+        notes: [
+          'Played 72 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Matt Duchene', after: 'Matt Duchene', status: 'retained',
+        notes: [
+          'Played 57 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Radek Faksa', after: 'Radek Faksa', status: 'retained',
+        notes: [
+          'Played 58 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Justin Hryckowian', after: 'Justin Hryckowian', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Arttu Hyry', after: 'Arttu Hyry', status: 'retained',
+        notes: [
+          'Played 20 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Mikko Rantanen', after: 'Mikko Rantanen', status: 'retained',
+        notes: [
+          'Played 64 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Tyler Seguin', after: 'Tyler Seguin', status: 'retained',
+        notes: [
+          'Played 27 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Sam Steel', after: 'Sam Steel', status: 'retained',
+        notes: [
+          'Played 73 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Lyubushkin and Petrovic out; no replacement signed',
+    summary: 'Lyubushkin and Petrovic out; no replacement signed — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: 'Miro Heiskanen', after: 'Miro Heiskanen', status: 'retained',
@@ -94,6 +154,42 @@ export const rosterComparison = [
       {
         pos: 'LD', before: 'Lian Bichsel', after: 'Lian Bichsel', status: 'retained',
         notes: ['Projected on the third pair with Tyler Myers'],
+      },
+          {
+        pos: 'D', before: 'Kyle Burroughs', after: 'Kyle Burroughs', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'D', before: 'Kyle Capobianco', after: 'Kyle Capobianco', status: 'retained',
+        notes: [
+          'Played 33 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Thomas Harley', after: 'Thomas Harley', status: 'retained',
+        notes: [
+          'Played 70 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Esa Lindell', after: 'Esa Lindell', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Nils Lundkvist', after: 'Nils Lundkvist', status: 'retained',
+        notes: [
+          'Played 52 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Tyler Myers', after: 'Tyler Myers', status: 'retained',
+        notes: [
+          'Played 16 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

@@ -42,7 +42,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Kyrou traded for McMichael; McTavish bought from Anaheim with two first-round picks',
+    summary: 'Kyrou traded for McMichael; McTavish bought from Anaheim with two first-round picks — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: null, after: 'Mason McTavish', status: 'added',
@@ -75,11 +75,77 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Ross Johnston', status: 'added',
         notes: ['Three years on Jul. 1 after leaving Anaheim; projected fourth line'],
       },
+          {
+        pos: 'R', before: 'Jonatan Berggren', after: 'Jonatan Berggren', status: 'retained',
+        notes: [
+          'Played 36 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Pavel Buchnevich', after: 'Pavel Buchnevich', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Dalibor Dvorsky', after: 'Dalibor Dvorsky', status: 'retained',
+        notes: [
+          'Played 71 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jack Finley', after: 'Jack Finley', status: 'retained',
+        notes: [
+          'Played 22 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Dylan Holloway', after: 'Dylan Holloway', status: 'retained',
+        notes: [
+          'Played 59 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Jake Neighbours', after: 'Jake Neighbours', status: 'retained',
+        notes: [
+          'Played 69 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Jimmy Snuggerud', after: 'Jimmy Snuggerud', status: 'retained',
+        notes: [
+          'Played 70 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Oskar Sundqvist', after: 'Oskar Sundqvist', status: 'retained',
+        notes: [
+          'Played 52 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Pius Suter', after: 'Pius Suter', status: 'retained',
+        notes: [
+          'Played 64 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Alexey Toropchenko', after: 'Alexey Toropchenko', status: 'retained',
+        notes: [
+          'Played 65 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Nathan Walker', after: 'Nathan Walker', status: 'retained',
+        notes: [
+          'Played 46 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Carlo acquired from Toronto; Kessel and Holl left as free agents',
+    summary: 'Carlo acquired from Toronto; Kessel and Holl left as free agents — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: null, after: 'Brandon Carlo', status: 'added',
@@ -100,6 +166,30 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Justin Holl', after: null, status: 'departed',
         notes: ['Signed a one-year contract with Washington on Jul. 1'],
+      },
+          {
+        pos: 'D', before: 'Philip Broberg', after: 'Philip Broberg', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Cam Fowler', after: 'Cam Fowler', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Logan Mailloux', after: 'Logan Mailloux', status: 'retained',
+        notes: [
+          'Played 67 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Tyler Tucker', after: 'Tyler Tucker', status: 'retained',
+        notes: [
+          'Played 69 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

@@ -44,7 +44,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Peterka sold to Boston for two first-round picks; Trocheck and Lee added as veterans',
+    summary: 'Peterka sold to Boston for two first-round picks; Trocheck and Lee added as veterans — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'F', before: 'JJ Peterka', after: null, status: 'departed',
@@ -79,11 +79,77 @@ export const rosterComparison = [
         pos: 'F', before: 'Alex Kerfoot', after: null, status: 'departed',
         notes: ['Signed a two-year contract with Nashville on Jul. 1'],
       },
+          {
+        pos: 'L', before: 'Daniil But', after: 'Daniil But', status: 'retained',
+        notes: [
+          'Played 29 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Michael Carcone', after: 'Michael Carcone', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Lawson Crouse', after: 'Lawson Crouse', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Dylan Guenther', after: 'Dylan Guenther', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Barrett Hayton', after: 'Barrett Hayton', status: 'retained',
+        notes: [
+          'Played 67 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jack McBain', after: 'Jack McBain', status: 'retained',
+        notes: [
+          'Played 75 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Liam O\'Brien', after: 'Liam O\'Brien', status: 'retained',
+        notes: [
+          'Played 38 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Nick Schmaltz', after: 'Nick Schmaltz', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Kevin Stenlund', after: 'Kevin Stenlund', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Brandon Tanev', after: 'Brandon Tanev', status: 'retained',
+        notes: [
+          'Played 56 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Kailer Yamamoto', after: 'Kailer Yamamoto', status: 'retained',
+        notes: [
+          'Played 59 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Durzi traded and Cole gone; Peeke signed and Simashev expected to step in',
+    summary: 'Durzi traded and Cole gone; Peeke signed and Simashev expected to step in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'D', before: 'Sean Durzi', after: null, status: 'departed',
@@ -110,6 +176,36 @@ export const rosterComparison = [
       {
         pos: 'RD', before: 'Mikhail Sergachev', after: 'Mikhail Sergachev', status: 'retained',
         notes: ['Projected on the top pair with MacKenzie Weegar'],
+      },
+          {
+        pos: 'D', before: 'Nick DeSimone', after: 'Nick DeSimone', status: 'retained',
+        notes: [
+          'Played 40 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Maveric Lamoureux', after: 'Maveric Lamoureux', status: 'retained',
+        notes: [
+          'Played 5 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'John Marino', after: 'John Marino', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Nate Schmidt', after: 'Nate Schmidt', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'MacKenzie Weegar', after: 'MacKenzie Weegar', status: 'retained',
+        notes: [
+          'Played 19 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

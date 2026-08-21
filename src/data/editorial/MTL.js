@@ -40,7 +40,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Gallagher traded after fourteen seasons; Laine unsigned; Berard added',
+    summary: 'Gallagher traded after fourteen seasons; Laine unsigned; Berard added — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Nick Suzuki', after: 'Nick Suzuki', status: 'retained',
@@ -78,11 +78,83 @@ export const rosterComparison = [
         pos: 'F', before: 'Joe Veleno', after: null, status: 'departed',
         notes: ['Not qualified; signed with the N.Y. Rangers on Jul. 1'],
       },
+          {
+        pos: 'R', before: 'Josh Anderson', after: 'Josh Anderson', status: 'retained',
+        notes: [
+          'Played 72 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Owen Beck', after: 'Owen Beck', status: 'retained',
+        notes: [
+          'Played 15 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Zachary Bolduc', after: 'Zachary Bolduc', status: 'retained',
+        notes: [
+          'Played 78 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Cole Caufield', after: 'Cole Caufield', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Kirby Dach', after: 'Kirby Dach', status: 'retained',
+        notes: [
+          'Played 37 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Phillip Danault', after: 'Phillip Danault', status: 'retained',
+        notes: [
+          'Played 45 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jake Evans', after: 'Jake Evans', status: 'retained',
+        notes: [
+          'Played 68 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Oliver Kapanen', after: 'Oliver Kapanen', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Alex Newhook', after: 'Alex Newhook', status: 'retained',
+        notes: [
+          'Played 42 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Juraj Slafkovský', after: 'Juraj Slafkovský', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Alexandre Texier', after: 'Alexandre Texier', status: 'retained',
+        notes: [
+          'Played 43 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Florian Xhekaj', after: 'Florian Xhekaj', status: 'retained',
+        notes: [
+          'Played 5 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Unchanged in the top four, with Walsh added on a two-way deal',
+    summary: 'Unchanged in the top four, with Walsh added on a two-way deal — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LD', before: 'Lane Hutson', after: 'Lane Hutson', status: 'retained',
@@ -100,11 +172,53 @@ export const rosterComparison = [
         pos: 'RD', before: null, after: 'David Reinbacher', status: 'camp',
         notes: ['Fifth overall in 2023; the reset flags a potentially expanded role, which camp decides'],
       },
+          {
+        pos: 'D', before: 'Alexandre Carrier', after: 'Alexandre Carrier', status: 'retained',
+        notes: [
+          'Played 73 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Adam Engstrom', after: 'Adam Engstrom', status: 'retained',
+        notes: [
+          'Played 15 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Kaiden Guhle', after: 'Kaiden Guhle', status: 'retained',
+        notes: [
+          'Played 39 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Mike Matheson', after: 'Mike Matheson', status: 'retained',
+        notes: [
+          'Played 78 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jayden Struble', after: 'Jayden Struble', status: 'retained',
+        notes: [
+          'Played 59 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Maksymilian Szuber', after: 'Maksymilian Szuber', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'D', before: 'Arber Xhekaj', after: 'Arber Xhekaj', status: 'retained',
+        notes: [
+          'Played 65 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'The crease is handed to two young goaltenders',
+    summary: 'The crease is handed to two young goaltenders — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Sam Montembeault', after: 'Sam Montembeault', status: 'retained',
@@ -122,6 +236,12 @@ export const rosterComparison = [
         notes: [
           '9-6-2 with a .908 save percentage',
           'The reset says he could push Dobes for playing time',
+        ],
+      },
+          {
+        pos: 'G', before: 'Samuel Montembeault', after: 'Samuel Montembeault', status: 'retained',
+        notes: [
+          'Played 25 games for the club in 2025–26 and is on the current roster',
         ],
       },
     ],

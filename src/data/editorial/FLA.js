@@ -49,7 +49,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Brady Tkachuk acquired to join his brother; Barkov returns from a lost season',
+    summary: 'Brady Tkachuk acquired to join his brother; Barkov returns from a lost season — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Aleksander Barkov', after: 'Aleksander Barkov', status: 'retained',
@@ -88,11 +88,83 @@ export const rosterComparison = [
         pos: 'C', before: null, after: 'Lars Eller', status: 'added',
         notes: ['One year on Jul. 1 from Ottawa; projected to centre the fourth line'],
       },
+          {
+        pos: 'C', before: 'John Beecher', after: 'John Beecher', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Sam Bennett', after: 'Sam Bennett', status: 'retained',
+        notes: [
+          'Played 76 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Jonah Gadjovich', after: 'Jonah Gadjovich', status: 'retained',
+        notes: [
+          'Played 10 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Garnet Hathaway', after: 'Garnet Hathaway', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Sam Lafferty', after: 'Sam Lafferty', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Anton Lundell', after: 'Anton Lundell', status: 'retained',
+        notes: [
+          'Played 64 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Eetu Luostarinen', after: 'Eetu Luostarinen', status: 'retained',
+        notes: [
+          'Played 73 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Brad Marchand', after: 'Brad Marchand', status: 'retained',
+        notes: [
+          'Played 52 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Cole Reinhardt', after: 'Cole Reinhardt', status: 'retained',
+        notes: [
+          'Played 15 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Sam Reinhart', after: 'Sam Reinhart', status: 'retained',
+        notes: [
+          'Played 64 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Cole Schwindt', after: 'Cole Schwindt', status: 'retained',
+        notes: [
+          'Played 29 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Carter Verhaeghe', after: 'Carter Verhaeghe', status: 'retained',
+        notes: [
+          'Played 77 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Gudas signed for six years after his rights came from Anaheim',
+    summary: 'Gudas signed for six years after his rights came from Anaheim — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: null, after: 'Radko Gudas', status: 'added',
@@ -113,6 +185,36 @@ export const rosterComparison = [
       {
         pos: 'D', before: null, after: 'Alexander Petrovic', status: 'added',
         notes: ['Two years on Jul. 1 from Dallas'],
+      },
+          {
+        pos: 'D', before: 'Uvis Balinskis', after: 'Uvis Balinskis', status: 'retained',
+        notes: [
+          'Played 54 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Gustav Forsling', after: 'Gustav Forsling', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Dmitry Kulikov', after: 'Dmitry Kulikov', status: 'retained',
+        notes: [
+          'Played 19 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Niko Mikkola', after: 'Niko Mikkola', status: 'retained',
+        notes: [
+          'Played 68 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Donovan Sebrango', after: 'Donovan Sebrango', status: 'retained',
+        notes: [
+          'Played 40 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

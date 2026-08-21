@@ -54,7 +54,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Hischier extended five years; Mantha signed; an offer sheet for Barrett Hayton was matched',
+    summary: 'Hischier extended five years; Mantha signed; an offer sheet for Barrett Hayton was matched — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Nico Hischier', after: 'Nico Hischier', status: 'retained',
@@ -85,11 +85,71 @@ export const rosterComparison = [
         pos: 'F', before: 'Paul Cotter', after: null, status: 'departed',
         notes: ['Signed a one-year contract with Vancouver on Jul. 1'],
       },
+          {
+        pos: 'C', before: 'Nick Bjugstad', after: 'Nick Bjugstad', status: 'retained',
+        notes: [
+          'Played 26 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jesper Boqvist', after: 'Jesper Boqvist', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'L', before: 'Jesper Bratt', after: 'Jesper Bratt', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Connor Brown', after: 'Connor Brown', status: 'retained',
+        notes: [
+          'Played 75 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Cody Glass', after: 'Cody Glass', status: 'retained',
+        notes: [
+          'Played 70 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Arseny Gritsyuk', after: 'Arseny Gritsyuk', status: 'retained',
+        notes: [
+          'Played 66 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Lenni Hameenaho', after: 'Lenni Hameenaho', status: 'retained',
+        notes: [
+          'Played 33 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Timo Meier', after: 'Timo Meier', status: 'retained',
+        notes: [
+          'Played 77 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Dawson Mercer', after: 'Dawson Mercer', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Stefan Noesen', after: 'Stefan Noesen', status: 'retained',
+        notes: [
+          'Played 38 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Nemec sold to Calgary for two conditional firsts; Silayev signed',
+    summary: 'Nemec sold to Calgary for two conditional firsts; Silayev signed — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'D', before: 'Simon Nemec', after: null, status: 'departed',
@@ -114,11 +174,41 @@ export const rosterComparison = [
         pos: 'D', before: null, after: 'Declan Chisholm', status: 'added',
         notes: ['Acquired from Washington on Jun. 25 for a 2027 fourth-round pick'],
       },
+          {
+        pos: 'D', before: 'Brenden Dillon', after: 'Brenden Dillon', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Dougie Hamilton', after: 'Dougie Hamilton', status: 'retained',
+        notes: [
+          'Played 77 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Johnathan Kovacevic', after: 'Johnathan Kovacevic', status: 'retained',
+        notes: [
+          'Played 34 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Brett Pesce', after: 'Brett Pesce', status: 'retained',
+        notes: [
+          'Played 37 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jonas Siegenthaler', after: 'Jonas Siegenthaler', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Markstrom traded to Florida; Daws signed to compete behind Allen',
+    summary: 'Markstrom traded to Florida; Daws signed to compete behind Allen — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Jake Allen', after: 'Jake Allen', status: 'retained',
@@ -136,6 +226,12 @@ export const rosterComparison = [
         notes: [
           'Signed for two years on Jul. 1 and expected to compete for a full-time role',
           'The reset says goaltending could become a deadline priority if he cannot establish himself',
+        ],
+      },
+          {
+        pos: 'G', before: 'David Rittich', after: 'David Rittich', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],

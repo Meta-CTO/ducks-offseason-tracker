@@ -62,7 +62,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'The top of the lineup is intact; McKenna drafted first overall; Maccelli and Robertson out',
+    summary: 'The top of the lineup is intact; McKenna drafted first overall; Maccelli and Robertson out — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Auston Matthews', after: 'Auston Matthews', status: 'retained',
@@ -94,11 +94,83 @@ export const rosterComparison = [
         pos: 'C', before: null, after: 'Teddy Blueger', status: 'added',
         notes: ['Two years on Jul. 1 from Vancouver; projected fourth line'],
       },
+          {
+        pos: 'C', before: 'Max Domi', after: 'Max Domi', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Brandon Duhaime', after: 'Brandon Duhaime', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Bo Groulx', after: 'Bo Groulx', status: 'retained',
+        notes: [
+          'Played 13 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Luke Haymes', after: 'Luke Haymes', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Dakota Joshua', after: 'Dakota Joshua', status: 'retained',
+        notes: [
+          'Played 55 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Matthew Knies', after: 'Matthew Knies', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Steven Lorentz', after: 'Steven Lorentz', status: 'retained',
+        notes: [
+          'Played 71 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Zack MacEwen', after: 'Zack MacEwen', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'R', before: 'William Nylander', after: 'William Nylander', status: 'retained',
+        notes: [
+          'Played 65 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jack Roslovic', after: 'Jack Roslovic', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Colton Sissons', after: 'Colton Sissons', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'John Tavares', after: 'John Tavares', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Raddysh signed for eight years; Carlo and Benoit traded out; the group is still called unfinished',
+    summary: 'Raddysh signed for eight years; Carlo and Benoit traded out; the group is still called unfinished — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: null, after: 'Darren Raddysh', status: 'added',
@@ -128,6 +200,36 @@ export const rosterComparison = [
         notes: [
           'Projected on the second pair with Chris Tanev, at a $7.5M cap hit',
           'The reset recorded trade rumours around him; the club’s news feed since reports they have ceased, quoting him that “this is home now”',
+        ],
+      },
+          {
+        pos: 'D', before: 'Oliver Ekman-Larsson', after: 'Oliver Ekman-Larsson', status: 'retained',
+        notes: [
+          'Played 78 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jake McCabe', after: 'Jake McCabe', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Philippe Myers', after: 'Philippe Myers', status: 'retained',
+        notes: [
+          'Played 39 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Troy Stecher', after: 'Troy Stecher', status: 'retained',
+        notes: [
+          'Played 58 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Chris Tanev', after: 'Chris Tanev', status: 'retained',
+        notes: [
+          'Played 11 games for the club in 2025–26 and is on the current roster',
         ],
       },
     ],

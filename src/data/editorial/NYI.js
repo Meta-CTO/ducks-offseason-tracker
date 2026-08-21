@@ -42,7 +42,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Lee left for Utah; Maccelli signed for a year; Eklund projected onto the third line',
+    summary: 'Lee left for Utah; Maccelli signed for a year; Eklund projected onto the third line — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LW', before: 'Anders Lee', after: null, status: 'departed',
@@ -70,11 +70,77 @@ export const rosterComparison = [
           '39 points in 71 games; projected fourth line',
         ],
       },
+          {
+        pos: 'C', before: 'Mathew Barzal', after: 'Mathew Barzal', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Mitchell Chaffee', after: 'Mitchell Chaffee', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Casey Cizikas', after: 'Casey Cizikas', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Anthony Duclair', after: 'Anthony Duclair', status: 'retained',
+        notes: [
+          'Played 62 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Emil Heineman', after: 'Emil Heineman', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Simon Holmstrom', after: 'Simon Holmstrom', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Kyle MacLean', after: 'Kyle MacLean', status: 'retained',
+        notes: [
+          'Played 59 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jean-Gabriel Pageau', after: 'Jean-Gabriel Pageau', status: 'retained',
+        notes: [
+          'Played 74 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Ondrej Palat', after: 'Ondrej Palat', status: 'retained',
+        notes: [
+          'Played 29 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Kyle Palmieri', after: 'Kyle Palmieri', status: 'retained',
+        notes: [
+          'Played 25 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Brayden Schenn', after: 'Brayden Schenn', status: 'retained',
+        notes: [
+          'Played 19 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'DeAngelo re-signed; Schaefer projected onto the top pair; Romanov returning from injury',
+    summary: 'DeAngelo re-signed; Schaefer projected onto the top pair; Romanov returning from injury — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LD', before: 'Matthew Schaefer', after: 'Matthew Schaefer', status: 'retained',
@@ -95,6 +161,24 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Carson Soucy', after: null, status: 'unsigned',
         notes: ['An unsigned UFA, which is the only firm fact about his situation'],
+      },
+          {
+        pos: 'D', before: 'Scott Mayfield', after: 'Scott Mayfield', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Adam Pelech', after: 'Adam Pelech', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Ryan Pulock', after: 'Ryan Pulock', status: 'retained',
+        notes: [
+          'Played 76 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

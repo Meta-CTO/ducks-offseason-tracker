@@ -46,7 +46,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Mantha and his 33 goals left; Kuzmenko and Robertson signed to replace them',
+    summary: 'Mantha and his 33 goals left; Kuzmenko and Robertson signed to replace them — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Sidney Crosby', after: 'Sidney Crosby', status: 'retained',
@@ -80,11 +80,83 @@ export const rosterComparison = [
           'A career-high 32 points in 78 games; projected third line',
         ],
       },
+          {
+        pos: 'R', before: 'Justin Brazeau', after: 'Justin Brazeau', status: 'retained',
+        notes: [
+          'Played 64 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Egor Chinakhov', after: 'Egor Chinakhov', status: 'retained',
+        notes: [
+          'Played 43 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Connor Dewar', after: 'Connor Dewar', status: 'retained',
+        notes: [
+          'Played 78 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Ben Kindel', after: 'Ben Kindel', status: 'retained',
+        notes: [
+          'Played 77 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Ville Koivunen', after: 'Ville Koivunen', status: 'retained',
+        notes: [
+          'Played 39 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Hendrix Lapierre', after: 'Hendrix Lapierre', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Blake Lizotte', after: 'Blake Lizotte', status: 'retained',
+        notes: [
+          'Played 55 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Tommy Novak', after: 'Tommy Novak', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Rickard Rakell', after: 'Rickard Rakell', status: 'retained',
+        notes: [
+          'Played 60 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Nick Robertson', after: 'Nick Robertson', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'R', before: 'Bryan Rust', after: 'Bryan Rust', status: 'retained',
+        notes: [
+          'Played 72 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Elmer Soderblom', after: 'Elmer Soderblom', status: 'retained',
+        notes: [
+          'Played 20 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Wotherspoon swapped for Korczak; van Riemsdyk signed to partner Karlsson',
+    summary: 'Wotherspoon swapped for Korczak; van Riemsdyk signed to partner Karlsson — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: 'Erik Karlsson', after: 'Erik Karlsson', status: 'retained',
@@ -107,6 +179,24 @@ export const rosterComparison = [
       {
         pos: 'D', before: null, after: 'Kaedan Korczak', status: 'added',
         notes: ['Arrived from Vegas on Jun. 30; projected third pair with Ryan Graves'],
+      },
+          {
+        pos: 'D', before: 'Declan Carlile', after: 'Declan Carlile', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'D', before: 'Samuel Girard', after: 'Samuel Girard', status: 'retained',
+        notes: [
+          'Played 20 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Kris Letang', after: 'Kris Letang', status: 'retained',
+        notes: [
+          'Played 74 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

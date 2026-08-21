@@ -41,7 +41,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Peterka bought with two first-round picks; Arvidsson left for Detroit',
+    summary: 'Peterka bought with two first-round picks; Arvidsson left for Detroit — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'F', before: null, after: 'JJ Peterka', status: 'added',
@@ -69,11 +69,77 @@ export const rosterComparison = [
           'Projected onto the third line; two regular-season games so far',
         ],
       },
+          {
+        pos: 'C', before: 'Michael Eyssimont', after: 'Michael Eyssimont', status: 'retained',
+        notes: [
+          'Played 56 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Morgan Geekie', after: 'Morgan Geekie', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Tanner Jeannot', after: 'Tanner Jeannot', status: 'retained',
+        notes: [
+          'Played 77 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Mark Kastelic', after: 'Mark Kastelic', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Marat Khusnutdinov', after: 'Marat Khusnutdinov', status: 'retained',
+        notes: [
+          'Played 77 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Sean Kuraly', after: 'Sean Kuraly', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Elias Lindholm', after: 'Elias Lindholm', status: 'retained',
+        notes: [
+          'Played 69 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Fraser Minten', after: 'Fraser Minten', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Casey Mittelstadt', after: 'Casey Mittelstadt', status: 'retained',
+        notes: [
+          'Played 71 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Alex Steeves', after: 'Alex Steeves', status: 'retained',
+        notes: [
+          'Played 43 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Pavel Zacha', after: 'Pavel Zacha', status: 'retained',
+        notes: [
+          'Played 78 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Peeke left for Utah; Borgen acquired and Clifton re-signed',
+    summary: 'Peeke left for Utah; Borgen acquired and Clifton re-signed — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: 'Charlie McAvoy', after: 'Charlie McAvoy', status: 'retained',
@@ -93,6 +159,42 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Andrew Peeke', after: null, status: 'departed',
         notes: ['Signed a one-year contract with Utah on Jul. 3'],
+      },
+          {
+        pos: 'D', before: 'Jonathan Aspirot', after: 'Jonathan Aspirot', status: 'retained',
+        notes: [
+          'Played 61 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jordan Harris', after: 'Jordan Harris', status: 'retained',
+        notes: [
+          'Played 8 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Henri Jokiharju', after: 'Henri Jokiharju', status: 'retained',
+        notes: [
+          'Played 41 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Hampus Lindholm', after: 'Hampus Lindholm', status: 'retained',
+        notes: [
+          'Played 67 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Mason Lohrei', after: 'Mason Lohrei', status: 'retained',
+        notes: [
+          'Played 73 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Nikita Zadorov', after: 'Nikita Zadorov', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

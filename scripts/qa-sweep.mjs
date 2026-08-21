@@ -76,10 +76,14 @@ for (const club of targets) {
   // 1. Coverage against the actual roster.
   const covered = new Set(playerRows.map((r) => subject(r)).filter(Boolean))
   const coveredNorm = new Set([...covered].map(norm))
-  const pct = rosterSize ? Math.round((covered.size / rosterSize) * 100) : 0
-  if (pct < 60) {
-    add(club, pct < 40 ? 'high' : 'medium', 'thin-coverage',
-      `${covered.size} of ${rosterSize} rostered players have a row (${pct}%)`)
+  // Coverage is the overlap with the roster, not the row count: a club can have
+  // plenty of rows and still miss most of its roster if many describe players
+  // who left. Comparing row count to roster size overstated Calgary at 41%.
+  const overlap = [...leagueNames].filter((n) => coveredNorm.has(n)).length
+  const pct = rosterSize ? Math.round((overlap / rosterSize) * 100) : 0
+  if (pct < 90) {
+    add(club, pct < 70 ? 'high' : 'medium', 'thin-coverage',
+      `${overlap} of ${rosterSize} rostered players have a row (${pct}%)`)
   }
 
   // 2. Coaching section.
@@ -90,8 +94,11 @@ for (const club of targets) {
   // 3. Handover rows: both names present, chip describes only one of them.
   for (const r of allRows) {
     if (r.before && r.after && r.before !== r.after && r.after !== 'TBD' && r.status === 'added') {
-      add(club, 'high', 'handover-row',
-        `${r.pos}: before='${r.before}' after='${r.after}' status='added' — the chip is about ${r.after}`)
+      // The render bug these exposed is fixed; what is left is that a handover
+      // asserts two things at once — one person out, another in — and both
+      // halves need a source. Listed so they can be re-read, not as a defect.
+      add(club, 'medium', 'handover-verify',
+        `${r.pos}: ${r.before} → ${r.after}. Both halves need a primary source.`)
     }
   }
 

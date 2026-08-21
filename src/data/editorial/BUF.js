@@ -44,7 +44,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Tuch signed and traded on the same day; Sheary returns',
+    summary: 'Tuch signed and traded on the same day; Sheary returns — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'F', before: 'Alex Tuch', after: null, status: 'departed',
@@ -72,11 +72,95 @@ export const rosterComparison = [
           'Projected to centre the third line, which camp still has to confirm',
         ],
       },
+          {
+        pos: 'L', before: 'Zach Benson', after: 'Zach Benson', status: 'retained',
+        notes: [
+          'Played 65 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Sam Carrick', after: 'Sam Carrick', status: 'retained',
+        notes: [
+          'Played 13 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Justin Danforth', after: 'Justin Danforth', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Josh Doan', after: 'Josh Doan', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Riley Fiddler-Schultz', after: 'Riley Fiddler-Schultz', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Tyson Kozak', after: 'Tyson Kozak', status: 'retained',
+        notes: [
+          'Played 46 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Peyton Krebs', after: 'Peyton Krebs', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jiri Kulich', after: 'Jiri Kulich', status: 'retained',
+        notes: [
+          'Played 12 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Beck Malenstyn', after: 'Beck Malenstyn', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Ryan McLeod', after: 'Ryan McLeod', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Josh Norris', after: 'Josh Norris', status: 'retained',
+        notes: [
+          'Played 44 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Noah Ostlund', after: 'Noah Ostlund', status: 'retained',
+        notes: [
+          'Played 60 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Jack Quinn', after: 'Jack Quinn', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Jason Zucker', after: 'Jason Zucker', status: 'retained',
+        notes: [
+          'Played 62 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Byram and Kesselring sold; Zellweger and Crevier acquired',
+    summary: 'Byram and Kesselring sold; Zellweger and Crevier acquired — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'LD', before: 'Bowen Byram', after: null, status: 'departed',
@@ -109,11 +193,59 @@ export const rosterComparison = [
         pos: 'D', before: 'Michael Kesselring', after: null, status: 'departed',
         notes: ['Traded to San Jose on Jun. 17 in a pick swap'],
       },
+          {
+        pos: 'D', before: 'Dennis Gilbert', after: 'Dennis Gilbert', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'D', before: 'Ryan Johnson', after: 'Ryan Johnson', status: 'retained',
+        notes: [
+          'Played 3 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Vsevolod Komarov', after: 'Vsevolod Komarov', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'D', before: 'Zach Metsa', after: 'Zach Metsa', status: 'retained',
+        notes: [
+          'Played 43 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Radim Mrtka', after: 'Radim Mrtka', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'D', before: 'Owen Power', after: 'Owen Power', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Mattias Samuelsson', after: 'Mattias Samuelsson', status: 'retained',
+        notes: [
+          'Played 78 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Conor Timmins', after: 'Conor Timmins', status: 'retained',
+        notes: [
+          'Played 39 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Levi traded to Edmonton; Luukkonen and Lyon projected',
+    summary: 'Levi traded to Edmonton; Luukkonen and Lyon projected — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Ukko-Pekka Luukkonen', after: 'Ukko-Pekka Luukkonen', status: 'retained',
@@ -122,6 +254,24 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Devon Levi', after: null, status: 'departed',
         notes: ['Traded to Edmonton on Jul. 1 with a 2028 seventh for a 2028 third'],
+      },
+          {
+        pos: 'G', before: 'Colten Ellis', after: 'Colten Ellis', status: 'retained',
+        notes: [
+          'Played 16 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'G', before: 'Alex Lyon', after: 'Alex Lyon', status: 'retained',
+        notes: [
+          'Played 36 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'G', before: 'Matt Villalta', after: 'Matt Villalta', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
       },
     ],
   },

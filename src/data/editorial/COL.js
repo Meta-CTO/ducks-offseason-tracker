@@ -44,7 +44,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Nichushkin, Drury and Colton traded; Schwartz, Svechkov and L’Heureux in',
+    summary: 'Nichushkin, Drury and Colton traded; Schwartz, Svechkov and L’Heureux in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Nathan MacKinnon', after: 'Nathan MacKinnon', status: 'retained',
@@ -86,11 +86,65 @@ export const rosterComparison = [
         pos: 'F', before: 'Ross Colton', after: null, status: 'departed',
         notes: ['Traded to Nashville on Jun. 16 after 24 points in 73 games'],
       },
+          {
+        pos: 'C', before: 'Vinnie Hinostroza', after: 'Vinnie Hinostroza', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Nazem Kadri', after: 'Nazem Kadri', status: 'retained',
+        notes: [
+          'Played 16 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Parker Kelly', after: 'Parker Kelly', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Gabriel Landeskog', after: 'Gabriel Landeskog', status: 'retained',
+        notes: [
+          'Played 60 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Artturi Lehkonen', after: 'Artturi Lehkonen', status: 'retained',
+        notes: [
+          'Played 70 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Martin Necas', after: 'Martin Necas', status: 'retained',
+        notes: [
+          'Played 78 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Brock Nelson', after: 'Brock Nelson', status: 'retained',
+        notes: [
+          'Played 81 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Logan O\'Connor', after: 'Logan O\'Connor', status: 'retained',
+        notes: [
+          'Played 13 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Nicolas Roy', after: 'Nicolas Roy', status: 'retained',
+        notes: [
+          'Played 15 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Intact at the top, with Makar’s contract the outstanding question',
+    summary: 'Intact at the top, with Makar’s contract the outstanding question — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: 'Cale Makar', after: 'Cale Makar', status: 'retained',
@@ -106,6 +160,30 @@ export const rosterComparison = [
       {
         pos: 'D', before: null, after: 'Noah Juulsen', status: 'added',
         notes: ['Two years on Jul. 1 after 10 points in 52 games with Philadelphia'],
+      },
+          {
+        pos: 'D', before: 'Brett Kulak', after: 'Brett Kulak', status: 'retained',
+        notes: [
+          'Played 27 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Sam Malinski', after: 'Sam Malinski', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Josh Manson', after: 'Josh Manson', status: 'retained',
+        notes: [
+          'Played 79 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Devon Toews', after: 'Devon Toews', status: 'retained',
+        notes: [
+          'Played 68 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },

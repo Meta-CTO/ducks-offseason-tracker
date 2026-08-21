@@ -46,7 +46,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Dorofeyev sold for picks; Kolesar and Sissons out; Olofsson and Gatcomb in',
+    summary: 'Dorofeyev sold for picks; Kolesar and Sissons out; Olofsson and Gatcomb in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'F', before: 'Pavel Dorofeyev', after: null, status: 'departed',
@@ -82,11 +82,89 @@ export const rosterComparison = [
         pos: 'F', before: 'Colton Sissons', after: null, status: 'departed',
         notes: ['Signed a two-year contract with Toronto on Jul. 1'],
       },
+          {
+        pos: 'L', before: 'Ivan Barbashev', after: 'Ivan Barbashev', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Braeden Bowman', after: 'Braeden Bowman', status: 'retained',
+        notes: [
+          'Played 54 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Trevor Connelly', after: 'Trevor Connelly', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'C', before: 'Nic Dowd', after: 'Nic Dowd', status: 'retained',
+        notes: [
+          'Played 20 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Tomas Hertl', after: 'Tomas Hertl', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Alexander Holtz', after: 'Alexander Holtz', status: 'retained',
+        notes: [
+          'Played 28 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Brett Howden', after: 'Brett Howden', status: 'retained',
+        notes: [
+          'Played 58 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'William Karlsson', after: 'William Karlsson', status: 'retained',
+        notes: [
+          'Played 14 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Tanner Laczynski', after: 'Tanner Laczynski', status: 'retained',
+        notes: [
+          'Played 10 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Raphael Lavoie', after: 'Raphael Lavoie', status: 'retained',
+        notes: [
+          'Played 1 game for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Jonas Rondbjerg', after: 'Jonas Rondbjerg', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Mark Stone', after: 'Mark Stone', status: 'retained',
+        notes: [
+          'Played 60 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Kai Uchacz', after: 'Kai Uchacz', status: 'retained',
+        notes: [
+          'Played 3 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Korczak swapped for Wotherspoon; Pietrangelo is hurt',
+    summary: 'Korczak swapped for Wotherspoon; Pietrangelo is hurt — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'D', before: 'Alex Pietrangelo', after: 'Alex Pietrangelo', status: 'injured',
@@ -107,11 +185,59 @@ export const rosterComparison = [
         pos: 'RD', before: 'Shea Theodore', after: 'Shea Theodore', status: 'retained',
         notes: ['Projected on the top pair with Brayden McNabb'],
       },
+          {
+        pos: 'D', before: 'Rasmus Andersson', after: 'Rasmus Andersson', status: 'retained',
+        notes: [
+          'Played 33 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Dylan Coghlan', after: 'Dylan Coghlan', status: 'retained',
+        notes: [
+          'Played 3 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jeremy Davies', after: 'Jeremy Davies', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'D', before: 'Noah Hanifin', after: 'Noah Hanifin', status: 'retained',
+        notes: [
+          'Played 71 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Ville Heinola', after: 'Ville Heinola', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jeremy Lauzon', after: 'Jeremy Lauzon', status: 'retained',
+        notes: [
+          'Played 68 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Brayden McNabb', after: 'Brayden McNabb', status: 'retained',
+        notes: [
+          'Played 63 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Jaycob Megna', after: 'Jaycob Megna', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Schmid traded to Florida; Hart and Hill projected as the tandem',
+    summary: 'Schmid traded to Florida; Hart and Hill projected as the tandem — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Carter Hart', after: 'Carter Hart', status: 'retained',
@@ -126,6 +252,12 @@ export const rosterComparison = [
         notes: [
           'Traded to Florida on Jun. 29 for a 2028 third-round pick',
           '16-10-6 with a 2.59 GAA in 34 games',
+        ],
+      },
+          {
+        pos: 'G', before: 'Carl Lindbom', after: 'Carl Lindbom', status: 'retained',
+        notes: [
+          'Played 8 games for the club in 2025–26 and is on the current roster',
         ],
       },
     ],

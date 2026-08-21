@@ -59,7 +59,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Zegras re-signed and centering the top line; Glendening and Abols out; Acciari and Grundstrom in',
+    summary: 'Zegras re-signed and centering the top line; Glendening and Abols out; Acciari and Grundstrom in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'C', before: 'Trevor Zegras', after: 'Trevor Zegras', status: 'retained',
@@ -133,11 +133,47 @@ export const rosterComparison = [
         pos: 'LW', before: null, after: 'Carl Grundstrom', status: 'added',
         notes: ['One year at $1.0M for bottom-six depth'],
       },
+          {
+        pos: 'C', before: 'Denver Barkey', after: 'Denver Barkey', status: 'retained',
+        notes: [
+          'Played 43 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'L', before: 'Alex Bump', after: 'Alex Bump', status: 'retained',
+        notes: [
+          'Played 17 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Christian Dvorak', after: 'Christian Dvorak', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jacob Gaucher', after: 'Jacob Gaucher', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'R', before: 'Nikita Grebenkin', after: 'Nikita Grebenkin', status: 'retained',
+        notes: [
+          'Played 55 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'C', before: 'Jett Luchanko', after: 'Jett Luchanko', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Drysdale re-signed; Andrae and Juulsen out; Benoit in from Toronto',
+    summary: 'Drysdale re-signed; Andrae and Juulsen out; Benoit in from Toronto — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'RD', before: 'Jamie Drysdale', after: 'Jamie Drysdale', status: 'retained',
@@ -180,11 +216,41 @@ export const rosterComparison = [
         pos: 'D', before: 'Noah Juulsen', after: null, status: 'departed',
         notes: ['Signed a two-year contract with Colorado on Jul. 1'],
       },
+          {
+        pos: 'D', before: 'Helge Grans', after: 'Helge Grans', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'D', before: 'David Jiricek', after: 'David Jiricek', status: 'retained',
+        notes: [
+          'Played 1 game for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Hunter McDonald', after: 'Hunter McDonald', status: 'retained',
+        notes: [
+          'Played 1 game for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Nick Seeler', after: 'Nick Seeler', status: 'retained',
+        notes: [
+          'Played 80 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+      {
+        pos: 'D', before: 'Cam York', after: 'Cam York', status: 'retained',
+        notes: [
+          'Played 74 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'The crease was rebuilt in one June trade: Ersson out, Woll in behind Vladar',
+    summary: 'The crease was rebuilt in one June trade: Ersson out, Woll in behind Vladar — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
     rows: [
       {
         pos: 'G', before: 'Dan Vladar', after: 'Dan Vladar', status: 'retained',
@@ -204,6 +270,18 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Samuel Ersson', after: null, status: 'departed',
         notes: ['Traded to Toronto on Jun. 16; the move that changed the position'],
+      },
+          {
+        pos: 'G', before: 'Carson Bjarnason', after: 'Carson Bjarnason', status: 'retained',
+        notes: [
+          'On the current roster; no 2025–26 games for the club',
+        ],
+      },
+      {
+        pos: 'G', before: 'Aleksei Kolosov', after: 'Aleksei Kolosov', status: 'retained',
+        notes: [
+          'Played 4 games for the club in 2025–26 and is on the current roster',
+        ],
       },
     ],
   },
