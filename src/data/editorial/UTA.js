@@ -44,7 +44,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Peterka sold to Boston for two first-round picks; Trocheck and Lee added as veterans — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Peterka sold to Boston for two first-round picks; Trocheck and Lee added as veterans — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'F', before: 'JJ Peterka', after: null, status: 'departed',
@@ -82,74 +82,74 @@ export const rosterComparison = [
       {
         pos: 'L', before: 'Daniil But', after: 'Daniil But', status: 'retained',
         notes: [
-          'Played 29 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Michael Carcone', after: 'Michael Carcone', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Lawson Crouse and Barrett Hayton',
         ],
       },
       {
         pos: 'L', before: 'Lawson Crouse', after: 'Lawson Crouse', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Barrett Hayton and Michael Carcone',
         ],
       },
       {
         pos: 'R', before: 'Dylan Guenther', after: 'Dylan Guenther', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Anders Lee and Logan Cooley',
         ],
       },
       {
         pos: 'C', before: 'Barrett Hayton', after: 'Barrett Hayton', status: 'retained',
         notes: [
-          'Played 67 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Lawson Crouse and Michael Carcone',
         ],
       },
       {
         pos: 'C', before: 'Jack McBain', after: 'Jack McBain', status: 'retained',
         notes: [
-          'Played 75 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Kevin Stenlund and Kailer Yamamoto',
         ],
       },
       {
         pos: 'C', before: 'Nick Schmaltz', after: 'Nick Schmaltz', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the first line between Clayton Keller and Vincent Trocheck',
         ],
       },
       {
         pos: 'C', before: 'Kevin Stenlund', after: 'Kevin Stenlund', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Jack McBain and Kailer Yamamoto',
         ],
       },
       {
         pos: 'L', before: 'Brandon Tanev', after: 'Brandon Tanev', status: 'retained',
         notes: [
-          'Played 56 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Kailer Yamamoto', after: 'Kailer Yamamoto', status: 'retained',
         notes: [
-          'Played 59 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Jack McBain and Kevin Stenlund',
         ],
       },
       {
         pos: 'C', before: 'Liam O\'Brien', after: 'Liam O\'Brien', status: 'retained',
         notes: [
-          'Played 38 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Durzi traded and Cole gone; Peeke signed and Simashev expected to step in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Durzi traded and Cole gone; Peeke signed and Simashev expected to step in — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Sean Durzi', after: null, status: 'departed',
@@ -180,31 +180,31 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Nick DeSimone', after: 'Nick DeSimone', status: 'retained',
         notes: [
-          'Played 40 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Maveric Lamoureux', after: 'Maveric Lamoureux', status: 'retained',
         notes: [
-          'Played 5 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'John Marino', after: 'John Marino', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Nate Schmidt',
         ],
       },
       {
         pos: 'D', before: 'Nate Schmidt', after: 'Nate Schmidt', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with John Marino',
         ],
       },
       {
         pos: 'D', before: 'MacKenzie Weegar', after: 'MacKenzie Weegar', status: 'retained',
         notes: [
-          'Played 19 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Mikhail Sergachev',
         ],
       },
     ],

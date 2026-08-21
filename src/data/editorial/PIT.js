@@ -46,7 +46,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Mantha and his 33 goals left; Kuzmenko and Robertson signed to replace them — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Mantha and his 33 goals left; Kuzmenko and Robertson signed to replace them — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Sidney Crosby', after: 'Sidney Crosby', status: 'retained',
@@ -83,68 +83,68 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Justin Brazeau', after: 'Justin Brazeau', status: 'retained',
         notes: [
-          'Played 64 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Blake Lizotte and Connor Dewar',
         ],
       },
       {
         pos: 'R', before: 'Egor Chinakhov', after: 'Egor Chinakhov', status: 'retained',
         notes: [
-          'Played 43 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Tommy Novak and Evgeni Malkin',
         ],
       },
       {
         pos: 'C', before: 'Connor Dewar', after: 'Connor Dewar', status: 'retained',
         notes: [
-          'Played 78 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Justin Brazeau and Blake Lizotte',
         ],
       },
       {
         pos: 'C', before: 'Ben Kindel', after: 'Ben Kindel', status: 'retained',
         notes: [
-          'Played 77 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Andrei Kuzmenko and Nicholas Robertson',
         ],
       },
       {
         pos: 'R', before: 'Ville Koivunen', after: 'Ville Koivunen', status: 'retained',
         notes: [
-          'Played 39 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Blake Lizotte', after: 'Blake Lizotte', status: 'retained',
         notes: [
-          'Played 55 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Justin Brazeau and Connor Dewar',
         ],
       },
       {
         pos: 'C', before: 'Tommy Novak', after: 'Tommy Novak', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Egor Chinakhov and Evgeni Malkin',
         ],
       },
       {
         pos: 'R', before: 'Rickard Rakell', after: 'Rickard Rakell', status: 'retained',
         notes: [
-          'Played 60 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Sidney Crosby and Bryan Rust',
         ],
       },
       {
         pos: 'R', before: 'Bryan Rust', after: 'Bryan Rust', status: 'retained',
         notes: [
-          'Played 72 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Rickard Rakell and Sidney Crosby',
         ],
       },
       {
         pos: 'L', before: 'Elmer Soderblom', after: 'Elmer Soderblom', status: 'retained',
         notes: [
-          'Played 20 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Wotherspoon swapped for Korczak; van Riemsdyk signed to partner Karlsson — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Wotherspoon swapped for Korczak; van Riemsdyk signed to partner Karlsson — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RD', before: 'Erik Karlsson', after: 'Erik Karlsson', status: 'retained',
@@ -171,13 +171,13 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Samuel Girard', after: 'Samuel Girard', status: 'retained',
         notes: [
-          'Played 20 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Kris Letang',
         ],
       },
       {
         pos: 'D', before: 'Kris Letang', after: 'Kris Letang', status: 'retained',
         notes: [
-          'Played 74 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Samuel Girard',
         ],
       },
     ],

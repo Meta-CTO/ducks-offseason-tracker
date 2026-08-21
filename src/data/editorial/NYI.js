@@ -42,7 +42,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Lee left for Utah; Maccelli signed for a year; Eklund projected onto the third line — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Lee left for Utah; Maccelli signed for a year; Eklund projected onto the third line — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LW', before: 'Anders Lee', after: null, status: 'departed',
@@ -73,68 +73,68 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Mathew Barzal', after: 'Mathew Barzal', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Simon Holmstrom and Bo Horvat',
         ],
       },
       {
         pos: 'C', before: 'Casey Cizikas', after: 'Casey Cizikas', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Ondrej Palat and Matias Maccelli',
         ],
       },
       {
         pos: 'L', before: 'Anthony Duclair', after: 'Anthony Duclair', status: 'retained',
         notes: [
-          'Played 62 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Emil Heineman', after: 'Emil Heineman', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Calum Ritchie and Brayden Schenn',
         ],
       },
       {
         pos: 'R', before: 'Simon Holmstrom', after: 'Simon Holmstrom', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Bo Horvat and Mathew Barzal',
         ],
       },
       {
         pos: 'C', before: 'Kyle MacLean', after: 'Kyle MacLean', status: 'retained',
         notes: [
-          'Played 59 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Jean-Gabriel Pageau', after: 'Jean-Gabriel Pageau', status: 'retained',
         notes: [
-          'Played 74 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Victor Eklund and Kyle Palmieri',
         ],
       },
       {
         pos: 'L', before: 'Ondrej Palat', after: 'Ondrej Palat', status: 'retained',
         notes: [
-          'Played 29 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Casey Cizikas and Matias Maccelli',
         ],
       },
       {
         pos: 'C', before: 'Kyle Palmieri', after: 'Kyle Palmieri', status: 'retained',
         notes: [
-          'Played 25 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Victor Eklund and Jean-Gabriel Pageau',
         ],
       },
       {
         pos: 'C', before: 'Brayden Schenn', after: 'Brayden Schenn', status: 'retained',
         notes: [
-          'Played 19 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Calum Ritchie and Emil Heineman',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'DeAngelo re-signed; Schaefer projected onto the top pair; Romanov returning from injury — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'DeAngelo re-signed; Schaefer projected onto the top pair; Romanov returning from injury — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LD', before: 'Matthew Schaefer', after: 'Matthew Schaefer', status: 'retained',
@@ -159,19 +159,19 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Scott Mayfield', after: 'Scott Mayfield', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Alexander Romanov',
         ],
       },
       {
         pos: 'D', before: 'Adam Pelech', after: 'Adam Pelech', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Tony DeAngelo',
         ],
       },
       {
         pos: 'D', before: 'Ryan Pulock', after: 'Ryan Pulock', status: 'retained',
         notes: [
-          'Played 76 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Matthew Schaefer',
         ],
       },
     ],

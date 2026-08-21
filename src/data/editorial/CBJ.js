@@ -43,7 +43,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Jenner and Marchment out; Nichushkin bought with three picks — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Jenner and Marchment out; Nichushkin bought with three picks — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Boone Jenner', after: null, status: 'departed',
@@ -78,74 +78,74 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Charlie Coyle', after: 'Charlie Coyle', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Cole Sillinger and Mathieu Olivier',
         ],
       },
       {
         pos: 'R', before: 'Conor Garland', after: 'Conor Garland', status: 'retained',
         notes: [
-          'Played 21 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Danton Heinen', after: 'Danton Heinen', status: 'retained',
         notes: [
-          'Played 33 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Kent Johnson', after: 'Kent Johnson', status: 'retained',
         notes: [
-          'Played 76 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Sean Monahan and Connor Garland',
         ],
       },
       {
         pos: 'C', before: 'Isac Lundeström', after: 'Isac Lundeström', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Kirill Marchenko', after: 'Kirill Marchenko', status: 'retained',
         notes: [
-          'Played 76 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Valeri Nichushkin and Adam Fantilli',
         ],
       },
       {
         pos: 'C', before: 'Sean Monahan', after: 'Sean Monahan', status: 'retained',
         notes: [
-          'Played 78 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Kent Johnson and Connor Garland',
         ],
       },
       {
         pos: 'R', before: 'Mathieu Olivier', after: 'Mathieu Olivier', status: 'retained',
         notes: [
-          'Played 61 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Cole Sillinger and Charlie Coyle',
         ],
       },
       {
         pos: 'C', before: 'Cole Sillinger', after: 'Cole Sillinger', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Charlie Coyle and Mathieu Olivier',
         ],
       },
       {
         pos: 'L', before: 'Dmitri Voronkov', after: 'Dmitri Voronkov', status: 'retained',
         notes: [
-          'Played 63 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Luca Del Bel Belluz and Ryan Lomberg',
         ],
       },
       {
         pos: 'L', before: 'Miles Wood', after: 'Miles Wood', status: 'retained',
         notes: [
-          'Played 54 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Werenski stayed after considering leaving; Zamula went to the KHL — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Werenski stayed after considering leaving; Zamula went to the KHL — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Zach Werenski', after: 'Zach Werenski', status: 'retained',
@@ -166,31 +166,31 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Jake Christiansen', after: 'Jake Christiansen', status: 'retained',
         notes: [
-          'Played 40 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Dante Fabbro', after: 'Dante Fabbro', status: 'retained',
         notes: [
-          'Played 74 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Erik Gudbranson',
         ],
       },
       {
         pos: 'D', before: 'Erik Gudbranson', after: 'Erik Gudbranson', status: 'retained',
         notes: [
-          'Played 37 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Dante Fabbro',
         ],
       },
       {
         pos: 'D', before: 'Ivan Provorov', after: 'Ivan Provorov', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Denton Mateychuk',
         ],
       },
       {
         pos: 'D', before: 'Damon Severson', after: 'Damon Severson', status: 'retained',
         notes: [
-          'Played 71 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Zach Werenski',
         ],
       },
     ],

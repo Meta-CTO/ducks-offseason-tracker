@@ -47,7 +47,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Dorofeyev signed for seven years; Trocheck traded to Utah; Bjorkstrand and Veleno added — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Dorofeyev signed for seven years; Trocheck traded to Utah; Bjorkstrand and Veleno added — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LW', before: null, after: 'Pavel Dorofeyev', status: 'added',
@@ -82,68 +82,68 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Jaroslav Chmelar', after: 'Jaroslav Chmelar', status: 'retained',
         notes: [
-          'Played 28 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Adam Sykora and Joe Veleno',
         ],
       },
       {
         pos: 'L', before: 'Will Cuylle', after: 'Will Cuylle', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Noah Laba and Tye Kartye',
         ],
       },
       {
         pos: 'L', before: 'Tye Kartye', after: 'Tye Kartye', status: 'retained',
         notes: [
-          'Played 24 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Will Cuylle and Noah Laba',
         ],
       },
       {
         pos: 'C', before: 'Noah Laba', after: 'Noah Laba', status: 'retained',
         notes: [
-          'Played 74 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Will Cuylle and Tye Kartye',
         ],
       },
       {
         pos: 'L', before: 'Alexis Lafrenière', after: 'Alexis Lafrenière', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Gabe Perreault and Mika Zibanejad',
         ],
       },
       {
         pos: 'C', before: 'J.T. Miller', after: 'J.T. Miller', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Pavel Dorofeyev and Oliver Bjorkstrand',
         ],
       },
       {
         pos: 'R', before: 'Gabe Perreault', after: 'Gabe Perreault', status: 'retained',
         notes: [
-          'Played 49 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Mika Zibanejad and Alexis Lafreniere',
         ],
       },
       {
         pos: 'R', before: 'Taylor Raddysh', after: 'Taylor Raddysh', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Matt Rempe', after: 'Matt Rempe', status: 'retained',
         notes: [
-          'Played 26 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Adam Sykora', after: 'Adam Sykora', status: 'retained',
         notes: [
-          'Played 11 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Joe Veleno and Jaroslav Chmelar',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Borgen traded to Boston; Durzi and Pettersson both acquired — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Borgen traded to Boston; Durzi and Pettersson both acquired — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RD', before: 'Adam Fox', after: 'Adam Fox', status: 'retained',
@@ -170,44 +170,44 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Drew Fortescue', after: 'Drew Fortescue', status: 'retained',
         notes: [
-          'Played 9 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Vladislav Gavrikov', after: 'Vladislav Gavrikov', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Adam Fox',
         ],
       },
       {
         pos: 'D', before: 'Vincent Iorio', after: 'Vincent Iorio', status: 'retained',
         notes: [
-          'Played 6 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Matthew Robertson', after: 'Matthew Robertson', status: 'retained',
         notes: [
-          'Played 72 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Braden Schneider',
         ],
       },
       {
         pos: 'D', before: 'Braden Schneider', after: 'Braden Schneider', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Matthew Robertson',
         ],
       },
       {
         pos: 'D', before: 'Urho Vaakanainen', after: 'Urho Vaakanainen', status: 'retained',
         notes: [
-          'Played 34 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Quick retired; Korpisalo acquired from Boston behind Shesterkin — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Quick retired; Korpisalo acquired from Boston behind Shesterkin — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'G', before: 'Igor Shesterkin', after: 'Igor Shesterkin', status: 'retained',
@@ -227,7 +227,7 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Dylan Garand', after: 'Dylan Garand', status: 'retained',
         notes: [
-          'Played 3 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

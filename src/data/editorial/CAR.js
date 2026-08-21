@@ -39,7 +39,7 @@ export const arrivals = []
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Nobody added; Jarvis is months from returning — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Nobody added; Jarvis is months from returning — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RW', before: 'Seth Jarvis', after: 'Seth Jarvis', status: 'injured',
@@ -63,68 +63,68 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Jackson Blake', after: 'Jackson Blake', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Taylor Hall and Logan Stankoven',
         ],
       },
       {
         pos: 'L', before: 'William Carrier', after: 'William Carrier', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Mark Jankowski and Eric Robinson',
         ],
       },
       {
         pos: 'L', before: 'Nicolas Deslauriers', after: 'Nicolas Deslauriers', status: 'retained',
         notes: [
-          'Played 7 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Taylor Hall', after: 'Taylor Hall', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Logan Stankoven and Jackson Blake',
         ],
       },
       {
         pos: 'L', before: 'Mark Jankowski', after: 'Mark Jankowski', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between William Carrier and Eric Robinson',
         ],
       },
       {
         pos: 'C', before: 'Jesperi Kotkaniemi', after: 'Jesperi Kotkaniemi', status: 'retained',
         notes: [
-          'Played 42 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Nikolaj Ehlers and Jordan Staal',
         ],
       },
       {
         pos: 'L', before: 'Jordan Martinook', after: 'Jordan Martinook', status: 'retained',
         notes: [
-          'Played 77 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Andrei Svechnikov and Sebastian Aho',
         ],
       },
       {
         pos: 'L', before: 'Eric Robinson', after: 'Eric Robinson', status: 'retained',
         notes: [
-          'Played 67 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside William Carrier and Mark Jankowski',
         ],
       },
       {
         pos: 'C', before: 'Jordan Staal', after: 'Jordan Staal', status: 'retained',
         notes: [
-          'Played 75 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Nikolaj Ehlers and Jesperi Kotkaniemi',
         ],
       },
       {
         pos: 'R', before: 'Andrei Svechnikov', after: 'Andrei Svechnikov', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Sebastian Aho and Jordan Martinook',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Nikishin unsigned and in trade rumours; Reilly unsigned — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Nikishin unsigned and in trade rumours; Reilly unsigned — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Alexander Nikishin', after: 'Alexander Nikishin', status: 'unsigned',
@@ -148,19 +148,19 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Jalen Chatfield', after: 'Jalen Chatfield', status: 'retained',
         notes: [
-          'Played 72 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Jaccob Slavin',
         ],
       },
       {
         pos: 'D', before: 'Shayne Gostisbehere', after: 'Shayne Gostisbehere', status: 'retained',
         notes: [
-          'Played 55 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Alexander Nikishin',
         ],
       },
       {
         pos: 'D', before: 'Sean Walker', after: 'Sean Walker', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with K\'Andre Miller',
         ],
       },
     ],

@@ -47,7 +47,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Six forwards acquired; Svechkov, L’Heureux and Haula out — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Six forwards acquired; Svechkov, L’Heureux and Haula out — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: null, after: 'Mavrik Bourque', status: 'added',
@@ -93,38 +93,38 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Luke Evangelista', after: 'Luke Evangelista', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Steven Stamkos and Ryan O\'Reilly',
         ],
       },
       {
         pos: 'C', before: 'Jonathan Marchessault', after: 'Jonathan Marchessault', status: 'retained',
         notes: [
-          'Played 62 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Nils Hoglander and Ross Colton',
         ],
       },
       {
         pos: 'C', before: 'Steven Stamkos', after: 'Steven Stamkos', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Ryan O\'Reilly and Luke Evangelista',
         ],
       },
       {
         pos: 'C', before: 'Ozzy Wiesblatt', after: 'Ozzy Wiesblatt', status: 'retained',
         notes: [
-          'Played 40 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Matthew Wood', after: 'Matthew Wood', status: 'retained',
         notes: [
-          'Played 71 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Filip Forsberg and Mavrik Bourque',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Lyubushkin added; the top four is unchanged — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Lyubushkin added; the top four is unchanged — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Roman Josi', after: 'Roman Josi', status: 'retained',
@@ -140,31 +140,31 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Justin Barron', after: 'Justin Barron', status: 'retained',
         notes: [
-          'Played 52 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Brady Skjei',
         ],
       },
       {
         pos: 'D', before: 'Nicolas Hague', after: 'Nicolas Hague', status: 'retained',
         notes: [
-          'Played 62 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Ilya Lyubushkin',
         ],
       },
       {
         pos: 'D', before: 'Nick Perbix', after: 'Nick Perbix', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Roman Josi',
         ],
       },
       {
         pos: 'D', before: 'Brady Skjei', after: 'Brady Skjei', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Justin Barron',
         ],
       },
       {
         pos: 'D', before: 'Adam Wilsby', after: 'Adam Wilsby', status: 'retained',
         notes: [
-          'Played 58 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

@@ -49,7 +49,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Brady Tkachuk acquired to join his brother; Barkov returns from a lost season — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Brady Tkachuk acquired to join his brother; Barkov returns from a lost season — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Aleksander Barkov', after: 'Aleksander Barkov', status: 'retained',
@@ -91,62 +91,62 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Sam Bennett', after: 'Sam Bennett', status: 'retained',
         notes: [
-          'Played 76 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Carter Verhaeghe and Matthew Tkachuk',
         ],
       },
       {
         pos: 'L', before: 'Jonah Gadjovich', after: 'Jonah Gadjovich', status: 'retained',
         notes: [
-          'Played 10 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Anton Lundell', after: 'Anton Lundell', status: 'retained',
         notes: [
-          'Played 64 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Eetu Luostarinen and Brad Marchand',
         ],
       },
       {
         pos: 'C', before: 'Eetu Luostarinen', after: 'Eetu Luostarinen', status: 'retained',
         notes: [
-          'Played 73 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Anton Lundell and Brad Marchand',
         ],
       },
       {
         pos: 'L', before: 'Brad Marchand', after: 'Brad Marchand', status: 'retained',
         notes: [
-          'Played 52 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Eetu Luostarinen and Anton Lundell',
         ],
       },
       {
         pos: 'L', before: 'Cole Reinhardt', after: 'Cole Reinhardt', status: 'retained',
         notes: [
-          'Played 15 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Sam Reinhart', after: 'Sam Reinhart', status: 'retained',
         notes: [
-          'Played 64 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Brady Tkachuk and Aleksander Barkov',
         ],
       },
       {
         pos: 'C', before: 'Cole Schwindt', after: 'Cole Schwindt', status: 'retained',
         notes: [
-          'Played 29 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Carter Verhaeghe', after: 'Carter Verhaeghe', status: 'retained',
         notes: [
-          'Played 77 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Sam Bennett and Matthew Tkachuk',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Gudas signed for six years after his rights came from Anaheim — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Gudas signed for six years after his rights came from Anaheim — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RD', before: null, after: 'Radko Gudas', status: 'added',
@@ -171,31 +171,31 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Uvis Balinskis', after: 'Uvis Balinskis', status: 'retained',
         notes: [
-          'Played 54 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Gustav Forsling', after: 'Gustav Forsling', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Aaron Ekblad',
         ],
       },
       {
         pos: 'D', before: 'Dmitry Kulikov', after: 'Dmitry Kulikov', status: 'retained',
         notes: [
-          'Played 19 games for the club in 2025–26 and is on the current roster',
+          'Projected on the 4th pair with Radko Gudas',
         ],
       },
       {
         pos: 'D', before: 'Niko Mikkola', after: 'Niko Mikkola', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Seth Jones',
         ],
       },
       {
         pos: 'D', before: 'Donovan Sebrango', after: 'Donovan Sebrango', status: 'retained',
         notes: [
-          'Played 40 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

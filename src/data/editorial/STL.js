@@ -42,7 +42,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Kyrou traded for McMichael; McTavish bought from Anaheim with two first-round picks — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Kyrou traded for McMichael; McTavish bought from Anaheim with two first-round picks — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: null, after: 'Mason McTavish', status: 'added',
@@ -78,74 +78,74 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Jonatan Berggren', after: 'Jonatan Berggren', status: 'retained',
         notes: [
-          'Played 36 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Pavel Buchnevich', after: 'Pavel Buchnevich', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Connor McMichael and Mason McTavish',
         ],
       },
       {
         pos: 'R', before: 'Dalibor Dvorsky', after: 'Dalibor Dvorsky', status: 'retained',
         notes: [
-          'Played 71 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Jake Neighbours and Pius Suter',
         ],
       },
       {
         pos: 'C', before: 'Jack Finley', after: 'Jack Finley', status: 'retained',
         notes: [
-          'Played 22 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Ross Johnston and Alexey Toropchenko',
         ],
       },
       {
         pos: 'L', before: 'Dylan Holloway', after: 'Dylan Holloway', status: 'retained',
         notes: [
-          'Played 59 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Robert Thomas and Jimmy Snuggerud',
         ],
       },
       {
         pos: 'L', before: 'Jake Neighbours', after: 'Jake Neighbours', status: 'retained',
         notes: [
-          'Played 69 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Pius Suter and Dalibor Dvorsky',
         ],
       },
       {
         pos: 'R', before: 'Jimmy Snuggerud', after: 'Jimmy Snuggerud', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Dylan Holloway and Robert Thomas',
         ],
       },
       {
         pos: 'C', before: 'Oskar Sundqvist', after: 'Oskar Sundqvist', status: 'retained',
         notes: [
-          'Played 52 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Pius Suter', after: 'Pius Suter', status: 'retained',
         notes: [
-          'Played 64 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Jake Neighbours and Dalibor Dvorsky',
         ],
       },
       {
         pos: 'R', before: 'Alexey Toropchenko', after: 'Alexey Toropchenko', status: 'retained',
         notes: [
-          'Played 65 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Ross Johnston and Jack Finley',
         ],
       },
       {
         pos: 'L', before: 'Nathan Walker', after: 'Nathan Walker', status: 'retained',
         notes: [
-          'Played 46 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Carlo acquired from Toronto; Kessel and Holl left as free agents — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Carlo acquired from Toronto; Kessel and Holl left as free agents — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RD', before: null, after: 'Brandon Carlo', status: 'added',
@@ -170,25 +170,25 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Philip Broberg', after: 'Philip Broberg', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Logan Mailloux',
         ],
       },
       {
         pos: 'D', before: 'Cam Fowler', after: 'Cam Fowler', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Brandon Carlo',
         ],
       },
       {
         pos: 'D', before: 'Logan Mailloux', after: 'Logan Mailloux', status: 'retained',
         notes: [
-          'Played 67 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Philip Broberg',
         ],
       },
       {
         pos: 'D', before: 'Tyler Tucker', after: 'Tyler Tucker', status: 'retained',
         notes: [
-          'Played 69 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

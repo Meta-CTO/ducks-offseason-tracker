@@ -40,7 +40,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Gallagher traded after fourteen seasons; Laine unsigned; Berard added — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Gallagher traded after fourteen seasons; Laine unsigned; Berard added — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Nick Suzuki', after: 'Nick Suzuki', status: 'retained',
@@ -81,80 +81,80 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Josh Anderson', after: 'Josh Anderson', status: 'retained',
         notes: [
-          'Played 72 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Alexandre Texier and Phillip Danault',
         ],
       },
       {
         pos: 'C', before: 'Owen Beck', after: 'Owen Beck', status: 'retained',
         notes: [
-          'Played 15 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Zachary Bolduc', after: 'Zachary Bolduc', status: 'retained',
         notes: [
-          'Played 78 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Oliver Kapanen and Kirby Dach',
         ],
       },
       {
         pos: 'R', before: 'Cole Caufield', after: 'Cole Caufield', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Nick Suzuki and Juraj Slafkovsky',
         ],
       },
       {
         pos: 'C', before: 'Kirby Dach', after: 'Kirby Dach', status: 'retained',
         notes: [
-          'Played 37 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Zachary Bolduc and Oliver Kapanen',
         ],
       },
       {
         pos: 'C', before: 'Phillip Danault', after: 'Phillip Danault', status: 'retained',
         notes: [
-          'Played 45 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Alexandre Texier and Josh Anderson',
         ],
       },
       {
         pos: 'C', before: 'Jake Evans', after: 'Jake Evans', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Alex Newhook and Ivan Demidov',
         ],
       },
       {
         pos: 'C', before: 'Oliver Kapanen', after: 'Oliver Kapanen', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Zachary Bolduc and Kirby Dach',
         ],
       },
       {
         pos: 'C', before: 'Alex Newhook', after: 'Alex Newhook', status: 'retained',
         notes: [
-          'Played 42 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Jake Evans and Ivan Demidov',
         ],
       },
       {
         pos: 'L', before: 'Juraj Slafkovský', after: 'Juraj Slafkovský', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Cole Caufield and Nick Suzuki',
         ],
       },
       {
         pos: 'L', before: 'Alexandre Texier', after: 'Alexandre Texier', status: 'retained',
         notes: [
-          'Played 43 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Phillip Danault and Josh Anderson',
         ],
       },
       {
         pos: 'L', before: 'Florian Xhekaj', after: 'Florian Xhekaj', status: 'retained',
         notes: [
-          'Played 5 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Unchanged in the top four, with Walsh added on a two-way deal — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Unchanged in the top four, with Walsh added on a two-way deal — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LD', before: 'Lane Hutson', after: 'Lane Hutson', status: 'retained',
@@ -175,44 +175,44 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Alexandre Carrier', after: 'Alexandre Carrier', status: 'retained',
         notes: [
-          'Played 73 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Kaiden Guhle',
         ],
       },
       {
         pos: 'D', before: 'Adam Engstrom', after: 'Adam Engstrom', status: 'retained',
         notes: [
-          'Played 15 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Kaiden Guhle', after: 'Kaiden Guhle', status: 'retained',
         notes: [
-          'Played 39 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Alexandre Carrier',
         ],
       },
       {
         pos: 'D', before: 'Mike Matheson', after: 'Mike Matheson', status: 'retained',
         notes: [
-          'Played 78 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Noah Dobson',
         ],
       },
       {
         pos: 'D', before: 'Jayden Struble', after: 'Jayden Struble', status: 'retained',
         notes: [
-          'Played 59 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Lane Hutson',
         ],
       },
       {
         pos: 'D', before: 'Arber Xhekaj', after: 'Arber Xhekaj', status: 'retained',
         notes: [
-          'Played 65 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'The crease is handed to two young goaltenders — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'The crease is handed to two young goaltenders — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'G', before: 'Sam Montembeault', after: 'Sam Montembeault', status: 'retained',
@@ -235,7 +235,7 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Samuel Montembeault', after: 'Samuel Montembeault', status: 'retained',
         notes: [
-          'Played 25 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

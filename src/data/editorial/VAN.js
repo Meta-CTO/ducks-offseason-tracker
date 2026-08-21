@@ -55,7 +55,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Blueger and Hoglander out, Kane unsigned; Gallagher, Cotter and Safonov in on short deals — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Blueger and Hoglander out, Kane unsigned; Gallagher, Cotter and Safonov in on short deals — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Elias Pettersson', after: 'Elias Pettersson', status: 'retained',
@@ -93,62 +93,62 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Brock Boeser', after: 'Brock Boeser', status: 'retained',
         notes: [
-          'Played 75 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Liam Ohgren and Marco Rossi',
         ],
       },
       {
         pos: 'C', before: 'Filip Chytil', after: 'Filip Chytil', status: 'retained',
         notes: [
-          'Played 12 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Drew O\'Connor and Jonathan Lekkerimaki',
         ],
       },
       {
         pos: 'L', before: 'Jake DeBrusk', after: 'Jake DeBrusk', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Elias Pettersson and Linus Karlsson',
         ],
       },
       {
         pos: 'C', before: 'Linus Karlsson', after: 'Linus Karlsson', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Jake DeBrusk and Elias Pettersson',
         ],
       },
       {
         pos: 'L', before: 'Liam Ohgren', after: 'Liam Ohgren', status: 'retained',
         notes: [
-          'Played 51 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Marco Rossi and Brock Boeser',
         ],
       },
       {
         pos: 'C', before: 'Aatu Räty', after: 'Aatu Räty', status: 'retained',
         notes: [
-          'Played 66 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Paul Cotter and Brendan Gallagher',
         ],
       },
       {
         pos: 'C', before: 'Marco Rossi', after: 'Marco Rossi', status: 'retained',
         notes: [
-          'Played 33 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Liam Ohgren and Brock Boeser',
         ],
       },
       {
         pos: 'C', before: 'Max Sasson', after: 'Max Sasson', status: 'retained',
         notes: [
-          'Played 66 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Drew O\'Connor', after: 'Drew O\'Connor', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Filip Chytil and Jonathan Lekkerimaki',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Marcus Pettersson traded to the Rangers; Oleksiak and Schenn signed as veterans — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Marcus Pettersson traded to the Rangers; Oleksiak and Schenn signed as veterans — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Marcus Pettersson', after: null, status: 'departed',
@@ -177,26 +177,26 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Zeev Buium', after: 'Zeev Buium', status: 'retained',
         notes: [
-          'Played 45 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Filip Hronek',
         ],
       },
       {
         pos: 'D', before: 'Victor Mancini', after: 'Victor Mancini', status: 'retained',
         notes: [
-          'Played 24 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Tom Willander', after: 'Tom Willander', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Jamie Oleksiak',
         ],
       },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Unchanged: Demko and Lankinen — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Unchanged: Demko and Lankinen — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'G', before: 'Thatcher Demko', after: 'Thatcher Demko', status: 'retained',
@@ -209,7 +209,7 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Nikita Tolopilo', after: 'Nikita Tolopilo', status: 'retained',
         notes: [
-          'Played 21 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

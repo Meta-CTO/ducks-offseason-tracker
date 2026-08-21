@@ -40,7 +40,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Schwartz gone and Tolvanen unsigned; Samoskevich bought with picks and signed for three years — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Schwartz gone and Tolvanen unsigned; Samoskevich bought with picks and signed for three years — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'F', before: null, after: 'Mackie Samoskevich', status: 'added',
@@ -76,62 +76,62 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Berkly Catton', after: 'Berkly Catton', status: 'retained',
         notes: [
-          'Played 66 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Jared McCann and Shane Wright',
         ],
       },
       {
         pos: 'R', before: 'Jordan Eberle', after: 'Jordan Eberle', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Bobby McMann and Matty Beniers',
         ],
       },
       {
         pos: 'C', before: 'Frederick Gaudreau', after: 'Frederick Gaudreau', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Ryan Winterton and Jacob Melanson',
         ],
       },
       {
         pos: 'R', before: 'Kaapo Kakko', after: 'Kaapo Kakko', status: 'retained',
         notes: [
-          'Played 65 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Mackie Samoskevich and Chandler Stephenson',
         ],
       },
       {
         pos: 'L', before: 'Jared McCann', after: 'Jared McCann', status: 'retained',
         notes: [
-          'Played 52 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Shane Wright and Berkly Catton',
         ],
       },
       {
         pos: 'C', before: 'Bobby McMann', after: 'Bobby McMann', status: 'retained',
         notes: [
-          'Played 18 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Matty Beniers and Jordan Eberle',
         ],
       },
       {
         pos: 'C', before: 'Ben Meyers', after: 'Ben Meyers', status: 'retained',
         notes: [
-          'Played 52 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Chandler Stephenson', after: 'Chandler Stephenson', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Mackie Samoskevich and Kaapo Kakko',
         ],
       },
       {
         pos: 'C', before: 'Ryan Winterton', after: 'Ryan Winterton', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Frederick Gaudreau and Jacob Melanson',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Oleksiak left for Vancouver; the rest of the group is projected intact — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Oleksiak left for Vancouver; the rest of the group is projected intact — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Jamie Oleksiak', after: null, status: 'departed',
@@ -148,31 +148,31 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Ryker Evans', after: 'Ryker Evans', status: 'retained',
         notes: [
-          'Played 67 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Brandon Montour',
         ],
       },
       {
         pos: 'D', before: 'Cale Fleury', after: 'Cale Fleury', status: 'retained',
         notes: [
-          'Played 23 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Ryan Lindgren',
         ],
       },
       {
         pos: 'D', before: 'Adam Larsson', after: 'Adam Larsson', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Vince Dunn',
         ],
       },
       {
         pos: 'D', before: 'Ryan Lindgren', after: 'Ryan Lindgren', status: 'retained',
         notes: [
-          'Played 76 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Cale Fleury',
         ],
       },
       {
         pos: 'D', before: 'Joshua Mahura', after: 'Joshua Mahura', status: 'retained',
         notes: [
-          'Played 23 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

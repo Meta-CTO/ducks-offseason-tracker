@@ -47,7 +47,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Larkin has asked to be traded; four veteran forwards are unsigned; Arvidsson and Kolesar in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Larkin has asked to be traded; four veteran forwards are unsigned; Arvidsson and Kolesar in — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Dylan Larkin', after: 'Dylan Larkin', status: 'retained',
@@ -86,56 +86,56 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Mason Appleton', after: 'Mason Appleton', status: 'retained',
         notes: [
-          'Played 65 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Carter Mazur and Marco Kasper',
         ],
       },
       {
         pos: 'L', before: 'J.T. Compher', after: 'J.T. Compher', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Michael Rasmussen and Keegan Kolesar',
         ],
       },
       {
         pos: 'C', before: 'Andrew Copp', after: 'Andrew Copp', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Alex DeBrincat and Viktor Arvidsson',
         ],
       },
       {
         pos: 'R', before: 'Alex DeBrincat', after: 'Alex DeBrincat', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Andrew Copp and Viktor Arvidsson',
         ],
       },
       {
         pos: 'C', before: 'Emmitt Finnie', after: 'Emmitt Finnie', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Dylan Larkin and Lucas Raymond',
         ],
       },
       {
         pos: 'C', before: 'Marco Kasper', after: 'Marco Kasper', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Carter Mazur and Mason Appleton',
         ],
       },
       {
         pos: 'C', before: 'Michael Rasmussen', after: 'Michael Rasmussen', status: 'retained',
         notes: [
-          'Played 64 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside J.T. Compher and Keegan Kolesar',
         ],
       },
       {
         pos: 'L', before: 'Lucas Raymond', after: 'Lucas Raymond', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Emmitt Finnie and Dylan Larkin',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Hamonic unsigned; Bryson added as depth behind an unchanged top four — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Hamonic unsigned; Bryson added as depth behind an unchanged top four — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LD', before: 'Simon Edvinsson', after: 'Simon Edvinsson', status: 'unsigned',
@@ -163,25 +163,25 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Jacob Bernard-Docker', after: 'Jacob Bernard-Docker', status: 'retained',
         notes: [
-          'Played 63 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Ben Chiarot', after: 'Ben Chiarot', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Justin Faulk',
         ],
       },
       {
         pos: 'D', before: 'Justin Faulk', after: 'Justin Faulk', status: 'retained',
         notes: [
-          'Played 17 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Ben Chiarot',
         ],
       },
       {
         pos: 'D', before: 'Albert Johansson', after: 'Albert Johansson', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Axel Sandin-Pellikka',
         ],
       },
     ],

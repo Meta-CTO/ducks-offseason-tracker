@@ -46,7 +46,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Coleman, Lomberg and Olofsson out; Tsyplakov in, and the vacated minutes go to younger players — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Coleman, Lomberg and Olofsson out; Tsyplakov in, and the vacated minutes go to younger players — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'F', before: 'Blake Coleman', after: null, status: 'departed',
@@ -84,80 +84,80 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Matt Coronato', after: 'Matt Coronato', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Matvei Gridin and Morgan Frost',
         ],
       },
       {
         pos: 'L', before: 'Joel Farabee', after: 'Joel Farabee', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Connor Zary and Mikael Backlund',
         ],
       },
       {
         pos: 'R', before: 'Matvei Gridin', after: 'Matvei Gridin', status: 'retained',
         notes: [
-          'Played 37 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Morgan Frost and Matt Coronato',
         ],
       },
       {
         pos: 'C', before: 'Tyson Gross', after: 'Tyson Gross', status: 'retained',
         notes: [
-          'Played 6 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Samuel Honzek', after: 'Samuel Honzek', status: 'retained',
         notes: [
-          'Played 18 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Rory Kerins', after: 'Rory Kerins', status: 'retained',
         notes: [
-          'Played 4 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Adam Klapka', after: 'Adam Klapka', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Maxim Tsyplakov and Martin Pospisil',
         ],
       },
       {
         pos: 'C', before: 'Martin Pospisil', after: 'Martin Pospisil', status: 'retained',
         notes: [
-          'Played 22 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Maxim Tsyplakov and Adam Klapka',
         ],
       },
       {
         pos: 'C', before: 'Yegor Sharangovich', after: 'Yegor Sharangovich', status: 'retained',
         notes: [
-          'Played 78 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Jonathan Huberdeau and Ryan Strome',
         ],
       },
       {
         pos: 'C', before: 'Ryan Strome', after: 'Ryan Strome', status: 'retained',
         notes: [
-          'Played 19 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Jonathan Huberdeau and Yegor Sharangovich',
         ],
       },
       {
         pos: 'L', before: 'Aydar Suniev', after: 'Aydar Suniev', status: 'retained',
         notes: [
-          'Played 6 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Connor Zary', after: 'Connor Zary', status: 'retained',
         notes: [
-          'Played 74 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Mikael Backlund and Joel Farabee',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Rebuilt in two trades: Nemec bought with picks, Middleton acquired for Coleman and Maatta — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Rebuilt in two trades: Nemec bought with picks, Middleton acquired for Coleman and Maatta — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: null, after: 'Simon Nemec', status: 'added',
@@ -185,43 +185,43 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Kevin Bahl', after: 'Kevin Bahl', status: 'retained',
         notes: [
-          'Played 76 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Zach Whitecloud',
         ],
       },
       {
         pos: 'D', before: 'Hunter Brzustewicz', after: 'Hunter Brzustewicz', status: 'retained',
         notes: [
-          'Played 34 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Joel Hanley', after: 'Joel Hanley', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Yan Kuznetsov', after: 'Yan Kuznetsov', status: 'retained',
         notes: [
-          'Played 57 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Zayne Parekh',
         ],
       },
       {
         pos: 'D', before: 'Brayden Pachal', after: 'Brayden Pachal', status: 'retained',
         notes: [
-          'Played 39 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Zach Whitecloud', after: 'Zach Whitecloud', status: 'retained',
         notes: [
-          'Played 31 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Kevin Bahl',
         ],
       },
       {
         pos: 'D', before: 'Abram Wiebe', after: 'Abram Wiebe', status: 'retained',
         notes: [
-          'Played 4 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

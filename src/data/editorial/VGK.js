@@ -46,7 +46,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Dorofeyev sold for picks; Kolesar and Sissons out; Olofsson and Gatcomb in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Dorofeyev sold for picks; Kolesar and Sissons out; Olofsson and Gatcomb in — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'F', before: 'Pavel Dorofeyev', after: null, status: 'departed',
@@ -85,80 +85,80 @@ export const rosterComparison = [
       {
         pos: 'L', before: 'Ivan Barbashev', after: 'Ivan Barbashev', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Jack Eichel and Mark Stone',
         ],
       },
       {
         pos: 'R', before: 'Braeden Bowman', after: 'Braeden Bowman', status: 'retained',
         notes: [
-          'Played 54 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Victor Olofsson and Tomas Hertl',
         ],
       },
       {
         pos: 'C', before: 'Nic Dowd', after: 'Nic Dowd', status: 'retained',
         notes: [
-          'Played 20 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Alexander Holtz and Marc Gatcomb',
         ],
       },
       {
         pos: 'C', before: 'Tomas Hertl', after: 'Tomas Hertl', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Victor Olofsson and Braeden Bowman',
         ],
       },
       {
         pos: 'R', before: 'Alexander Holtz', after: 'Alexander Holtz', status: 'retained',
         notes: [
-          'Played 28 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Nic Dowd and Marc Gatcomb',
         ],
       },
       {
         pos: 'C', before: 'Brett Howden', after: 'Brett Howden', status: 'retained',
         notes: [
-          'Played 58 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside William Karlsson and Mitch Marner',
         ],
       },
       {
         pos: 'C', before: 'William Karlsson', after: 'William Karlsson', status: 'retained',
         notes: [
-          'Played 14 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Brett Howden and Mitch Marner',
         ],
       },
       {
         pos: 'C', before: 'Tanner Laczynski', after: 'Tanner Laczynski', status: 'retained',
         notes: [
-          'Played 10 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Raphael Lavoie', after: 'Raphael Lavoie', status: 'retained',
         notes: [
-          'Played 1 game for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Jonas Rondbjerg', after: 'Jonas Rondbjerg', status: 'retained',
         notes: [
-          'Played 4 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Mark Stone', after: 'Mark Stone', status: 'retained',
         notes: [
-          'Played 60 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Ivan Barbashev and Jack Eichel',
         ],
       },
       {
         pos: 'C', before: 'Kai Uchacz', after: 'Kai Uchacz', status: 'retained',
         notes: [
-          'Played 3 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Korczak swapped for Wotherspoon; Pietrangelo is hurt — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Korczak swapped for Wotherspoon; Pietrangelo is hurt — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Alex Pietrangelo', after: 'Alex Pietrangelo', status: 'injured',
@@ -182,44 +182,44 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Rasmus Andersson', after: 'Rasmus Andersson', status: 'retained',
         notes: [
-          'Played 33 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Noah Hanifin',
         ],
       },
       {
         pos: 'D', before: 'Dylan Coghlan', after: 'Dylan Coghlan', status: 'retained',
         notes: [
-          'Played 3 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Noah Hanifin', after: 'Noah Hanifin', status: 'retained',
         notes: [
-          'Played 71 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Rasmus Andersson',
         ],
       },
       {
         pos: 'D', before: 'Jeremy Lauzon', after: 'Jeremy Lauzon', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Parker Wotherspoon',
         ],
       },
       {
         pos: 'D', before: 'Brayden McNabb', after: 'Brayden McNabb', status: 'retained',
         notes: [
-          'Played 63 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Shea Theodore',
         ],
       },
       {
         pos: 'D', before: 'Jaycob Megna', after: 'Jaycob Megna', status: 'retained',
         notes: [
-          'Played 4 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Schmid traded to Florida; Hart and Hill projected as the tandem — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Schmid traded to Florida; Hart and Hill projected as the tandem — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'G', before: 'Carter Hart', after: 'Carter Hart', status: 'retained',
@@ -239,7 +239,7 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Carl Lindbom', after: 'Carl Lindbom', status: 'retained',
         notes: [
-          'Played 8 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

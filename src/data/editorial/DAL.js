@@ -42,7 +42,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Robertson re-signed for a year; Bourque traded to Nashville; Kiviranta returns — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Robertson re-signed for a year; Bourque traded to Nashville; Kiviranta returns — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LW', before: 'Jason Robertson', after: 'Jason Robertson', status: 'retained',
@@ -76,68 +76,68 @@ export const rosterComparison = [
       {
         pos: 'L', before: 'Jamie Benn', after: 'Jamie Benn', status: 'retained',
         notes: [
-          'Played 60 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Sam Steel and Matt Duchene',
         ],
       },
       {
         pos: 'C', before: 'Colin Blackwell', after: 'Colin Blackwell', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Oskar Bäck', after: 'Oskar Bäck', status: 'retained',
         notes: [
-          'Played 72 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Radek Faksa and Joel Kiviranta',
         ],
       },
       {
         pos: 'C', before: 'Matt Duchene', after: 'Matt Duchene', status: 'retained',
         notes: [
-          'Played 57 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Sam Steel and Jamie Benn',
         ],
       },
       {
         pos: 'C', before: 'Radek Faksa', after: 'Radek Faksa', status: 'retained',
         notes: [
-          'Played 58 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Oskar Back and Joel Kiviranta',
         ],
       },
       {
         pos: 'C', before: 'Justin Hryckowian', after: 'Justin Hryckowian', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Wyatt Johnston and Mikko Rantanen',
         ],
       },
       {
         pos: 'R', before: 'Arttu Hyry', after: 'Arttu Hyry', status: 'retained',
         notes: [
-          'Played 20 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Mikko Rantanen', after: 'Mikko Rantanen', status: 'retained',
         notes: [
-          'Played 64 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Justin Hryckowian and Wyatt Johnston',
         ],
       },
       {
         pos: 'C', before: 'Tyler Seguin', after: 'Tyler Seguin', status: 'retained',
         notes: [
-          'Played 27 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Jason Robertson and Roope Hintz',
         ],
       },
       {
         pos: 'C', before: 'Sam Steel', after: 'Sam Steel', status: 'retained',
         notes: [
-          'Played 73 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Matt Duchene and Jamie Benn',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Lyubushkin and Petrovic out; no replacement signed — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Lyubushkin and Petrovic out; no replacement signed — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RD', before: 'Miro Heiskanen', after: 'Miro Heiskanen', status: 'retained',
@@ -158,31 +158,31 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Kyle Capobianco', after: 'Kyle Capobianco', status: 'retained',
         notes: [
-          'Played 33 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Thomas Harley', after: 'Thomas Harley', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Nils Lundkvist',
         ],
       },
       {
         pos: 'D', before: 'Esa Lindell', after: 'Esa Lindell', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Miro Heiskanen',
         ],
       },
       {
         pos: 'D', before: 'Nils Lundkvist', after: 'Nils Lundkvist', status: 'retained',
         notes: [
-          'Played 52 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Thomas Harley',
         ],
       },
       {
         pos: 'D', before: 'Tyler Myers', after: 'Tyler Myers', status: 'retained',
         notes: [
-          'Played 16 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Lian Bichsel',
         ],
       },
     ],

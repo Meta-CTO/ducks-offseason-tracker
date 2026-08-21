@@ -50,7 +50,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Zuccarello, Johansson and Tarasenko out — 150 points — with Coleman and Shabanov in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Zuccarello, Johansson and Tarasenko out — 150 points — with Coleman and Shabanov in — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LW', before: 'Kirill Kaprizov', after: 'Kirill Kaprizov', status: 'retained',
@@ -92,74 +92,74 @@ export const rosterComparison = [
       {
         pos: 'L', before: 'Matt Boldy', after: 'Matt Boldy', status: 'retained',
         notes: [
-          'Played 76 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Kirill Kaprizov and Joel Eriksson Ek',
         ],
       },
       {
         pos: 'R', before: 'Bobby Brink', after: 'Bobby Brink', status: 'retained',
         notes: [
-          'Played 13 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Yakov Trenin and Danila Yurov',
         ],
       },
       {
         pos: 'C', before: 'Joel Eriksson Ek', after: 'Joel Eriksson Ek', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the first line between Kirill Kaprizov and Matt Boldy',
         ],
       },
       {
         pos: 'L', before: 'Marcus Foligno', after: 'Marcus Foligno', status: 'retained',
         notes: [
-          'Played 56 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Michael McCarron and Nick Foligno',
         ],
       },
       {
         pos: 'L', before: 'Nick Foligno', after: 'Nick Foligno', status: 'retained',
         notes: [
-          'Played 17 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Marcus Foligno and Michael McCarron',
         ],
       },
       {
         pos: 'C', before: 'Hunter Haight', after: 'Hunter Haight', status: 'retained',
         notes: [
-          'Played 9 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Ryan Hartman', after: 'Ryan Hartman', status: 'retained',
         notes: [
-          'Played 76 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Blake Coleman and Maksim Shabanov',
         ],
       },
       {
         pos: 'C', before: 'Michael McCarron', after: 'Michael McCarron', status: 'retained',
         notes: [
-          'Played 20 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Marcus Foligno and Nick Foligno',
         ],
       },
       {
         pos: 'C', before: 'Nico Sturm', after: 'Nico Sturm', status: 'retained',
         notes: [
-          'Played 49 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Yakov Trenin', after: 'Yakov Trenin', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Danila Yurov and Bobby Brink',
         ],
       },
       {
         pos: 'R', before: 'Danila Yurov', after: 'Danila Yurov', status: 'retained',
         notes: [
-          'Played 73 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Yakov Trenin and Bobby Brink',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Middleton traded to Calgary; Maatta came back the other way — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Middleton traded to Calgary; Maatta came back the other way — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Jake Middleton', after: null, status: 'departed',
@@ -186,62 +186,62 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Zach Bogosian', after: 'Zach Bogosian', status: 'retained',
         notes: [
-          'Played 41 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Olli Maatta',
         ],
       },
       {
         pos: 'D', before: 'Jonas Brodin', after: 'Jonas Brodin', status: 'retained',
         notes: [
-          'Played 62 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Jared Spurgeon',
         ],
       },
       {
         pos: 'D', before: 'Viking Gustafsson Nyberg', after: 'Viking Gustafsson Nyberg', status: 'retained',
         notes: [
-          'Played 2 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Quinn Hughes', after: 'Quinn Hughes', status: 'retained',
         notes: [
-          'Played 48 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Brock Faber',
         ],
       },
       {
         pos: 'D', before: 'Daemon Hunt', after: 'Daemon Hunt', status: 'retained',
         notes: [
-          'Played 32 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Matt Kiersted', after: 'Matt Kiersted', status: 'retained',
         notes: [
-          'Played 6 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Carson Lambos', after: 'Carson Lambos', status: 'retained',
         notes: [
-          'Played 1 game for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'David Spacek', after: 'David Spacek', status: 'retained',
         notes: [
-          'Played 2 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Jared Spurgeon', after: 'Jared Spurgeon', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Jonas Brodin',
         ],
       },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Gustavsson recovering from hip surgery; Pickard signed behind Wallstedt — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Gustavsson recovering from hip surgery; Pickard signed behind Wallstedt — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'G', before: 'Filip Gustavsson', after: 'Filip Gustavsson', status: 'injured',

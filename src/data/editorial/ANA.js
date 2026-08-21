@@ -75,7 +75,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Top six returns intact; McTavish, Viel and Johnston out; Greer and Malott in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Top six returns intact; McTavish, Viel and Johnston out; Greer and Malott in — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Leo Carlsson', after: 'Leo Carlsson', status: 'retained',
@@ -209,32 +209,32 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Sam Colangelo', after: 'Sam Colangelo', status: 'retained',
         notes: [
-          'Played 9 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Jeff Malott and Tim Washe',
         ],
       },
       {
         pos: 'C', before: 'Nathan Gaucher', after: 'Nathan Gaucher', status: 'retained',
         notes: [
-          'Played 3 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Nikita Nesterenko', after: 'Nikita Nesterenko', status: 'retained',
         notes: [
-          'Played 29 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Tim Washe', after: 'Tim Washe', status: 'retained',
         notes: [
-          'Played 39 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Jeff Malott and Sam Colangelo',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Four of six playoff regulars gone; Jensen is the only established outside addition — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Four of six playoff regulars gone; Jensen is the only established outside addition — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LD', before: 'Jackson LaCombe', after: 'Jackson LaCombe', status: 'retained',

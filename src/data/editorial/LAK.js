@@ -43,7 +43,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Kopitar retired and Kuzmenko left; Zuccarello, Haula and Perry signed on one- and two-year deals — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Kopitar retired and Kuzmenko left; Zuccarello, Haula and Perry signed on one- and two-year deals — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Anze Kopitar', after: null, status: 'departed',
@@ -92,62 +92,62 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Joel Armia', after: 'Joel Armia', status: 'retained',
         notes: [
-          'Played 67 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Samuel Helenius and Corey Perry',
         ],
       },
       {
         pos: 'L', before: 'Kevin Fiala', after: 'Kevin Fiala', status: 'retained',
         notes: [
-          'Played 56 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Erik Haula and Mats Zuccarello',
         ],
       },
       {
         pos: 'C', before: 'Samuel Helenius', after: 'Samuel Helenius', status: 'retained',
         notes: [
-          'Played 53 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Joel Armia and Corey Perry',
         ],
       },
       {
         pos: 'R', before: 'Adrian Kempe', after: 'Adrian Kempe', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Artemi Panarin and Quinton Byfield',
         ],
       },
       {
         pos: 'R', before: 'Alex Laferriere', after: 'Alex Laferriere', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Trevor Moore and Scott Laughton',
         ],
       },
       {
         pos: 'C', before: 'Scott Laughton', after: 'Scott Laughton', status: 'retained',
         notes: [
-          'Played 21 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Trevor Moore and Alex Laferriere',
         ],
       },
       {
         pos: 'L', before: 'Trevor Moore', after: 'Trevor Moore', status: 'retained',
         notes: [
-          'Played 69 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Scott Laughton and Alex Laferriere',
         ],
       },
       {
         pos: 'C', before: 'Alex Turcotte', after: 'Alex Turcotte', status: 'retained',
         notes: [
-          'Played 62 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Taylor Ward', after: 'Taylor Ward', status: 'retained',
         notes: [
-          'Played 36 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Largely intact, with Gustafsson added on a one-year deal — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Largely intact, with Gustafsson added on a one-year deal — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RD', before: 'Drew Doughty', after: 'Drew Doughty', status: 'retained',
@@ -167,25 +167,25 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Mikey Anderson', after: 'Mikey Anderson', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Drew Doughty',
         ],
       },
       {
         pos: 'D', before: 'Cody Ceci', after: 'Cody Ceci', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Brian Dumoulin',
         ],
       },
       {
         pos: 'D', before: 'Brian Dumoulin', after: 'Brian Dumoulin', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Cody Ceci',
         ],
       },
       {
         pos: 'D', before: 'Joel Edmundson', after: 'Joel Edmundson', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Brandt Clarke',
         ],
       },
     ],

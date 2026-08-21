@@ -45,7 +45,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Paul, Perry and Bjorkstrand out; Mikheyev and Viel in; Kucherov unsigned beyond this season — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Paul, Perry and Bjorkstrand out; Mikheyev and Viel in; Kucherov unsigned beyond this season — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RW', before: 'Nikita Kucherov', after: 'Nikita Kucherov', status: 'retained',
@@ -86,68 +86,68 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Anthony Cirelli', after: 'Anthony Cirelli', status: 'retained',
         notes: [
-          'Played 71 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Brandon Hagel and Gage Goncalves',
         ],
       },
       {
         pos: 'C', before: 'Zemgus Girgensons', after: 'Zemgus Girgensons', status: 'retained',
         notes: [
-          'Played 74 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Yanni Gourde and Ilya Mikheyev',
         ],
       },
       {
         pos: 'C', before: 'Gage Goncalves', after: 'Gage Goncalves', status: 'retained',
         notes: [
-          'Played 74 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Brandon Hagel and Anthony Cirelli',
         ],
       },
       {
         pos: 'C', before: 'Yanni Gourde', after: 'Yanni Gourde', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Zemgus Girgensons and Ilya Mikheyev',
         ],
       },
       {
         pos: 'C', before: 'Jake Guentzel', after: 'Jake Guentzel', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Brayden Point and Nikita Kucherov',
         ],
       },
       {
         pos: 'L', before: 'Brandon Hagel', after: 'Brandon Hagel', status: 'retained',
         notes: [
-          'Played 71 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Anthony Cirelli and Gage Goncalves',
         ],
       },
       {
         pos: 'R', before: 'Pontus Holmberg', after: 'Pontus Holmberg', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Dominic James and Conor Geekie',
         ],
       },
       {
         pos: 'C', before: 'Dominic James', after: 'Dominic James', status: 'retained',
         notes: [
-          'Played 43 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Pontus Holmberg and Conor Geekie',
         ],
       },
       {
         pos: 'C', before: 'Brayden Point', after: 'Brayden Point', status: 'retained',
         notes: [
-          'Played 63 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the first line between Jake Guentzel and Nikita Kucherov',
         ],
       },
       {
         pos: 'R', before: 'Scott Sabourin', after: 'Scott Sabourin', status: 'retained',
         notes: [
-          'Played 26 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Raddysh signed an eight-year deal with Toronto; Carlson signed for two — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Raddysh signed an eight-year deal with Toronto; Carlson signed for two — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Darren Raddysh', after: null, status: 'departed',
@@ -174,44 +174,44 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Erik Cernak', after: 'Erik Cernak', status: 'retained',
         notes: [
-          'Played 61 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Ryan McDonagh',
         ],
       },
       {
         pos: 'D', before: 'Max Crozier', after: 'Max Crozier', status: 'retained',
         notes: [
-          'Played 35 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Emil Lilleberg', after: 'Emil Lilleberg', status: 'retained',
         notes: [
-          'Played 50 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Ryan McDonagh', after: 'Ryan McDonagh', status: 'retained',
         notes: [
-          'Played 48 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Erik Cernak',
         ],
       },
       {
         pos: 'D', before: 'J.J. Moser', after: 'J.J. Moser', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Victor Hedman',
         ],
       },
       {
         pos: 'D', before: 'Charle-Edouard D\'Astous', after: 'Charle-Edouard D\'Astous', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with John Carlson',
         ],
       },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Hildeby acquired from Toronto behind Vasilevskiy — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Hildeby acquired from Toronto behind Vasilevskiy — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'G', before: 'Andrei Vasilevskiy', after: 'Andrei Vasilevskiy', status: 'retained',
@@ -227,7 +227,7 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Jonas Johansson', after: 'Jonas Johansson', status: 'retained',
         notes: [
-          'Played 25 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

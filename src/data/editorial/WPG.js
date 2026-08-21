@@ -44,7 +44,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Toews retired and Nyquist unsigned; Perfetti extended for five years — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Toews retired and Nyquist unsigned; Perfetti extended for five years — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Jonathan Toews', after: null, status: 'departed',
@@ -75,68 +75,68 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Morgan Barron', after: 'Morgan Barron', status: 'retained',
         notes: [
-          'Played 65 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Cole Koepke and Isak Rosen',
         ],
       },
       {
         pos: 'R', before: 'Nikita Chibrikov', after: 'Nikita Chibrikov', status: 'retained',
         notes: [
-          'Played 11 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Alex Iafallo', after: 'Alex Iafallo', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Cole Perfetti and Adam Lowry',
         ],
       },
       {
         pos: 'L', before: 'Cole Koepke', after: 'Cole Koepke', status: 'retained',
         notes: [
-          'Played 66 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Morgan Barron and Isak Rosen',
         ],
       },
       {
         pos: 'C', before: 'Adam Lowry', after: 'Adam Lowry', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Cole Perfetti and Alex Iafallo',
         ],
       },
       {
         pos: 'C', before: 'Vladislav Namestnikov', after: 'Vladislav Namestnikov', status: 'retained',
         notes: [
-          'Played 60 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Nino Niederreiter and Brad Lambert',
         ],
       },
       {
         pos: 'R', before: 'Nino Niederreiter', after: 'Nino Niederreiter', status: 'retained',
         notes: [
-          'Played 61 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Vladislav Namestnikov and Brad Lambert',
         ],
       },
       {
         pos: 'R', before: 'Isak Rosen', after: 'Isak Rosen', status: 'retained',
         notes: [
-          'Played 21 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Cole Koepke and Morgan Barron',
         ],
       },
       {
         pos: 'C', before: 'Mark Scheifele', after: 'Mark Scheifele', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the first line between Kyle Connor and Gabriel Vilardi',
         ],
       },
       {
         pos: 'C', before: 'Gabriel Vilardi', after: 'Gabriel Vilardi', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Kyle Connor and Mark Scheifele',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Miller left for Switzerland; Ferraro signed for three years — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Miller left for Switzerland; Ferraro signed for three years — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LD', before: 'Josh Morrissey', after: 'Josh Morrissey', status: 'retained',
@@ -160,25 +160,25 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Dylan DeMelo', after: 'Dylan DeMelo', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Josh Morrissey',
         ],
       },
       {
         pos: 'D', before: 'Haydn Fleury', after: 'Haydn Fleury', status: 'retained',
         notes: [
-          'Played 38 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Neal Pionk', after: 'Neal Pionk', status: 'retained',
         notes: [
-          'Played 51 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Dylan Samberg',
         ],
       },
       {
         pos: 'D', before: 'Dylan Samberg', after: 'Dylan Samberg', status: 'retained',
         notes: [
-          'Played 66 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Neal Pionk',
         ],
       },
     ],

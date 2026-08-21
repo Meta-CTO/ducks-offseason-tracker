@@ -59,7 +59,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Zegras re-signed and centering the top line; Glendening and Abols out; Acciari and Grundstrom in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Zegras re-signed and centering the top line; Glendening and Abols out; Acciari and Grundstrom in — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Trevor Zegras', after: 'Trevor Zegras', status: 'retained',
@@ -136,44 +136,44 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Denver Barkey', after: 'Denver Barkey', status: 'retained',
         notes: [
-          'Played 43 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Sean Couturier and Noel Acciari',
         ],
       },
       {
         pos: 'L', before: 'Alex Bump', after: 'Alex Bump', status: 'retained',
         notes: [
-          'Played 17 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Noah Cates and Matvei Michkov',
         ],
       },
       {
         pos: 'C', before: 'Christian Dvorak', after: 'Christian Dvorak', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Travis Konecny and Owen Tippett',
         ],
       },
       {
         pos: 'C', before: 'Jacob Gaucher', after: 'Jacob Gaucher', status: 'retained',
         notes: [
-          'Played 4 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Nikita Grebenkin', after: 'Nikita Grebenkin', status: 'retained',
         notes: [
-          'Played 55 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Jett Luchanko', after: 'Jett Luchanko', status: 'retained',
         notes: [
-          'Played 4 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Drysdale re-signed; Andrae and Juulsen out; Benoit in from Toronto — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Drysdale re-signed; Andrae and Juulsen out; Benoit in from Toronto — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RD', before: 'Jamie Drysdale', after: 'Jamie Drysdale', status: 'retained',
@@ -219,32 +219,32 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'David Jiricek', after: 'David Jiricek', status: 'retained',
         notes: [
-          'Played 1 game for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Hunter McDonald', after: 'Hunter McDonald', status: 'retained',
         notes: [
-          'Played 1 game for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Nick Seeler', after: 'Nick Seeler', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Oliver Bonk',
         ],
       },
       {
         pos: 'D', before: 'Cam York', after: 'Cam York', status: 'retained',
         notes: [
-          'Played 74 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Jamie Drysdale',
         ],
       },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'The crease was rebuilt in one June trade: Ersson out, Woll in behind Vladar — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'The crease was rebuilt in one June trade: Ersson out, Woll in behind Vladar — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'G', before: 'Dan Vladar', after: 'Dan Vladar', status: 'retained',
@@ -268,7 +268,7 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Aleksei Kolosov', after: 'Aleksei Kolosov', status: 'retained',
         notes: [
-          'Played 4 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

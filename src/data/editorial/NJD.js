@@ -54,7 +54,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Hischier extended five years; Mantha signed; an offer sheet for Barrett Hayton was matched — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Hischier extended five years; Mantha signed; an offer sheet for Barrett Hayton was matched — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Nico Hischier', after: 'Nico Hischier', status: 'retained',
@@ -88,62 +88,62 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Nick Bjugstad', after: 'Nick Bjugstad', status: 'retained',
         notes: [
-          'Played 26 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Jesper Boqvist and Evan Rodrigues',
         ],
       },
       {
         pos: 'L', before: 'Jesper Bratt', after: 'Jesper Bratt', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Jack Hughes and Connor Brown',
         ],
       },
       {
         pos: 'R', before: 'Connor Brown', after: 'Connor Brown', status: 'retained',
         notes: [
-          'Played 75 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Jesper Bratt and Jack Hughes',
         ],
       },
       {
         pos: 'C', before: 'Cody Glass', after: 'Cody Glass', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Arseny Gritsyuk and Anthony Mantha',
         ],
       },
       {
         pos: 'R', before: 'Arseny Gritsyuk', after: 'Arseny Gritsyuk', status: 'retained',
         notes: [
-          'Played 66 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Cody Glass and Anthony Mantha',
         ],
       },
       {
         pos: 'R', before: 'Lenni Hameenaho', after: 'Lenni Hameenaho', status: 'retained',
         notes: [
-          'Played 33 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Timo Meier', after: 'Timo Meier', status: 'retained',
         notes: [
-          'Played 77 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Nico Hischier and Dawson Mercer',
         ],
       },
       {
         pos: 'C', before: 'Dawson Mercer', after: 'Dawson Mercer', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Timo Meier and Nico Hischier',
         ],
       },
       {
         pos: 'R', before: 'Stefan Noesen', after: 'Stefan Noesen', status: 'retained',
         notes: [
-          'Played 38 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Nemec sold to Calgary for two conditional firsts; Silayev signed — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Nemec sold to Calgary for two conditional firsts; Silayev signed — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'D', before: 'Simon Nemec', after: null, status: 'departed',
@@ -171,38 +171,38 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Brenden Dillon', after: 'Brenden Dillon', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Johnathan Kovacevic',
         ],
       },
       {
         pos: 'D', before: 'Dougie Hamilton', after: 'Dougie Hamilton', status: 'retained',
         notes: [
-          'Played 77 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Jonas Siegenthaler',
         ],
       },
       {
         pos: 'D', before: 'Johnathan Kovacevic', after: 'Johnathan Kovacevic', status: 'retained',
         notes: [
-          'Played 34 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Brenden Dillon',
         ],
       },
       {
         pos: 'D', before: 'Brett Pesce', after: 'Brett Pesce', status: 'retained',
         notes: [
-          'Played 37 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Luke Hughes',
         ],
       },
       {
         pos: 'D', before: 'Jonas Siegenthaler', after: 'Jonas Siegenthaler', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Dougie Hamilton',
         ],
       },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Markstrom traded to Florida; Daws signed to compete behind Allen — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Markstrom traded to Florida; Daws signed to compete behind Allen — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'G', before: 'Jake Allen', after: 'Jake Allen', status: 'retained',

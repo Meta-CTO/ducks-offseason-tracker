@@ -62,7 +62,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'The top of the lineup is intact; McKenna drafted first overall; Maccelli and Robertson out — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'The top of the lineup is intact; McKenna drafted first overall; Maccelli and Robertson out — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Auston Matthews', after: 'Auston Matthews', status: 'retained',
@@ -97,56 +97,56 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Max Domi', after: 'Max Domi', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Bo Groulx', after: 'Bo Groulx', status: 'retained',
         notes: [
-          'Played 13 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Luke Haymes', after: 'Luke Haymes', status: 'retained',
         notes: [
-          'Played 4 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Dakota Joshua', after: 'Dakota Joshua', status: 'retained',
         notes: [
-          'Played 55 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Teddy Blueger and Brandon Duhaime',
         ],
       },
       {
         pos: 'L', before: 'Matthew Knies', after: 'Matthew Knies', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Auston Matthews and Jack Roslovic',
         ],
       },
       {
         pos: 'C', before: 'Steven Lorentz', after: 'Steven Lorentz', status: 'retained',
         notes: [
-          'Played 71 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'William Nylander', after: 'William Nylander', status: 'retained',
         notes: [
-          'Played 65 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Gavin McKenna and John Tavares',
         ],
       },
       {
         pos: 'C', before: 'John Tavares', after: 'John Tavares', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Gavin McKenna and William Nylander',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Raddysh signed for eight years; Carlo and Benoit traded out; the group is still called unfinished — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Raddysh signed for eight years; Carlo and Benoit traded out; the group is still called unfinished — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RD', before: null, after: 'Darren Raddysh', status: 'added',
@@ -181,31 +181,31 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Oliver Ekman-Larsson', after: 'Oliver Ekman-Larsson', status: 'retained',
         notes: [
-          'Played 78 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Emil Andrae',
         ],
       },
       {
         pos: 'D', before: 'Jake McCabe', after: 'Jake McCabe', status: 'retained',
         notes: [
-          'Played 80 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Darren Raddysh',
         ],
       },
       {
         pos: 'D', before: 'Philippe Myers', after: 'Philippe Myers', status: 'retained',
         notes: [
-          'Played 39 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Troy Stecher', after: 'Troy Stecher', status: 'retained',
         notes: [
-          'Played 58 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Chris Tanev', after: 'Chris Tanev', status: 'retained',
         notes: [
-          'Played 11 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Morgan Rielly',
         ],
       },
     ],

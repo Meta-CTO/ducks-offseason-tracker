@@ -43,7 +43,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Tkachuk traded to Florida; Eklund bought with the pick it returned — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Tkachuk traded to Florida; Eklund bought with the pick it returned — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LW', before: 'Brady Tkachuk', after: null, status: 'departed',
@@ -88,74 +88,74 @@ export const rosterComparison = [
       {
         pos: 'R', before: 'Michael Amadio', after: 'Michael Amadio', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Fabian Zetterlund and Nick Cousins',
         ],
       },
       {
         pos: 'R', before: 'Drake Batherson', after: 'Drake Batherson', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside William Eklund and Tim Stutzle',
         ],
       },
       {
         pos: 'C', before: 'Nick Cousins', after: 'Nick Cousins', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Fabian Zetterlund and Michael Amadio',
         ],
       },
       {
         pos: 'C', before: 'Dylan Cozens', after: 'Dylan Cozens', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Ridly Greig and Claude Giroux',
         ],
       },
       {
         pos: 'L', before: 'Warren Foegele', after: 'Warren Foegele', status: 'retained',
         notes: [
-          'Played 21 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Shane Pinto and Andre Burakovsky',
         ],
       },
       {
         pos: 'C', before: 'Ridly Greig', after: 'Ridly Greig', status: 'retained',
         notes: [
-          'Played 77 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Dylan Cozens and Claude Giroux',
         ],
       },
       {
         pos: 'C', before: 'Stephen Halliday', after: 'Stephen Halliday', status: 'retained',
         notes: [
-          'Played 30 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'R', before: 'Hayden Hodgson', after: 'Hayden Hodgson', status: 'retained',
         notes: [
-          'Played 10 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'L', before: 'Kurtis MacDermid', after: 'Kurtis MacDermid', status: 'retained',
         notes: [
-          'Played 19 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Shane Pinto', after: 'Shane Pinto', status: 'retained',
         notes: [
-          'Played 72 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Warren Foegele and Andre Burakovsky',
         ],
       },
       {
         pos: 'L', before: 'Fabian Zetterlund', after: 'Fabian Zetterlund', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Nick Cousins and Michael Amadio',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Unchanged; Yakemchuk gets a look at camp — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Unchanged; Yakemchuk gets a look at camp — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LD', before: 'Jake Sanderson', after: 'Jake Sanderson', status: 'retained',
@@ -175,38 +175,38 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Cameron Crotty', after: 'Cameron Crotty', status: 'retained',
         notes: [
-          'Played 6 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Tyler Kleven', after: 'Tyler Kleven', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Carter Yakemchuk',
         ],
       },
       {
         pos: 'D', before: 'Nikolas Matinpalo', after: 'Nikolas Matinpalo', status: 'retained',
         notes: [
-          'Played 50 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'D', before: 'Jordan Spence', after: 'Jordan Spence', status: 'retained',
         notes: [
-          'Played 73 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Thomas Chabot',
         ],
       },
       {
         pos: 'D', before: 'Artem Zub', after: 'Artem Zub', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Jake Sanderson',
         ],
       },
     ],
   },
   {
     group: 'Goaltending',
-    summary: 'Ersson acquired from Toronto to back up Ullmark — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Ersson acquired from Toronto to back up Ullmark — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'G', before: 'Linus Ullmark', after: 'Linus Ullmark', status: 'retained',
@@ -222,7 +222,7 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Leevi Meriläinen', after: 'Leevi Meriläinen', status: 'retained',
         notes: [
-          'Played 20 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],

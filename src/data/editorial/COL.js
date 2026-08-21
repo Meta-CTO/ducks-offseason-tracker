@@ -44,7 +44,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Nichushkin, Drury and Colton traded; Schwartz, Svechkov and L’Heureux in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Nichushkin, Drury and Colton traded; Schwartz, Svechkov and L’Heureux in — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Nathan MacKinnon', after: 'Nathan MacKinnon', status: 'retained',
@@ -89,56 +89,56 @@ export const rosterComparison = [
       {
         pos: 'C', before: 'Nazem Kadri', after: 'Nazem Kadri', status: 'retained',
         notes: [
-          'Played 16 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Gabriel Landeskog and Nicolas Roy',
         ],
       },
       {
         pos: 'C', before: 'Parker Kelly', after: 'Parker Kelly', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Fedor Svechkov and Logan O\'Connor',
         ],
       },
       {
         pos: 'L', before: 'Gabriel Landeskog', after: 'Gabriel Landeskog', status: 'retained',
         notes: [
-          'Played 60 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Nazem Kadri and Nicolas Roy',
         ],
       },
       {
         pos: 'L', before: 'Artturi Lehkonen', after: 'Artturi Lehkonen', status: 'retained',
         notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Nathan MacKinnon and Martin Necas',
         ],
       },
       {
         pos: 'C', before: 'Martin Necas', after: 'Martin Necas', status: 'retained',
         notes: [
-          'Played 78 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Artturi Lehkonen and Nathan MacKinnon',
         ],
       },
       {
         pos: 'C', before: 'Brock Nelson', after: 'Brock Nelson', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Jaden Schwartz and Zachary L\'Heureux',
         ],
       },
       {
         pos: 'C', before: 'Nicolas Roy', after: 'Nicolas Roy', status: 'retained',
         notes: [
-          'Played 15 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Gabriel Landeskog and Nazem Kadri',
         ],
       },
       {
         pos: 'R', before: 'Logan O\'Connor', after: 'Logan O\'Connor', status: 'retained',
         notes: [
-          'Played 13 games for the club in 2025–26 and is on the current roster',
+          'Projected on the fourth line alongside Parker Kelly and Fedor Svechkov',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'Intact at the top, with Makar’s contract the outstanding question — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Intact at the top, with Makar’s contract the outstanding question — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'RD', before: 'Cale Makar', after: 'Cale Makar', status: 'retained',
@@ -158,25 +158,25 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Brett Kulak', after: 'Brett Kulak', status: 'retained',
         notes: [
-          'Played 27 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Sam Malinski',
         ],
       },
       {
         pos: 'D', before: 'Sam Malinski', after: 'Sam Malinski', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Brett Kulak',
         ],
       },
       {
         pos: 'D', before: 'Josh Manson', after: 'Josh Manson', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Brent Burns',
         ],
       },
       {
         pos: 'D', before: 'Devon Toews', after: 'Devon Toews', status: 'retained',
         notes: [
-          'Played 68 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Cale Makar',
         ],
       },
     ],

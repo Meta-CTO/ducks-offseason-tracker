@@ -46,7 +46,7 @@ export const arrivals = [
 export const rosterComparison = [
   {
     group: 'Offense',
-    summary: 'Bedard opens the season injured; Mikheyev and Lafferty out, Greenway and Smith in — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'Bedard opens the season injured; Mikheyev and Lafferty out, Greenway and Smith in — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'C', before: 'Connor Bedard', after: 'Connor Bedard', status: 'injured',
@@ -92,74 +92,74 @@ export const rosterComparison = [
       {
         pos: 'L', before: 'Tyler Bertuzzi', after: 'Tyler Bertuzzi', status: 'retained',
         notes: [
-          'Played 79 games for the club in 2025–26 and is on the current roster',
+          'Projected on the first line alongside Frank Nazar and Roman Kantserov',
         ],
       },
       {
         pos: 'C', before: 'Sacha Boisvert', after: 'Sacha Boisvert', status: 'retained',
         notes: [
-          'Played 7 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the fourth line between Jordan Greenway and Cole Smith',
         ],
       },
       {
         pos: 'C', before: 'Ryan Donato', after: 'Ryan Donato', status: 'retained',
         notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Oliver Moore and Nick Lardis',
         ],
       },
       {
         pos: 'C', before: 'Anton Frondell', after: 'Anton Frondell', status: 'retained',
         notes: [
-          'Played 12 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the second line between Ryan Greene and Teuvo Teravainen',
         ],
       },
       {
         pos: 'C', before: 'Ryan Greene', after: 'Ryan Greene', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Anton Frondell and Teuvo Teravainen',
         ],
       },
       {
         pos: 'L', before: 'Nick Lardis', after: 'Nick Lardis', status: 'retained',
         notes: [
-          'Played 41 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third line alongside Ryan Donato and Oliver Moore',
         ],
       },
       {
         pos: 'L', before: 'Andrew Mangiapane', after: 'Andrew Mangiapane', status: 'retained',
         notes: [
-          'Played 10 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Oliver Moore', after: 'Oliver Moore', status: 'retained',
         notes: [
-          'Played 51 games for the club in 2025–26 and is on the current roster',
+          'Projected to centre the third line between Ryan Donato and Nick Lardis',
         ],
       },
       {
         pos: 'L', before: 'Landon Slaggert', after: 'Landon Slaggert', status: 'retained',
         notes: [
-          'Played 53 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
       {
         pos: 'C', before: 'Teuvo Teravainen', after: 'Teuvo Teravainen', status: 'retained',
         notes: [
-          'Played 75 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second line alongside Ryan Greene and Anton Frondell',
         ],
       },
       {
         pos: 'C', before: 'Dominic Toninato', after: 'Dominic Toninato', status: 'retained',
         notes: [
-          'Played 8 games for the club in 2025–26 and is on the current roster',
+          'On the roster; not in NHL.com\'s projected lineup',
         ],
       },
     ],
   },
   {
     group: 'Defense',
-    summary: 'The fourth overall pick became Bowen Byram; Ian Cole added as a veteran — depth rows are from the roster feed and 2025–26 club stats, not individually researched',
+    summary: 'The fourth overall pick became Bowen Byram; Ian Cole added as a veteran — projected roles are NHL.com’s',
     rows: [
       {
         pos: 'LD', before: null, after: 'Bowen Byram', status: 'added',
@@ -189,19 +189,19 @@ export const rosterComparison = [
       {
         pos: 'D', before: 'Wyatt Kaiser', after: 'Wyatt Kaiser', status: 'retained',
         notes: [
-          'Played 77 games for the club in 2025–26 and is on the current roster',
+          'Projected on the second pair with Artyom Levshunov',
         ],
       },
       {
         pos: 'D', before: 'Sam Rinzel', after: 'Sam Rinzel', status: 'retained',
         notes: [
-          'Played 54 games for the club in 2025–26 and is on the current roster',
+          'Projected on the third pair with Ian Cole',
         ],
       },
       {
         pos: 'D', before: 'Alex Vlasic', after: 'Alex Vlasic', status: 'retained',
         notes: [
-          'Played 81 games for the club in 2025–26 and is on the current roster',
+          'Projected on the top pair with Bowen Byram',
         ],
       },
     ],
