@@ -5,5 +5,14 @@
   "previousCoach": "Bruce Cassidy",
   "changed": true,
   "source": "https://www.hockey-reference.com/teams/VEG/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/VEG/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/VEG/2026.html",
+  "headCoach": "Ryan Craig",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "John Stevens",
+    "Dominique Ducharme",
+    "Mark Letestu"
+  ],
+  "goaltendingCoaches": [],
+  "staffSource": "https://www.nhl.com/goldenknights/team/front-office"
 }

@@ -5,5 +5,17 @@
   "previousCoach": "Andrew Brunette",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/NSH/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/NSH/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/NSH/2026.html",
+  "headCoach": "Andrew Brunette",
+  "associateCoaches": [
+    "Luke Richardson"
+  ],
+  "assistantCoaches": [
+    "Darby Hendrickson",
+    "Derek MacKenzie"
+  ],
+  "goaltendingCoaches": [
+    "Ben Vanderklok"
+  ],
+  "staffSource": "https://www.nhl.com/predators/team/hockey-operations"
 }

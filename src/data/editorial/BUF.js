@@ -255,6 +255,30 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Seth Appert', after: 'Seth Appert', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Mike Bales', after: 'Mike Bales', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Matt Ellis', after: 'Matt Ellis', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Marty Wilford', after: 'Marty Wilford', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -289,6 +313,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/sabres/team/staff' },
   { label: 'NHL.com Sabres 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/buffalo-sabres-roster-changes-for-2026-27-season' },
   { label: 'Official Sabres news', url: 'https://www.nhl.com/sabres/news/' },
 ]

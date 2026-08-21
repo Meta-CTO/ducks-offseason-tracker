@@ -5,5 +5,17 @@
   "previousCoach": "Dan Muse",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/PIT/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/PIT/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/PIT/2026.html",
+  "headCoach": "Dan Muse",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Todd Nelson",
+    "Mike Stothers",
+    "Nick Bonino",
+    "Rich Clune"
+  ],
+  "goaltendingCoaches": [
+    "Andy Chiodo"
+  ],
+  "staffSource": "https://www.nhl.com/penguins/team/staff"
 }

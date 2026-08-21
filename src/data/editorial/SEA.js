@@ -201,6 +201,30 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Chris Taylor', after: 'Chris Taylor', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Aaron Schneekloth', after: 'Aaron Schneekloth', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Pascal Vincent', after: 'Pascal Vincent', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Colin Zulianello', after: 'Colin Zulianello', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -234,6 +258,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/kraken/team/coaching-staff/' },
   { label: 'NHL.com Kraken 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/seattle-kraken-roster-changes-for-2026-27-season' },
   { label: 'Official Kraken news', url: 'https://www.nhl.com/kraken/news/' },
 ]

@@ -5,5 +5,16 @@
   "previousCoach": "Kris Knoblauch",
   "changed": true,
   "source": "https://www.hockey-reference.com/teams/EDM/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/EDM/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/EDM/2026.html",
+  "headCoach": "Mike Babcock",
+  "associateCoaches": [
+    "D.J. Smith"
+  ],
+  "assistantCoaches": [
+    "Paul McFarland"
+  ],
+  "goaltendingCoaches": [
+    "Peter Aubry"
+  ],
+  "staffSource": "https://www.nhl.com/oilers/team/hockey-operations"
 }

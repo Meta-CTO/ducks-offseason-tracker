@@ -230,6 +230,30 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Anders Sorensen', after: 'Anders Sorensen', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Michael Peca', after: 'Michael Peca', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Michael Vellucci', after: 'Michael Vellucci', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Jimmy Waite', after: 'Jimmy Waite', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -262,6 +286,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/blackhawks/team/front-office/' },
   { label: 'NHL.com Blackhawks 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/chicago-blackhawks-roster-changes-for-2026-27-season' },
   { label: 'NHL.com Senators team reset (Burakovsky trade)', url: 'https://www.nhl.com/news/topic/team-resets/ottawa-senators-roster-changes-for-2026-27-season' },
   { label: 'Official Blackhawks news', url: 'https://www.nhl.com/blackhawks/news/' },

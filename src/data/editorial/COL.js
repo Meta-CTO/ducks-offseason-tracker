@@ -206,6 +206,24 @@ export const rosterComparison = [
           'Sakic took the role back',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Nolan Pratt', after: 'Nolan Pratt', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Dave Hakstol', after: 'Dave Hakstol', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Jussi Parkkila', after: 'Jussi Parkkila', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -244,6 +262,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/avalanche/team/coaching-staff' },
   { label: 'NHL.com Avalanche 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/colorado-avalanche-roster-changes-for-2026-27-season' },
   { label: 'Official Avalanche news', url: 'https://www.nhl.com/avalanche/news/' },
 ]

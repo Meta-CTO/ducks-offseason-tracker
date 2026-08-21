@@ -5,5 +5,16 @@
   "previousCoach": "Ryan Huska",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/CGY/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/CGY/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/CGY/2026.html",
+  "headCoach": "Ryan Huska",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Cail MacLean",
+    "Trent Cull",
+    "Dave Lowry"
+  ],
+  "goaltendingCoaches": [
+    "Jason Labarbera"
+  ],
+  "staffSource": "https://www.nhl.com/flames/team/coaching-staff"
 }

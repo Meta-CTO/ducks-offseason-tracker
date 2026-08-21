@@ -250,6 +250,30 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Cail MacLean', after: 'Cail MacLean', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Trent Cull', after: 'Trent Cull', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Dave Lowry', after: 'Dave Lowry', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Jason Labarbera', after: 'Jason Labarbera', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -287,6 +311,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/flames/team/coaching-staff' },
   { label: 'NHL.com Flames 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/calgary-flames-roster-changes-for-2026-27-season' },
   { label: 'Official Flames news', url: 'https://www.nhl.com/flames/news/' },
 ]

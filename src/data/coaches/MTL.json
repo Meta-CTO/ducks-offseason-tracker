@@ -5,5 +5,15 @@
   "previousCoach": "Martin St. Louis",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/MTL/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/MTL/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/MTL/2026.html",
+  "headCoach": "Martin St-Louis",
+  "associateCoaches": [
+    "Derek Lalonde"
+  ],
+  "assistantCoaches": [
+    "Trevor Letowski",
+    "Stéphane Robidas"
+  ],
+  "goaltendingCoaches": [],
+  "staffSource": "https://www.nhl.com/canadiens/team/hockey-operations"
 }

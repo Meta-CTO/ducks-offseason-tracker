@@ -5,5 +5,14 @@
   "previousCoach": "Glen Gulutzan",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/DAL/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/DAL/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/DAL/2026.html",
+  "headCoach": "Glen Gulutzan",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Neil Graham Alain Nasreddine David Pelletier"
+  ],
+  "goaltendingCoaches": [
+    "Jeff Reese"
+  ],
+  "staffSource": "https://www.nhl.com/stars/team/front-office"
 }

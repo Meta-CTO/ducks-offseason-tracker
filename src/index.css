@@ -13,6 +13,7 @@
 
   /* Status colors (brief legend) */
   --status-retained: #2e8b57;
+  --status-onstaff: #4a6f8a;
   --status-added: #1f7a3d;
   --status-departed: #b3261e;
   --status-unsigned: #a36a00;
@@ -190,6 +191,7 @@ body {
 .status-border-unsigned { border-left-color: var(--status-unsigned); }
 .status-border-injured { border-left-color: var(--status-injured); }
 .status-border-camp { border-left-color: var(--status-camp); }
+.status-border-onstaff { border-left-color: var(--status-onstaff); }
 
 .player-card-head {
   display: flex;
@@ -236,6 +238,7 @@ body {
 .badge-unsigned { background: var(--status-unsigned); }
 .badge-injured { background: var(--status-injured); }
 .badge-camp { background: var(--status-camp); }
+.badge-onstaff { background: var(--status-onstaff); }
 .badge-confirmed { background: var(--rumor-confirmed); }
 .badge-reported { background: var(--rumor-reported); }
 .badge-unconfirmed { background: var(--rumor-unconfirmed); }

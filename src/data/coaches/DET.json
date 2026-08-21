@@ -5,5 +5,15 @@
   "previousCoach": "Todd McLellan",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/DET/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/DET/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/DET/2026.html",
+  "headCoach": "Todd McLellan",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Alex Tanguay",
+    "Trent Yawney"
+  ],
+  "goaltendingCoaches": [
+    "Michael Leighton"
+  ],
+  "staffSource": "https://www.nhl.com/redwings/team/hockey-operations"
 }

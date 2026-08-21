@@ -283,6 +283,30 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Todd Reirden', after: 'Todd Reirden', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Jaroslav Svejkovsky', after: 'Jaroslav Svejkovsky', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Jay Varady', after: 'Jay Varady', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Kim Dillabaugh', after: 'Kim Dillabaugh', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -330,6 +354,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/flyers/team/staff/hockey-personnel' },
   { label: 'Official Flyers news', url: 'https://www.nhl.com/flyers/news/' },
   { label: 'Flyers acquire Woll and Benoit from Toronto', url: 'https://www.nhl.com/flyers/news/flyers-acquire-joseph-woll-and-simon-benoit-from-toronto' },
   { label: 'NHL.com Flyers 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/philadelphia-flyers-roster-changes-for-2026-27-season' },

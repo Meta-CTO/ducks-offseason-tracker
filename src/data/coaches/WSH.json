@@ -5,5 +5,16 @@
   "previousCoach": "Spencer Carbery",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/WSH/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/WSH/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/WSH/2026.html",
+  "headCoach": "Spencer Carbery",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Scott Allen",
+    "Ray Bennett",
+    "Patrick Wellar"
+  ],
+  "goaltendingCoaches": [
+    "Scott Murray"
+  ],
+  "staffSource": "https://www.nhl.com/capitals/team/coaching-staff"
 }

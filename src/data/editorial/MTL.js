@@ -250,6 +250,24 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Associate coach', before: 'Derek Lalonde', after: 'Derek Lalonde', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Trevor Letowski', after: 'Trevor Letowski', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Stéphane Robidas', after: 'Stéphane Robidas', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -288,6 +306,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/canadiens/team/hockey-operations' },
   { label: 'NHL.com Canadiens 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/montreal-canadiens-roster-changes-for-2026-27-season' },
   { label: 'Official Canadiens news', url: 'https://www.nhl.com/canadiens/news/' },
 ]

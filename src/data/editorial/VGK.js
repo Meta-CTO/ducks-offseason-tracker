@@ -256,6 +256,24 @@ export const rosterComparison = [
           'Craig: “This team’s been built through standards since Day 1, and those standards aren’t going to change”',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'John Stevens', after: 'John Stevens', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Dominique Ducharme', after: 'Dominique Ducharme', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Mark Letestu', after: 'Mark Letestu', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -298,6 +316,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/goldenknights/team/front-office' },
   { label: 'NHL.com Golden Knights 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/vegas-golden-knights-roster-changes-for-2026-27-season' },
   { label: 'Official Golden Knights news', url: 'https://www.nhl.com/goldenknights/news/' },
 ]

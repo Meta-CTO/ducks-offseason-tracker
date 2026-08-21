@@ -5,5 +5,13 @@
   "previousCoach": "Adam Foote",
   "changed": true,
   "source": "https://www.hockey-reference.com/teams/VAN/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/VAN/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/VAN/2026.html",
+  "headCoach": "Manny Malhotra",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Ryan Mougenel",
+    "Jordan Smith"
+  ],
+  "goaltendingCoaches": [],
+  "staffSource": "https://www.nhl.com/canucks/team/hockey-operations"
 }

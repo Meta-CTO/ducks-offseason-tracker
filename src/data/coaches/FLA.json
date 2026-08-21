@@ -5,5 +5,17 @@
   "previousCoach": "Paul Maurice",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/FLA/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/FLA/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/FLA/2026.html",
+  "headCoach": "Paul Maurice",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Jamie Kompon",
+    "Sylvain Lefebvre",
+    "Tuomo Ruutu",
+    "Myles Fee"
+  ],
+  "goaltendingCoaches": [
+    "Robb Tallas"
+  ],
+  "staffSource": "https://www.nhl.com/panthers/team/coaches"
 }

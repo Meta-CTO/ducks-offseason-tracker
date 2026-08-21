@@ -5,5 +5,16 @@
   "previousCoach": "Lane Lambert",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/SEA/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/SEA/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/SEA/2026.html",
+  "headCoach": "Lane Lambert",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Chris Taylor",
+    "Aaron Schneekloth",
+    "Pascal Vincent"
+  ],
+  "goaltendingCoaches": [
+    "Colin Zulianello"
+  ],
+  "staffSource": "https://www.nhl.com/kraken/team/coaching-staff/"
 }

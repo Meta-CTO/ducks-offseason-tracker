@@ -223,6 +223,48 @@ export const rosterComparison = [
           'Rick Bowness is the head coach for 2026–27; Hockey-Reference lists Dean Evason as the club\'s 2025–26 head coach',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Jared Boll', after: 'Jared Boll', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Don Granato', after: 'Don Granato', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Trent Vogelhuber', after: 'Trent Vogelhuber', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Chris Bergeron', after: 'Chris Bergeron', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Stefan Matteau', after: 'Stefan Matteau', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Niklas Backstrom', after: 'Niklas Backstrom', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Brad Thiessen', after: 'Brad Thiessen', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -260,6 +302,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/bluejackets/team/staff-directory' },
   { label: 'NHL.com Blue Jackets 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/columbus-blue-jackets-roster-changes-for-2026-27-season' },
   { label: 'Official Blue Jackets news', url: 'https://www.nhl.com/bluejackets/news/' },
 ]

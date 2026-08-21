@@ -5,5 +5,17 @@
   "previousCoach": "John Hynes",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/MIN/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/MIN/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/MIN/2026.html",
+  "headCoach": "John Hynes",
+  "associateCoaches": [
+    "Jack Capuano"
+  ],
+  "assistantCoaches": [
+    "Patrick Dwyer",
+    "Jason King"
+  ],
+  "goaltendingCoaches": [
+    "Frederic Chabot"
+  ],
+  "staffSource": "https://www.nhl.com/wild/team/staff-directory"
 }

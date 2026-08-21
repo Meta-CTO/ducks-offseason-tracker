@@ -270,6 +270,30 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Associate coach', before: 'Jack Capuano', after: 'Jack Capuano', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Patrick Dwyer', after: 'Patrick Dwyer', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Jason King', after: 'Jason King', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Frederic Chabot', after: 'Frederic Chabot', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -306,6 +330,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/wild/team/staff-directory' },
   { label: 'NHL.com Wild 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/minnesota-wild-roster-changes-for-2026-27-season' },
   { label: 'Hughes traded to Wild by Canucks (Dec. 2025)', url: 'https://www.nhl.com/news/quinn-hughes-traded-to-minnesota-wild-by-vancouver-canucks' },
   { label: 'Official Wild news', url: 'https://www.nhl.com/wild/news/' },

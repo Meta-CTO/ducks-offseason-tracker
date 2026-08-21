@@ -210,6 +210,24 @@ export const rosterComparison = [
           'Peter DeBoer is the head coach for 2026–27; Hockey-Reference lists Patrick Roy as the club\'s 2025–26 head coach',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Rocky Thompson', after: 'Rocky Thompson', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Bob Boughner', after: 'Bob Boughner', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Sergei Naumovs', after: 'Sergei Naumovs', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -248,6 +266,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/islanders/team/coaching-staff/' },
   { label: 'NHL.com Islanders 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/new-york-islanders-roster-changes-for-2026-27-season' },
   { label: 'Official Islanders news', url: 'https://www.nhl.com/islanders/news/' },
 ]

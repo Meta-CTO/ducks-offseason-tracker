@@ -5,5 +5,16 @@
   "previousCoach": "Jeff Blashill",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/CHI/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/CHI/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/CHI/2026.html",
+  "headCoach": "Jeff Blashill",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Anders Sorensen",
+    "Michael Peca",
+    "Michael Vellucci"
+  ],
+  "goaltendingCoaches": [
+    "Jimmy Waite"
+  ],
+  "staffSource": "https://www.nhl.com/blackhawks/team/front-office/"
 }

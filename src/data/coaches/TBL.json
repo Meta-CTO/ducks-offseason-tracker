@@ -5,5 +5,16 @@
   "previousCoach": "Jon Cooper",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/TBL/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/TBL/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/TBL/2026.html",
+  "headCoach": "Jon Cooper",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Jeff Halpern",
+    "Rob Zettler",
+    "Dan Hinote"
+  ],
+  "goaltendingCoaches": [
+    "Frantz Jean"
+  ],
+  "staffSource": "https://www.nhl.com/lightning/team/hockey-staff"
 }

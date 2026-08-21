@@ -217,6 +217,18 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Greg Cronin', after: 'Greg Cronin', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Vinny Prospal', after: 'Vinny Prospal', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -251,6 +263,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/blues/team/coaches' },
   { label: 'NHL.com Blues 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/st-louis-blues-roster-changes-for-2026-27-season' },
   { label: 'Official Blues news', url: 'https://www.nhl.com/blues/news/' },
 ]

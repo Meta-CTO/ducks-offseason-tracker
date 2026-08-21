@@ -5,5 +5,19 @@
   "previousCoach": "Dean Evason",
   "changed": true,
   "source": "https://www.hockey-reference.com/teams/CBJ/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/CBJ/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/CBJ/2026.html",
+  "headCoach": "Rick Bowness",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Jared Boll",
+    "Don Granato",
+    "Trent Vogelhuber",
+    "Chris Bergeron",
+    "Stefan Matteau"
+  ],
+  "goaltendingCoaches": [
+    "Niklas Backstrom",
+    "Brad Thiessen"
+  ],
+  "staffSource": "https://www.nhl.com/bluejackets/team/staff-directory"
 }

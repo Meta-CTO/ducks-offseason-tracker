@@ -210,6 +210,36 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Todd Nelson', after: 'Todd Nelson', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Mike Stothers', after: 'Mike Stothers', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Nick Bonino', after: 'Nick Bonino', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Rich Clune', after: 'Rich Clune', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Andy Chiodo', after: 'Andy Chiodo', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -248,6 +278,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/penguins/team/staff' },
   { label: 'NHL.com Penguins 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/pittsburgh-penguins-roster-changes-for-2026-27-season' },
   { label: 'NHL.com Capitals team reset (Lapierre trade)', url: 'https://www.nhl.com/news/topic/team-resets/washington-capitals-roster-changes-for-2026-27-season' },
   { label: 'Official Penguins news', url: 'https://www.nhl.com/penguins/news/' },

@@ -5,5 +5,19 @@
   "previousCoach": "Sheldon Keefe",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/NJD/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/NJD/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/NJD/2026.html",
+  "headCoach": "Sheldon Keefe",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Brad Shaw",
+    "Ted Donato",
+    "AJ MacLean",
+    "Matt Carkner",
+    "Mike Zalewski"
+  ],
+  "goaltendingCoaches": [
+    "Dan Stewart",
+    "Brian Eklund"
+  ],
+  "staffSource": "https://www.nhl.com/devils/team/staff-directory"
 }

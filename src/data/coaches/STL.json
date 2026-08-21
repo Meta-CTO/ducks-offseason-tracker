@@ -5,5 +5,13 @@
   "previousCoach": "Jim Montgomery",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/STL/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/STL/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/STL/2026.html",
+  "headCoach": "Jim Montgomery",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Greg Cronin",
+    "Vinny Prospal"
+  ],
+  "goaltendingCoaches": [],
+  "staffSource": "https://www.nhl.com/blues/team/coaches"
 }

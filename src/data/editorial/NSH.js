@@ -195,6 +195,30 @@ export const rosterComparison = [
           'MacFarland: “We want to surround our young NHL players with character builders, guys that have seen winning”',
         ],
       },
+      {
+        pos: 'Associate coach', before: 'Luke Richardson', after: 'Luke Richardson', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Darby Hendrickson', after: 'Darby Hendrickson', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Derek MacKenzie', after: 'Derek MacKenzie', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Ben Vanderklok', after: 'Ben Vanderklok', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -232,6 +256,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/predators/team/hockey-operations' },
   { label: 'NHL.com Predators 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/nashville-predators-roster-changes-for-2026-27-season' },
   { label: 'Official Predators news', url: 'https://www.nhl.com/predators/news/' },
 ]

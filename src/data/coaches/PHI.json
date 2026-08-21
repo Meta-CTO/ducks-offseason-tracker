@@ -5,5 +5,16 @@
   "previousCoach": "Rick Tocchet",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/PHI/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/PHI/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/PHI/2026.html",
+  "headCoach": "Rick Tocchet",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Todd Reirden",
+    "Jaroslav Svejkovsky",
+    "Jay Varady"
+  ],
+  "goaltendingCoaches": [
+    "Kim Dillabaugh"
+  ],
+  "staffSource": "https://www.nhl.com/flyers/team/staff/hockey-personnel"
 }

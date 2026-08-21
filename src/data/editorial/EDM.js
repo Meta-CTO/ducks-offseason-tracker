@@ -245,6 +245,24 @@ export const rosterComparison = [
           'Babcock was hired Jun. 23 and brings 700 career NHL wins',
         ],
       },
+      {
+        pos: 'Associate coach', before: 'D.J. Smith', after: 'D.J. Smith', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Paul McFarland', after: 'Paul McFarland', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Peter Aubry', after: 'Peter Aubry', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -280,6 +298,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/oilers/team/hockey-operations' },
   { label: 'NHL.com Oilers 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/edmonton-oilers-roster-changes-for-2026-27-season' },
   { label: 'Official Oilers news', url: 'https://www.nhl.com/oilers/news/' },
 ]

@@ -235,6 +235,48 @@ export const rosterComparison = [
           'Mehta spent six seasons in Florida, three as assistant GM and head of analytics through back-to-back Stanley Cups',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Brad Shaw', after: 'Brad Shaw', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Ted Donato', after: 'Ted Donato', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'AJ MacLean', after: 'AJ MacLean', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Matt Carkner', after: 'Matt Carkner', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Mike Zalewski', after: 'Mike Zalewski', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Dan Stewart', after: 'Dan Stewart', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Brian Eklund', after: 'Brian Eklund', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -276,6 +318,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/devils/team/staff-directory' },
   { label: 'NHL.com Devils 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/new-jersey-devils-roster-changes-for-2026-27-season' },
   { label: 'NHL.com Panthers team reset (Markstrom trade)', url: 'https://www.nhl.com/news/topic/team-resets/florida-panthers-roster-changes-for-2026-27-season' },
   { label: 'Official Devils news', url: 'https://www.nhl.com/devils/news/' },

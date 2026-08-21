@@ -5,5 +5,17 @@
   "previousCoach": "Scott Arniel",
   "changed": false,
   "source": "https://www.hockey-reference.com/teams/WPG/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/WPG/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/WPG/2026.html",
+  "headCoach": "Scott Arniel",
+  "associateCoaches": [],
+  "assistantCoaches": [
+    "Marty Johnston",
+    "Davis Payne",
+    "Dean Chynoweth",
+    "Wade Flaherty",
+    "Morgan Klimchuk",
+    "Bob Nardella"
+  ],
+  "goaltendingCoaches": [],
+  "staffSource": "https://www.nhl.com/jets/team/hockey-operations/"
 }

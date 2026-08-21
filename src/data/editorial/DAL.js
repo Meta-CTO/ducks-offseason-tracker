@@ -211,6 +211,18 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Neil Graham Alain Nasreddine David Pelletier', after: 'Neil Graham Alain Nasreddine David Pelletier', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Jeff Reese', after: 'Jeff Reese', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -252,6 +264,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/stars/team/front-office' },
   { label: 'NHL.com Stars 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/dallas-stars-roster-changes-for-2026-27-season' },
   { label: 'Official Stars news', url: 'https://www.nhl.com/stars/news/' },
 ]

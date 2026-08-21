@@ -8,6 +8,11 @@ export const STATUS = {
   unsigned: { label: 'Unsigned / RFA', color: 'unsigned' },
   injured: { label: 'Injured', color: 'injured' },
   camp: { label: 'Camp candidate', color: 'camp' },
+  // For staff a club lists for this season where continuity from last season
+  // has not been established. `retained` would claim they were here before,
+  // which the club sites do not say and Hockey-Reference covers only for the
+  // head coach.
+  onstaff: { label: 'On staff', color: 'onstaff' },
 }
 
 /**

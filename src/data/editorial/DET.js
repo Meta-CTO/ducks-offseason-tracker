@@ -218,6 +218,24 @@ export const rosterComparison = [
           'Left with the captain having requested a trade and four veterans unsigned',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Alex Tanguay', after: 'Alex Tanguay', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Trent Yawney', after: 'Trent Yawney', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Michael Leighton', after: 'Michael Leighton', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -255,6 +273,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/redwings/team/hockey-operations' },
   { label: 'NHL.com Red Wings 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/detroit-red-wings-roster-changes-for-2026-27-season' },
   { label: 'Official Red Wings news', url: 'https://www.nhl.com/redwings/news/' },
 ]

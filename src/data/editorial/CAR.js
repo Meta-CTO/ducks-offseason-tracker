@@ -196,6 +196,24 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Jeff Daniels', after: 'Jeff Daniels', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Tim Gleason', after: 'Tim Gleason', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Paul Schonfelder', after: 'Paul Schonfelder', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -246,6 +264,7 @@ export const rumors = [
 ]
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/hurricanes/team/coaches' },
   { label: 'NHL.com Hurricanes 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/carolina-hurricanes-roster-changes-for-2026-27-season' },
   { label: 'Official Hurricanes news', url: 'https://www.nhl.com/hurricanes/news/' },
 ]

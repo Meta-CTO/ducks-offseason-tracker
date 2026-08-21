@@ -228,6 +228,30 @@ export const rosterComparison = [
           'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
+      {
+        pos: 'Assistant coach', before: 'Scott Allen', after: 'Scott Allen', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Ray Bennett', after: 'Ray Bennett', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Assistant coach', before: 'Patrick Wellar', after: 'Patrick Wellar', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
+      {
+        pos: 'Goaltending coach', before: 'Scott Murray', after: 'Scott Murray', status: 'onstaff',
+        notes: [
+          'Listed on the club\'s coaching staff for 2026–27',
+        ],
+      },
     ],
   },
 ]
@@ -264,6 +288,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Coaching staff (NHL.com club site)', url: 'https://www.nhl.com/capitals/team/coaching-staff' },
   { label: 'NHL.com Capitals 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/washington-capitals-roster-changes-for-2026-27-season' },
   { label: 'Official Capitals news', url: 'https://www.nhl.com/capitals/news/' },
 ]

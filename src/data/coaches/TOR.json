@@ -5,5 +5,17 @@
   "previousCoach": "Craig Berube",
   "changed": true,
   "source": "https://www.hockey-reference.com/teams/TOR/2027.html",
-  "previousSource": "https://www.hockey-reference.com/teams/TOR/2026.html"
+  "previousSource": "https://www.hockey-reference.com/teams/TOR/2026.html",
+  "headCoach": "Jim Hiller",
+  "associateCoaches": [
+    "Daniel Alfredsson"
+  ],
+  "assistantCoaches": [
+    "John Gruden",
+    "Brad Werenka"
+  ],
+  "goaltendingCoaches": [
+    "Curtis Sanford"
+  ],
+  "staffSource": "https://www.nhl.com/mapleleafs/team/management"
 }
