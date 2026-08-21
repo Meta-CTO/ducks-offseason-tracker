@@ -11,7 +11,7 @@
 
 import { register } from 'node:module'
 import { pathToFileURL } from 'node:url'
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile, writeFile, readdir } from 'node:fs/promises'
 import path from 'node:path'
 
 // The club modules use extensionless imports and bare .json imports, which Vite
@@ -55,6 +55,11 @@ const targets = only ? clubs.filter((c) => c === only) : clubs
 
 const updates = JSON.parse(await readFile('src/data/updates.json', 'utf8'))
 const issues = []
+const verified = []
+const confirmedHC = new Set()
+const haveCoach = new Set(
+  (await readdir('src/data/coaches').catch(() => [])).map((f) => f.replace('.json', '')),
+)
 const add = (club, severity, kind, detail) => issues.push({ club, severity, kind, detail })
 
 // Roles that are staff, not skaters — they will never be on an NHL roster feed.
@@ -113,14 +118,29 @@ for (const club of targets) {
       `${overlap} of ${rosterSize} rostered players have a row (${pct}%)`)
   }
 
-  // 2. Coaching section.
-  if (!groups.some((g) => g.group === 'Coaching')) {
+  // 2. Coaching section, and whether what it says matches the source.
+  const coaching = groups.find((g) => g.group === 'Coaching')
+  if (!coaching) {
     add(club, 'medium', 'no-coaching', 'no Coaching group, so the club shows no staff at all')
+  } else if (haveCoach.has(club)) {
+    const hr = JSON.parse(await readFile(`src/data/coaches/${club}.json`, 'utf8'))
+    const hcRow = coaching.rows.find((r) => /head coach/i.test(r.pos ?? ''))
+    const stated = hcRow ? subject(hcRow) : null
+    if (stated && hr.coach && norm(stated) !== norm(hr.coach)) {
+      add(club, 'high', 'coach-disagrees',
+        `module says the head coach is '${stated}', Hockey-Reference says '${hr.coach}'`)
+    } else if (stated && hr.coach) {
+      verified.push(`${club}: head coach '${stated}' confirmed against Hockey-Reference`)
+      confirmedHC.add(club)
+    }
   }
 
   // 3. Handover rows: both names present, chip describes only one of them.
   for (const r of allRows) {
     if (r.before && r.after && r.before !== r.after && r.after !== 'TBD' && r.status === 'added') {
+      // Already cross-checked against Hockey-Reference above; no need to ask for
+      // a source twice.
+      if (/head coach/i.test(r.pos ?? '') && confirmedHC.has(club)) continue
       // The render bug these exposed is fixed; what is left is that a handover
       // asserts two things at once — one person out, another in — and both
       // halves need a source. Listed so they can be re-read, not as a defect.
@@ -222,6 +242,11 @@ for (const i of issues) (byKind[`${i.severity}|${i.kind}`] ??= []).push(i)
 const counts = issues.reduce((a, i) => ({ ...a, [i.severity]: (a[i.severity] ?? 0) + 1 }), {})
 console.log(`QA sweep over ${targets.length} club(s): ${issues.length} issue(s) ` +
   `(${counts.high ?? 0} high, ${counts.medium ?? 0} medium, ${counts.low ?? 0} low)\n`)
+if (verified.length) {
+  console.log(`VERIFIED  (${verified.length})`)
+  for (const v of verified) console.log(`    ${v}`)
+  console.log()
+}
 for (const [key, list] of Object.entries(byKind).sort(
   (a, b) => RANK[a[1][0].severity] - RANK[b[1][0].severity] || b[1].length - a[1].length)) {
   const [sev, kind] = key.split('|')
