@@ -1,6 +1,9 @@
 {
   "abbrev": "NYR",
   "season": "2026-27",
+  "coach": "Mike Sullivan",
+  "previousCoach": "Mike Sullivan",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/NYR/2027.html",
-  "coach": "Mike Sullivan"
+  "previousSource": "https://www.hockey-reference.com/teams/NYR/2026.html"
 }

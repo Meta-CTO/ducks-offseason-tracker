@@ -1,6 +1,9 @@
 {
   "abbrev": "CBJ",
   "season": "2026-27",
+  "coach": "Rick Bowness",
+  "previousCoach": "Dean Evason",
+  "changed": true,
   "source": "https://www.hockey-reference.com/teams/CBJ/2027.html",
-  "coach": "Rick Bowness"
+  "previousSource": "https://www.hockey-reference.com/teams/CBJ/2026.html"
 }

@@ -1,6 +1,9 @@
 {
   "abbrev": "EDM",
   "season": "2026-27",
+  "coach": "Mike Babcock",
+  "previousCoach": "Kris Knoblauch",
+  "changed": true,
   "source": "https://www.hockey-reference.com/teams/EDM/2027.html",
-  "coach": "Mike Babcock"
+  "previousSource": "https://www.hockey-reference.com/teams/EDM/2026.html"
 }

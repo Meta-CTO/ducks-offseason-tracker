@@ -115,12 +115,6 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'L', before: 'Drew O\'Connor', after: 'Drew O\'Connor', status: 'retained',
-        notes: [
-          'Played 82 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
         pos: 'L', before: 'Liam Ohgren', after: 'Liam Ohgren', status: 'retained',
         notes: [
           'Played 51 games for the club in 2025–26 and is on the current roster',

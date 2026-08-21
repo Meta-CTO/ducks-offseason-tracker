@@ -1,6 +1,9 @@
 {
   "abbrev": "DET",
   "season": "2026-27",
+  "coach": "Todd McLellan",
+  "previousCoach": "Todd McLellan",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/DET/2027.html",
-  "coach": "Todd McLellan"
+  "previousSource": "https://www.hockey-reference.com/teams/DET/2026.html"
 }

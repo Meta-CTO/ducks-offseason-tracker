@@ -1,6 +1,9 @@
 {
   "abbrev": "BUF",
   "season": "2026-27",
+  "coach": "Lindy Ruff",
+  "previousCoach": "Lindy Ruff",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/BUF/2027.html",
-  "coach": "Lindy Ruff"
+  "previousSource": "https://www.hockey-reference.com/teams/BUF/2026.html"
 }

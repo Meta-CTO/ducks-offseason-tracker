@@ -1,6 +1,9 @@
 {
   "abbrev": "STL",
   "season": "2026-27",
+  "coach": "Jim Montgomery",
+  "previousCoach": "Jim Montgomery",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/STL/2027.html",
-  "coach": "Jim Montgomery"
+  "previousSource": "https://www.hockey-reference.com/teams/STL/2026.html"
 }

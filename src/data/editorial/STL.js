@@ -207,6 +207,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Jim Montgomery returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Jim Montgomery', after: 'Jim Montgomery', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

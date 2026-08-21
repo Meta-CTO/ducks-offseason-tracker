@@ -14,6 +14,12 @@
 // Only the head coach. Assistants and GMs are not on these pages, so a club
 // that already lists them keeps what it has and is left alone.
 //
+// Hockey-Reference lists one coach per season, so a mid-season change is not
+// visible here — Vegas shows Cassidy for 2025-26 though Tortorella took over in
+// March. Notes therefore attribute the previous name to the source rather than
+// claiming the person held the job all year. Clubs with a mid-season change are
+// exactly the ones likely to already have a Coaching group, which this skips.
+//
 // Usage: node scripts/add-coaching.mjs [--dry-run]
 
 import { readFile, writeFile, readdir } from 'node:fs/promises'
@@ -49,7 +55,7 @@ for (const club of clubs) {
       {
         pos: 'Head coach', before: '${esc(c.previousCoach)}', after: '${esc(c.coach)}', status: 'added',
         notes: [
-          '${esc(c.coach)} is the head coach for 2026–27; ${esc(c.previousCoach)} held the job in 2025–26',
+          '${esc(c.coach)} is the head coach for 2026–27; Hockey-Reference lists ${esc(c.previousCoach)} as the club\\'s 2025–26 head coach',
         ],
       },
     ],
@@ -62,7 +68,7 @@ for (const club of clubs) {
       {
         pos: 'Head coach', before: '${esc(c.coach)}', after: '${esc(c.coach)}', status: 'retained',
         notes: [
-          'Head coach in 2025–26 and again for 2026–27',
+          'Listed as the club\\'s head coach for both 2025–26 and 2026–27',
         ],
       },
     ],

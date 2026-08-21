@@ -1,6 +1,9 @@
 {
   "abbrev": "UTA",
   "season": "2026-27",
+  "coach": "André Tourigny",
+  "previousCoach": "André Tourigny",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/UTA/2027.html",
-  "coach": "Andr\u00e9 Tourigny"
+  "previousSource": "https://www.hockey-reference.com/teams/UTA/2026.html"
 }

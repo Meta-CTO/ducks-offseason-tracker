@@ -1,6 +1,9 @@
 {
   "abbrev": "VGK",
   "season": "2026-27",
+  "coach": "Ryan Craig",
+  "previousCoach": "Bruce Cassidy",
+  "changed": true,
   "source": "https://www.hockey-reference.com/teams/VEG/2027.html",
-  "coach": "Ryan Craig"
+  "previousSource": "https://www.hockey-reference.com/teams/VEG/2026.html"
 }

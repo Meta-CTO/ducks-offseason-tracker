@@ -184,12 +184,6 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'D', before: 'Charle-Edouard D\'Astous', after: 'Charle-Edouard D\'Astous', status: 'retained',
-        notes: [
-          'Played 70 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
         pos: 'D', before: 'Emil Lilleberg', after: 'Emil Lilleberg', status: 'retained',
         notes: [
           'Played 50 games for the club in 2025–26 and is on the current roster',
@@ -234,6 +228,18 @@ export const rosterComparison = [
         pos: 'G', before: 'Jonas Johansson', after: 'Jonas Johansson', status: 'retained',
         notes: [
           'Played 25 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
+    ],
+  },
+  {
+    group: 'Coaching',
+    summary: 'Jon Cooper returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Jon Cooper', after: 'Jon Cooper', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
         ],
       },
     ],

@@ -1,6 +1,9 @@
 {
   "abbrev": "CHI",
   "season": "2026-27",
+  "coach": "Jeff Blashill",
+  "previousCoach": "Jeff Blashill",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/CHI/2027.html",
-  "coach": "Jeff Blashill"
+  "previousSource": "https://www.hockey-reference.com/teams/CHI/2026.html"
 }

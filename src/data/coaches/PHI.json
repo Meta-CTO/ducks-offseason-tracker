@@ -1,6 +1,9 @@
 {
   "abbrev": "PHI",
   "season": "2026-27",
+  "coach": "Rick Tocchet",
+  "previousCoach": "Rick Tocchet",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/PHI/2027.html",
-  "coach": "Rick Tocchet"
+  "previousSource": "https://www.hockey-reference.com/teams/PHI/2026.html"
 }

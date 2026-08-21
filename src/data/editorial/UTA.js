@@ -116,12 +116,6 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'C', before: 'Liam O\'Brien', after: 'Liam O\'Brien', status: 'retained',
-        notes: [
-          'Played 38 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
         pos: 'C', before: 'Nick Schmaltz', after: 'Nick Schmaltz', status: 'retained',
         notes: [
           'Played 82 games for the club in 2025–26 and is on the current roster',
@@ -233,6 +227,18 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Vitek Vanecek', after: null, status: 'departed',
         notes: ['Signed a one-year contract with the N.Y. Islanders on Jul. 1'],
+      },
+    ],
+  },
+  {
+    group: 'Coaching',
+    summary: 'André Tourigny returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'André Tourigny', after: 'André Tourigny', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
       },
     ],
   },

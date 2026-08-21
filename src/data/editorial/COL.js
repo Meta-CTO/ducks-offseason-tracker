@@ -123,12 +123,6 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'R', before: 'Logan O\'Connor', after: 'Logan O\'Connor', status: 'retained',
-        notes: [
-          'Played 13 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
         pos: 'C', before: 'Nicolas Roy', after: 'Nicolas Roy', status: 'retained',
         notes: [
           'Played 15 games for the club in 2025–26 and is on the current roster',

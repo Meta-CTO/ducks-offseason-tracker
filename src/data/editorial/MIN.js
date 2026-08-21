@@ -260,6 +260,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'John Hynes returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'John Hynes', after: 'John Hynes', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

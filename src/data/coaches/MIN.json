@@ -1,6 +1,9 @@
 {
   "abbrev": "MIN",
   "season": "2026-27",
+  "coach": "John Hynes",
+  "previousCoach": "John Hynes",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/MIN/2027.html",
-  "coach": "John Hynes"
+  "previousSource": "https://www.hockey-reference.com/teams/MIN/2026.html"
 }

@@ -1,6 +1,9 @@
 {
   "abbrev": "LAK",
   "season": "2026-27",
+  "coach": "Peter Laviolette",
+  "previousCoach": "Jim Hiller",
+  "changed": true,
   "source": "https://www.hockey-reference.com/teams/LAK/2027.html",
-  "coach": "Peter Laviolette"
+  "previousSource": "https://www.hockey-reference.com/teams/LAK/2026.html"
 }

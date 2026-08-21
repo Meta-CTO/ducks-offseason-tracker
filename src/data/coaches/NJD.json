@@ -1,6 +1,9 @@
 {
   "abbrev": "NJD",
   "season": "2026-27",
+  "coach": "Sheldon Keefe",
+  "previousCoach": "Sheldon Keefe",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/NJD/2027.html",
-  "coach": "Sheldon Keefe"
+  "previousSource": "https://www.hockey-reference.com/teams/NJD/2026.html"
 }

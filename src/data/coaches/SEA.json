@@ -1,6 +1,9 @@
 {
   "abbrev": "SEA",
   "season": "2026-27",
+  "coach": "Lane Lambert",
+  "previousCoach": "Lane Lambert",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/SEA/2027.html",
-  "coach": "Lane Lambert"
+  "previousSource": "https://www.hockey-reference.com/teams/SEA/2026.html"
 }

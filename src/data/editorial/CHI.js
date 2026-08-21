@@ -220,6 +220,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Jeff Blashill returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Jeff Blashill', after: 'Jeff Blashill', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

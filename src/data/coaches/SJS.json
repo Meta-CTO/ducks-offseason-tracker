@@ -1,6 +1,9 @@
 {
   "abbrev": "SJS",
   "season": "2026-27",
+  "coach": "Ryan Warsofsky",
+  "previousCoach": "Ryan Warsofsky",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/SJS/2027.html",
-  "coach": "Ryan Warsofsky"
+  "previousSource": "https://www.hockey-reference.com/teams/SJS/2026.html"
 }

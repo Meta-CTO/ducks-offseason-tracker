@@ -1,6 +1,9 @@
 {
   "abbrev": "OTT",
   "season": "2026-27",
+  "coach": "Travis Green",
+  "previousCoach": "Travis Green",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/OTT/2027.html",
-  "coach": "Travis Green"
+  "previousSource": "https://www.hockey-reference.com/teams/OTT/2026.html"
 }

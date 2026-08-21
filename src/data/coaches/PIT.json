@@ -1,6 +1,9 @@
 {
   "abbrev": "PIT",
   "season": "2026-27",
+  "coach": "Dan Muse",
+  "previousCoach": "Dan Muse",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/PIT/2027.html",
-  "coach": "Dan Muse"
+  "previousSource": "https://www.hockey-reference.com/teams/PIT/2026.html"
 }

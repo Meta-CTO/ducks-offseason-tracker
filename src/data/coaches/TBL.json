@@ -1,6 +1,9 @@
 {
   "abbrev": "TBL",
   "season": "2026-27",
+  "coach": "Jon Cooper",
+  "previousCoach": "Jon Cooper",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/TBL/2027.html",
-  "coach": "Jon Cooper"
+  "previousSource": "https://www.hockey-reference.com/teams/TBL/2026.html"
 }

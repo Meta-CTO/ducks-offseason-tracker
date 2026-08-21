@@ -213,6 +213,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Rick Bowness replaced Dean Evason behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Dean Evason', after: 'Rick Bowness', status: 'added',
+        notes: [
+          'Rick Bowness is the head coach for 2026–27; Hockey-Reference lists Dean Evason as the club\'s 2025–26 head coach',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

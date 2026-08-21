@@ -1,6 +1,9 @@
 {
   "abbrev": "MTL",
   "season": "2026-27",
+  "coach": "Martin St. Louis",
+  "previousCoach": "Martin St. Louis",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/MTL/2027.html",
-  "coach": "Martin St. Louis"
+  "previousSource": "https://www.hockey-reference.com/teams/MTL/2026.html"
 }

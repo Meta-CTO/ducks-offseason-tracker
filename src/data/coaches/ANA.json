@@ -1,6 +1,9 @@
 {
   "abbrev": "ANA",
   "season": "2026-27",
+  "coach": "Joel Quenneville",
+  "previousCoach": "Joel Quenneville",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/ANA/2027.html",
-  "coach": "Joel Quenneville"
+  "previousSource": "https://www.hockey-reference.com/teams/ANA/2026.html"
 }

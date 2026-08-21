@@ -1,6 +1,9 @@
 {
   "abbrev": "NYI",
   "season": "2026-27",
+  "coach": "Peter DeBoer",
+  "previousCoach": "Patrick Roy",
+  "changed": true,
   "source": "https://www.hockey-reference.com/teams/NYI/2027.html",
-  "coach": "Peter DeBoer"
+  "previousSource": "https://www.hockey-reference.com/teams/NYI/2026.html"
 }

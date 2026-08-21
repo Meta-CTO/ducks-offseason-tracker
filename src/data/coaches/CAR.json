@@ -1,6 +1,9 @@
 {
   "abbrev": "CAR",
   "season": "2026-27",
+  "coach": "Rod Brind'Amour",
+  "previousCoach": "Rod Brind'Amour",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/CAR/2027.html",
-  "coach": "Rod Brind'Amour"
+  "previousSource": "https://www.hockey-reference.com/teams/CAR/2026.html"
 }

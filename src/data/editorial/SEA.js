@@ -191,6 +191,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Lane Lambert returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Lane Lambert', after: 'Lane Lambert', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

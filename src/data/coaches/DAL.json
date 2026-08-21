@@ -1,6 +1,9 @@
 {
   "abbrev": "DAL",
   "season": "2026-27",
+  "coach": "Glen Gulutzan",
+  "previousCoach": "Glen Gulutzan",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/DAL/2027.html",
-  "coach": "Glen Gulutzan"
+  "previousSource": "https://www.hockey-reference.com/teams/DAL/2026.html"
 }

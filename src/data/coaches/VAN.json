@@ -1,6 +1,9 @@
 {
   "abbrev": "VAN",
   "season": "2026-27",
+  "coach": "Manny Malhotra",
+  "previousCoach": "Adam Foote",
+  "changed": true,
   "source": "https://www.hockey-reference.com/teams/VAN/2027.html",
-  "coach": "Manny Malhotra"
+  "previousSource": "https://www.hockey-reference.com/teams/VAN/2026.html"
 }

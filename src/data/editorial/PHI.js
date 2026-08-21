@@ -273,6 +273,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Rick Tocchet returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Rick Tocchet', after: 'Rick Tocchet', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

@@ -200,6 +200,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Peter DeBoer replaced Patrick Roy behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Patrick Roy', after: 'Peter DeBoer', status: 'added',
+        notes: [
+          'Peter DeBoer is the head coach for 2026–27; Hockey-Reference lists Patrick Roy as the club\'s 2025–26 head coach',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

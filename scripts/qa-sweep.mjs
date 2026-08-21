@@ -46,7 +46,7 @@ const only = args.includes('--club') ? args[args.indexOf('--club') + 1]?.toUpper
 // "Stützle" and "Stutzle", "O’Reilly" and "O'Reilly" are the same person. Not
 // folding these produced nine false "not on roster" hits on the first run.
 const norm = (s) =>
-  s.normalize('NFD').replace(/\p{M}/gu, '').replace(/['’`]/g, '').toLowerCase().trim()
+  s.normalize('NFD').replace(/\p{M}/gu, '').replace(/[\\'’`]/g, '').toLowerCase().trim()
 
 
 const registry = await readFile('src/data/editorial/index.js', 'utf8')

@@ -232,6 +232,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Mike Sullivan returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Mike Sullivan', after: 'Mike Sullivan', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

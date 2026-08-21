@@ -1,6 +1,9 @@
 {
   "abbrev": "CGY",
   "season": "2026-27",
+  "coach": "Ryan Huska",
+  "previousCoach": "Ryan Huska",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/CGY/2027.html",
-  "coach": "Ryan Huska"
+  "previousSource": "https://www.hockey-reference.com/teams/CGY/2026.html"
 }

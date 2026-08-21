@@ -227,6 +227,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Paul Maurice returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Paul Maurice', after: 'Paul Maurice', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

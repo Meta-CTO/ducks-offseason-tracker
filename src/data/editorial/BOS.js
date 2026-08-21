@@ -219,6 +219,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Marco Sturm returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Marco Sturm', after: 'Marco Sturm', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

@@ -27,7 +27,7 @@ const PROVENANCE =
   'depth rows are from the roster feed and 2025–26 club stats, not individually researched'
 
 const norm = (s) =>
-  s.normalize('NFD').replace(/\p{M}/gu, '').replace(/['’`]/g, '').toLowerCase().trim()
+  s.normalize('NFD').replace(/\p{M}/gu, '').replace(/[\\'’`]/g, '').toLowerCase().trim()
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 const get = async (url, tries = 4) => {

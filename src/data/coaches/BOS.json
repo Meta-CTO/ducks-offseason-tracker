@@ -1,6 +1,9 @@
 {
   "abbrev": "BOS",
   "season": "2026-27",
+  "coach": "Marco Sturm",
+  "previousCoach": "Marco Sturm",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/BOS/2027.html",
-  "coach": "Marco Sturm"
+  "previousSource": "https://www.hockey-reference.com/teams/BOS/2026.html"
 }

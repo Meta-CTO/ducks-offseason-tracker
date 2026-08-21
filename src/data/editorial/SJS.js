@@ -223,6 +223,18 @@ export const rosterComparison = [
       },
     ],
   },
+  {
+    group: 'Coaching',
+    summary: 'Ryan Warsofsky returns behind the bench',
+    rows: [
+      {
+        pos: 'Head coach', before: 'Ryan Warsofsky', after: 'Ryan Warsofsky', status: 'retained',
+        notes: [
+          'Listed as the club\'s head coach for both 2025–26 and 2026–27',
+        ],
+      },
+    ],
+  },
 ]
 
 export const biggestChanges = [

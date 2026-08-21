@@ -1,6 +1,9 @@
 {
   "abbrev": "NSH",
   "season": "2026-27",
+  "coach": "Andrew Brunette",
+  "previousCoach": "Andrew Brunette",
+  "changed": false,
   "source": "https://www.hockey-reference.com/teams/NSH/2027.html",
-  "coach": "Andrew Brunette"
+  "previousSource": "https://www.hockey-reference.com/teams/NSH/2026.html"
 }
