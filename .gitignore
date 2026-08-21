@@ -28,3 +28,4 @@ dist-ssr
 
 # Local infrastructure identifiers (see .env.deploy.example)
 .env.deploy
+scripts/.qa-resolver.mjs

@@ -13,6 +13,7 @@
     "photos": "node scripts/fetch-commons-photos.mjs && node scripts/crop-faces.mjs",
     "rollup": "bash scripts/rollup.sh",
     "league": "node scripts/fetch-league.mjs",
+    "qa": "node scripts/qa-sweep.mjs",
     "check:editorial": "node scripts/check-editorial.mjs",
     "draft": "node scripts/fetch-draft.mjs"
   },

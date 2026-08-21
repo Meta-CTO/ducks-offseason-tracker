@@ -99,7 +99,10 @@ jobs:
         env:
           SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
         run: |
-          BUILT=$(ls dist/assets/*.js | head -1 | xargs basename)
+          # index-*.js, not *.js: the bare glob returns an alphabetically-early
+          # code-split chunk (ANA-*.js), which never matches the entry bundle
+          # scraped from the HTML, so this step failed on every push.
+          BUILT=$(ls dist/assets/index-*.js | head -1 | xargs basename)
           LIVE=$(curl -sS "https://$SITE_DOMAIN/" | grep -oE '/assets/index-[^"]+\.js' | head -1 | xargs basename)
           echo "built: $BUILT"
           echo "live:  $LIVE"

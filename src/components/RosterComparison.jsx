@@ -21,8 +21,26 @@ const contractLine = (name, contracts) => {
   return `${c.aav} thru ${c.thru.replace('-', '–')}${c.team ? ` (${c.team})` : ''}`
 }
 
+/**
+ * Whose name a row is *about*, which is not always `before`.
+ *
+ * A row carries both names when one person replaced another. Reading `before`
+ * first then showed the outgoing person wearing the incoming person's chip —
+ * Vegas rendered "John Tortorella / Added" when Tortorella was the one not
+ * retained and Ryan Craig was the hire. The subject has to follow the status:
+ * `added` is about whoever holds the job now, `departed` about whoever left.
+ * Anaheim's vacant captaincy relies on that second half — Gudas departed and
+ * `after` is the placeholder 'TBD', so `before` is still correct there.
+ */
+const subjectOf = (row) =>
+  row.status === 'added' ? (row.after ?? row.before) : (row.before ?? row.after)
+
+// The person being replaced, shown only when a row is genuinely a handover.
+const predecessorOf = (row) =>
+  row.status === 'added' && row.before && row.before !== row.after ? row.before : null
+
 // 2025–26 NHL points for ordering; players with no NHL season sort last
-const rowPoints = (row, points) => points[slugify(row.before ?? row.after)]?.points ?? -1
+const rowPoints = (row, points) => points[slugify(subjectOf(row))]?.points ?? -1
 
 function PersonCard({ name, pos, hasNewNote, rumors, points, contracts }) {
   const rumorCount = freshRumorsFor(name, rumors).length
@@ -124,7 +142,7 @@ export default function RosterComparison() {
             <p>{group.summary}</p>
           </div>
           {rows.map((row) => {
-            const name = row.before ?? row.after
+            const name = subjectOf(row)
             return (
               <div
                 className={`roster-row status-border-${row.status}`}
@@ -139,8 +157,15 @@ export default function RosterComparison() {
                   contracts={contracts}
                 />
                 <div className="roster-delta">
-                  <span className={`badge badge-${STATUS[row.status].color}`}>
-                    {STATUS[row.status].label}
+                  <span className="roster-delta-chips">
+                    <span className={`badge badge-${STATUS[row.status].color}`}>
+                      {STATUS[row.status].label}
+                    </span>
+                    {predecessorOf(row) && (
+                      <span className="roster-replaces">
+                        replaces {predecessorOf(row)}
+                      </span>
+                    )}
                   </span>
                   <ul className="roster-notes">
                     {row.notes.map((note) => (
