@@ -67,6 +67,10 @@ curl -sI https://nhl.metacto.com/   # expect 200
 Until the record exists, the distribution is still reachable and testable at
 its `*.cloudfront.net` domain directly.
 
+`nhl.metacto.com` was cut over on 2026-08-20 and resolves to
+`d2apl1987f2qiz.cloudfront.net`; the wildcard cert already covered the name, so
+no certificate work was needed.
+
 ## Deploying
 
 `scripts/deploy.sh` builds, syncs to S3 with two cache profiles (hashed assets
@@ -107,11 +111,13 @@ CLOUDFRONT_DISTRIBUTION_ID="$NHL_CLOUDFRONT_DISTRIBUTION_ID" \
 - `deploy` — deploys to the site in the plain `SITE_DOMAIN` / `S3_BUCKET` /
   `CLOUDFRONT_DISTRIBUTION_ID` repository variables.
 - `deploy-nhl` — deploys to the site in the `NHL_*` repository variables.
-  **Gated on the `NHL_DEPLOY_ENABLED` variable being `true`**, so it stays
-  dormant until the deploy role has been granted access to the new bucket —
-  enabling it earlier just fails with AccessDenied. Its verify step
-  checks the real domain once DNS resolves and the `*.cloudfront.net` domain
-  before that, so the check is meaningful either way.
+  **Live since 2026-08-20**; both sites now ship on the same push and neither
+  needs a manual sync. It stays gated on the `NHL_DEPLOY_ENABLED` variable, which
+  is the switch to flip if the site ever needs to be parked. Keep the ordering
+  rule in mind when adding the *next* site: arm the variable only after the
+  deploy role can reach the bucket, or the job fails with AccessDenied. Its
+  verify step checks the real domain once DNS resolves and the
+  `*.cloudfront.net` domain before that, so the check is meaningful either way.
 
 Both deploy jobs end by fetching the live page and comparing the served bundle
 filename to the one just built, failing if they differ. **Pushing is deploying,

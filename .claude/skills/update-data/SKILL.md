@@ -222,20 +222,24 @@ of the pass** — a push that fails in CI leaves the site on the old bundle:
 
 ```sh
 gh run watch "$(gh run list --limit 1 --json databaseId --jq '.[0].databaseId')" --exit-status
-LIVE=$(curl -s https://ducks.metacto.com/ | grep -oE '/assets/index-[^"]+\.js' | head -1)
-[ "$(basename "$LIVE")" = "$(basename dist/assets/index-*.js)" ] \
-  && echo "live bundle matches build" || echo "MISMATCH — the deploy did not land"
+
+BUILT=$(basename dist/assets/index-*.js)
+for host in ducks.metacto.com nhl.metacto.com; do
+  LIVE=$(curl -s "https://$host/" | grep -oE '/assets/index-[^"]+\.js' | head -1)
+  [ "$(basename "$LIVE")" = "$BUILT" ] \
+    && echo "$host: matches build" || echo "$host: MISMATCH — the deploy did not land"
+done
 ```
 
 If the run fails or the bundles disagree, say so plainly and leave it broken
 rather than retrying blindly; a failed deploy is usually a credentials or
 CloudFront problem, not something another push fixes.
 
-> **Second site.** `nhl.metacto.com` has its own bucket and distribution and is
-> **not** deployed by CI until `NHL_DEPLOY_ENABLED` is set — see
-> `docs/INFRASTRUCTURE.md`. Until then it must be synced by hand after a push,
-> or it silently serves stale content. Check whether that is still true before
-> reporting a pass as fully shipped.
+> **Both sites ship on one push.** `nhl.metacto.com` has its own bucket and
+> distribution, and since 2026-08-20 CI deploys it alongside `ducks.metacto.com`
+> from the same push. There is no hand-sync step any more. Each site is verified
+> by its own job, so read the run's status rather than assuming: a green
+> `deploy` with a failed `deploy-nhl` means the league site is stale.
 
 Two things this authorization does **not** cover: rewriting site content or
 design at your own initiative, and any change that would remove or restructure
