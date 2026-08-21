@@ -14,6 +14,7 @@
     "rollup": "bash scripts/rollup.sh",
     "league": "node scripts/fetch-league.mjs",
     "coaches": "node scripts/fetch-coaches.mjs",
+    "staff": "node scripts/fetch-staff.mjs",
     "qa": "node scripts/qa-sweep.mjs",
     "check:editorial": "node scripts/check-editorial.mjs",
     "draft": "node scripts/fetch-draft.mjs"

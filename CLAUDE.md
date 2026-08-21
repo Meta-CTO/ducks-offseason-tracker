@@ -122,6 +122,7 @@ name regex, a lossy abbreviated page layout and a $4M hole. Read its header
 comment before the next refresh.
 npm run qa         # content QA sweep: coverage, wrong-club rows, dead lookups
 npm run coaches    # head coaches from Hockey-Reference (rate-limited; see below)
+npm run staff      # assistants from the club sites, gated on the head coach
 npm run photos     # fetch freely-licensed Wikimedia photos
 npm run deploy     # deploy the default site (see docs/INFRASTRUCTURE.md)
 ```
@@ -155,10 +156,20 @@ feature or design work.
   succession returns `429` with a ~3500s `Retry-After`, and the block is
   site-wide rather than per-page. `npm run coaches` paces itself, aborts on a
   429 rather than hammering, and resumes with `--only-missing`.
-- **The NHL API has no coaching endpoint** (`v1/coaches` 404s) and NHL.com's club
-  sites are bespoke — only Calgary exposes a parseable `/team/coaching-staff`.
-  Coaching comes from Hockey-Reference, and only the head coach; assistants and
-  GMs are not on those pages.
+- **The NHL API has no coaching endpoint** (`v1/coaches` 404s). Head coaches come
+  from Hockey-Reference; assistants come from the club sites, which are bespoke —
+  six different markups, with candidate URLs read from nhl.com's sitemap.
+- **A club site's staff page is only trusted when it agrees with Hockey-Reference
+  on the head coach.** That gate has caught three separate failures: Anaheim's
+  `captains-and-coaches` is a historical table and parsed a coach named "Season",
+  Ottawa's staff directory returns the wrong person, and **Ottawa's own coaching
+  page is years out of date** — it still lists D.J. Smith, hired in 2019. A club
+  publishing something does not make it current.
+- **General managers are not scraped.** Front-office titles are compound
+  ("President, Hockey Operations / General Manager / Alternate Governor: Don
+  Waddell"), an exact-role match returns the wrong person, and nothing gates the
+  field. Boston, Los Angeles, Ottawa and Utah publish no usable staff page at
+  all, so they carry a head coach only.
 - **CI verify globs `index-*.js`, not `*.js`.** The bare glob returns an
   alphabetically-early code-split chunk, which never matches the entry bundle
   scraped from the live HTML, so the step failed on every push while the S3 sync

@@ -275,6 +275,7 @@ export const unresolved = [
 export const rumors = []
 
 export const sources = [
+  { label: 'Canucks front office and coaching staff (NHL.com) — confirms Ryan Johnson as general manager and Manny Malhotra as head coach', url: 'https://www.nhl.com/canucks/team/hockey-operations' },
   { label: 'NHL.com Canucks 2026–27 team reset', url: 'https://www.nhl.com/news/topic/team-resets/vancouver-canucks-roster-changes-for-2026-27-season' },
   { label: 'Hughes traded to Wild by Canucks (Dec. 2025)', url: 'https://www.nhl.com/news/quinn-hughes-traded-to-minnesota-wild-by-vancouver-canucks' },
   { label: 'Official Canucks news', url: 'https://www.nhl.com/canucks/news/' },
