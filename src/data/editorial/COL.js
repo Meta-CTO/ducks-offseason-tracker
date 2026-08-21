@@ -86,12 +86,6 @@ export const rosterComparison = [
         pos: 'F', before: 'Ross Colton', after: null, status: 'departed',
         notes: ['Traded to Nashville on Jun. 16 after 24 points in 73 games'],
       },
-          {
-        pos: 'C', before: 'Vinnie Hinostroza', after: 'Vinnie Hinostroza', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
       {
         pos: 'C', before: 'Nazem Kadri', after: 'Nazem Kadri', status: 'retained',
         notes: [
@@ -140,6 +134,12 @@ export const rosterComparison = [
           'Played 15 games for the club in 2025–26 and is on the current roster',
         ],
       },
+      {
+        pos: 'R', before: 'Logan O\'Connor', after: 'Logan O\'Connor', status: 'retained',
+        notes: [
+          'Played 13 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
@@ -161,7 +161,7 @@ export const rosterComparison = [
         pos: 'D', before: null, after: 'Noah Juulsen', status: 'added',
         notes: ['Two years on Jul. 1 after 10 points in 52 games with Philadelphia'],
       },
-          {
+      {
         pos: 'D', before: 'Brett Kulak', after: 'Brett Kulak', status: 'retained',
         notes: [
           'Played 27 games for the club in 2025–26 and is on the current roster',

@@ -88,12 +88,6 @@ export const rosterComparison = [
         pos: 'C', before: null, after: 'Lars Eller', status: 'added',
         notes: ['One year on Jul. 1 from Ottawa; projected to centre the fourth line'],
       },
-          {
-        pos: 'C', before: 'John Beecher', after: 'John Beecher', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
       {
         pos: 'C', before: 'Sam Bennett', after: 'Sam Bennett', status: 'retained',
         notes: [
@@ -104,18 +98,6 @@ export const rosterComparison = [
         pos: 'L', before: 'Jonah Gadjovich', after: 'Jonah Gadjovich', status: 'retained',
         notes: [
           'Played 10 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'R', before: 'Garnet Hathaway', after: 'Garnet Hathaway', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'C', before: 'Sam Lafferty', after: 'Sam Lafferty', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -186,7 +168,7 @@ export const rosterComparison = [
         pos: 'D', before: null, after: 'Alexander Petrovic', status: 'added',
         notes: ['Two years on Jul. 1 from Dallas'],
       },
-          {
+      {
         pos: 'D', before: 'Uvis Balinskis', after: 'Uvis Balinskis', status: 'retained',
         notes: [
           'Played 54 games for the club in 2025–26 and is on the current roster',

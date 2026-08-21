@@ -80,7 +80,7 @@ export const rosterComparison = [
           'A career-high 32 points in 78 games; projected third line',
         ],
       },
-          {
+      {
         pos: 'R', before: 'Justin Brazeau', after: 'Justin Brazeau', status: 'retained',
         notes: [
           'Played 64 games for the club in 2025–26 and is on the current roster',
@@ -111,12 +111,6 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'C', before: 'Hendrix Lapierre', after: 'Hendrix Lapierre', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
         pos: 'C', before: 'Blake Lizotte', after: 'Blake Lizotte', status: 'retained',
         notes: [
           'Played 55 games for the club in 2025–26 and is on the current roster',
@@ -132,12 +126,6 @@ export const rosterComparison = [
         pos: 'R', before: 'Rickard Rakell', after: 'Rickard Rakell', status: 'retained',
         notes: [
           'Played 60 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'L', before: 'Nick Robertson', after: 'Nick Robertson', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -179,12 +167,6 @@ export const rosterComparison = [
       {
         pos: 'D', before: null, after: 'Kaedan Korczak', status: 'added',
         notes: ['Arrived from Vegas on Jun. 30; projected third pair with Ryan Graves'],
-      },
-          {
-        pos: 'D', before: 'Declan Carlile', after: 'Declan Carlile', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
       },
       {
         pos: 'D', before: 'Samuel Girard', after: 'Samuel Girard', status: 'retained',

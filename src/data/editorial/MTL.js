@@ -78,7 +78,7 @@ export const rosterComparison = [
         pos: 'F', before: 'Joe Veleno', after: null, status: 'departed',
         notes: ['Not qualified; signed with the N.Y. Rangers on Jul. 1'],
       },
-          {
+      {
         pos: 'R', before: 'Josh Anderson', after: 'Josh Anderson', status: 'retained',
         notes: [
           'Played 72 games for the club in 2025–26 and is on the current roster',
@@ -172,7 +172,7 @@ export const rosterComparison = [
         pos: 'RD', before: null, after: 'David Reinbacher', status: 'camp',
         notes: ['Fifth overall in 2023; the reset flags a potentially expanded role, which camp decides'],
       },
-          {
+      {
         pos: 'D', before: 'Alexandre Carrier', after: 'Alexandre Carrier', status: 'retained',
         notes: [
           'Played 73 games for the club in 2025–26 and is on the current roster',
@@ -200,12 +200,6 @@ export const rosterComparison = [
         pos: 'D', before: 'Jayden Struble', after: 'Jayden Struble', status: 'retained',
         notes: [
           'Played 59 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'D', before: 'Maksymilian Szuber', after: 'Maksymilian Szuber', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -238,7 +232,7 @@ export const rosterComparison = [
           'The reset says he could push Dobes for playing time',
         ],
       },
-          {
+      {
         pos: 'G', before: 'Samuel Montembeault', after: 'Samuel Montembeault', status: 'retained',
         notes: [
           'Played 25 games for the club in 2025–26 and is on the current roster',

@@ -79,7 +79,7 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Joe Veleno', status: 'added',
         notes: ['One year on Jul. 1 after Montréal declined to qualify him'],
       },
-          {
+      {
         pos: 'R', before: 'Jaroslav Chmelar', after: 'Jaroslav Chmelar', status: 'retained',
         notes: [
           'Played 28 games for the club in 2025–26 and is on the current roster',
@@ -167,7 +167,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Will Borgen', after: null, status: 'departed',
         notes: ['Traded to Boston on Jul. 1 for a 2027 second and a conditional 2028 third'],
       },
-          {
+      {
         pos: 'D', before: 'Drew Fortescue', after: 'Drew Fortescue', status: 'retained',
         notes: [
           'Played 9 games for the club in 2025–26 and is on the current roster',
@@ -224,7 +224,7 @@ export const rosterComparison = [
         pos: 'G', before: 'Jonathan Quick', after: null, status: 'departed',
         notes: ['Retired after a 6-17-2 season'],
       },
-          {
+      {
         pos: 'G', before: 'Dylan Garand', after: 'Dylan Garand', status: 'retained',
         notes: [
           'Played 3 games for the club in 2025–26 and is on the current roster',

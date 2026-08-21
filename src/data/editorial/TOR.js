@@ -94,16 +94,10 @@ export const rosterComparison = [
         pos: 'C', before: null, after: 'Teddy Blueger', status: 'added',
         notes: ['Two years on Jul. 1 from Vancouver; projected fourth line'],
       },
-          {
+      {
         pos: 'C', before: 'Max Domi', after: 'Max Domi', status: 'retained',
         notes: [
           'Played 80 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'R', before: 'Brandon Duhaime', after: 'Brandon Duhaime', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -137,27 +131,9 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'C', before: 'Zack MacEwen', after: 'Zack MacEwen', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
         pos: 'R', before: 'William Nylander', after: 'William Nylander', status: 'retained',
         notes: [
           'Played 65 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'C', before: 'Jack Roslovic', after: 'Jack Roslovic', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'C', before: 'Colton Sissons', after: 'Colton Sissons', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -202,7 +178,7 @@ export const rosterComparison = [
           'The reset recorded trade rumours around him; the club’s news feed since reports they have ceased, quoting him that “this is home now”',
         ],
       },
-          {
+      {
         pos: 'D', before: 'Oliver Ekman-Larsson', after: 'Oliver Ekman-Larsson', status: 'retained',
         notes: [
           'Played 78 games for the club in 2025–26 and is on the current roster',

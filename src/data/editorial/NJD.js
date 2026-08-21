@@ -85,16 +85,10 @@ export const rosterComparison = [
         pos: 'F', before: 'Paul Cotter', after: null, status: 'departed',
         notes: ['Signed a one-year contract with Vancouver on Jul. 1'],
       },
-          {
+      {
         pos: 'C', before: 'Nick Bjugstad', after: 'Nick Bjugstad', status: 'retained',
         notes: [
           'Played 26 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'C', before: 'Jesper Boqvist', after: 'Jesper Boqvist', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -174,7 +168,7 @@ export const rosterComparison = [
         pos: 'D', before: null, after: 'Declan Chisholm', status: 'added',
         notes: ['Acquired from Washington on Jun. 25 for a 2027 fourth-round pick'],
       },
-          {
+      {
         pos: 'D', before: 'Brenden Dillon', after: 'Brenden Dillon', status: 'retained',
         notes: [
           'Played 82 games for the club in 2025–26 and is on the current roster',
@@ -226,12 +220,6 @@ export const rosterComparison = [
         notes: [
           'Signed for two years on Jul. 1 and expected to compete for a full-time role',
           'The reset says goaltending could become a deadline priority if he cannot establish himself',
-        ],
-      },
-          {
-        pos: 'G', before: 'David Rittich', after: 'David Rittich', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],

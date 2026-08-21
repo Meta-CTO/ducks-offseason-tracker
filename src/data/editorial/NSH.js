@@ -90,28 +90,10 @@ export const rosterComparison = [
         pos: 'F', before: 'Erik Haula', after: null, status: 'departed',
         notes: ['Signed a two-year contract with Los Angeles on Jul. 1 after 38 points in 81 games'],
       },
-          {
-        pos: 'C', before: 'Adam Edstrom', after: 'Adam Edstrom', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
       {
         pos: 'R', before: 'Luke Evangelista', after: 'Luke Evangelista', status: 'retained',
         notes: [
           'Played 81 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'R', before: 'Aiden Fink', after: 'Aiden Fink', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'C', before: 'Alexander Kerfoot', after: 'Alexander Kerfoot', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -155,7 +137,7 @@ export const rosterComparison = [
           '9 points and 68 hits in 53 games; projected third pair',
         ],
       },
-          {
+      {
         pos: 'D', before: 'Justin Barron', after: 'Justin Barron', status: 'retained',
         notes: [
           'Played 52 games for the club in 2025–26 and is on the current roster',

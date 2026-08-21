@@ -52,7 +52,10 @@ const insertRows = (src, groupName, block) => {
     else if (src[i] === ']') {
       depth--
       if (depth === 0) {
-        return src.slice(0, i) + block + '    ' + src.slice(i)
+        // Trim the whitespace already sitting before the closing bracket, or the
+        // block's own indent is added to it and every inserted row opens at ten
+        // spaces instead of six.
+        return src.slice(0, i).replace(/[ \t]*$/, '') + block + '    ' + src.slice(i)
       }
     }
   }
@@ -91,12 +94,19 @@ for (const club of targets) {
     [...src.matchAll(/(?:before|after): '((?:[^'\\]|\\.)*)'/g)].map((m) => norm(m[1])),
   )
 
-  let added = 0, leftOut = 0, unresearched = 0
+  let added = 0, leftOut = 0, unresearched = 0, noGames = 0
   for (const [key, groupName] of Object.entries(GROUP_OF)) {
     const missing = (league[key] ?? []).filter((p) => {
       const n = norm(p.name)
       if (existing.has(n)) return false
       if (!onRoster.has(n)) { leftOut++; return false }   // in stats, not on roster => departed
+      // The league file is the CURRENT roster with 2025-26 club stats attached
+      // where they exist — not a list of everyone who played here. A player with
+      // no games for the club did not play for it last season, so `retained` is
+      // unsupportable: they either arrived this offseason or were never up. An
+      // earlier pass wrote 50 such rows, including players the same module's own
+      // summary described as arrivals.
+      if (!(p.stats?.gp > 0)) { noGames++; return false }
       return true
     })
     if (!missing.length) continue
@@ -122,18 +132,19 @@ for (const club of targets) {
   for (const n of onRoster) if (!leagueNames.has(n) && !existing.has(n)) unresearched++
 
   if (added && !dry) await writeFile(file, src)
-  summary.push({ club, added, leftOut, unresearched })
+  summary.push({ club, added, leftOut, unresearched, noGames })
 }
 
 const w = (s, n) => String(s).padEnd(n)
-console.log(`${w('club', 6)}${w('added', 7)}${w('departed?', 11)}new-to-club?`)
+console.log(`${w('club', 6)}${w('added', 7)}${w('departed?', 11)}${w('no-games', 10)}new-to-club?`)
 let total = 0
 for (const r of summary) {
   if (r.skipped) { console.log(`${w(r.club, 6)}${r.skipped}`); continue }
   total += r.added
-  console.log(`${w(r.club, 6)}${w(r.added, 7)}${w(r.leftOut, 11)}${r.unresearched}`)
+  console.log(`${w(r.club, 6)}${w(r.added, 7)}${w(r.leftOut, 11)}${w(r.noGames, 10)}${r.unresearched}`)
 }
 console.log(`\n${dry ? 'Would add' : 'Added'} ${total} row(s).`)
 console.log('"departed?" played for the club in 2025–26 but is not on the roster now.')
-console.log('"new-to-club?" is on the roster with no 2025–26 club stats.')
+console.log('"no-games" is on the roster and in the stats file but played 0 games for the club.')
+console.log('"new-to-club?" is on the roster with no 2025–26 club stats at all.')
 console.log('Both need a source before they can be stated; neither was written.')

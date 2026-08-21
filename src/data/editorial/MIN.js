@@ -89,7 +89,7 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Maksim Shabanov', status: 'added',
         notes: ['One year on Jul. 2 after 18 points in 44 games with the Islanders'],
       },
-          {
+      {
         pos: 'L', before: 'Matt Boldy', after: 'Matt Boldy', status: 'retained',
         notes: [
           'Played 76 games for the club in 2025–26 and is on the current roster',
@@ -138,12 +138,6 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'R', before: 'Maxim Shabanov', after: 'Maxim Shabanov', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
         pos: 'C', before: 'Nico Sturm', after: 'Nico Sturm', status: 'retained',
         notes: [
           'Played 49 games for the club in 2025–26 and is on the current roster',
@@ -189,7 +183,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Jeff Petry', after: null, status: 'unsigned',
         notes: ['An unsigned UFA, which is the only firm fact about his situation'],
       },
-          {
+      {
         pos: 'D', before: 'Zach Bogosian', after: 'Zach Bogosian', status: 'retained',
         notes: [
           'Played 41 games for the club in 2025–26 and is on the current roster',
@@ -262,18 +256,6 @@ export const rosterComparison = [
         notes: [
           'One year on Jul. 1 from Edmonton',
           'Projected backup while Gustavsson recovers',
-        ],
-      },
-          {
-        pos: 'G', before: 'Riley Mercer', after: 'Riley Mercer', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'G', before: 'Chase Wutzke', after: 'Chase Wutzke', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],

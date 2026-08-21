@@ -81,7 +81,7 @@ export const rosterComparison = [
         pos: 'F', before: 'Ryan Lomberg', after: null, status: 'departed',
         notes: ['Signed a two-year deal with Columbus on Jul. 1'],
       },
-          {
+      {
         pos: 'R', before: 'Matt Coronato', after: 'Matt Coronato', status: 'retained',
         notes: [
           'Played 80 games for the club in 2025–26 and is on the current roster',
@@ -109,12 +109,6 @@ export const rosterComparison = [
         pos: 'L', before: 'Samuel Honzek', after: 'Samuel Honzek', status: 'retained',
         notes: [
           'Played 18 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'C', before: 'Ben Jones', after: 'Ben Jones', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -188,7 +182,7 @@ export const rosterComparison = [
         pos: 'D', before: null, after: 'Zayne Parekh', status: 'camp',
         notes: ['Projected onto the third pair with Yan Kuznetsov; a projection, not an announced job'],
       },
-          {
+      {
         pos: 'D', before: 'Kevin Bahl', after: 'Kevin Bahl', status: 'retained',
         notes: [
           'Played 76 games for the club in 2025–26 and is on the current roster',

@@ -73,7 +73,7 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Curtis Douglas', status: 'added',
         notes: ['Two years at $1.25M a season on Jul. 1'],
       },
-          {
+      {
         pos: 'C', before: 'Berkly Catton', after: 'Berkly Catton', status: 'retained',
         notes: [
           'Played 66 games for the club in 2025–26 and is on the current roster',
@@ -145,7 +145,7 @@ export const rosterComparison = [
         pos: 'RD', before: 'Brandon Montour', after: 'Brandon Montour', status: 'retained',
         notes: ['Projected on the second pair'],
       },
-          {
+      {
         pos: 'D', before: 'Ryker Evans', after: 'Ryker Evans', status: 'retained',
         notes: [
           'Played 67 games for the club in 2025–26 and is on the current roster',

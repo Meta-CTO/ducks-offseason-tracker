@@ -90,7 +90,7 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Paul Cotter', status: 'added',
         notes: ['One year on Jul. 1 after 15 points in 79 games with New Jersey'],
       },
-          {
+      {
         pos: 'R', before: 'Brock Boeser', after: 'Brock Boeser', status: 'retained',
         notes: [
           'Played 75 games for the club in 2025–26 and is on the current roster',
@@ -144,6 +144,12 @@ export const rosterComparison = [
           'Played 66 games for the club in 2025–26 and is on the current roster',
         ],
       },
+      {
+        pos: 'L', before: 'Drew O\'Connor', after: 'Drew O\'Connor', status: 'retained',
+        notes: [
+          'Played 82 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
@@ -174,7 +180,7 @@ export const rosterComparison = [
         pos: 'RD', before: 'Filip Hronek', after: 'Filip Hronek', status: 'retained',
         notes: ['Projected on the top pair'],
       },
-          {
+      {
         pos: 'D', before: 'Zeev Buium', after: 'Zeev Buium', status: 'retained',
         notes: [
           'Played 45 games for the club in 2025–26 and is on the current roster',
@@ -206,7 +212,7 @@ export const rosterComparison = [
         pos: 'G', before: 'Kevin Lankinen', after: 'Kevin Lankinen', status: 'retained',
         notes: ['Projected backup'],
       },
-          {
+      {
         pos: 'G', before: 'Nikita Tolopilo', after: 'Nikita Tolopilo', status: 'retained',
         notes: [
           'Played 21 games for the club in 2025–26 and is on the current roster',

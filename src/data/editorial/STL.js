@@ -75,7 +75,7 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Ross Johnston', status: 'added',
         notes: ['Three years on Jul. 1 after leaving Anaheim; projected fourth line'],
       },
-          {
+      {
         pos: 'R', before: 'Jonatan Berggren', after: 'Jonatan Berggren', status: 'retained',
         notes: [
           'Played 36 games for the club in 2025–26 and is on the current roster',
@@ -167,7 +167,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Justin Holl', after: null, status: 'departed',
         notes: ['Signed a one-year contract with Washington on Jul. 1'],
       },
-          {
+      {
         pos: 'D', before: 'Philip Broberg', after: 'Philip Broberg', status: 'retained',
         notes: [
           'Played 81 games for the club in 2025–26 and is on the current roster',

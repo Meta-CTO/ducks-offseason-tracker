@@ -89,7 +89,7 @@ export const rosterComparison = [
         pos: 'F', before: 'Andrei Kuzmenko', after: null, status: 'departed',
         notes: ['Signed a one-year contract with Pittsburgh on Jul. 1'],
       },
-          {
+      {
         pos: 'R', before: 'Joel Armia', after: 'Joel Armia', status: 'retained',
         notes: [
           'Played 67 games for the club in 2025–26 and is on the current roster',
@@ -164,7 +164,7 @@ export const rosterComparison = [
           'Played only two NHL games last season, with 37 points in 39 AHL games',
         ],
       },
-          {
+      {
         pos: 'D', before: 'Mikey Anderson', after: 'Mikey Anderson', status: 'retained',
         notes: [
           'Played 80 games for the club in 2025–26 and is on the current roster',
@@ -186,12 +186,6 @@ export const rosterComparison = [
         pos: 'D', before: 'Joel Edmundson', after: 'Joel Edmundson', status: 'retained',
         notes: [
           'Played 82 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'D', before: 'Scott Perunovich', after: 'Scott Perunovich', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],

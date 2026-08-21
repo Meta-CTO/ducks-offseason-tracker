@@ -72,7 +72,7 @@ export const rosterComparison = [
           'Projected to centre the third line, which camp still has to confirm',
         ],
       },
-          {
+      {
         pos: 'L', before: 'Zach Benson', after: 'Zach Benson', status: 'retained',
         notes: [
           'Played 65 games for the club in 2025–26 and is on the current roster',
@@ -94,12 +94,6 @@ export const rosterComparison = [
         pos: 'R', before: 'Josh Doan', after: 'Josh Doan', status: 'retained',
         notes: [
           'Played 82 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'C', before: 'Riley Fiddler-Schultz', after: 'Riley Fiddler-Schultz', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -193,12 +187,6 @@ export const rosterComparison = [
         pos: 'D', before: 'Michael Kesselring', after: null, status: 'departed',
         notes: ['Traded to San Jose on Jun. 17 in a pick swap'],
       },
-          {
-        pos: 'D', before: 'Dennis Gilbert', after: 'Dennis Gilbert', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
       {
         pos: 'D', before: 'Ryan Johnson', after: 'Ryan Johnson', status: 'retained',
         notes: [
@@ -206,21 +194,9 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'D', before: 'Vsevolod Komarov', after: 'Vsevolod Komarov', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
         pos: 'D', before: 'Zach Metsa', after: 'Zach Metsa', status: 'retained',
         notes: [
           'Played 43 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'D', before: 'Radim Mrtka', after: 'Radim Mrtka', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -255,7 +231,7 @@ export const rosterComparison = [
         pos: 'G', before: 'Devon Levi', after: null, status: 'departed',
         notes: ['Traded to Edmonton on Jul. 1 with a 2028 seventh for a 2028 third'],
       },
-          {
+      {
         pos: 'G', before: 'Colten Ellis', after: 'Colten Ellis', status: 'retained',
         notes: [
           'Played 16 games for the club in 2025–26 and is on the current roster',
@@ -265,12 +241,6 @@ export const rosterComparison = [
         pos: 'G', before: 'Alex Lyon', after: 'Alex Lyon', status: 'retained',
         notes: [
           'Played 36 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'G', before: 'Matt Villalta', after: 'Matt Villalta', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],

@@ -133,7 +133,7 @@ export const rosterComparison = [
         pos: 'LW', before: null, after: 'Carl Grundstrom', status: 'added',
         notes: ['One year at $1.0M for bottom-six depth'],
       },
-          {
+      {
         pos: 'C', before: 'Denver Barkey', after: 'Denver Barkey', status: 'retained',
         notes: [
           'Played 43 games for the club in 2025–26 and is on the current roster',
@@ -216,12 +216,6 @@ export const rosterComparison = [
         pos: 'D', before: 'Noah Juulsen', after: null, status: 'departed',
         notes: ['Signed a two-year contract with Colorado on Jul. 1'],
       },
-          {
-        pos: 'D', before: 'Helge Grans', after: 'Helge Grans', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
       {
         pos: 'D', before: 'David Jiricek', after: 'David Jiricek', status: 'retained',
         notes: [
@@ -270,12 +264,6 @@ export const rosterComparison = [
       {
         pos: 'G', before: 'Samuel Ersson', after: null, status: 'departed',
         notes: ['Traded to Toronto on Jun. 16; the move that changed the position'],
-      },
-          {
-        pos: 'G', before: 'Carson Bjarnason', after: 'Carson Bjarnason', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
       },
       {
         pos: 'G', before: 'Aleksei Kolosov', after: 'Aleksei Kolosov', status: 'retained',

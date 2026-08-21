@@ -72,7 +72,7 @@ export const rosterComparison = [
           'Projected on the fourth line with Samanski and Frederic',
         ],
       },
-          {
+      {
         pos: 'C', before: 'Colton Dach', after: 'Colton Dach', status: 'retained',
         notes: [
           'Played 8 games for the club in 2025–26 and is on the current roster',
@@ -169,7 +169,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Evan Bouchard', after: 'Evan Bouchard', status: 'retained',
         notes: ['Projected on the top pair with Mattias Ekholm'],
       },
-          {
+      {
         pos: 'D', before: 'Mattias Ekholm', after: 'Mattias Ekholm', status: 'retained',
         notes: [
           'Played 82 games for the club in 2025–26 and is on the current roster',

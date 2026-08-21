@@ -82,7 +82,7 @@ export const rosterComparison = [
         pos: 'F', before: 'Colton Sissons', after: null, status: 'departed',
         notes: ['Signed a two-year contract with Toronto on Jul. 1'],
       },
-          {
+      {
         pos: 'L', before: 'Ivan Barbashev', after: 'Ivan Barbashev', status: 'retained',
         notes: [
           'Played 82 games for the club in 2025–26 and is on the current roster',
@@ -92,12 +92,6 @@ export const rosterComparison = [
         pos: 'R', before: 'Braeden Bowman', after: 'Braeden Bowman', status: 'retained',
         notes: [
           'Played 54 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'L', before: 'Trevor Connelly', after: 'Trevor Connelly', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -185,7 +179,7 @@ export const rosterComparison = [
         pos: 'RD', before: 'Shea Theodore', after: 'Shea Theodore', status: 'retained',
         notes: ['Projected on the top pair with Brayden McNabb'],
       },
-          {
+      {
         pos: 'D', before: 'Rasmus Andersson', after: 'Rasmus Andersson', status: 'retained',
         notes: [
           'Played 33 games for the club in 2025–26 and is on the current roster',
@@ -198,21 +192,9 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'D', before: 'Jeremy Davies', after: 'Jeremy Davies', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
         pos: 'D', before: 'Noah Hanifin', after: 'Noah Hanifin', status: 'retained',
         notes: [
           'Played 71 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'D', before: 'Ville Heinola', after: 'Ville Heinola', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -254,7 +236,7 @@ export const rosterComparison = [
           '16-10-6 with a 2.59 GAA in 34 games',
         ],
       },
-          {
+      {
         pos: 'G', before: 'Carl Lindbom', after: 'Carl Lindbom', status: 'retained',
         notes: [
           'Played 8 games for the club in 2025–26 and is on the current roster',

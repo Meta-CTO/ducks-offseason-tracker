@@ -70,16 +70,10 @@ export const rosterComparison = [
           '39 points in 71 games; projected fourth line',
         ],
       },
-          {
+      {
         pos: 'C', before: 'Mathew Barzal', after: 'Mathew Barzal', status: 'retained',
         notes: [
           'Played 81 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'R', before: 'Mitchell Chaffee', after: 'Mitchell Chaffee', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -162,7 +156,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Carson Soucy', after: null, status: 'unsigned',
         notes: ['An unsigned UFA, which is the only firm fact about his situation'],
       },
-          {
+      {
         pos: 'D', before: 'Scott Mayfield', after: 'Scott Mayfield', status: 'retained',
         notes: [
           'Played 80 games for the club in 2025–26 and is on the current roster',

@@ -73,7 +73,7 @@ export const rosterComparison = [
           'One year at $1M on Jul. 1, returning after playing in Dallas from 2019 to 2023',
         ],
       },
-          {
+      {
         pos: 'L', before: 'Jamie Benn', after: 'Jamie Benn', status: 'retained',
         notes: [
           'Played 60 games for the club in 2025–26 and is on the current roster',
@@ -154,12 +154,6 @@ export const rosterComparison = [
       {
         pos: 'LD', before: 'Lian Bichsel', after: 'Lian Bichsel', status: 'retained',
         notes: ['Projected on the third pair with Tyler Myers'],
-      },
-          {
-        pos: 'D', before: 'Kyle Burroughs', after: 'Kyle Burroughs', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
       },
       {
         pos: 'D', before: 'Kyle Capobianco', after: 'Kyle Capobianco', status: 'retained',

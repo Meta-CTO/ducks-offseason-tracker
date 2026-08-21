@@ -95,10 +95,19 @@ const searchPlayer = async (name) => {
 for (const club of targets) {
   const m = await import(pathToFileURL(path.resolve(`src/data/editorial/${club}.js`)).href)
   const league = JSON.parse(await readFile(`src/data/league/${club}.json`, 'utf8'))
-  const rawNames = [...league.forwards, ...league.defensemen, ...league.goalies].map((p) => p.name)
+  const leaguePlayers = [...league.forwards, ...league.defensemen, ...league.goalies]
+  const rawNames = leaguePlayers.map((p) => p.name)
   const leagueNames = new Set(rawNames.map(norm))
   const leagueSurnames = new Set(rawNames.map((n) => norm(n.split(' ').slice(-1)[0])))
-  const rosterSize = rawNames.length
+  // Coverage counts only players with games for the club. The league file is the
+  // current roster with 2025-26 club stats attached where they exist, so an entry
+  // with no games is someone who did not play here last season — an arrival or a
+  // prospect. Nothing about them can be asserted from the API, so they are not
+  // rows the site is missing; counting them made Anaheim read as 64% covered
+  // while every player it can speak about had a row.
+  const played = leaguePlayers.filter((p) => p.stats?.gp > 0).map((p) => norm(p.name))
+  const rosterSize = played.length
+  const unplayed = leaguePlayers.length - rosterSize
 
   const groups = m.rosterComparison ?? []
   const allRows = groups.flatMap((g) => g.rows.map((r) => ({ ...r, group: g.group })))
@@ -111,11 +120,15 @@ for (const club of targets) {
   // Coverage is the overlap with the roster, not the row count: a club can have
   // plenty of rows and still miss most of its roster if many describe players
   // who left. Comparing row count to roster size overstated Calgary at 41%.
-  const overlap = [...leagueNames].filter((n) => coveredNorm.has(n)).length
+  const overlap = played.filter((n) => coveredNorm.has(n)).length
   const pct = rosterSize ? Math.round((overlap / rosterSize) * 100) : 0
   if (pct < 90) {
     add(club, pct < 70 ? 'high' : 'medium', 'thin-coverage',
-      `${overlap} of ${rosterSize} rostered players have a row (${pct}%)`)
+      `${overlap} of ${rosterSize} players with games for the club have a row (${pct}%)`)
+  }
+  if (unplayed > 0) {
+    add(club, 'low', 'unresearched-arrivals',
+      `${unplayed} roster entr${unplayed === 1 ? 'y has' : 'ies have'} no games for the club — arrivals or prospects needing a source`)
   }
 
   // 2. Coaching section, and whether what it says matches the source.

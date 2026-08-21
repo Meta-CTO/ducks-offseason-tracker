@@ -89,7 +89,7 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Cole Smith', status: 'added',
         notes: ['Three years on Jul. 1 after a season split between Nashville and Vegas'],
       },
-          {
+      {
         pos: 'L', before: 'Tyler Bertuzzi', after: 'Tyler Bertuzzi', status: 'retained',
         notes: [
           'Played 79 games for the club in 2025–26 and is on the current roster',
@@ -186,7 +186,7 @@ export const rosterComparison = [
         pos: 'RD', before: 'Artyom Levshunov', after: 'Artyom Levshunov', status: 'retained',
         notes: ['Projected on the second pair with Wyatt Kaiser'],
       },
-          {
+      {
         pos: 'D', before: 'Wyatt Kaiser', after: 'Wyatt Kaiser', status: 'retained',
         notes: [
           'Played 77 games for the club in 2025–26 and is on the current roster',

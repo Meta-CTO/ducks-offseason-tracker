@@ -83,7 +83,7 @@ export const rosterComparison = [
           'The reset projects an expanded role with Paul gone',
         ],
       },
-          {
+      {
         pos: 'C', before: 'Anthony Cirelli', after: 'Anthony Cirelli', status: 'retained',
         notes: [
           'Played 71 games for the club in 2025–26 and is on the current roster',
@@ -120,12 +120,6 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'C', before: 'Jansen Harkins', after: 'Jansen Harkins', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
         pos: 'R', before: 'Pontus Holmberg', after: 'Pontus Holmberg', status: 'retained',
         notes: [
           'Played 70 games for the club in 2025–26 and is on the current roster',
@@ -147,12 +141,6 @@ export const rosterComparison = [
         pos: 'R', before: 'Scott Sabourin', after: 'Scott Sabourin', status: 'retained',
         notes: [
           'Played 26 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'L', before: 'Jeffrey Viel', after: 'Jeffrey Viel', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],
@@ -183,7 +171,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Declan Carlile', after: null, status: 'departed',
         notes: ['Signed a two-year contract with Pittsburgh on Jul. 1'],
       },
-          {
+      {
         pos: 'D', before: 'Erik Cernak', after: 'Erik Cernak', status: 'retained',
         notes: [
           'Played 61 games for the club in 2025–26 and is on the current roster',
@@ -219,6 +207,12 @@ export const rosterComparison = [
           'Played 79 games for the club in 2025–26 and is on the current roster',
         ],
       },
+      {
+        pos: 'D', before: 'Charle-Edouard D\'Astous', after: 'Charle-Edouard D\'Astous', status: 'retained',
+        notes: [
+          'Played 70 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
@@ -236,7 +230,7 @@ export const rosterComparison = [
           '2.86 GAA and .914 in 20 games; projected backup',
         ],
       },
-          {
+      {
         pos: 'G', before: 'Jonas Johansson', after: 'Jonas Johansson', status: 'retained',
         notes: [
           'Played 25 games for the club in 2025–26 and is on the current roster',

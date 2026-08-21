@@ -79,7 +79,7 @@ export const rosterComparison = [
         pos: 'F', before: 'Alex Kerfoot', after: null, status: 'departed',
         notes: ['Signed a two-year contract with Nashville on Jul. 1'],
       },
-          {
+      {
         pos: 'L', before: 'Daniil But', after: 'Daniil But', status: 'retained',
         notes: [
           'Played 29 games for the club in 2025–26 and is on the current roster',
@@ -145,6 +145,12 @@ export const rosterComparison = [
           'Played 59 games for the club in 2025–26 and is on the current roster',
         ],
       },
+      {
+        pos: 'C', before: 'Liam O\'Brien', after: 'Liam O\'Brien', status: 'retained',
+        notes: [
+          'Played 38 games for the club in 2025–26 and is on the current roster',
+        ],
+      },
     ],
   },
   {
@@ -177,7 +183,7 @@ export const rosterComparison = [
         pos: 'RD', before: 'Mikhail Sergachev', after: 'Mikhail Sergachev', status: 'retained',
         notes: ['Projected on the top pair with MacKenzie Weegar'],
       },
-          {
+      {
         pos: 'D', before: 'Nick DeSimone', after: 'Nick DeSimone', status: 'retained',
         notes: [
           'Played 40 games for the club in 2025–26 and is on the current roster',

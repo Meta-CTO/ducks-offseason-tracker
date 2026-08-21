@@ -75,7 +75,7 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Ryan Lomberg', status: 'added',
         notes: ['Two years on Jul. 1 from Calgary; projected fourth line'],
       },
-          {
+      {
         pos: 'C', before: 'Charlie Coyle', after: 'Charlie Coyle', status: 'retained',
         notes: [
           'Played 82 games for the club in 2025–26 and is on the current roster',
@@ -163,7 +163,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Egor Zamula', after: null, status: 'departed',
         notes: ['Signed a three-year contract with CSKA Moscow on Jul. 1'],
       },
-          {
+      {
         pos: 'D', before: 'Jake Christiansen', after: 'Jake Christiansen', status: 'retained',
         notes: [
           'Played 40 games for the club in 2025–26 and is on the current roster',

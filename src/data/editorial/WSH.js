@@ -83,7 +83,7 @@ export const rosterComparison = [
           'Projected to centre the fourth line',
         ],
       },
-          {
+      {
         pos: 'R', before: 'Anthony Beauvillier', after: 'Anthony Beauvillier', status: 'retained',
         notes: [
           'Played 82 games for the club in 2025–26 and is on the current roster',
@@ -172,7 +172,7 @@ export const rosterComparison = [
         pos: 'LD', before: null, after: 'Cole Hutson', status: 'camp',
         notes: ['A rookie defenseman the reset names as a Calder Trophy candidate'],
       },
-          {
+      {
         pos: 'D', before: 'Martin Fehérváry', after: 'Martin Fehérváry', status: 'retained',
         notes: [
           'Played 81 games for the club in 2025–26 and is on the current roster',
@@ -210,7 +210,7 @@ export const rosterComparison = [
         pos: 'G', before: 'Charlie Lindgren', after: 'Charlie Lindgren', status: 'retained',
         notes: ['Projected backup'],
       },
-          {
+      {
         pos: 'G', before: 'Clay Stevenson', after: 'Clay Stevenson', status: 'retained',
         notes: [
           'Played 4 games for the club in 2025–26 and is on the current roster',

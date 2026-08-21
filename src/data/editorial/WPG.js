@@ -72,7 +72,7 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Noah Gregor', status: 'added',
         notes: ['One year, two-way, on Jul. 1'],
       },
-          {
+      {
         pos: 'C', before: 'Morgan Barron', after: 'Morgan Barron', status: 'retained',
         notes: [
           'Played 65 games for the club in 2025–26 and is on the current roster',
@@ -157,7 +157,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Colin Miller', after: null, status: 'departed',
         notes: ['Signed with Lausanne HC in Switzerland on Jul. 1'],
       },
-          {
+      {
         pos: 'D', before: 'Dylan DeMelo', after: 'Dylan DeMelo', status: 'retained',
         notes: [
           'Played 82 games for the club in 2025–26 and is on the current roster',
@@ -179,12 +179,6 @@ export const rosterComparison = [
         pos: 'D', before: 'Dylan Samberg', after: 'Dylan Samberg', status: 'retained',
         notes: [
           'Played 66 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'D', before: 'Jack St. Ivany', after: 'Jack St. Ivany', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],

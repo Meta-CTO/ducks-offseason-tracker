@@ -60,7 +60,7 @@ export const rosterComparison = [
         pos: 'C', before: 'Logan Stankoven', after: 'Logan Stankoven', status: 'retained',
         notes: ['Projected to centre the second line with Taylor Hall and Jackson Blake'],
       },
-          {
+      {
         pos: 'R', before: 'Jackson Blake', after: 'Jackson Blake', status: 'retained',
         notes: [
           'Played 81 games for the club in 2025–26 and is on the current roster',
@@ -145,7 +145,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Mike Reilly', after: null, status: 'unsigned',
         notes: ['An unsigned UFA at thirty-three'],
       },
-          {
+      {
         pos: 'D', before: 'Jalen Chatfield', after: 'Jalen Chatfield', status: 'retained',
         notes: [
           'Played 72 games for the club in 2025–26 and is on the current roster',

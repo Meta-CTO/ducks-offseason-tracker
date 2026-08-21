@@ -206,22 +206,10 @@ export const rosterComparison = [
           'One year left at $850K (Group 6 UFA after)',
         ],
       },
-          {
-        pos: 'R', before: 'Judd Caulfield', after: 'Judd Caulfield', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
       {
         pos: 'R', before: 'Sam Colangelo', after: 'Sam Colangelo', status: 'retained',
         notes: [
           'Played 9 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'C', before: 'Sean Farrell', after: 'Sean Farrell', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -231,45 +219,9 @@ export const rosterComparison = [
         ],
       },
       {
-        pos: 'L', before: 'James Hamblin', after: 'James Hamblin', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'R', before: 'Nikita Klepov', after: 'Nikita Klepov', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'C', before: 'Roger McQueen', after: 'Roger McQueen', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'L', before: 'Nico Myatovic', after: 'Nico Myatovic', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
         pos: 'C', before: 'Nikita Nesterenko', after: 'Nikita Nesterenko', status: 'retained',
         notes: [
           'Played 29 games for the club in 2025–26 and is on the current roster',
-        ],
-      },
-      {
-        pos: 'L', before: 'Marcus Nordmark', after: 'Marcus Nordmark', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'C', before: 'Anton Wahlberg', after: 'Anton Wahlberg', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
       {
@@ -370,36 +322,6 @@ export const rosterComparison = [
           'GM Pat Verbeek has said he expects Luneau to make the team out of camp',
           '41 points in 70 AHL games; 1 NHL game last season',
           'Final entry-level year ($865K), RFA next summer; four departed regulars create the opening',
-        ],
-      },
-          {
-        pos: 'D', before: 'Travis Mitchell', after: 'Travis Mitchell', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'D', before: 'Corey Schueneman', after: 'Corey Schueneman', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'D', before: 'Stian Solberg', after: 'Stian Solberg', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'D', before: 'Noah Warren', after: 'Noah Warren', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
-        ],
-      },
-      {
-        pos: 'D', before: 'Jett Woo', after: 'Jett Woo', status: 'retained',
-        notes: [
-          'On the current roster; no 2025–26 games for the club',
         ],
       },
     ],

@@ -84,7 +84,7 @@ export const rosterComparison = [
         pos: 'F', before: 'Ryan Reaves', after: null, status: 'departed',
         notes: ['Became a UFA after 3 goals in 50 games'],
       },
-          {
+      {
         pos: 'C', before: 'Ty Dellandrea', after: 'Ty Dellandrea', status: 'retained',
         notes: [
           'Played 46 games for the club in 2025–26 and is on the current roster',
@@ -186,7 +186,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Shakir Mukhamadullin', after: null, status: 'departed',
         notes: ['Traded to Edmonton on Jul. 1 in the Nurse deal'],
       },
-          {
+      {
         pos: 'D', before: 'Sam Dickinson', after: 'Sam Dickinson', status: 'retained',
         notes: [
           'Played 72 games for the club in 2025–26 and is on the current roster',
@@ -215,7 +215,7 @@ export const rosterComparison = [
           'Competing with Alex Nedeljkovic for the backup job',
         ],
       },
-          {
+      {
         pos: 'G', before: 'Alex Nedeljkovic', after: 'Alex Nedeljkovic', status: 'retained',
         notes: [
           'Played 40 games for the club in 2025–26 and is on the current roster',

@@ -83,7 +83,7 @@ export const rosterComparison = [
         pos: 'F', before: null, after: 'Carter Mazur', status: 'added',
         notes: ['Two years on Jul. 1 at twenty-four; projected third line'],
       },
-          {
+      {
         pos: 'C', before: 'Mason Appleton', after: 'Mason Appleton', status: 'retained',
         notes: [
           'Played 65 games for the club in 2025–26 and is on the current roster',
@@ -160,7 +160,7 @@ export const rosterComparison = [
         pos: 'RD', before: null, after: 'Axel Sandin-Pellikka', status: 'camp',
         notes: ['Projected onto the third pair with Albert Johansson; a projection, not an announced job'],
       },
-          {
+      {
         pos: 'D', before: 'Jacob Bernard-Docker', after: 'Jacob Bernard-Docker', status: 'retained',
         notes: [
           'Played 63 games for the club in 2025–26 and is on the current roster',

@@ -85,7 +85,7 @@ export const rosterComparison = [
         pos: 'C', before: 'Lars Eller', after: null, status: 'departed',
         notes: ['Signed a one-year contract with Florida on Jul. 1'],
       },
-          {
+      {
         pos: 'R', before: 'Michael Amadio', after: 'Michael Amadio', status: 'retained',
         notes: [
           'Played 81 games for the club in 2025–26 and is on the current roster',
@@ -172,7 +172,7 @@ export const rosterComparison = [
           'The reset says he “will get a long look at training camp”',
         ],
       },
-          {
+      {
         pos: 'D', before: 'Cameron Crotty', after: 'Cameron Crotty', status: 'retained',
         notes: [
           'Played 6 games for the club in 2025–26 and is on the current roster',
@@ -219,7 +219,7 @@ export const rosterComparison = [
           'Had gone Philadelphia to Toronto ten days earlier in the Joseph Woll trade',
         ],
       },
-          {
+      {
         pos: 'G', before: 'Leevi Meriläinen', after: 'Leevi Meriläinen', status: 'retained',
         notes: [
           'Played 20 games for the club in 2025–26 and is on the current roster',

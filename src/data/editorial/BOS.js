@@ -69,7 +69,7 @@ export const rosterComparison = [
           'Projected onto the third line; two regular-season games so far',
         ],
       },
-          {
+      {
         pos: 'C', before: 'Michael Eyssimont', after: 'Michael Eyssimont', status: 'retained',
         notes: [
           'Played 56 games for the club in 2025–26 and is on the current roster',
@@ -160,7 +160,7 @@ export const rosterComparison = [
         pos: 'D', before: 'Andrew Peeke', after: null, status: 'departed',
         notes: ['Signed a one-year contract with Utah on Jul. 3'],
       },
-          {
+      {
         pos: 'D', before: 'Jonathan Aspirot', after: 'Jonathan Aspirot', status: 'retained',
         notes: [
           'Played 61 games for the club in 2025–26 and is on the current roster',
