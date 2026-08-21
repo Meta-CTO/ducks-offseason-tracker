@@ -332,7 +332,7 @@ export const cap = {
     { key: 'O', label: 'Retained & buyouts', color: 'var(--cap-other)', total: 6_444_444 },
   ],
   capHits: [
-    { name: 'Joshua Norris', group: 'F', hit: 7_950_000 },
+    { name: 'Josh Norris', group: 'F', hit: 7_950_000 },
     { name: 'Zach Benson', group: 'F', hit: 7_500_000 },
     { name: 'Tage Thompson', group: 'F', hit: 7_142_857 },
     { name: 'Josh Doan', group: 'F', hit: 6_950_000 },

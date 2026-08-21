@@ -271,7 +271,7 @@ export const cap = {
     { name: 'Connor McMichael', group: 'F', hit: 6_750_000 },
     { name: 'Pius Suter', group: 'F', hit: 4_125_000 },
     { name: 'Jake Neighbours', group: 'F', hit: 3_750_000 },
-    { name: 'Alexei Toropchenko', group: 'F', hit: 2_500_000 },
+    { name: 'Alexey Toropchenko', group: 'F', hit: 2_500_000 },
     { name: 'Ross Johnston', group: 'F', hit: 2_000_000 },
     { name: 'Jonatan Berggren', group: 'F', hit: 2_000_000 },
     { name: 'Jimmy Snuggerud', group: 'F', hit: 950_000 },

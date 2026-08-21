@@ -293,7 +293,7 @@ export const cap = {
     { name: 'Brady Skjei', group: 'D', hit: 7_000_000 },
     { name: 'Nicolas Hague', group: 'D', hit: 5_500_000 },
     { name: 'Ilya Lyubushkin', group: 'D', hit: 3_250_000 },
-    { name: 'Nicklaus Perbix', group: 'D', hit: 2_750_000 },
+    { name: 'Nick Perbix', group: 'D', hit: 2_750_000 },
     { name: 'Justin Barron', group: 'D', hit: 1_575_000 },
     { name: 'Adam Wilsby', group: 'D', hit: 850_000 },
     { name: 'Juuse Saros', group: 'G', hit: 7_740_000 },

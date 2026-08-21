@@ -267,7 +267,7 @@ export const biggestChanges = [
 export const draftClass = draftFromApi(draft)
 
 export const campWatch = [
-  { name: 'Matthew Savoie', pos: 'F', note: 'Projected onto the second line beside Draisaitl; a projection rather than a decision.' },
+  { name: 'Matt Savoie', pos: 'F', note: 'Projected onto the second line beside Draisaitl; a projection rather than a decision.' },
   { name: 'Shakir Mukhamadullin', pos: 'D', note: 'Arrived in the Nurse trade and is projected onto the third pair.' },
 ]
 
@@ -316,7 +316,7 @@ export const cap = {
     { name: 'Mattias Janmark', group: 'F', hit: 1_450_000 },
     { name: 'Colton Dach', group: 'F', hit: 1_200_000 },
     { name: 'Mathieu Joseph', group: 'F', hit: 1_000_000 },
-    { name: 'Matthew Savoie', group: 'F', hit: 886_666 },
+    { name: 'Matt Savoie', group: 'F', hit: 886_666 },
     { name: 'Evan Bouchard', group: 'D', hit: 10_500_000 },
     { name: 'Jake Walman', group: 'D', hit: 7_000_000 },
     { name: 'Connor Murphy', group: 'D', hit: 4_100_000 },

@@ -60,6 +60,33 @@ const add = (club, severity, kind, detail) => issues.push({ club, severity, kind
 // Roles that are staff, not skaters — they will never be on an NHL roster feed.
 const STAFF = /coach|manager|president|captain|gm\b|hc\b|ac\b|gc\b|advisor|operations/i
 
+// NHL player search, used only for names the roster feed does not have. Cached
+// so a club with several depth signings costs one request each, not repeats.
+const UA = 'ducks-offseason-tracker/1.0 (personal hockey site)'
+const searchCache = new Map()
+const searchPlayer = async (name) => {
+  const key = norm(name)
+  if (searchCache.has(key)) return searchCache.get(key)
+  // The endpoint does not always match a full hyphenated name — querying
+  // "Axel Sandin-Pellikka" returns nothing while "Sandin" returns him — so fall
+  // back to the last name before concluding a player does not exist.
+  const plain = name.replace(/’/g, "'")
+  let out = null
+  for (const term of [plain, plain.split(/[\s-]+/).slice(-1)[0], plain.split(/\s+/).slice(-1)[0]]) {
+    if (!term || out) continue
+    const url = `https://search.d3.nhle.com/api/v1/search/player?culture=en-us&limit=20&q=${encodeURIComponent(term)}`
+    const res = await fetch(url, { headers: { 'user-agent': UA } }).catch(() => null)
+    if (!res?.ok) continue
+    const list = await res.json().catch(() => [])
+    const hit = list.find((p) => norm(p.name) === key)
+    if (hit) out = { team: hit.teamAbbrev ?? null, last: hit.lastTeamAbbrev ?? null }
+    await new Promise((r) => setTimeout(r, 200))
+  }
+  searchCache.set(key, out)
+  await new Promise((r) => setTimeout(r, 250))
+  return out
+}
+
 for (const club of targets) {
   const m = await import(pathToFileURL(path.resolve(`src/data/editorial/${club}.js`)).href)
   const league = JSON.parse(await readFile(`src/data/league/${club}.json`, 'utf8'))
@@ -103,20 +130,40 @@ for (const club of targets) {
   }
 
   // 4. A player row whose name the league file does not know.
+  //
+  // Absence from the roster feed is NOT by itself an error: the feed carries the
+  // NHL roster only, so AHL depth and LTIR players are legitimately missing.
+  // Seven of the eight names this first flagged turned out to be correct. So
+  // anyone unmatched is put to the player-search endpoint, which reports a
+  // current club — that is what separates "not in the 23-man feed" from a row
+  // attributing someone to the wrong team.
   for (const r of playerRows) {
     const n = subject(r)
     if (!n) continue
     const nn = norm(n)
-    if (!leagueNames.has(nn) && !leagueSurnames.has(nn) && !leagueSurnames.has(norm(n.split(' ').slice(-1)[0]))) {
-      const gone = r.status === 'departed' || r.status === 'unsigned' || r.status === 'camp'
-      add(club, gone ? 'low' : 'high', 'name-not-on-roster',
-        `${r.pos} '${n}' (${r.status}) is not on the current ${club} roster feed`)
+    if (leagueNames.has(nn) || leagueSurnames.has(nn) || leagueSurnames.has(norm(n.split(' ').slice(-1)[0]))) continue
+    if (r.status === 'departed' || r.status === 'unsigned') continue   // expected to be gone
+
+    const found = await searchPlayer(n)
+    if (!found) {
+      add(club, 'medium', 'player-not-found',
+        `${r.pos} '${n}' (${r.status}) is on no roster feed and NHL player search does not know the name`)
+    } else if (found.team && found.team !== club) {
+      add(club, 'high', 'wrong-club',
+        `${r.pos} '${n}' is listed here but NHL player search puts them on ${found.team}`)
+    } else if (!found.team) {
+      add(club, 'medium', 'no-current-club',
+        `${r.pos} '${n}' (${r.status}) has no current NHL club (last: ${found.last ?? '—'})`)
     }
+    // team === club: correct, just outside the 23-man feed. Not an issue.
   }
 
   // 5. Duplicate rows for the same person.
+  // playerRows, not allRows: a person can legitimately hold a role as well as a
+  // lineup spot. Anaheim lists Gudas as a departed defenceman and again on the
+  // captaincy row he vacated, which is two facts, not a duplicate.
   const seen = new Map()
-  for (const r of allRows) {
+  for (const r of playerRows) {
     const n = subject(r)
     if (!n) continue
     if (seen.has(n)) add(club, 'medium', 'duplicate-row', `'${n}' appears in ${seen.get(n)} and ${r.group}`)
@@ -135,8 +182,14 @@ for (const club of targets) {
   for (const h of m.cap?.capHits ?? []) {
     if (coveredNorm.has(norm(h.name))) continue
     const sur = norm(h.name.split(' ').slice(-1)[0])
-    const clash = [...covered].find((n) => norm(n.split(' ').slice(-1)[0]) === sur)
-    if (clash) add(club, 'low', 'cap-name-mismatch', `cap says '${h.name}', roster says '${clash}'`)
+    const clashes = [...covered].filter((n) => norm(n.split(' ').slice(-1)[0]) === sur)
+    // Two players can share a surname, in which case a differing cap name is the
+    // thing telling them apart, not a typo. Vancouver rosters two Elias
+    // Petterssons — a forward at $11.6M and a defenceman at $913K — and
+    // "correcting" the cap row to match would merge them.
+    if (clashes.length === 1) {
+      add(club, 'low', 'cap-name-mismatch', `cap says '${h.name}', roster says '${clashes[0]}'`)
+    }
   }
 
   // 8. draftClass present.

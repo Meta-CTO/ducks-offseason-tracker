@@ -366,7 +366,7 @@ export const cap = {
     { name: 'Darren Raddysh', group: 'D', hit: 8_500_000 },
     { name: 'Morgan Rielly', group: 'D', hit: 7_500_000 },
     { name: 'Jake McCabe', group: 'D', hit: 4_513_102 },
-    { name: 'Christopher Tanev', group: 'D', hit: 4_500_000 },
+    { name: 'Chris Tanev', group: 'D', hit: 4_500_000 },
     { name: 'Oliver Ekman-Larsson', group: 'D', hit: 3_500_000 },
     { name: 'Emil Andrae', group: 'D', hit: 1_550_000 },
     { name: 'Troy Stecher', group: 'D', hit: 1_350_000 },

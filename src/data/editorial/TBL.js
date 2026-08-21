@@ -316,7 +316,7 @@ export const cap = {
     { name: 'Conor Geekie', group: 'F', hit: 886_666 },
     { name: 'John Carlson', group: 'D', hit: 8_500_000 },
     { name: 'Victor Hedman', group: 'D', hit: 8_000_000 },
-    { name: 'Janis Jérôme Moser', group: 'D', hit: 6_750_000 },
+    { name: 'J.J. Moser', group: 'D', hit: 6_750_000 },
     { name: 'Erik Cernak', group: 'D', hit: 5_200_000 },
     { name: 'Ryan McDonagh', group: 'D', hit: 4_100_000 },
     { name: 'Charle-Edouard D\'Astous', group: 'D', hit: 875_000 },

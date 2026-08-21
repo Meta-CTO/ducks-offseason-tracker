@@ -287,7 +287,7 @@ export const cap = {
     { name: 'Rickard Rakell', group: 'F', hit: 5_000_000 },
     { name: 'Andrei Kuzmenko', group: 'F', hit: 5_000_000 },
     { name: 'Ville Koivunen', group: 'F', hit: 4_000_000 },
-    { name: 'Thomas Novak', group: 'F', hit: 3_500_000 },
+    { name: 'Tommy Novak', group: 'F', hit: 3_500_000 },
     { name: 'Nicholas Robertson', group: 'F', hit: 3_250_000 },
     { name: 'Connor Dewar', group: 'F', hit: 2_250_000 },
     { name: 'Blake Lizotte', group: 'F', hit: 2_250_000 },

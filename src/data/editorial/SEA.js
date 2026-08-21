@@ -266,7 +266,7 @@ export const cap = {
     { name: 'Adam Larsson', group: 'D', hit: 5_250_000 },
     { name: 'Ryan Lindgren', group: 'D', hit: 4_500_000 },
     { name: 'Ryker Evans', group: 'D', hit: 2_050_000 },
-    { name: 'Josh Mahura', group: 'D', hit: 907_500 },
+    { name: 'Joshua Mahura', group: 'D', hit: 907_500 },
     { name: 'Cale Fleury', group: 'D', hit: 890_000 },
     { name: 'Philipp Grubauer', group: 'G', hit: 5_900_000 },
     { name: 'Joey Daccord', group: 'G', hit: 5_000_000 },

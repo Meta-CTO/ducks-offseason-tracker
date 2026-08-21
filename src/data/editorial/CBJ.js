@@ -37,7 +37,7 @@ export const departures = [
 export const arrivals = [
   { date: 'Jun. 25', player: 'Valeri Nichushkin', pos: 'F', deal: 'Trade from Colorado', role: 'Cost a 2026 second, a 2027 third and a 2028 fifth; projected top line' },
   { date: 'Jul. 1', player: 'Ryan Lomberg', pos: 'F', deal: 'Two years', role: 'From Calgary; 129 hits in 57 games; projected fourth line' },
-  { date: 'Jul. 1', player: 'Phoenix Copley', pos: 'G', deal: 'One year', role: 'Thirty-four; a third goaltending option' },
+  { date: 'Jul. 1', player: 'Pheonix Copley', pos: 'G', deal: 'One year', role: 'Thirty-four; a third goaltending option' },
 ]
 
 export const rosterComparison = [
@@ -208,7 +208,7 @@ export const rosterComparison = [
         notes: ['Projected backup'],
       },
       {
-        pos: 'G', before: null, after: 'Phoenix Copley', status: 'added',
+        pos: 'G', before: null, after: 'Pheonix Copley', status: 'added',
         notes: ['One year on Jul. 1 as a potential third goaltender'],
       },
     ],

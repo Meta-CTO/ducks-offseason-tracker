@@ -318,7 +318,7 @@ export const cap = {
     { name: 'Jake Sanderson', group: 'D', hit: 8_050_000 },
     { name: 'Thomas Chabot', group: 'D', hit: 8_000_000 },
     { name: 'Jordan Spence', group: 'D', hit: 5_000_000 },
-    { name: 'Artyom Zub', group: 'D', hit: 4_600_000 },
+    { name: 'Artem Zub', group: 'D', hit: 4_600_000 },
     { name: 'Tyler Kleven', group: 'D', hit: 1_600_000 },
     { name: 'Carter Yakemchuk', group: 'D', hit: 941_667 },
     { name: 'Nikolas Matinpalo', group: 'D', hit: 875_000 },
